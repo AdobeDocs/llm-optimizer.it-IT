@@ -1,0 +1,157 @@
+---
+title: Adobe LLM Optimizer
+description: Rafforzate il vostro marchio con Adobe LLM Optimizer. Tieni traccia delle menzioni, scopri informazioni approfondite e domina la ricerca basata sull’intelligenza artificiale. Assumi il controllo della tua visibilità e inizia subito a ottimizzarla.
+source-git-commit: 746a5d50d39a0681d5a3ff8c050bef0f010b4e55
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 3%
+
+---
+
+
+# Adobe LLM Optimizer
+
+<!-- VIDEO HERE/SLIDES HERE -->
+
+Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza artificiale per l’ottimizzazione dei motori generativi, progettata per aiutare i brand a migliorare la visibilità, l’accuratezza e l’influenza in ambienti di ricerca basati sull’intelligenza artificiale. Fornisce informazioni sulla presenza del brand nelle risposte generate dall’intelligenza artificiale, offre consigli sui contenuti prescrittivi e automatizza le correzioni di ottimizzazione.
+
+## Introduzione a LLM Optimizer
+
+<!-- CARDS
+
+* ./overview/quick-start.md
+  {title= Quickstart guide}
+  {description= Learn how to quickly get up and running with the LLM Optimizer.}
+  {image= ./assets/overview/agentic-traffic-card.png}
+  {target=_blank}
+  {cta=Learn more}
+* ./dashboards/dashboards-overview.md
+  {title= Dashboards overview}
+  {image= ./assets/overview/brand-presence-card.png}
+  {description= Learn how to get insights and get recommendations for your site with dashboards.}
+  {target=_blank}
+  {cta=Learn more}
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Quickstart guide">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./overview/quick-start.md" title="Guida rapida" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/overview/agentic-traffic-card.png" alt="Guida rapida"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./overview/quick-start.md" target="_blank" rel="referrer" title="Guida rapida">Guida rapida</a>
+                    </p>
+                    <p class="is-size-6">Scopri come iniziare a utilizzare LLM Optimizer.</p>
+                </div>
+                <a href="./overview/quick-start.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Dashboards overview">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./dashboards/dashboards-overview.md" title="Panoramica delle dashboard" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/overview/brand-presence-card.png" alt="Panoramica delle dashboard"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Panoramica delle dashboard">Panoramica dei dashboard</a>
+                    </p>
+                    <p class="is-size-6">Scopri come ottenere informazioni approfondite e consigli per il tuo sito con le dashboard.</p>
+                </div>
+                <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## Ulteriori informazioni su LLM Optimizer
+
+<!-- Add cards -->
+
+<!-- CARDS
+
+* ./tutorials/best-practices.md
+  {title= Best practices for marketers and SEO analysts}
+  {image= ./assets/overview/best-practices-card.png}
+  {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
+* https://business.adobe.com/products/llm-optimizer.html
+  {title = Explore the capabilities of the Adobe LLM Optimizer}
+  {image = ./assets/overview/business-adobe.png}
+  {target=_blank}
+  {cta=Learn more}
+
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Best practices for marketers and SEO analysts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./tutorials/best-practices.md" title="Best practice per gli esperti di marketing e gli analisti SEO" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/overview/best-practices-card.png" alt="Best practice per gli esperti di marketing e gli analisti SEO"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" title="Best practice per gli esperti di marketing e gli analisti SEO">Best practice per gli esperti di marketing e gli analisti SEO</a>
+                    </p>
+                    <p class="is-size-6">Scopri in che modo LLM Optimizer può aiutarti a promuovere l’autorità del brand nelle attività di ricerca e scoperta basate sull’intelligenza artificiale.</p>
+                </div>
+                <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Explore the capabilities of the Adobe LLM Optimizer">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://business.adobe.com/products/llm-optimizer.html" title="Esplorare le funzionalità di Adobe LLM Optimizer" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/overview/business-adobe.png" alt="Esplorare le funzionalità di Adobe LLM Optimizer"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" title="Esplorare le funzionalità di Adobe LLM Optimizer">Esplora le funzionalità di Adobe LLM Optimizer</a>
+                    </p>
+                    <p class="is-size-6">Aumenta la visibilità nella ricerca basata sull’intelligenza artificiale con Adobe LLM Optimizer. Ottimizza i contenuti per la ricerca generativa e l’individuazione LLM (Large Language Model) per ottenere risultati.</p>
+                </div>
+                <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+
+## Riferimenti
+
+I collegamenti di riferimento devono essere disponibili qui.
