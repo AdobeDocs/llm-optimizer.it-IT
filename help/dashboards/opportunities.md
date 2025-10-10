@@ -1,9 +1,9 @@
 ---
 title: Opportunità di ottimizzazione
 description: Panoramica dell’articolo.
-source-git-commit: 8c38027e46b53d85776fffe17597883c742235d6
+source-git-commit: ea8434daef2402f0dc9ac2d4f6060c38c9137fe6
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Di seguito è riportata una tabella delle opportunità attualmente supportate:
 
 ### Opportunità di visibilità del ripristino dei contenuti {#recover-contet}
 
-Come indicato in precedenza, l’opportunità di visibilità dei contenuti contrassegna le pagine in cui i contenuti chiave vengono persi per gli agenti AI a causa del rendering lato client. Per ogni pagina identificata, mostra esattamente quale contenuto manca dalla vista dell’agente di intelligenza artificiale, aiutandoti a individuare i vuoti di visibilità. È inoltre supportato da una funzionalità di pre-rendering basata su server perimetrali che può distribuire più contenuti HTML al traffico di agenti senza richiedere modifiche al sistema di gestione dei contenuti (CMS). Tieni presente che questa funzionalità si trova attualmente in **Accesso anticipato** e richiede anche la configurazione da parte del team LLMO per abilitare la distribuzione ottimizzata dei contenuti.
+Come indicato in precedenza, l’opportunità di visibilità dei contenuti contrassegna le pagine in cui i contenuti chiave vengono persi per gli agenti AI a causa del rendering lato client. Per ogni pagina identificata, mostra esattamente quale contenuto manca dalla vista dell’agente di intelligenza artificiale, aiutandoti a individuare i vuoti di visibilità. È inoltre supportato da una funzionalità di pre-rendering basata su server perimetrali che può distribuire più contenuti HTML al traffico di agenti senza richiedere modifiche al sistema di gestione dei contenuti (CMS). Questa funzionalità è attualmente in fase di accesso anticipato e richiede la configurazione da parte del team LLMO. Contatta `llmo-at-edge@adobe.com` per attivare l&#39;opportunità di visibilità dei contenuti.
 
 ### Strumenti aggiuntivi
 
