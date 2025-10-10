@@ -1,9 +1,9 @@
 ---
 title: Configurazione cliente
-description: Panoramica dell’articolo.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Utilizza la configurazione del cliente per definire in che modo il tuo marchio verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM.
+source-git-commit: 7d01b35cb2153e020f0b64e493aad263fb9bb09f
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configurazione cliente
 
-Nella configurazione del cliente puoi definire in che modo il brand verrà monitorato e analizzato all’interno della piattaforma. Puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia dei concorrenti e aggiungere alias di menzione del brand per acquisire tutte le varianti del brand in tutti i prompt. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
+Nella configurazione del cliente puoi definire in che modo il brand verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM. Puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia dei concorrenti e aggiungere alias di menzione del brand per acquisire tutte le varianti del brand in tutti i prompt. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
 
 ![Dashboard configurazione cliente](/help/dashboards/assets/customer-config.png)
 
