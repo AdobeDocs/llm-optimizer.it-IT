@@ -1,10 +1,10 @@
 ---
 title: Collaborazione
-description: Panoramica dell’articolo.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Scopri come utilizzare il dashboard di collaborazione per invitare i membri del gruppo nell’area di lavoro LLM Optimizer della tua organizzazione.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 

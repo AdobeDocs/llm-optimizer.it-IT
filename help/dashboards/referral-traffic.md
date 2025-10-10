@@ -1,9 +1,9 @@
 ---
 title: Traffico di riferimento
-description: Panoramica dell’articolo.
-source-git-commit: c83b4929a82331534654fcfdccd41d91eefe6d92
+description: Scopri come utilizzare il dashboard Traffico di riferimento per vedere come i visitatori arrivano al tuo sito da piattaforme esterne, citazioni AI e collegamenti di riferimento.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---

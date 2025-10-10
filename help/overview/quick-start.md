@@ -1,9 +1,9 @@
 ---
 title: Avvio rapido
-description: Questo è l’articolo di avvio rapido.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Scopri come iniziare a utilizzare l’ottimizzatore LLM e come procedere con il processo di onboarding.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Il processo di onboarding inizia con l’onboarding del dominio. Il processo var
 
 ### Clienti AEM Cloud
 
-I clienti di AEM Cloud (Cloud Service/Managed Services/ Edge Delivery Service) vedranno l&#39;opzione per provare LLM Optimizer tramite la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+I clienti di AEM Cloud (Cloud Service/Managed Services/ Edge Delivery Service) vedranno l&#39;opzione per provare LLM Optimizer tramite la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Le nuove richieste aggiunte non verranno visualizzate in Presenza marchio fino al completamento dell’elaborazione. I clienti di AEM Cloud (Cloud Service, Managed Services/Edge Delivery Service) possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contattare il [rappresentante dell&#39;account].
