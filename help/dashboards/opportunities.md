@@ -1,9 +1,9 @@
 ---
 title: Opportunità di ottimizzazione
 description: Panoramica dell’articolo.
-source-git-commit: 77bddfa7351d573c20a0f68a08b69000bc06beb8
+source-git-commit: 8c38027e46b53d85776fffe17597883c742235d6
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,16 @@ Di seguito è riportata una tabella delle opportunità attualmente supportate:
 | Riepiloga paragrafi lunghi | Contenuto (nel sito) | Rileva i paragrafi che superano le soglie di lunghezza consigliate. Mostra gli URL interessati e frammenti di testo di dimensioni eccessive. | Creare riassunti o dividere testo lungo in sezioni più brevi e digitalizzabili. |
 | Consigliare contenuti strutturati (FAQ) | Contenuto (nel sito) | Rileva i prompt a popolarità elevata senza le voci di domanda corrispondenti. Mostra i prompt correlati, le categorie e gli URL interessati. | Aggiungi blocchi di schema di domande frequenti con risposte concise per far corrispondere le query comuni. |
 | Rileva hreflang mancante | Contenuto (nel sito) | Segnala le pagine prive di attributi hreflang. Fornisce gli URL interessati e la copertura prevista per lingua/area geografica. | Implementa tag hreflang per indicare le versioni localizzate corrette. |
-| Rileva Canonici Mancanti | Contenuto (nel sito) | Rileva i paragrafi che superano le soglie di lunghezza consigliate. Mostra gli URL interessati e frammenti di testo di dimensioni eccessive. | Creare riassunti o dividere testo lungo in sezioni più brevi e digitalizzabili. |
+| Rileva Canonici Mancanti | Contenuto (nel sito) | Cerca le pagine senza tag canonici o con tag in conflitto. Elenca URL interessati e duplicati. | Aggiungi tag canonici che puntano alla versione preferita di ogni pagina. Assicurati di utilizzare in modo coerente le diverse varianti. |
 | Rileva intestazioni vuote | Contenuto (nel sito) | Segnala le pagine in cui sono presenti tag di intestazione ma non contengono testo. Mostra URL e posizione di tag vuoti. | Aggiungi testo descrittivo alle intestazioni che riflettono il contenuto al di sotto di esse. |
 | Rileva titoli duplicati | Contenuto (nel sito) | Esegue la scansione dei tag di intestazione di HTML e contrassegna le intestazioni ripetute. Mostra gli URL interessati e i frammenti di testo duplicati. | Modifica le intestazioni in modo che siano univoche e mantieni la gerarchia (H1 → H2 → H3). Unire o rinominare sezioni duplicate. |
 | Rileva traffico agente bloccato | GEO tecnico | Analizza i registri CDN per le richieste bloccate da agenti di intelligenza artificiale noti (ad esempio, GPTBot, PerplexityBot). Segnala gli URL e gli agenti interessati. | Se necessario, aggiorna robots.txt o le configurazioni server per consentire l’accesso ai crawler di IA supportati. |
 | Rileva problemi 404s / 403s / 5xx | GEO tecnico | Esegue il monitoraggio dei registri CDN per le risposte di errore. Segnala la frequenza, gli URL interessati e gli hit stimati persi. | Correggi i collegamenti interrotti, aggiorna le autorizzazioni e risolvi i problemi lato server in modo che il contenuto chiave restituisca 200 risposte. |
+
+### Opportunità di visibilità del ripristino dei contenuti {#recover-contet}
+
+Come indicato in precedenza, l’opportunità di visibilità dei contenuti contrassegna le pagine in cui i contenuti chiave vengono persi per gli agenti AI a causa del rendering lato client. Per ogni pagina identificata, mostra esattamente quale contenuto manca dalla vista dell’agente di intelligenza artificiale, aiutandoti a individuare i vuoti di visibilità. È inoltre supportato da una funzionalità di pre-rendering basata su server perimetrali che può distribuire più contenuti HTML al traffico di agenti senza richiedere modifiche al sistema di gestione dei contenuti (CMS). Tieni presente che questa funzionalità si trova attualmente in **Accesso anticipato** e richiede anche la configurazione da parte del team LLMO per abilitare la distribuzione ottimizzata dei contenuti.
+
+### Strumenti aggiuntivi
+
+Il controllo di visibilità [LLM](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) è un&#39;estensione di Chrome che consente di visualizzare esattamente la quantità di contenuto della pagina Web a cui i moduli LLM possono accedere e ciò che rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto. Con un solo clic, gli utenti possono valutare la leggibilità automatica di qualsiasi sito, visualizzando un confronto affiancato tra ciò che gli agenti di intelligenza artificiale visualizzano e ciò che gli utenti umani vedono. Inoltre, stima la quantità di contenuto che può essere recuperata utilizzando LLM Optimizer.
