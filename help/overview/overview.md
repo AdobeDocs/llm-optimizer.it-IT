@@ -1,30 +1,73 @@
 ---
-title: Documentazione di LLM Optimizer
-description: Scopri come utilizzare Adobe LLM Optimizer per migliorare la visibilità del brand nelle ricerche basate sull’intelligenza artificiale. Tracciare menzioni, citazioni e informazioni. Ottimizza per migliorare la visibilità e l’influenza del brand.
-source-git-commit: 4277e140f2cf6cc1db01c58824e12521c36a82b4
+title: Panoramica di LLM Optimizer
+description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’intelligenza artificiale. Tracciare menzioni, citazioni e informazioni. Inizia a ottimizzare oggi stesso per un coinvolgimento e un’influenza migliori.
+source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 1%
+source-wordcount: '563'
+ht-degree: 0%
 
 ---
 
 
-# Documentazione di LLM Optimizer
+# Panoramica di LLM Optimizer
 
-Ti diamo il benvenuto nella documentazione di LLM Optimizer. Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza artificiale per l’ottimizzazione dei motori generativi (denominata anche ottimizzazione dei motori di risposta), progettata per aiutare i brand a migliorare la visibilità, l’accuratezza e l’influenza in ambienti di ricerca basati sull’intelligenza artificiale. Fornisce informazioni sulla presenza del brand nelle risposte generate dall’intelligenza artificiale, offre consigli sui contenuti prescrittivi e automatizza le correzioni di ottimizzazione.
+Questa pagina illustra tutto ciò che devi sapere su Adobe LLM Optimizer prima di iniziare a utilizzare lo strumento:
 
-Qui puoi trovare informazioni su come utilizzare Adobe LLM Optimizer per monitorare la visibilità dell’intelligenza artificiale e far sì che il tuo marchio venga menzionato e citato dall’intelligenza artificiale.
+* [Cos’è Adobe LLM Optimizer?](#what-is-adobe-llm-optimizer)
+* [Cosa sono le funzionalità di LLM Optimizer?](#what-are-llm-optimizer-capabilities)
+* [Perché l’ottimizzazione LLM è importante per il tuo marchio?](#why-llm-optimization-matters-for-your-brand)
+* [Chi deve utilizzare Adobe LLM Optimizer?](#who-should-use-adobe-llm-optimizer)
+* [Cosa posso fare con Adobe LLM Optimizer?](#what-can-i-do-with-adobe-llm-optimizer)
 
-<!-- Add image-->
+## Cos’è Adobe LLM Optimizer?
 
-## Nozioni di base su LLM Optimizer
+Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza artificiale per l’ottimizzazione dei motori generativi (denominata anche ottimizzazione dei motori di risposta), progettata per aiutare i brand a migliorare la visibilità, l’accuratezza e l’influenza in ambienti di ricerca basati sull’intelligenza artificiale. Fornisce informazioni sulla presenza del brand nelle risposte generate dall’intelligenza artificiale, offre consigli sui contenuti prescrittivi e automatizza le correzioni di ottimizzazione.
 
-Esplora la documentazione di LLM Optimizer per scoprire le dashboard chiave, la configurazione delle impostazioni e l’elenco Opportunità per informazioni approfondite sull’ottimizzazione IA. Questo set di documentazione illustra le principali funzionalità fornite da LLM Optimizer. Scoprirai come navigare nell’interfaccia utente, interpretare le dashboard e intervenire sulle opportunità.
+## Cosa sono le funzionalità di LLM Optimizer?
+
+Adobe LLM Optimizer offre una suite di strumenti progettati per l’ottimizzazione generativa dei motori:
+
+* **Misura la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il brand appare nei risultati di ricerca basati sull’intelligenza artificiale, con un punteggio di visibilità chiaro per il benchmark.
+* **Benchmark Competitors**: confronta la quota di voce e di presenza del tuo marchio con i concorrenti dei motori generativi.
+* **Scopri opportunità utilizzabili**: identifica contenuti e miglioramenti tecnici (come domande frequenti, riassunti, schema, crawlability) per aumentare menzioni e citazioni.
+* **Tracciare l&#39;impatto del traffico**: monitora il traffico agente (assistente AI) e di riferimento alle proprietà, collegando la visibilità al coinvolgimento.
+* **Abilita Team Collaboration**: condividi dashboard, assegna i proprietari e allinea gli obiettivi tra i team di marketing, SEO e comunicazione.
+
+## Perché l’ottimizzazione LLM è importante per il tuo marchio
+
+L’ottimizzazione LLM sta diventando sempre più importante:
+
+* Le risposte generate dall’intelligenza artificiale stanno rimodellando l’individuazione dei consumatori.
+* LLM Optimizer garantisce che il tuo marchio sia visibile, preciso e influente in questi ambienti.
+* Collega la visibilità dell’intelligenza artificiale a risultati di business reali come coinvolgimento e ricavi.
+* In un mondo di percorsi zero-click, questo strumento è essenziale per rimanere competitivi.
+
+## Chi deve utilizzare Adobe LLM Optimizer?
+
+L&#39;ottimizzazione generativa dei motori è per sua natura cross-functional. LLM Optimizer è progettato con questo obiettivo per i diversi utenti tipo elencati:
+
+* **I Marketing Manager** misurano la visibilità del brand e l&#39;efficacia della campagna nella ricerca AI.
+* **Gli analisti SEO** tengono traccia delle citazioni del brand, delle citazioni e di altre informazioni per orientare la strategia dei contenuti.
+* **PR e responsabili delle comunicazioni** tengono traccia della percezione del marchio nelle strategie LLM da parte di piattaforme di terze parti e gestiscono la disinformazione, gestiscono i sentimenti e proteggono la brand trust.
+
+## Cosa posso fare con Adobe LLM Optimizer?
+
+Con Adobe LLM Optimizer è possibile:
+
+**Misura la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il tuo brand viene menzionato nei risultati di ricerca basati sull’intelligenza artificiale. Vai oltre le supposizioni con un punteggio di visibilità chiaro che puoi confrontare nel tempo.
+**Benchmark Competitors**: scopri in che modo il tuo marchio si confronta con i concorrenti nei motori generativi. Identificare la quota di gap vocali e scoprire i vantaggi competitivi.
+**Scopri opportunità fruibili**: individua opportunità di contenuto (ad esempio, domande frequenti, riassunti, schema) e opportunità tecniche (crawlability, problemi di indicizzazione) che aumentano direttamente menzioni e citazioni.
+**Tracciare l&#39;impatto del traffico dall&#39;IA** - Monitorare il traffico agente (dagli assistenti IA) e il traffico di riferimento (l&#39;utente fa clic dalle citazioni) alle proprietà di tua proprietà. Legare la visibilità GEO a un coinvolgimento reale.
+**Abilita Team Collaboration** - Condividi dashboard, assegna i proprietari per le richieste o le categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO e comunicazione.
 
 
-## Riferimenti
+## Ulteriori informazioni
 
-Collegamenti
+Di seguito sono elencate le risorse che possono aiutarti a ottenere il massimo da LLM Optimizer:
+
+* [Quickstart](/help/overview/quick-start.md) ti rende subito operativo.
+* [Panoramica dashboard](/help/dashboards/dashboards-overview.md) descrive tutte le dashboard disponibili in LLM Optimizer.
+* [Best practice](/help/tutorials/best-practices.md) ti guida attraverso le modalità di utilizzo dello strumento per ottenere le informazioni necessarie per il tuo marchio.
 
 
 
