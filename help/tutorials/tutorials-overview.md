@@ -1,9 +1,9 @@
 ---
 title: Nozioni di base su LLM Optimizer
 description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’intelligenza artificiale. Tracciare menzioni, citazioni e informazioni. Inizia a ottimizzare oggi stesso per un coinvolgimento e un’influenza migliori.
-source-git-commit: 227eb378bd5484fad2fb4165822394b0b605747b
+source-git-commit: b39a6acbcb86c91d23c3aab790266f37b579f651
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -62,75 +62,9 @@ Con Adobe LLM Optimizer è possibile:
 **Abilita Team Collaboration** - Condividi dashboard, assegna i proprietari per le richieste o le categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO e comunicazione.
 
 
-## Riferimenti
-
-Aggiungi qui ulteriori collegamenti e dettagli.
 
 
 
-
-
-
-
-
-<!--## Understanding Brand Visibility and AI Search
-
-Use these as guidelines for creating tutorials - some may be covered already in docs
-
-## Using the Brand Presence Dashboard
-
-* Visibility Score
-* Mentions and Citations
-* Competitor Benchmarking
-* Sentiment Trend Analysis
-
-
-## Exploring the Data Insights Table
-
-* Topic-Level Performance
-* Sentiment and Position Analysis
-* Citation Breakdown
-* Optimization Prioritization
-
-
-## Tracking Agentic Traffic from AI Crawlers
-
-* Setup and Activation
-* Traffic Distribution and Trends
-* User Agent and URL Performance Analysis
-
-
-## Measuring Referral Traffic from AI Citations
-
-* Setup and Activation
-* Source, Region, and Channel Filters
-* Top Referral URLs and Traffic Quality
-
-
-## Inspecting URL Performance in AI Responses
-
-* Cited URLs and Prompt Coverage
-* Competing URLs and Citation Trends
-
-
-## Identifying Optimization Opportunities
-
-* Content Fixes (Headings, FAQs, Canonicals)
-* Technical Fixes (Blocked Agents, Errors)
-* Third-Party Influence Strategies
-
-## Collaborating Across Teams
-
-* Workspace Sharing
-* Role-Based Dashboards
-* Prompt and Category Ownership
-
-
-## Configuring Your Brand Monitoring Setup
-
-* Categories and Topics
-* Brand and Competitor Aliases
-* Domain Switching and Customization -->
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Configurazione cliente
 description: Utilizza la configurazione del cliente per definire in che modo il tuo marchio verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM.
-source-git-commit: 653a6be856412faac8783fa9dc7b759a7c6e1f68
+source-git-commit: b39a6acbcb86c91d23c3aab790266f37b579f651
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Assicurati di rivedere e aggiornare regolarmente i prompt per garantire che sian
 
 >[!TIP]
 >
->* Puoi utilizzare strumenti come LLM Optimizer e Google Search Console con filtri regex per identificare strutture di domande comuni (ad esempio, &quot;come&quot;, &quot;cosa&quot;, &quot;quando&quot;, &quot;dove&quot;).
+>* Puoi utilizzare strumenti come Adobe LLM Optimizer e Google Search Console con filtri regex per identificare strutture di domande comuni (ad esempio, &quot;come&quot;, &quot;cosa&quot;, &quot;quando&quot;, &quot;dove&quot;) e scoprire quali prompt vengono utilizzati dalle persone per visitare il tuo sito.
 >* Per scoprire quali prompt sono rilevanti per il sito o il brand, puoi utilizzare i dati di ricerca nel sito, le domande frequenti nelle pagine dei risultati dei motori di ricerca o anche chiedere direttamente ai chatbot LLM quali domande i clienti potrebbero porre sul brand.
 
 ### Best practice per i concorrenti
