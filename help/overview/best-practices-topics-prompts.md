@@ -1,9 +1,9 @@
 ---
 title: Best practice per categorie, argomenti e prompt
 description: Ottimizza le informazioni di LLM configurando categorie, argomenti, prompt e concorrenti per il monitoraggio del marchio personalizzato e l’analisi strategica dei contenuti.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Durante la creazione dell’elenco, considera quanto segue:
 
 * Un editor è in grado di comprendere l’argomento in 5 secondi dal testo del prompt? In caso contrario, rinominare/semplificare.
 * Un team diverso sarà proprietario della correzione per argomenti diversi? Se sì, sono stati selezionati argomenti utili.
-  <!-- Last bullet point does not make sense. Clarification needed.-->
+  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Alcuni utili suggerimenti aggiuntivi:
 
@@ -94,14 +94,20 @@ Alcuni utili suggerimenti aggiuntivi:
 >
 > * Mantieni gli argomenti basati sulle finalità, non organizzativi.
 > * Non aggiungere categorie/filtri per marchio/non marchio/area geografica, in quanto è possibile filtrare specificamente per questo nella scheda **[!UICONTROL Marchi]**.
-> * Gli argomenti sono suddivisi in diverse categorie. È possibile **non** avere argomenti diversi per categoria.
-> * Un singolo prompt può essere presente in diversi argomenti o categorie.
+> * Gli argomenti sono suddivisi in diverse categorie. **impossibile** definire argomenti univoci per ogni categoria.
+> * Un singolo prompt **can** esiste in diversi argomenti o categorie.
 
 ## Best practice per i prompt
 
 I prompt identificano le domande o le query specifiche poste dai clienti, che possono avere un impatto sull&#39;azienda. Si tratta di domande o query effettive che gli utenti inseriscono nei moduli LLM.
 
 Assicurati di rivedere e aggiornare regolarmente i prompt per garantire che siano in linea con le esigenze dei clienti e gli obiettivi aziendali.
+
+Best practice per i prompt:
+
+* Raggruppa i prompt simili in base alle domande degli utenti.
+* Concentrati sui prompt più importanti per i tuoi clienti.
+* Controlla se il tuo marchio ha buone probabilità di essere menzionato per determinati prompt.
 
 >[!TIP]
 >

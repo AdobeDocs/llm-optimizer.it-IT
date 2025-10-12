@@ -1,9 +1,9 @@
 ---
 title: Best practice per LLM Optimizer
 description: Scopri le best practice per l’ottimizzazione LLM per aumentare la visibilità del brand nella ricerca AI. Informazioni per il benchmark e l’ottimizzazione dei contenuti.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1655'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,12 @@ Se l’ottimizzazione LLM ti aiuta a vincere le classifiche della pagina uno, l�
 
 Questo articolo descrive le best practice per misurare e migliorare la visibilità e l’influenza negli ambienti di ricerca basati sull’intelligenza artificiale con Adobe LLM Optimizer.
 
-* [LLM e SEO](#key-differences)
-* [Sblocco della visibilità del marchio LLM](#unlocking-llm-brand-visibility)
+* [LLM e SEO: differenze chiave](#key-differences)
 * [Pianificazione strategica delle campagne](#strategic-campaign-planning)
-* [Passaggi di ottimizzazione utilizzabili](#actionable-optimization-steps)
-* [Ottimizzazione fuori sede per la visibilità LLM](#offsite-optimization-for-llm-visibility)
-* [Misurazione della visibilità LLM](#measuring-llm-visibility)
-* [Tracciamento delle modifiche di visibilità](#tracking-visibility-changes)
+* [Ottimizzazione in loco](#onsite-optimization---strengthening-your-owned-content)
+* [Ottimizzazione fuori sede](#offsite-optimization---expanding-your-brand-footprint)
+* [Misurazione della visibilità LLM e delle modifiche di tracciamento](#measuring-llm-visibility-and-tracking-changes)
+* [Come ottimizzare per il traffico agente](#how-to-optimize-for-agentic-traffic)
 
 ## LLM e SEO: differenze chiave {#key-differences}
 
@@ -52,69 +51,98 @@ Altre considerazioni sull&#39;ottimizzazione LLM:
 * L’aggiornamento dei contenuti è importante: i moduli LLM danno priorità ai contenuti aggiornati di recente. Anche i motori di ricerca assegnano priorità a questo aspetto per le query sensibili al tempo, ma si basano su altri valori in modo più significativo.
 * Ottenere guadagnato (terze parti) sotto forma di menzioni e citazioni è molto importante.
 
-## Sblocco della visibilità del marchio LLM
+## Pianificazione strategica delle campagne
+
+La creazione di una campagna di ottimizzazione LLM di successo comporta:
+
+* Identifica argomenti di valore elevato in linea con le intenzioni del cliente. Allinea le intenzioni immediate agli obiettivi aziendali e alle esigenze dei clienti.
+* Il concorrente spot menziona per trovare lacune e opportunità. Concentrati sui messaggi in cui vengono citati i concorrenti, indicando l&#39;opportunità di includere il brand.
+* Raggruppa le richieste per intento utilizzando il clustering di argomenti: utilizza argomenti e campi di ricerca per raggruppare obiettivi utente simili per eseguire il benchmark della visibilità.
+* Valuta la credibilità del brand utilizzando gli standard EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) e YMYL (Your Money or Your Life).
+
+Questo approccio strategico garantisce miglioramenti mirati e basati sui dati nella visibilità LLM.
+
+### Sblocco della visibilità del marchio LLM
 
 La visibilità LLM è incentrata sulla frequenza e sul grado di visibilità del brand nelle risposte generate dall’intelligenza artificiale.
 
-Per migliorare la visibilità,
+Per migliorare la visibilità, segui questo ciclo:
 
-1. **Analizza:** controlla come appare il tuo marchio nei messaggi principali dei clienti nei vari moduli LLM.
-2. **Piano:** gruppi di prompt di destinazione con intento simile per le campagne mirate.
-3. **Atto:** Implementa le modifiche e monitora gli spostamenti nella visibilità LLM nel tempo.
-4. **Adatta:** perfeziona le strategie in base alle informazioni actionable provenienti dall&#39;ottimizzatore.
+Analizza > Piano > Att > Adapt
+
+* **Analizza:** controlla come appare il tuo marchio nei messaggi principali dei clienti nei vari moduli LLM.
+* **Piano:** gruppi di prompt di destinazione con intento simile per le campagne mirate.
+* **Atto:** Implementa le modifiche e monitora gli spostamenti nella visibilità LLM nel tempo.
+* **Adatta:** perfeziona le strategie in base alle informazioni actionable provenienti dall&#39;ottimizzatore.
 
 <!--insert image-->
 
 Comprendere e sfruttare questi passaggi può aiutare il tuo marchio a rimanere rilevante in quanto l’intelligenza artificiale diventa fondamentale per il discovery delle informazioni.
 
-## Pianificazione strategica delle campagne
+## Ottimizzazione in loco - rafforzamento dei contenuti
 
-La creazione di una campagna di ottimizzazione LLM di successo comporta:
+L’ottimizzazione in loco migliora i contenuti di proprietà per la visibilità LLM. Si tratta di azioni che esegui sul tuo sito web e sulle tue proprietà digitali per migliorare la percezione, l’accesso e la citazione del brand da parte degli LLM.
 
-* Identificare gli argomenti di valore elevato: allinea l’intento del prompt agli obiettivi aziendali e alle esigenze dei clienti.
-* Spot competitor menzioni: concentrarsi sui prompt in cui vengono citati i concorrenti, indicando l&#39;opportunità per l&#39;inclusione del brand.
-* Raggruppa le richieste per intento: utilizza argomenti e campi di ricerca per raggruppare obiettivi utente simili per eseguire il benchmark della visibilità.
-* Valuta l’inclusione di un marchio realistico: valuta se il tuo marchio può essere citato in modo credibile, considerando fattori come l’esperienza, le competenze, l’autorevolezza, la fiducia e gli standard YMYL (Your Money or Your Life).
+>[!TIP]
+>
+>LLM Optimizer consiglia di ottimizzare le opportunità in loco e fuori sede nel dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Spesso può distribuire le ottimizzazioni direttamente sul sito.
 
-Questo approccio strategico garantisce miglioramenti mirati e basati sui dati nella visibilità LLM.
+Di seguito sono riportate alcune best practice di ottimizzazione:
 
-## Passaggi di ottimizzazione utilizzabili
+1. Garanzia di accessibilità tecnica
 
-LLM Optimizer suggerisce opportunità di ottimizzazione nel dashboard [Opportunities](/help/dashboards/opportunities.md).
+   * Controlla le impostazioni robots.txt e CDN per consentire agli agenti di IA di eseguire la ricerca per indicizzazione del sito.
+   * Utilizza la funzione di ispezione URL per identificare le pagine bloccate o inaccessibili. Vedi [Ispettore URL](/help/dashboards/url-inspector.md).
 
-Di seguito sono riportate alcune azioni pratiche da prendere in considerazione per aumentare la visibilità del brand nei moduli LLM:
+2. Aggiornare e strutturare i contenuti
 
-* Aggiornamento delle pagine di Wikipedia: assicurati che la società e le pagine citate siano attuali e pertinenti.
-* Abilita accesso LLM: monitora le impostazioni robots.txt e CDN per impedire il blocco dei bot di IA.
-* Aggiornare il contenuto: aggiorna il 10-15% del contenuto della pagina, aggiungi riferimenti e migliora la struttura con le intestazioni (H1, H2, H3).
-* Aggiungi domande frequenti: integra le domande frequenti pertinenti in base all’analisi tempestiva per rispondere alle domande degli utenti.
-* Aumentare le menzioni del brand su Reddit/Quora: contribuisce alle piattaforme di contenuti generate dagli utenti in cui trovano le citazioni LLM. Presta attenzione all&#39;approccio da adottare per l&#39;attivazione
+   * Aggiorna regolarmente il 10-15% del contenuto della pagina. I moduli LLM danno priorità ai nuovi contenuti.
+   * Aggiungere citazioni e riferimenti a fonti autorevoli.
+   * Utilizza intestazioni strutturate (H1, H2, H3) per un’analisi migliore.
 
-L’esecuzione coerente di questi passaggi può migliorare in modo significativo la presenza del brand nei risultati di ricerca basati sull’intelligenza artificiale.
+3. Integrare le domande frequenti
 
-## Ottimizzazione fuori sede per la visibilità LLM
+   * Aggiungi le domande frequenti in linguaggio naturale in base all’analisi tempestiva.
+   * Risolvi le domande più frequenti degli utenti nei formati di conversazione.
 
-L’ottimizzazione offsite si concentra sul miglioramento della visibilità del brand nelle risposte generate dall’intelligenza artificiale influenzando le origini di contenuto di terze parti citate di frequente dai moduli LLM.
+4. Monitora e ripeti
+
+   * Utilizza il [dashboard Opportunità](/help/dashboards/opportunities.md) per identificare e agire in base ai consigli.
+   * Traccia il punteggio di visibilità, la valutazione e la frequenza delle citazioni.
+   * Effettua regolazioni in base all’attività della concorrenza e alle tendenze immediate.
+
+## Ottimizzazione off-site: aumento dell&#39;ingombro del marchio
+
+L’ottimizzazione offsite si concentra sul miglioramento della visibilità del brand nelle risposte generate dall’intelligenza artificiale influenzando le origini di contenuto di terze parti citate di frequente dai moduli LLM. Si tratta di azioni intraprese al di fuori delle proprietà per influenzare il modo in cui i moduli LLM trovano e citano il tuo marchio.
+
+>[!TIP]
+>
+>LLM Optimizer consiglia di ottimizzare le opportunità in loco e fuori sede nel dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Spesso può distribuire le ottimizzazioni direttamente sul sito.
+
 
 Principali canali fuori sede:
 
 * Wikipedia: assicurati che le pagine siano aggiornate, ben fornite e scritte in modo neutro.
-* Reddit &amp; Quora: Partecipa a discussioni con contributi autentici e utili.
+* Reddit e Quora: partecipa a discussioni con contributi autentici e utili e menzioni del brand.
 * Articoli e recensioni di affiliazione: collabora con gli editori per contenuti di alta qualità.
-* YouTube &amp; Social Media: crea video e post che rispondono a domande comuni.
-* News &amp; PR: Copertura sicura in punti vendita affidabili.
+* YouTube e social media: crea video e post che rispondono a domande comuni.
+* News e PR: Proteggere i dati in un punto vendita affidabile.
 
 Best practice:
 
 * Diversificate il vostro ingombro fuori sede.
-* Monitora le citazioni utilizzando LLM Optimizer di Adobe.
+* Monitorare le citazioni tramite Adobe LLM Optimizer. Vedi [Dashboard di presenza del brand](/help/dashboards/brand-presence.md).
 * Aggiorna i contenuti non aggiornati e cerca nuove opportunità di inclusione.
 * Coordina con PR e team sociali.
 * Garantire contributi imparziali e informativi.
 
-## Misurazione della visibilità LLM
+L’esecuzione coerente di questi passaggi può migliorare in modo significativo la presenza del brand nei risultati di ricerca basati sull’intelligenza artificiale.
 
-Per eseguire il benchmark della visibilità del tuo sito web o per vedere miglioramenti della visibilità, tieni traccia di queste metriche chiave:
+## Misurazione della visibilità LLM e delle modifiche di tracciamento
+
+Comprendere come il tuo marchio si presenta nelle risposte generate dall’intelligenza artificiale è essenziale per ottimizzare per i moduli LLM. Adobe LLM Optimizer offre un modo strutturato per misurare la visibilità, valutare le prestazioni e tenere traccia dei miglioramenti nel tempo
+
+Tieni traccia di queste metriche chiave:
 
 * **Riferimenti:** quante volte il tuo marchio viene menzionato nelle risposte.
 * **Citazioni:** con quale frequenza i moduli LLM utilizzano il contenuto o le origini per rispondere a domande.
@@ -123,26 +151,26 @@ Per eseguire il benchmark della visibilità del tuo sito web o per vedere miglio
 
 Queste metriche si combinano in un punteggio di **visibilità**, che indica quanto sia forte la presenza del tuo marchio nelle risposte LLM. Visualizza la bacheca [Presenza marchio](/help/dashboards/brand-presence.md).
 
-## Tracciamento delle modifiche di visibilità
+### Strategia di tracciamento
 
 Di seguito sono riportati i passaggi da seguire per monitorare l’avanzamento:
 
-1. Verifica la visibilità corrente
-   * Utilizza Adobe LLM Optimizer per mostrarti quanto spesso il tuo marchio viene menzionato e citato e qual è il sentimento nelle risposte LLM. Visualizza il dashboard [Presenza marchio](/help/dashboards/brand-presence.md).
+1. Effettua il benchmark della tua visibilità corrente.
+   * Identifica con quale frequenza e dove viene menzionato e citato il tuo marchio e qual è il sentimento in Adobe LLM Optimizer. Visualizza il dashboard [Presenza marchio](/help/dashboards/brand-presence.md).
    * Analizza i prompt dove viene visualizzato il brand e dove non viene visualizzato.
-   * Effettuare un benchmark rispetto ai concorrenti.
-   * Visibilità di recensioni su piattaforme generate dagli utenti come Reddit, Quora e Wikipedia. Queste piattaforme UGC vengono spesso citate dai moduli LLM per trovare informazioni.
+   * Confrontare la visibilità con la concorrenza.
+   * Visibilità di recensioni su piattaforme generate dagli utenti come Reddit, Quora e Wikipedia. Segmento per piattaforma (ChatGPT, modalità IA di Google e così via)
    * Monitora il traffico agente per capire quali pagine visitano i moduli LLM. Il traffico agente spesso **non** passa alla home page ma ad altre pagine nella parte inferiore della gerarchia. Visualizza il dashboard [Traffico agente](/help/assets/overview/agentic-traffic-card.png).
-   * Assicurati che il contenuto sia visibile e accessibile ai moduli LLM. Puoi utilizzare il plug-in Chrome per visualizzare cosa possono visualizzare gli agenti di intelligenza artificiale.
-
-1. Pianificare la strategia
-   * Raggruppa i prompt simili in base alle domande degli utenti.
-   * Concentrati sui prompt più importanti per i tuoi clienti.
-   * Controlla se il tuo marchio ha buone probabilità di essere menzionato per determinati prompt.
-   * Assicurati che il contenuto mostri la tua competenza, affidabilità e autorità (EEAT).
-
+1. Monitora le modifiche nel tempo.
+   * Utilizza i filtri orario per tenere traccia delle turni settimanali e mensili
+   * Presta attenzione a picchi o cadute nel punteggio di visibilità.
+   * Analizza le tendenze del sentiment per comprendere la percezione del brand.
+1. Correlare visibilità con traffico, coinvolgimento e conversioni.
+   * Utilizza le funzioni di attribuzione per collegare i miglioramenti di visibilità a traffico, coinvolgimento e conversioni. Le funzioni di attribuzione di Adobe LLM Optimizer consentono di collegare i miglioramenti nelle metriche di visibilità (menzioni, citazioni, sentimenti) a risultati di business reali come il traffico del sito, il coinvolgimento degli utenti e le conversioni. Questo dimostra il ritorno sull’investimento per i tuoi sforzi di ottimizzazione.
+   * Tieni traccia delle modifiche nel traffico agente e di riferimento per convalidare il ROI di ottimizzazione.
 1. Migliorare i contenuti
-   * Utilizza LLM Optimizer Opportunities per identificare e apportare modifiche immediate e consigliate in modo specifico al tuo sito. Vedi [Opportunità](/help/dashboards/opportunities.md) (quindi misura i risultati). Rivedi regolarmente la sezione Opportunità e intervieni sulle raccomandazioni fornite.
+   * Utilizza il [dashboard Opportunità](/help/dashboards/opportunities.md) di LLM Optimizer per identificare e apportare modifiche immediate al sito consigliate in modo specifico. Vedi [Opportunità](/help/dashboards/opportunities.md) (quindi misura i risultati). Rivedi regolarmente la sezione Opportunità e intervieni sulle raccomandazioni fornite.
+   * Assegna priorità alle pagine con visibilità ridotta.
    * Aggiorna il tuo sito web e altri contenuti per renderlo più pertinente alle richieste che desideri eseguire.
    * Aggiungi alle pagine le domande frequenti che rispondono alle domande più frequenti.
    * Assicurati che il contenuto sia facile da trovare e leggere per i moduli LLM. Correggi eventuali problemi come pagine bloccate o problemi con il codice del tuo sito web.
@@ -150,6 +178,11 @@ Di seguito sono riportati i passaggi da seguire per monitorare l’avanzamento:
    * Utilizza Adobe LLM Optimizer per tenere traccia delle modifiche della visibilità nel tempo.
    * Se noti che i concorrenti vengono menzionati più spesso, regola la tua strategia per restare al passo con i tempi.
    * Continua ad aggiornare i contenuti in modo che corrispondano alle ricerche e alle richieste degli utenti.
+1. Regola [strategie fuori sede](#offsite-optimization---expanding-your-brand-footprint) e [in sede](#onsite-optimization---strengthening-your-owned-content) in base alle informazioni.
+
+>[!NOTE]
+>
+>Assicurati che il contenuto sia visibile e accessibile ai moduli LLM. Puoi utilizzare il plug-in Chrome per visualizzare cosa possono visualizzare gli agenti di intelligenza artificiale.
 
 ## Informazioni sul traffico agente
 
@@ -157,7 +190,7 @@ Il traffico agente si riferisce a visite da agenti di intelligenza artificiale c
 
 Il traffico agente viene visualizzato in due modi: esperienze con clic zero e visibilità senza clic.
 
-### Esperienze con zero clic
+### Esperienze con clic zero
 
 Nella ricerca tradizionale, gli utenti fanno clic sui siti web per utilizzare i contenuti. Ma con i LLM gli utenti spesso ottengono risposte complete direttamente nell&#39;interfaccia di chat o motore di ricerca ritmo risultati senza mai visitare il tuo sito. Questa si chiama esperienza di clic zero.
 
@@ -186,7 +219,7 @@ Perché è importante:
 
 Il tracciamento del traffico agente consente di comprendere come l’intelligenza artificiale vede e utilizza il contenuto.
 
-### Come ottimizzare per il traffico agente:
+### Come ottimizzare per il traffico agente
 
 Per ottimizzare per il traffico agente:
 
