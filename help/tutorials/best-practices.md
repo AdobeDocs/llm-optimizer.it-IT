@@ -1,9 +1,9 @@
 ---
 title: Best practice per LLM Optimizer
 description: Scopri le best practice per l’ottimizzazione LLM per aumentare la visibilità del brand nella ricerca AI. Informazioni per il benchmark e l’ottimizzazione dei contenuti.
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+source-git-commit: a76d348a94495682d648ef0aad268e835e321017
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Una solida base SEO supporta l’ottimizzazione LLM, ma sono necessarie nuove ta
 
 >[!NOTE]
 >
->Attualmente il traffico SEO è ancora il più grande driver di traffico per la maggior parte dei siti web, rendendolo molto importante per la strategia di visibilità del tuo marchio.
+>Attualmente il traffico SEO è ancora il più grande driver di traffico per la maggior parte del web, rendendolo molto importante per la strategia di visibilità del tuo marchio.
 
 
 | SEO | LLM |
@@ -173,7 +173,7 @@ Di seguito sono riportati i passaggi da seguire per monitorare l’avanzamento:
    * Assegna priorità alle pagine con visibilità ridotta.
    * Aggiorna il tuo sito web e altri contenuti per renderlo più pertinente alle richieste che desideri eseguire.
    * Aggiungi alle pagine le domande frequenti che rispondono alle domande più frequenti.
-   * Assicurati che il contenuto sia facile da trovare e leggere per i moduli LLM. Correggi eventuali problemi come pagine bloccate o problemi con il codice del tuo sito web.
+   * Assicurati che i contenuti siano facili da trovare e leggere per i moduli LLM. Correggi eventuali problemi come pagine bloccate o problemi con il codice del tuo sito web.
    * Garantire che i contributi a piattaforme come Wikipedia e Reddit siano imparziali, non commerciali e aggiungano valore.
    * Utilizza Adobe LLM Optimizer per tenere traccia delle modifiche della visibilità nel tempo.
    * Se noti che i concorrenti vengono menzionati più spesso, regola la tua strategia per restare al passo con i tempi.
@@ -192,7 +192,7 @@ Il traffico agente viene visualizzato in due modi: esperienze con clic zero e vi
 
 ### Esperienze con clic zero
 
-Nella ricerca tradizionale, gli utenti fanno clic sui siti web per utilizzare i contenuti. Ma con i LLM gli utenti spesso ottengono risposte complete direttamente nell&#39;interfaccia di chat o motore di ricerca ritmo risultati senza mai visitare il tuo sito. Questa si chiama esperienza di clic zero.
+Nella ricerca tradizionale, gli utenti fanno clic sui siti web per utilizzare i contenuti. Ma con LLM gli utenti spesso ottengono risposte complete direttamente nell&#39;interfaccia di chat o risultati del motore di ricerca pate senza mai visitare il tuo sito. Questa si chiama esperienza di clic zero.
 
 Che cosa significa per il tuo marchio:
 
@@ -224,7 +224,7 @@ Il tracciamento del traffico agente consente di comprendere come l’intelligenz
 Per ottimizzare per il traffico agente:
 
 * Assicurati che la ricerca per indicizzazione sia possibile consultando le impostazioni robots.txt e CDN.
-* Utilizza [Ispettore URL](/help/dashboards/url-inspector.md)per analizzare le prestazioni degli URL.
+* Utilizza [Ispettore URL](/help/dashboards/url-inspector.md) per analizzare le prestazioni degli URL.
 * Tieni traccia del comportamento dei bot accedendo ai registri CDN nel [dashboard del traffico agente](/help/dashboards/agentic-traffic.md).
 * Segmentare il traffico per comprendere i risultati di business. Consulta [Best practice per categorie, argomenti, prompt e concorrenti](/help/overview/best-practices-topics-prompts.md).
 
