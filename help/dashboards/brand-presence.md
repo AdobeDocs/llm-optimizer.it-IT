@@ -1,9 +1,9 @@
 ---
 title: Presenza del brand
 description: Scopri come utilizzare la dashboard Presenza marchio per comprendere come il tuo marchio viene percepito a livello di risposte generate dall’intelligenza artificiale.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,17 @@ In questa pagina sono disponibili i dettagli riportati di seguito.
 Nella parte superiore della pagina, puoi applicare i filtri per perfezionare la visualizzazione. I filtri scelti influiranno su **tutte** le sezioni presenti nel dashboard. Puoi personalizzare quanto segue:
 
 * **Intervallo date** - Selezionare l&#39;intervallo di tempo per i dati visualizzati. Ad esempio, le ultime 4 settimane. Puoi anche personalizzare il periodo di tempo selezionando l&#39;opzione **Settimane personalizzate**.
-* **Categoria** - Filtra i risultati visualizzati per categorie predefinite. Puoi anche aggiungere categorie personalizzate a questo campo (**SR**-come?).
+* **Categoria** - Filtra i risultati visualizzati in base a categorie predefinite o personalizzate.
 * **Piattaforma** - Scegli quale motore di intelligenza artificiale analizzare.
+* **Prompts Origin** - Scegli l&#39;origine dei prompt. L’origine può essere inserita dall’utente o generata tramite IA.
+* **Chiedi branding** - Filtra i risultati in base a prompt con brand o non con brand.
 * **Area** - Filtra i risultati per area geografica. Al momento del lancio non tutte le aree geografiche saranno disponibili.
 
 Dopo aver selezionato il filtro desiderato, fare clic su **Applica filtri** per applicare la selezione al dashboard.
 
 ## Metriche di panoramica {#overview-metrics}
 
-La dashboard evidenzia tre metriche molto importanti nella parte superiore della pagina: punteggio di visibilità, menzioni e citazioni. Minore è il conteggio per queste metriche, peggiore sarà la percezione del tuo marchio, e dovresti agire per migliorarne la presenza. come **SR - Aggiungi qui il collegamento di ottimizzazione**. Di seguito è riportata una breve descrizione di ciascuna metrica e di ciò che rappresenta.
+La dashboard evidenzia tre metriche molto importanti nella parte superiore della pagina: punteggio di visibilità, menzioni e citazioni. Minore è il conteggio per queste metriche, peggiore sarà la percezione del tuo marchio, e dovresti agire per migliorarne la presenza. Di seguito è riportata una breve descrizione di ciascuna metrica e di ciò che rappresenta.
 
 ![Metriche Panoramica](/help/dashboards/assets/overview-metrics.png)
 
@@ -64,7 +66,7 @@ I concorrenti vengono selezionati dall&#39;elenco a discesa e i grafici vengono 
 
 ## Analisi tendenza sentimento {#sentiment-trend}
 
-Nella sezione analisi delle tendenze del sentiment puoi monitorare come il tuo brand viene percepito nelle risposte di IA campionate. La metrica di tendenza del sentiment può essere positiva, neutra o negativa. Ad esempio, può essere positivo se le risposte evidenziano la qualità del prodotto, o negativo se menzionano un servizio scadente. Il grafico di tendenza mostra i cambiamenti nella percezione del brand settimana dopo settimana. La sezione viene compilata solo dopo che il tuo marchio è menzionato.
+Nella sezione analisi delle tendenze del sentiment puoi monitorare come il tuo brand viene percepito nelle risposte di IA campionate. La metrica di tendenza del sentiment può essere positiva, neutra o negativa. Ad esempio, può essere positivo se le risposte evidenziano la qualità del prodotto o negativo se menzionano un servizio scadente. Il grafico di tendenza mostra i cambiamenti nella percezione del brand settimana dopo settimana. La sezione viene compilata solo dopo che il tuo marchio è menzionato.
 
 ![Tendenza valutazione](/help/dashboards/assets/sentiment-trend.png)
 
@@ -84,25 +86,26 @@ Per informazioni dettagliate su ciascuna tabella e sulle metriche associate, fai
 
 La tabella Approfondimenti dati consente di esplorare argomenti e prompt degli utenti per valutare e ottimizzare l’impatto sui contenuti. Vengono visualizzate le metriche seguenti:
 
-* **Categoria** - La categoria di argomenti rappresenta le parole chiave SEO e le domande utente relative al tuo marchio. Puoi fare clic su per espandere ogni argomento e visualizzare i singoli prompt analizzati per rilevare la presenza di un brand. Ogni argomento e pulsante ha un pulsante **Dettagli** quando passi il puntatore del mouse su di esso. Facendo clic sul pulsante viene visualizzata una finestra separata con ulteriori dettagli.
+* **Argomento** - La categoria di argomenti rappresenta le parole chiave SEO e le domande utente relative al tuo marchio. Puoi fare clic su per espandere ogni argomento e visualizzare i singoli prompt analizzati per rilevare la presenza di un brand. Ogni argomento e pulsante ha un pulsante **Dettagli** quando passi il puntatore del mouse su di esso. Facendo clic sul pulsante viene visualizzata una finestra separata con ulteriori dettagli.
+* **Area** - visualizza l&#39;area dei prompt.
 * **Popolarità** - La categoria di popolarità rappresenta il volume di ricerca per questo argomento relativo a tutti gli altri argomenti dell&#39;analisi. Il valore può essere Alto, Medium o Basso.
 * **Punteggio visibilità** - Punteggio visibilità per l&#39;argomento. Riflette fattori ponderati come menzioni, citazioni, sentimento e rango.
 * **Menzioni** - Il numero di volte in cui il tuo marchio è stato menzionato nelle risposte AI per questo argomento o per questa combinazione di argomento/prompt.
-* **Sentimento** - La percezione del brand nelle risposte AI in relazione a ciascun argomento. La metrica di valutazione può essere positiva, neutra o negativa.
-* **Posizione** - Quanto presto il tuo brand viene visualizzato nella risposta AI, calcolato come media in tutte le settimane.
+* **Sentimento** - La percezione del brand nelle risposte AI in relazione a ciascun argomento calcolato come media in tutte le settimane. Popolato solo quando il tuo marchio viene effettivamente menzionato
+* **Posizione** - La rilevanza relativa del tuo marchio nelle risposte AI, calcolata come media in tutte le settimane.
 * **Tutte le citazioni** - Il numero di origini univoche citate nelle risposte AI per questo argomento o per questa combinazione argomento/prompt (include le citazioni di proprietà).
 * **Citazioni di proprietà**: il numero di volte in cui il brand è stato citato nelle risposte AI per questa parola chiave o per questa combinazione di parola chiave/domanda.
 
 >[!TAB Condivisione di voce]
 
-La tabella **share of voice** confronta la tua voce del brand con quella di altri concorrenti su argomenti diversi. Vengono visualizzate le metriche seguenti:
+La tabella Share of Voice (Condividi voce) fornisce un’analisi comparativa delle prestazioni del brand in argomenti chiave nelle risposte AI generative. Consente di identificare i divari di visibilità, monitorare le prestazioni della concorrenza e assegnare priorità alle aree per l&#39;ottimizzazione. Vengono visualizzate le metriche seguenti:
 
 * **Argomento** - L&#39;argomento analizzato.
 * **Popolarità**: il volume di ricerca dell&#39;argomento relativo a tutti gli altri argomenti dell&#39;analisi.
 * **Menzioni** - Numero di volte in cui il tuo marchio è stato menzionato nelle risposte AI per l&#39;argomento o la combinazione argomento/prompt.
 * **Classifica**: la classificazione della quota di voce del tuo marchio, relativa a tutti i concorrenti identificati.
-* **Share of voice** - La percentuale di tempo in cui un brand viene menzionato, rispetto a tutte le menzioni nelle risposte AI.
-* **I primi 5 concorrenti** - I primi cinque concorrenti organizzati in base alla loro quota di voce (dal più alto al più basso).
+* **Share of voice** - La percentuale del totale delle menzioni che il tuo marchio contiene nelle risposte generate dall&#39;intelligenza artificiale.
+* **Primi 5 concorrenti** - I primi cinque marchi menzionati più frequentemente per gli stessi argomenti. I concorrenti sono organizzati in base al loro Share of Voice (dal più alto al più basso).
 
 >[!ENDTABS]
 

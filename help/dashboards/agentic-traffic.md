@@ -1,9 +1,9 @@
 ---
 title: Traffico agente
 description: Scopri come utilizzare la dashboard Traffico agente per vedere come gli agenti di IA interagiscono con il tuo sito.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,26 @@ In questa pagina sono disponibili i dettagli riportati di seguito.
 * [Spostamenti superiore e inferiore](#top-bottom-movers)
 * [Analisi delle prestazioni dell’agente utente e dell’URL](#user-url-performance)
 
-## Configurazione CDN {#cdn-setup}
+## Inoltro registro CDN {#cdn-setup}
 
-Al primo accesso, il dashboard Traffico agente è vuoto. Per visualizzare le interazioni agente, devi configurare **Inoltro del registro CDN**. **Da oggi la configurazione della rete CDN è attiva in quickstart/onboarding?**
+Senza **inoltro del registro CDN**, il dashboard Traffico agente è vuoto. Per visualizzare le interazioni agente, devi configurare **Inoltro del registro CDN**.  Al primo accesso, verrà visualizzato un messaggio come mostrato nell&#39;immagine seguente.
 
-![Configurazione rete CDN](/help/dashboards/assets/ag-log-forward.png)
+![Configurazione rete CDN](/help/dashboards/assets/ag-log-forward1.png)
+
+Seleziona **Vai alla configurazione** e passerai automaticamente alla scheda **Configurazione CDN** del [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md).
+
+![Configurazione rete CDN integrata](/help/dashboards/assets/ag-log-forward2.png)
+
+In questa scheda, seleziona **CDN integrato**. Viene visualizzata la finestra del provider CDN.
+
+![Provider CDN](/help/dashboards/assets/ag-log-forward3.png)
+
+Nella finestra **Provider CDN integrato**:
 
 1. Seleziona il provider CDN (ad esempio Akamai, Fastly, Fastly, Fastly, AWS Cloudfront, Azure CDN, Cloudflare o Altro) gestito da Adobe.
-2. Immetti un indirizzo e-mail di contatto principale.
-3. Fai clic su **Richiedi attivazione** per abilitare l&#39;inoltro del registro.
+2. Fai clic su **Onboard** per abilitare l&#39;inoltro del registro.
+
+Se selezioni **Altro**, dovrai contattare Adobe per assistenza.
 
 Una volta attivati, i registri vengono acquisiti e la dashboard viene compilata con metriche quali interazioni totali dell’agente, tasso di successo, hit per mercato, analisi dell’agente utente e prestazioni a livello di URL.
 
@@ -39,11 +50,11 @@ Una volta attivati, i registri vengono acquisiti e la dashboard viene compilata 
 Nella parte superiore della pagina, puoi applicare i filtri per perfezionare la visualizzazione. I filtri scelti influiranno su **tutte** le sezioni presenti nel dashboard. Puoi personalizzare quanto segue:
 
 * **Intervallo date** - Selezionare l&#39;intervallo di tempo per i dati visualizzati. Ad esempio, le ultime 4 settimane. Puoi anche personalizzare il periodo di tempo selezionando l&#39;opzione **Settimane personalizzate**.
-* **Categoria** - Filtra i risultati visualizzati per categorie predefinite. Puoi anche aggiungere categorie personalizzate a questo campo (**SR**-come?).
+* **Categoria** - Filtra i risultati visualizzati in base a categorie predefinite o personalizzate.
 * **Piattaforma** - Scegli quale motore di intelligenza artificiale analizzare.
 * **Tipo di agente** - Filtra in base al tipo di agente di IA che ha interagito con il sito. Puoi filtrare tra crawler, chatbot o tutti gli agenti.
-* **Percentuale di successo** - Filtra in base alla qualità dell&#39;interazione (alta, media o bassa). Questa metrica rappresenta la percentuale di richieste HTTP riuscite, inclusi sia le risposte dirette che i reindirizzamenti.
-* **Tipo di contenuto** - Filtra per tipo di contenuto, HTML o txt.
+* **Percentuale di successo** - Filtra in base alla qualità dell&#39;interazione (alta, media o bassa). Questa metrica rappresenta la percentuale di richieste HTTP riuscite, incluse sia le risposte dirette riuscite (codici di stato 2xx) che i reindirizzamenti (codici di stato 3xx).
+* **Tipo di contenuto** - Visualizza l&#39;interazione agente per diversi tipi di contenuto, ad esempio HTML, PDF e così via.
 
 Dopo aver selezionato il filtro desiderato, fare clic su **Applica filtri** per applicare la selezione al dashboard.
 
@@ -69,10 +80,9 @@ Utilizza il grafico delle tendenze del traffico agente per tenere traccia dei to
 
 ## Spostamenti superiore e inferiore {#top-bottom-movers}
 
-Queste due metriche ordinano gli URL come segue:
+La vista Spostamenti in alto e in basso evidenzia gli URL con le modifiche più grandi, settimana dopo settimana, nel traffico agente: visite o hit dai sistemi di intelligenza artificiale che accedono al contenuto. I primi spostamenti mostrano pagine che acquisiscono visibilità o coinvolgimento, mentre i secondi mostrano URL con i declini più accentuati. Questo consente di identificare rapidamente quale contenuto ha una tendenza verso l’alto, che può richiedere attenzione e dove i modelli di individuazione basati sull’intelligenza artificiale si stanno spostando.
 
-* **Traslochi principali** - Gli URL con il maggiore aumento del traffico agente dalla settimana più vecchia a quella più recente.
-* **Ultimi spostamenti** - URL con la diminuzione più significativa del traffico agente dalla settimana più vecchia a quella più recente.
+![Spostamenti superiore e inferiore](/help/dashboards/assets/movers.png)
 
 ## Analisi delle prestazioni dell’agente utente e dell’URL {#user-url-performance}
 
@@ -104,6 +114,12 @@ La tabella Analisi delle prestazioni degli URL mostra una visualizzazione dettag
 * **Percentuale di successo** - Percentuale di richieste HTTP riuscite, incluse risposte dirette riuscite e reindirizzamenti.
 * **Categoria**: la categoria che corrisponde maggiormente al contenuto della pagina.
 
-La tabella delle prestazioni URL contiene un campo di ricerca per l’accesso rapido agli URL. Inoltre, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il tuo team oppure includere la tabella nei report manageriali.
+La tabella delle prestazioni URL contiene un campo di ricerca per l’accesso rapido agli URL. Puoi anche visualizzare ulteriori dettagli per ogni URL facendo clic sull’icona delle informazioni alla fine di ogni riga.
+
+![Dettagli URL](/help/dashboards/assets/details.png)
+
+La vista Dettagli URL fornisce una comprensione olistica delle prestazioni di una pagina, mostrando la frequenza con cui viene citata, la sensazione delle risposte AI in cui viene menzionata, gli argomenti e i prompt in cui viene visualizzata e le tendenze nel traffico agenziale e di riferimento nel tempo.
 
 >[!ENDTABS]
+
+Per entrambe le tabelle, puoi utilizzare l&#39;opzione **Esporta** per scaricare il file .csv della tabella e condividere le informazioni con il team oppure includere la tabella nel reporting esecutivo.

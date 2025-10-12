@@ -1,7 +1,7 @@
 ---
 title: Avvio rapido
 description: 'Inizia a usare Adobe LLM Optimizer: integra il tuo marchio, sfrutta le informazioni sulla visibilità AI ed esplora le dashboard per migliorare le prestazioni di ricerca.'
-source-git-commit: c64995176f6cb50bf23543fe95471c4723ae9a10
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Consulta la sezione seguente per informazioni su come attivare la versione di pr
 
 ### Clienti AEM Cloud
 
-Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Le nuove richieste aggiunte non verranno visualizzate nel [dashboard della presenza del marchio](/help/dashboards/brand-presence.md) fino al completamento dell&#39;elaborazione. I clienti di AEM Cloud (Cloud Service, Managed Services/Edge Delivery Service) possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contatta il rappresentante del tuo account.
@@ -79,11 +79,11 @@ Una volta effettuato l’onboarding del dominio e dopo aver fornito categorie e 
 
 ### Passaggio 4: fornire informazioni per l’inoltro del registro CDN {#step-4}
 
-Per sbloccare le informazioni sul traffico agente e sul traffico di riferimento, devi fornire informazioni per l’inoltro del registro CDN. Puoi aggiungerlo dal dashboard di configurazione del cliente accedendo alla scheda Configurazione CDN e facendo clic su **CDN onboard**.
+Per sbloccare le informazioni sul traffico agente e sul traffico di riferimento, devi fornire informazioni per l’inoltro del registro CDN. Può essere aggiunto dal [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md) passando alla scheda **Configurazione CDN** e facendo clic su **CDN integrato**.
 
 ![CDN configurazione cliente](/help/overview/assets/cc-cdn.png)
 
-In alternativa, se in precedenza non è stato selezionato alcun provider CDN, verrà richiesto di aggiungere l’inoltro del registro CDN quando si accede per la prima volta alle dashboard del traffico Agentico e di riferimento. Per ulteriori dettagli, consulta:
+In alternativa, se in precedenza non è stato aggiunto alcun provider CDN, verrà richiesto di aggiungere l’inoltro del registro CDN al primo accesso alle dashboard Traffico agente e di riferimento. Per ulteriori dettagli, consulta:
 
 * [Traffico agente](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Traffico di riferimento](/help/dashboards/referral-traffic.md#setup#setup)
