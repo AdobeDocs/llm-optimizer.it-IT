@@ -1,24 +1,27 @@
 ---
 title: Best practice per categorie, argomenti e prompt
-description: Descrizione
-source-git-commit: 099d4387b6a5efd25e142db13e309a181fe67941
+description: Ottimizza le informazioni di LLM configurando categorie, argomenti, prompt e concorrenti per il monitoraggio del marchio personalizzato e l’analisi strategica dei contenuti.
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 
-# Introduzione
-
-Nella configurazione del cliente puoi definire in che modo il brand verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM. Puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia dei concorrenti e aggiungere alias di menzione del brand per acquisire tutte le varianti del brand in tutti i prompt. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
-
-## Best practice per la configurazione di categorie, argomenti e prompt
+# Best practice per la configurazione di categorie, argomenti, prompt e concorrenti
 
 Questa sezione descrive le best practice per decidere come impostare categorie, argomenti, prompt e concorrenti.
+
 Si tratta di un primo passo fondamentale. Le decisioni prese determinano il modo in cui le informazioni vengono adattate al contesto aziendale. Eventuali modifiche apportate alle categorie in futuro reimposteranno i dati storici.
 
-### Best practice per le categorie
+Nel dashboard [[!UICONTROL Configurazione cliente]](/help/dashboards/customer-configuration.md) puoi definire in che modo il tuo marchio verrà monitorato e analizzato nella piattaforma di ottimizzazione LLM. Per informazioni su come utilizzare la dashboard, consulta [[!UICONTROL Configurazione del cliente]](/help/dashboards/customer-configuration.md).
+
+![Finestra di configurazione del cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
+
+Nel dashboard [!UICONTROL Configurazione cliente], puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia dei concorrenti e aggiungere alias di menzione del brand per acquisire tutte le varianti del brand in tutte le richieste. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
+
+## Best practice per le categorie
 
 Le categorie consentono di organizzare i contenuti in business unit strategiche o raggruppamenti logici. Sono il bucket &quot;dove appartiene&quot; e la struttura organizzativa di livello superiore per il contenuto.
 
@@ -46,16 +49,17 @@ La modalità di impostazione delle categorie dipende da una domanda: **Chi deve 
 >
 > * Scegli un approccio e attieniti ad esso.
 > * Puoi avere solo **un** modello di categoria per account/marchio. Non combinare **SBU** e **URL_DIR** contemporaneamente.
+>   <!--Can you mix Product/Service with these?-->
 
 Esempio:
 
 | Tipo di sito | Categoria | Esempi di tassonomia degli argomenti |
 |---------|----------|---------|
-| Aziende con più aziende | SBU | serie di intenti di piccole dimensioni (procedure, risoluzione dei problemi, confronto, prezzi, criteri) |
+| Aziende con più aziende | SBU | Serie di intenti di piccole dimensioni (procedure, risoluzione dei problemi, confronto, prezzi, criteri) |
 | Documentazione/supporto pesante del sito | URL_DIR | Procedure, risoluzione dei problemi, riferimenti e note sulla versione |
 | Catalogo eCommerce/Services | Prodotto/Servizio | Confronto, Recensioni, Prezzi/Disponibilità, Procedure, Risoluzione dei problemi |
 
-### Best practice per gli argomenti
+## Best practice per gli argomenti
 
 Gli argomenti consentono di comprendere le finalità dell&#39;utente, ovvero di mostrare ciò che l&#39;utente desidera. Consentono di raggruppare i prompt con finalità utente simili. Immaginatelo come un raggruppamento di prompt rilevanti.
 
@@ -73,12 +77,13 @@ Quando decidi gli argomenti, vuoi creare un breve elenco semplice (massimo 6-12)
 * Prezzi e disponibilità
 * Regole e garanzia
 * Contatto assistenza
-* Aziende / News (se ne avete veramente bisogno)
+* Aziendale/News (se ne hai davvero bisogno)
 
 Durante la creazione dell’elenco, considera quanto segue:
 
 * Un editor è in grado di comprendere l’argomento in 5 secondi dal testo del prompt? In caso contrario, rinominare/semplificare.
 * Un team diverso sarà proprietario della correzione per argomenti diversi? Se sì, sono stati selezionati argomenti utili.
+  <!-- Last bullet point does not make sense. Clarification needed.-->
 
 Alcuni utili suggerimenti aggiuntivi:
 
@@ -88,11 +93,11 @@ Alcuni utili suggerimenti aggiuntivi:
 >[!IMPORTANT]
 >
 > * Mantieni gli argomenti basati sulle finalità, non organizzativi.
-> * Non aggiungere categorie/filtri per marchio/non marchio/area geografica, in quanto è possibile filtrare specificamente per questo nella scheda **Marchi**.
+> * Non aggiungere categorie/filtri per marchio/non marchio/area geografica, in quanto è possibile filtrare specificamente per questo nella scheda **[!UICONTROL Marchi]**.
 > * Gli argomenti sono suddivisi in diverse categorie. È possibile **non** avere argomenti diversi per categoria.
 > * Un singolo prompt può essere presente in diversi argomenti o categorie.
 
-### Best practice per i prompt
+## Best practice per i prompt
 
 I prompt identificano le domande o le query specifiche poste dai clienti, che possono avere un impatto sull&#39;azienda. Si tratta di domande o query effettive che gli utenti inseriscono nei moduli LLM.
 
@@ -103,7 +108,7 @@ Assicurati di rivedere e aggiornare regolarmente i prompt per garantire che sian
 >* Puoi utilizzare strumenti come Adobe LLM Optimizer e Google Search Console con filtri regex per identificare strutture di domande comuni (ad esempio, &quot;come&quot;, &quot;cosa&quot;, &quot;quando&quot;, &quot;dove&quot;) e scoprire quali prompt vengono utilizzati dalle persone per visitare il tuo sito.
 >* Per scoprire quali prompt sono rilevanti per il sito o il brand, puoi utilizzare i dati di ricerca nel sito, le domande frequenti nelle pagine dei risultati dei motori di ricerca o anche chiedere direttamente ai chatbot LLM quali domande i clienti potrebbero porre sul brand.
 
-### Best practice per i concorrenti
+## Best practice per i concorrenti
 
 I concorrenti consentono di monitorare la visibilità e le menzioni nelle risposte LLM per i prompt e gli argomenti importanti per la propria attività.
 
@@ -114,4 +119,9 @@ Con il tracciamento dei concorrenti, puoi vedere con quale frequenza i concorren
 >[!TIP]
 >
 >Rivedi regolarmente le menzioni e le citazioni dei concorrenti per identificare le aree in cui il tuo marchio può migliorare.
+
+## Ulteriori informazioni
+
+* [Il dashboard Configurazione cliente](/help/dashboards/customer-configuration.md) è il luogo in cui puoi configurare categorie, argomenti, prompt e concorrenti.
+* [Best practice per LLM Optimizer](/help/tutorials/best-practices.md) descrive le best practice per l&#39;ottimizzazione LLM
 

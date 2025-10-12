@@ -1,17 +1,17 @@
 ---
 title: Collaborazione
 description: Scopri come utilizzare il dashboard di collaborazione per invitare i membri del gruppo nell’area di lavoro LLM Optimizer della tua organizzazione.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Collaborazione
 
-Collaboration consente di invitare i membri del gruppo nell’area di lavoro LLM Optimizer della tua organizzazione in modo che tutti possano accedere a approfondimenti e analisi da un’unica posizione. Aggiungendo i tuoi colleghi, potrai collaborare in modo trasparente con team tecnici, di marketing e SEO, per collaborare in modo più efficace ai miglioramenti della visibilità del brand, condividere i risultati e intraprendere azioni coordinate in merito alle opportunità.
+Collaboration consente di invitare i membri del gruppo nell’area di lavoro LLM Optimizer della tua organizzazione in modo che tutti possano accedere a informazioni approfondite e analisi da un’unica posizione. Aggiungendo i tuoi colleghi, potrai collaborare in modo trasparente con team tecnici, di marketing e SEO, per collaborare in modo più efficace ai miglioramenti della visibilità del brand, condividere i risultati e intraprendere azioni coordinate in merito alle opportunità.
 
 ## Come invitare i membri del gruppo
 

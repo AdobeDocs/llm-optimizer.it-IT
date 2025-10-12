@@ -1,9 +1,9 @@
 ---
 title: Panoramica di LLM Optimizer
 description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’intelligenza artificiale. Tracciare menzioni, citazioni e informazioni. Inizia a ottimizzare oggi stesso per un coinvolgimento e un’influenza migliori.
-source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,8 @@ Di seguito sono elencate le risorse che possono aiutarti a ottenere il massimo d
 
 * [Quickstart](/help/overview/quick-start.md) ti rende subito operativo.
 * [Panoramica dashboard](/help/dashboards/dashboards-overview.md) descrive tutte le dashboard disponibili in LLM Optimizer.
-* [Best practice](/help/tutorials/best-practices.md) ti guida attraverso le modalità di utilizzo dello strumento per ottenere le informazioni necessarie per il tuo marchio.
+* [Le best practice per la configurazione di categorie, argomenti, prompt e concorrenti](/help/overview/best-practices-topics-prompts.md) includono informazioni essenziali per la configurazione di LLM Optimizer.
+* [Best practice](/help/tutorials/best-practices.md) consente di scoprire le best practice per l&#39;ottimizzazione LLM per aumentare la visibilità del tuo marchio nella ricerca basata su intelligenza artificiale.
 
 
 

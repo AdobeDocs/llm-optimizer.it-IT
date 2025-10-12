@@ -1,7 +1,7 @@
 ---
 title: Nozioni di base su LLM Optimizer
 description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’intelligenza artificiale. Tracciare menzioni, citazioni e informazioni. Inizia a ottimizzare oggi stesso per un coinvolgimento e un’influenza migliori.
-source-git-commit: 227eb378bd5484fad2fb4165822394b0b605747b
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -9,9 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Panoramica di LLM Optimizer
-
-<!-- This doesn't seem like a tutorials overview to me. Still trying to place correctly -->
+# Nozioni di base su LLM Optimizer
 
 In questa pagina sono disponibili i dettagli riportati di seguito.
 
@@ -34,9 +32,6 @@ Adobe LLM Optimizer offre una suite di strumenti progettati per l’ottimizzazio
 * Scopri opportunità fruibili: identifica contenuti e miglioramenti tecnici (come domande frequenti, riassunti, schema, crawlability) per promuovere menzioni e citazioni.
 * Tracciamento impatto traffico: monitora sia il traffico agente (assistente AI) che il traffico di riferimento alle proprietà, collegando la visibilità al coinvolgimento.
 * Abilita Team Collaboration: condividi dashboard, assegna i proprietari e allinea gli obiettivi tra i team di marketing, SEO e comunicazione.
-
-
-<!-- I'm adding headings because LLMs like them and that way we'll rank better. Generally question format/question words in the the title is preferred. We can discuss. Or we can mirror what we did for Sites Optimizer and have this info on another page-->
 
 ## Perché l’ottimizzazione LLM è importante per il tuo marchio
 
