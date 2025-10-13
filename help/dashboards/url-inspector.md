@@ -1,9 +1,9 @@
 ---
 title: Ispettore URL
 description: Scopri come utilizzare l’Ispettore URL per analizzare le prestazioni di pagine specifiche sul dominio nelle ricerche AI.
-source-git-commit: 6d845628264885fd40fc6e14dff89b8aa80f9ca5
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,13 @@ Gli indicatori di tendenza per ogni metrica panoramica mostrano le modifiche di 
 
 ## Gli URL citati
 
-La vista dell’URL citato elenca tutti gli URL del tuo marchio che sono stati citati nelle risposte generate dall’intelligenza artificiale, con metriche di supporto. La tabella di dati dispone anche di un campo di ricerca per l’accesso rapido a URL specifici. Inoltre, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il tuo team oppure includere la tabella nei report manageriali. Vengono fornite le metriche seguenti:
+La visualizzazione URL citati elenca tutti gli URL del brand citati nelle risposte generate dall’intelligenza artificiale, con metriche di supporto. La tabella di dati dispone anche di un campo di ricerca per l’accesso rapido a URL specifici. Inoltre, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il tuo team oppure includere la tabella nei report manageriali.
 
-* **URL** - URL analizzato
+![URL citati](/help/dashboards/assets/cited-urls.png)
+
+Vengono fornite le metriche seguenti:
+
+* **URL** - URL analizzato.
 * **Volte citate** - Il numero di volte in cui l&#39;URL è stato citato nelle risposte generate da IA.
 * **Prompt citati in** - Numero di prompt di IA univoci che hanno citato l&#39;URL.
 * **Categorie** - Le categorie di prodotti o gli argomenti associati all&#39;URL.
@@ -54,7 +58,7 @@ La vista dell’URL citato elenca tutti gli URL del tuo marchio che sono stati c
 
 ## URL di tendenza in competizione per le citazioni
 
-La visualizzazione degli URL di tendenza in competizione per le citazioni evidenzia gli URL esterni attualmente citati nelle risposte pertinenti al tuo marchio, misurando chi sta vincendo le citazioni nel tuo spazio. La tabella dati contiene un campo di ricerca per l’accesso rapido a URL specifici. Inoltre, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il tuo team oppure includere la tabella nei report manageriali.
+Gli URL di tendenza in competizione per la visualizzazione delle citazioni evidenziano gli URL esterni attualmente citati nelle risposte pertinenti al tuo marchio, misurando chi sta vincendo le citazioni nel tuo spazio. La tabella dati contiene un campo di ricerca per l’accesso rapido a URL specifici. Inoltre, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il tuo team oppure includere la tabella nei report manageriali.
 
 ![URL di tendenza in competizione per le citazioni](/help/dashboards/assets/trend-url.png)
 

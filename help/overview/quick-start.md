@@ -1,9 +1,9 @@
 ---
 title: Avvio rapido
 description: 'Inizia a usare Adobe LLM Optimizer: integra il tuo marchio, sfrutta le informazioni sulla visibilità AI ed esplora le dashboard per migliorare le prestazioni di ricerca.'
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Il processo di onboarding inizia con l’onboarding del dominio. Il processo var
 
 ### Prova prima di acquistare
 
-I clienti di AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) possono utilizzare l’offerta &quot;Prova prima dell’acquisto&quot;. Si tratta di una versione di prova gratuita di LLM Optimizer con un massimo di 200 richieste gratuite. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento.
+I clienti di AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) possono utilizzare l&#39;offerta **Prova prima di acquistare**. Si tratta di una versione di prova gratuita di LLM Optimizer con un massimo di 200 richieste gratuite. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento.
 
 Nella versione gratuita di sono disponibili alcune funzionalità dei prodotti:
 
@@ -32,10 +32,10 @@ Consulta la sezione seguente per informazioni su come attivare la versione di pr
 
 ### Clienti AEM Cloud
 
-Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
->Le nuove richieste aggiunte non verranno visualizzate nel [dashboard della presenza del marchio](/help/dashboards/brand-presence.md) fino al completamento dell&#39;elaborazione. I clienti di AEM Cloud (Cloud Service, Managed Services/Edge Delivery Service) possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contatta il rappresentante del tuo account.
+>Le nuove richieste aggiunte non verranno visualizzate nel [dashboard della presenza del marchio](/help/dashboards/brand-presence.md) fino al completamento dell&#39;elaborazione. I clienti di AEM Cloud possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contatta il rappresentante del tuo account.
 
 ![Versione di valutazione di LLM Optimizer](/help/overview/assets/llm-trial.png)
 
@@ -73,6 +73,10 @@ Da questa dashboard è possibile:
 >[!NOTE]
 >I prompt esatti richiesti non sono disponibili al pubblico perché non sono resi pubblici dai moduli LLM.
 
+>[!NOTE]
+>
+> Per ulteriori dettagli su come impostare categorie, argomenti, prompt e concorrenti, vedere la pagina [Best practice per la configurazione di categorie, argomenti, prompt e concorrenti](/help/overview/best-practices-topics-prompts.md).
+
 ### Passaggio 3: precompilazione automatica di approfondimenti
 
 Una volta effettuato l’onboarding del dominio e dopo aver fornito categorie e argomenti, LLM Optimizer attiva automaticamente l’analisi della presenza del brand.
@@ -83,7 +87,7 @@ Per sbloccare le informazioni sul traffico agente e sul traffico di riferimento,
 
 ![CDN configurazione cliente](/help/overview/assets/cc-cdn.png)
 
-In alternativa, se in precedenza non è stato aggiunto alcun provider CDN, verrà richiesto di aggiungere l’inoltro del registro CDN al primo accesso alle dashboard Traffico agente e di riferimento. Per ulteriori dettagli, consulta:
+In alternativa, se in precedenza non è stato aggiunto alcun provider CDN simile all’esempio precedente, ti verrà richiesto di aggiungere l’inoltro del registro CDN quando accedi per la prima volta alle dashboard Traffico agente e traffico di riferimento. Per ulteriori dettagli, consulta:
 
 * [Traffico agente](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Traffico di riferimento](/help/dashboards/referral-traffic.md#setup#setup)
@@ -97,4 +101,4 @@ Dopo aver fornito le informazioni per l’inoltro del registro CDN, puoi:
 * Utilizza [Opportunità](/help/dashboards/opportunities.md) per identificare contenuti e miglioramenti tecnici.
 * Esportare dati e collaborare con il team o invitare il collega a utilizzare il prodotto.
 
-Infine, per comprendere appieno le funzionalità dell&#39;ottimizzatore LLM, esplorare tutte le [dashboard](/help/dashboards/dashboards-overview.md) disponibili.
+Infine, per comprendere appieno le funzionalità di LLM Optimizer, è necessario esplorare tutte le [dashboard](/help/dashboards/dashboards-overview.md) disponibili.

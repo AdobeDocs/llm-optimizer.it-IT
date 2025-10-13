@@ -1,23 +1,19 @@
 ---
 title: Configurazione cliente
 description: Utilizza la configurazione del cliente per definire in che modo il tuo marchio verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
 
 
-# Configurazione cliente
+# Configurazione cliente {#customer-configuration}
 
-Nella configurazione del cliente puoi definire in che modo il brand verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM. Puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia dei concorrenti e aggiungere alias di menzione del brand per acquisire tutte le varianti del brand in tutti i prompt. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
+La dashboard di configurazione del cliente è uno strumento potente che fornisce informazioni approfondite sulla visibilità del brand in LLM. Impostando correttamente categorie, argomenti, prompt e concorrenti, puoi garantire che il tuo marchio sia ben posizionato per essere visualizzato nelle risposte generate da LLM. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
 
 ![Dashboard configurazione cliente](/help/dashboards/assets/customer-config.png)
-
-## Dashboard di configurazione del cliente
-
-La dashboard di configurazione del cliente è uno strumento potente che fornisce informazioni approfondite sulla visibilità del brand in LLM. Impostando correttamente categorie, argomenti, prompt e concorrenti, puoi garantire che il tuo marchio sia ben posizionato per essere visualizzato nelle risposte generate da LLM. Rivedere regolarmente informazioni quali Share of Voice, visibilità dei contenuti e opportunità ti aiuterà ad adattare la tua strategia e restare al passo con la concorrenza.
 
 Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del brand in diversi mercati e scenari competitivi, puoi accedere alle seguenti schede:
 
@@ -25,11 +21,15 @@ Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del
 * [Tracciamento concorrenti](#competitor-tracking)
 * [Alias del marchio](#brand-aliases)
 * [Approfondimenti dati](#data-insights)
-* [CDN agente](#agentic-cdn)
+* [Configurazione CDN](#agentic-cdn)
+
+>[!IMPORTANT]
+>
+> Per ulteriori dettagli su come impostare categorie, argomenti, prompt e concorrenti, vedere la pagina [Best practice per la configurazione di categorie, argomenti, prompt e concorrenti](/help/overview/best-practices-topics-prompts.md).
 
 ## Categorie {#categories}
 
-Dalla scheda Categorie è possibile definire le categorie commerciali o le linee di prodotti che si desidera monitorare e associarle a specifiche aree geografiche. Nel complesso, la scheda Categorie fa riferimento a tutte le altre personalizzazioni presenti in questa pagina, poiché le categorie verranno visualizzate nel campo categoria per le altre personalizzazioni (monitoraggio dei concorrenti, alias e così via). Per aggiungere una nuova categoria:
+Dalla scheda Categorie è possibile definire le categorie commerciali o le linee di prodotti di cui si desidera tenere traccia e associarle ad aree specifiche. Nel complesso, la scheda Categorie fa riferimento a quasi tutte le altre personalizzazioni in questa pagina, perché le categorie verranno visualizzate nel campo categoria per le altre personalizzazioni (tracciamento dei concorrenti, alias e così via). Per aggiungere una nuova categoria:
 
 1. Fai clic sul pulsante **Aggiungi**.
 2. Nella nuova finestra di configurazione, aggiungi **Nome categoria**.
@@ -90,7 +90,15 @@ Inoltre, è possibile aggiungere argomenti/prompt all&#39;elenco indipendentemen
 
 Nell&#39;elenco è possibile fare clic su ogni argomento e verranno visualizzati i prompt associati. Per eliminare l&#39;argomento e i prompt associati, fare clic sull&#39;icona Elimina dall&#39;elenco.
 
-<!--## Agentic CDN {#agentic-cdn}
+## Configurazione CDN {#cdn-configuration}
 
-Not available (will it be available for release?).-->
+Da questa scheda, puoi configurare i flussi CDN per consentire a Adobe LLM Optimizer di analizzare i dati CDN. Questi dati verranno utilizzati per alimentare le dashboard (come Traffico agente), fornendo informazioni approfondite su pattern di traffico, metriche delle prestazioni e opportunità di ottimizzazione. Per integrare il provider CDN, fai clic su **CDN integrato**.
 
+![CDN configurazione cliente](/help/overview/assets/cc-cdn.png)
+
+Nella finestra **Provider CDN integrato**:
+
+1. Seleziona il provider CDN (ad esempio Akamai, Fastly, Fastly, Fastly, AWS Cloudfront, Azure CDN, Cloudflare o Altro) gestito da Adobe.
+2. Fai clic su **Onboard** per abilitare l&#39;inoltro del registro.
+
+Se selezioni **Altro**, dovrai contattare Adobe per assistenza.

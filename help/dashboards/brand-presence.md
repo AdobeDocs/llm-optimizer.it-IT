@@ -1,9 +1,9 @@
 ---
 title: Presenza del brand
 description: Scopri come utilizzare la dashboard Presenza marchio per comprendere come il tuo marchio viene percepito a livello di risposte generate dall’intelligenza artificiale.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Presenza del brand {#brand-presence}
 
-La dashboard Presenza marchio offre una panoramica della percezione del brand a livello di risposte generate dall’intelligenza artificiale. Mostra dove, con quale frequenza e in quale contesto viene menzionato il tuo marchio. Puoi utilizzare la dashboard per misurare la visibilità, tenere traccia delle citazioni, confrontare i concorrenti ed esplorare le tendenze del sentiment. Il dashboard è suddiviso in diverse sezioni, ciascuna delle quali fornisce informazioni diverse. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
+La dashboard Presenza marchio offre una panoramica dettagliata del modo in cui il brand viene percepito a livello di risposte generate dall’intelligenza artificiale. Mostra dove, con quale frequenza e in quale contesto viene menzionato il tuo marchio. Puoi utilizzare la dashboard per misurare la visibilità, tenere traccia delle citazioni, confrontare i concorrenti ed esplorare le tendenze del sentiment. Il dashboard è suddiviso in diverse sezioni, ciascuna delle quali fornisce informazioni diverse. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
 ![Presenza marchio](/help/dashboards/assets/brand-main.png)
 
@@ -44,7 +44,7 @@ La dashboard evidenzia tre metriche molto importanti nella parte superiore della
 
 ### Punteggio visibilità {#visibility-score}
 
-Il punteggio di visibilità è composto da fattori come: menzioni, citazioni, sentiment e rank. Ogni fattore ha un certo &quot;peso&quot; associato ad esso che si aggiunge al punteggio finale. Ad esempio, menziona &quot;pesa di più&quot; perché la visibilità è importante solo se il tuo marchio è citato.
+Il punteggio di visibilità è composto da fattori come: menzioni, citazioni, sentiment e rank. Ogni fattore ha un certo &quot;peso&quot; associato ad esso che si aggiunge al punteggio finale.
 
 ### Citazioni {#mentions}
 
@@ -72,7 +72,9 @@ Nella sezione analisi delle tendenze del sentiment puoi monitorare come il tuo b
 
 ## Approfondimenti dati e condivisione di dati vocali {#data-insights}
 
-Per arrotondare il dashboard, abbiamo due tabelle importanti: approfondimenti dei dati e condivisione della voce. Le informazioni presentate in queste tabelle ti aiuteranno a identificare la forza del tuo marchio e dove è necessaria l’ottimizzazione.  Utilizzando la tabella **approfondimenti dati** puoi esplorare argomenti e domande degli utenti per valutare e ottimizzare l&#39;impatto dei contenuti. I risultati sono dettagliati da argomenti e prompt. Nel frattempo, la tabella **share of voice** confronta la tua voce del brand con quella di altri concorrenti su argomenti diversi e ti aiuta a identificare le lacune e assegnare priorità ad argomenti futuri.
+Per arrotondare il dashboard, abbiamo due tabelle importanti: approfondimenti dei dati e condivisione della voce. Le informazioni presentate in queste tabelle ti aiuteranno a identificare la forza del tuo marchio e dove è necessaria l’ottimizzazione.
+
+Utilizzando la tabella **approfondimenti dati** puoi esplorare argomenti e domande degli utenti per valutare e ottimizzare l&#39;impatto dei contenuti. I risultati sono dettagliati da argomenti e prompt. Nel frattempo, la tabella **share of voice** confronta la tua voce del brand con quella di altri concorrenti su argomenti diversi e ti aiuta a identificare le lacune e assegnare priorità ad argomenti futuri.
 
 ![Informazioni dati](/help/dashboards/assets/data-insights.png)
 
@@ -86,12 +88,12 @@ Per informazioni dettagliate su ciascuna tabella e sulle metriche associate, fai
 
 La tabella Approfondimenti dati consente di esplorare argomenti e prompt degli utenti per valutare e ottimizzare l’impatto sui contenuti. Vengono visualizzate le metriche seguenti:
 
-* **Argomento** - La categoria di argomenti rappresenta le parole chiave SEO e le domande utente relative al tuo marchio. Puoi fare clic su per espandere ogni argomento e visualizzare i singoli prompt analizzati per rilevare la presenza di un brand. Ogni argomento e pulsante ha un pulsante **Dettagli** quando passi il puntatore del mouse su di esso. Facendo clic sul pulsante viene visualizzata una finestra separata con ulteriori dettagli.
+* **Argomento** - La categoria di argomenti rappresenta le parole chiave SEO e le domande utente relative al tuo marchio. Puoi fare clic su per espandere ogni argomento e visualizzare i singoli prompt analizzati per rilevare la presenza di un brand. Ogni argomento ha un pulsante **Dettagli** quando passi il puntatore del mouse su di esso. Facendo clic sul pulsante viene visualizzata una finestra separata con ulteriori dettagli.
 * **Area** - visualizza l&#39;area dei prompt.
 * **Popolarità** - La categoria di popolarità rappresenta il volume di ricerca per questo argomento relativo a tutti gli altri argomenti dell&#39;analisi. Il valore può essere Alto, Medium o Basso.
 * **Punteggio visibilità** - Punteggio visibilità per l&#39;argomento. Riflette fattori ponderati come menzioni, citazioni, sentimento e rango.
 * **Menzioni** - Il numero di volte in cui il tuo marchio è stato menzionato nelle risposte AI per questo argomento o per questa combinazione di argomento/prompt.
-* **Sentimento** - La percezione del brand nelle risposte AI in relazione a ciascun argomento calcolato come media in tutte le settimane. Popolato solo quando il tuo marchio viene effettivamente menzionato
+* **Sentimento** - La percezione del brand nelle risposte AI in relazione a ciascun argomento calcolato come media in tutte le settimane. Viene popolato solo quando il tuo marchio viene effettivamente menzionato.
 * **Posizione** - La rilevanza relativa del tuo marchio nelle risposte AI, calcolata come media in tutte le settimane.
 * **Tutte le citazioni** - Il numero di origini univoche citate nelle risposte AI per questo argomento o per questa combinazione argomento/prompt (include le citazioni di proprietà).
 * **Citazioni di proprietà**: il numero di volte in cui il brand è stato citato nelle risposte AI per questa parola chiave o per questa combinazione di parola chiave/domanda.

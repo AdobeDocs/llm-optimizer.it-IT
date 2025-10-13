@@ -1,9 +1,9 @@
 ---
 title: Opportunità di ottimizzazione
 description: Scopri come utilizzare la dashboard delle opportunità per rilevare automaticamente come migliorare il sito al fine di aumentare la visibilità del marchio.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,9 @@ ht-degree: 0%
 
 # Opportunità di ottimizzazione
 
-Le opportunità di ottimizzazione vengono rilevate automaticamente in base a informazioni che mostrano dove è possibile migliorare la presenza sul sito e quella esterna, per aumentare la visibilità del brand nella ricerca basata su intelligenza artificiale. Queste ottimizzazioni includono correzioni su pagina (aggiunta di contenuti strutturati, canonici o riepiloghi), adeguamenti tecnici (sblocco dei crawler di IA o risoluzione di errori) e influenza il contenuto su siti autorevoli di terze parti. Affrontare queste opportunità di ottimizzazione aiuta il tuo marchio ad essere rappresentato accuratamente e a essere citato più probabilmente in risposte generative.
+Le opportunità di ottimizzazione vengono rilevate automaticamente in base a informazioni che mostrano dove è possibile migliorare la presenza sul sito e quella esterna, per aumentare la visibilità del brand nella ricerca basata su intelligenza artificiale.
+
+Queste ottimizzazioni includono correzioni su pagina (aggiunta di contenuti strutturati, canonici o riepiloghi), adeguamenti tecnici (sblocco dei crawler di IA o risoluzione di errori) e influenza il contenuto su siti autorevoli di terze parti. Affrontare queste opportunità di ottimizzazione aiuta il tuo marchio ad essere rappresentato accuratamente e a essere citato più probabilmente in risposte generative.
 
 ![Opportunità di ottimizzazione](/help/dashboards/assets/oport.png)
 
@@ -35,10 +37,11 @@ Di seguito è riportata una tabella delle opportunità attualmente supportate:
 | Rileva titoli duplicati | Contenuto (nel sito) | Esegue la scansione dei tag di intestazione di HTML e contrassegna le intestazioni ripetute. Mostra gli URL interessati e i frammenti di testo duplicati. | Modifica le intestazioni in modo che siano univoche e mantieni la gerarchia (H1 → H2 → H3). Unire o rinominare sezioni duplicate. |
 | Rileva traffico agente bloccato | GEO tecnico | Analizza i registri CDN per le richieste bloccate da agenti di intelligenza artificiale noti (ad esempio, GPTBot, PerplexityBot). Segnala gli URL e gli agenti interessati. | Se necessario, aggiorna robots.txt o le configurazioni server per consentire l’accesso ai crawler di IA supportati. |
 | Rileva problemi 404s / 403s / 5xx | GEO tecnico | Esegue il monitoraggio dei registri CDN per le risposte di errore. Segnala la frequenza, gli URL interessati e gli hit stimati persi. | Correggi i collegamenti interrotti, aggiorna le autorizzazioni e risolvi i problemi lato server in modo che il contenuto chiave restituisca 200 risposte. |
+| Recupero visibilità dei contenuti (accesso anticipato) | GEO tecnico | Segnala le pagine in cui il contenuto critico è nascosto dagli agenti di intelligenza artificiale. Mostra gli URL interessati e il contenuto previsto che può essere recuperato. | Esegui il pre-rendering delle pagine in modo che sia disponibile più contenuto per gli agenti di intelligenza artificiale senza esecuzione di JavaScript. |
 
 ### Opportunità di visibilità del ripristino dei contenuti {#recover-contet}
 
-Come indicato in precedenza, l’opportunità di visibilità dei contenuti contrassegna le pagine in cui i contenuti chiave vengono persi per gli agenti AI a causa del rendering lato client. Per ogni pagina identificata, mostra esattamente quale contenuto manca dalla vista dell’agente di intelligenza artificiale, aiutandoti a individuare i vuoti di visibilità. È inoltre supportato da una funzionalità di pre-rendering basata su server perimetrali che può distribuire più contenuti HTML al traffico di agenti senza richiedere modifiche al sistema di gestione dei contenuti (CMS). Questa funzionalità è attualmente in fase di accesso anticipato e richiede la configurazione da parte del team LLMO. Contatta `llmo-at-edge@adobe.com` per attivare l&#39;opportunità di visibilità dei contenuti.
+Come indicato in precedenza, l’opportunità di visibilità dei contenuti contrassegna le pagine in cui i contenuti chiave vengono persi per gli agenti AI a causa del rendering lato client. Per ogni pagina identificata, mostra esattamente quale contenuto manca dalla vista dell’agente di intelligenza artificiale, aiutandoti a individuare i vuoti di visibilità. È inoltre supportato da una funzionalità di pre-rendering basata su server perimetrali che può distribuire più contenuti HTML al traffico di agenti senza richiedere modifiche al sistema di gestione dei contenuti (CMS). Questa funzionalità è attualmente in fase di accesso anticipato e richiede la configurazione da parte del team LLM Optimizer. Contatta `llmo-at-edge@adobe.com` per attivare l&#39;opportunità di visibilità dei contenuti.
 
 ### Strumenti aggiuntivi
 

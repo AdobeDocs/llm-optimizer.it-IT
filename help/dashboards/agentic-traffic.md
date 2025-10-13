@@ -1,9 +1,9 @@
 ---
 title: Traffico agente
 description: Scopri come utilizzare la dashboard Traffico agente per vedere come gli agenti di IA interagiscono con il tuo sito.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # Traffico agente {#agentic-traffic}
 
 Il dashboard Traffico agente mostra come gli agenti di intelligenza artificiale (crawler e chatbot) interagiscono con il sito. Utilizzando questa vista puoi tenere traccia del numero totale di richieste e delle metriche generali relative alle prestazioni. Puoi anche visualizzare la distribuzione del traffico tra mercati, categorie, pagine e agenti. I dati utilizzati da questo dashboard provengono dai registri CDN, pertanto è necessario configurare **Inoltro dei registri CDN** per visualizzare le metriche. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
+
+![Distribuzione traffico](/help/dashboards/assets/ag-main.png)
 
 In questa pagina sono disponibili i dettagli riportati di seguito.
 
@@ -34,8 +36,7 @@ Seleziona **Vai alla configurazione** e passerai automaticamente alla scheda **C
 
 In questa scheda, seleziona **CDN integrato**. Viene visualizzata la finestra del provider CDN.
 
-![Provider CDN](/help/dashboards/assets/ag-log-forward3.png)
-
+<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
 Nella finestra **Provider CDN integrato**:
 
 1. Seleziona il provider CDN (ad esempio Akamai, Fastly, Fastly, Fastly, AWS Cloudfront, Azure CDN, Cloudflare o Altro) gestito da Adobe.
@@ -80,13 +81,13 @@ Utilizza il grafico delle tendenze del traffico agente per tenere traccia dei to
 
 ## Spostamenti superiore e inferiore {#top-bottom-movers}
 
-La vista Spostamenti in alto e in basso evidenzia gli URL con le modifiche più grandi, settimana dopo settimana, nel traffico agente: visite o hit dai sistemi di intelligenza artificiale che accedono al contenuto. I primi spostamenti mostrano pagine che acquisiscono visibilità o coinvolgimento, mentre i secondi mostrano URL con i declini più accentuati. Questo consente di identificare rapidamente quale contenuto ha una tendenza verso l’alto, che può richiedere attenzione e dove i modelli di individuazione basati sull’intelligenza artificiale si stanno spostando.
+La vista Spostamenti in alto e in basso evidenzia gli URL con le modifiche più grandi, settimana dopo settimana, nel traffico agente: visite o hit dai sistemi di intelligenza artificiale che accedono al contenuto. In Primi spostamenti le pagine acquistano visibilità o coinvolgimento, mentre in Ultimi spostamenti gli URL presentano le riduzioni più accentuate. Questo consente di identificare rapidamente quale contenuto ha una tendenza verso l’alto, che può richiedere attenzione e dove i modelli di individuazione basati sull’intelligenza artificiale si stanno spostando.
 
 ![Spostamenti superiore e inferiore](/help/dashboards/assets/movers.png)
 
 ## Analisi delle prestazioni dell’agente utente e dell’URL {#user-url-performance}
 
-Le viste Agente utente e Analisi delle prestazioni URL forniscono ulteriori raggruppamenti di dati sul modo in cui crawler e chatbot interagiscono con il sito. Fai clic sulle schede seguenti per una descrizione dettagliata.
+Le viste Agente utente e Analisi delle prestazioni URL forniscono ulteriori raggruppamenti di dati sul modo in cui crawler e chatbot interagiscono con il sito. Fai clic sulle schede seguenti per le descrizioni dettagliate.
 
 ![Analisi prestazioni URL e agente utente](/help/dashboards/assets/user-agent.png)
 
@@ -99,8 +100,6 @@ La tabella Analisi agente utente fornisce un raggruppamento del traffico per tip
 * **Tipo di pagina**: il tipo di pagina.
 * **Tipo di agente** - Agente di IA che esegue la ricerca per indicizzazione della pagina, un crawler o un chatbot.
 * **Hit** - Numero totale di richieste effettuate dagli agenti di IA per quel tipo di pagina specifico.
-
-Puoi anche utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere l&#39;analisi dell&#39;agente con il team o includerla nei report esecutivi.
 
 >[!TAB Analisi prestazioni URL]
 
@@ -122,4 +121,4 @@ La vista Dettagli URL fornisce una comprensione olistica delle prestazioni di un
 
 >[!ENDTABS]
 
-Per entrambe le tabelle, puoi utilizzare l&#39;opzione **Esporta** per scaricare il file .csv della tabella e condividere le informazioni con il team oppure includere la tabella nel reporting esecutivo.
+In entrambe le tabelle è possibile utilizzare l&#39;opzione **Esporta** per scaricare il file .csv della tabella e condividere le informazioni con il team oppure includere la tabella nel reporting esecutivo.

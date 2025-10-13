@@ -1,9 +1,9 @@
 ---
 title: Traffico di riferimento
 description: Scopri come utilizzare il dashboard Traffico di riferimento per vedere come i visitatori arrivano al tuo sito da piattaforme esterne, citazioni AI e collegamenti di riferimento.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Traffico di riferimento
 
-Il traffico di riferimento mostra come i visitatori arrivano al sito da piattaforme esterne, citazioni AI e collegamenti di riferimento. Tiene traccia e analizza le origini del traffico, i pattern di riferimento e le metriche di conversione da siti web e piattaforme esterni. Questo ti aiuterà a capire quali origini, aree geografiche e pagine generano il traffico più coinvolto. I dati provengono dai registri CDN o dalla telemetria operativa di AEM. Entrambe queste fonti tutelano la privacy e non acquisiscono dati personali degli utenti.
+Il traffico di riferimento mostra come i visitatori arrivano al sito da piattaforme esterne, citazioni AI e collegamenti di riferimento. Tiene traccia e analizza le origini del traffico, i pattern di riferimento e le metriche di conversione da siti web e piattaforme esterni. Questo ti aiuterà a capire quali origini, aree geografiche e pagine generano il traffico più coinvolto. I dati provengono dai registri CDN o dalla [telemetria operativa di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Entrambe queste fonti tutelano la privacy e non acquisiscono dati personali degli utenti. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
-Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
+![Pagina di riferimento](/help/dashboards/assets/referral-traffic.png)
 
 In questa pagina sono disponibili i dettagli riportati di seguito.
 
@@ -89,4 +89,4 @@ La vista Analisi delle prestazioni degli URL classifica le pagine con le prestaz
 
 >[!ENDTABS]
 
-In entrambe le tabelle è possibile utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il team oppure includere la tabella del traffico di riferimento nei report esecutivi.
+In entrambe le tabelle, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il team oppure includere la tabella del traffico di riferimento nei report esecutivi.
