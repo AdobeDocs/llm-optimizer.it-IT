@@ -1,9 +1,9 @@
 ---
 title: Best practice per LLM Optimizer
 description: Scopri le best practice per l’ottimizzazione LLM per aumentare la visibilità del brand nella ricerca AI. Informazioni per il benchmark e l’ottimizzazione dei contenuti.
-source-git-commit: a76d348a94495682d648ef0aad268e835e321017
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Altre considerazioni sull&#39;ottimizzazione LLM:
 La creazione di una campagna di ottimizzazione LLM di successo comporta:
 
 * Identifica argomenti di valore elevato in linea con le intenzioni del cliente. Allinea le intenzioni immediate agli obiettivi aziendali e alle esigenze dei clienti.
-* Il concorrente spot menziona per trovare lacune e opportunità. Concentrati sui messaggi in cui vengono citati i concorrenti, indicando l&#39;opportunità di includere il brand.
+* Spot cita altri, inclusi i concorrenti, per individuare lacune e opportunità. Concentrati sui prompt in cui vengono citati altri utenti, indicando l’opportunità di includere il brand.
 * Raggruppa le richieste per intento utilizzando il clustering di argomenti: utilizza argomenti e campi di ricerca per raggruppare obiettivi utente simili per eseguire il benchmark della visibilità.
 * Valuta la credibilità del brand utilizzando gli standard EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) e YMYL (Your Money or Your Life).
 
@@ -109,7 +109,7 @@ Di seguito sono riportate alcune best practice di ottimizzazione:
 
    * Utilizza il [dashboard Opportunità](/help/dashboards/opportunities.md) per identificare e agire in base ai consigli.
    * Traccia il punteggio di visibilità, la valutazione e la frequenza delle citazioni.
-   * Effettua regolazioni in base all’attività della concorrenza e alle tendenze immediate.
+   * Effettua regolazioni in base all&#39;attività altrui (inclusa la concorrenza) e alle tendenze immediate.
 
 ## Ottimizzazione off-site: aumento dell&#39;ingombro del marchio
 
@@ -158,11 +158,11 @@ Di seguito sono riportati i passaggi da seguire per monitorare l’avanzamento:
 1. Effettua il benchmark della tua visibilità corrente.
    * Identifica con quale frequenza e dove viene menzionato e citato il tuo marchio e qual è il sentimento in Adobe LLM Optimizer. Visualizza il dashboard [Presenza marchio](/help/dashboards/brand-presence.md).
    * Analizza i prompt dove viene visualizzato il brand e dove non viene visualizzato.
-   * Confrontare la visibilità con la concorrenza.
+   * Confrontare la visibilità con altre aziende, inclusa la concorrenza (in **Altro monitoraggio** nella [dashboard Configurazione cliente](/help/dashboards/customer-configuration.md)).
    * Visibilità di recensioni su piattaforme generate dagli utenti come Reddit, Quora e Wikipedia. Segmento per piattaforma (ChatGPT, modalità IA di Google e così via)
    * Monitora il traffico agente per capire quali pagine visitano i moduli LLM. Il traffico agente spesso **non** passa alla home page ma ad altre pagine nella parte inferiore della gerarchia. Visualizza il dashboard [Traffico agente](/help/assets/overview/agentic-traffic-card.png).
 1. Monitora le modifiche nel tempo.
-   * Utilizza i filtri orario per tenere traccia delle turni settimanali e mensili
+   * Utilizza i filtri orario per tenere traccia delle turni settimanali e mensili.
    * Presta attenzione a picchi o cadute nel punteggio di visibilità.
    * Analizza le tendenze del sentiment per comprendere la percezione del brand.
 1. Correlare visibilità con traffico, coinvolgimento e conversioni.
@@ -176,7 +176,7 @@ Di seguito sono riportati i passaggi da seguire per monitorare l’avanzamento:
    * Assicurati che i contenuti siano facili da trovare e leggere per i moduli LLM. Correggi eventuali problemi come pagine bloccate o problemi con il codice del tuo sito web.
    * Garantire che i contributi a piattaforme come Wikipedia e Reddit siano imparziali, non commerciali e aggiungano valore.
    * Utilizza Adobe LLM Optimizer per tenere traccia delle modifiche della visibilità nel tempo.
-   * Se noti che i concorrenti vengono menzionati più spesso, regola la tua strategia per restare al passo con i tempi.
+   * Se noti che altri, inclusa la concorrenza, vengono menzionati più spesso, modifica la tua strategia per restare al passo con i tempi.
    * Continua ad aggiornare i contenuti in modo che corrispondano alle ricerche e alle richieste degli utenti.
 1. Regola [strategie fuori sede](#offsite-optimization---expanding-your-brand-footprint) e [in sede](#onsite-optimization---strengthening-your-owned-content) in base alle informazioni.
 
@@ -226,7 +226,7 @@ Per ottimizzare per il traffico agente:
 * Assicurati che la ricerca per indicizzazione sia possibile consultando le impostazioni robots.txt e CDN.
 * Utilizza [Ispettore URL](/help/dashboards/url-inspector.md) per analizzare le prestazioni degli URL.
 * Tieni traccia del comportamento dei bot accedendo ai registri CDN nel [dashboard del traffico agente](/help/dashboards/agentic-traffic.md).
-* Segmentare il traffico per comprendere i risultati di business. Consulta [Best practice per categorie, argomenti, prompt e concorrenti](/help/overview/best-practices-topics-prompts.md).
+* Segmentare il traffico per comprendere i risultati di business. Consulta [Best practice per categorie, argomenti e prompt](/help/overview/best-practices-topics-prompts.md).
 
 Di seguito sono elencate le metriche da monitorare:
 
