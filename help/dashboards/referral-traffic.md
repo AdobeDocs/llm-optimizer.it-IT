@@ -1,7 +1,7 @@
 ---
 title: Traffico di riferimento
 description: Scopri come utilizzare il dashboard Traffico di riferimento per vedere come i visitatori arrivano al tuo sito da piattaforme esterne, citazioni AI e collegamenti di riferimento.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -78,10 +78,10 @@ Le tabelle Dettagli origini di riferimento e Analisi delle prestazioni degli URL
 
 La vista Dettagli origini di riferimento suddivide il traffico proveniente da diverse piattaforme come OpenAI, Microsoft, Google e Perplessità. Visualizza metriche chiave come visite, tasso di mancato recapito e tipo di canale, che ti aiutano a capire quali origini di intelligenza artificiale e ricerca generano il traffico più coinvolto verso il tuo sito.
 
-**Source** - Origine del traffico di riferimento.
-**Visite** - Numero totale di visite per ogni origine.
-**Percentuale di mancato recapito** - Percentuale di sessioni dall&#39;origine di riferimento che non hanno avuto alcun evento di coinvolgimento.
-**Canale** - Canale per l&#39;origine, guadagnato, pagato o entrambi.
+* **Source** - Origine del traffico di riferimento.
+* **Visite** - Numero totale di visite per ogni origine.
+* **Percentuale di mancato recapito** - Percentuale di sessioni dall&#39;origine di riferimento che non hanno avuto alcun evento di coinvolgimento.
+* **Canale** - Canale per l&#39;origine, guadagnato, pagato o entrambi.
 
 >[!TAB Analisi prestazioni URL]
 

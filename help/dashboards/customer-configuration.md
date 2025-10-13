@@ -1,9 +1,9 @@
 ---
 title: Configurazione cliente
 description: Utilizza la configurazione del cliente per definire in che modo il tuo marchio verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM.
-source-git-commit: 099d4387b6a5efd25e142db13e309a181fe67941
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Inoltre, è possibile aggiungere argomenti/prompt all&#39;elenco indipendentemen
 
 Nell&#39;elenco è possibile fare clic su ogni argomento e verranno visualizzati i prompt associati. Per eliminare l&#39;argomento e i prompt associati, fare clic sull&#39;icona Elimina dall&#39;elenco.
 
-## CDN agente {#agentic-cdn}
+<!--## Agentic CDN {#agentic-cdn}
 
-Non disponibile (disponibile per il rilascio?).
+Not available (will it be available for release?).-->
 
