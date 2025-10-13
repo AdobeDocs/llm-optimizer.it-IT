@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Traffico di riferimento
 
-Il traffico di riferimento mostra come i visitatori arrivano al sito da piattaforme esterne, citazioni AI e collegamenti di riferimento. Tiene traccia e analizza le origini del traffico, i pattern di riferimento e le metriche di conversione da siti web e piattaforme esterni. Questo ti aiuterà a capire quali origini, aree geografiche e pagine generano il traffico più coinvolto. I dati provengono dai registri CDN o dalla [telemetria operativa di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Entrambe queste fonti tutelano la privacy e non acquisiscono dati personali degli utenti. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
+Il traffico di riferimento mostra come i visitatori arrivano al sito da piattaforme esterne, citazioni AI e collegamenti di riferimento. Tiene traccia e analizza le origini del traffico, i pattern di riferimento e le metriche di conversione da siti web e piattaforme esterni. Questo ti aiuterà a capire quali origini, aree geografiche e pagine generano il traffico più coinvolto. I dati provengono dai registri CDN o dalla [telemetria operativa di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Entrambe queste fonti tutelano la privacy e non acquisiscono dati personali degli utenti. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
 ![Pagina di riferimento](/help/dashboards/assets/referral-traffic.png)
 
