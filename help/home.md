@@ -1,7 +1,7 @@
 ---
 title: Adobe LLM Optimizer
 description: Rafforzate il vostro marchio con Adobe LLM Optimizer. Tieni traccia delle menzioni, scopri informazioni approfondite e domina la ricerca basata sull’intelligenza artificiale. Assumi il controllo della tua visibilità e inizia subito a ottimizzarla.
-source-git-commit: 2a723770b33a0c93e13e1b123962892fb3f9505b
+source-git-commit: 8debb7b04342f300a360c430768831c20c0d1015
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 3%
@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # Adobe LLM Optimizer
 
-<!-- VIDEO HERE/SLIDES HERE -->
+>[!SLIDE](llm-optimizer-overview)
 
 Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza artificiale per l’ottimizzazione dei motori generativi, progettata per aiutare i brand a migliorare la visibilità, l’accuratezza e l’influenza in ambienti di ricerca basati sull’intelligenza artificiale. Fornisce informazioni sulla presenza del brand nelle risposte generate dall’intelligenza artificiale, offre consigli sui contenuti prescrittivi e automatizza le correzioni di ottimizzazione.
 
