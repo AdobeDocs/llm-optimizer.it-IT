@@ -1,9 +1,9 @@
 ---
 title: Configurazione cliente
 description: Utilizza la configurazione del cliente per definire in che modo il tuo marchio verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 # Configurazione cliente {#customer-configuration}
 
-La dashboard di configurazione del cliente è uno strumento potente che fornisce informazioni approfondite sulla visibilità del brand in LLM. Impostando correttamente categorie, argomenti, prompt e concorrenti, puoi garantire che il tuo marchio sia ben posizionato per essere visualizzato nelle risposte generate da LLM. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
+La dashboard di configurazione del cliente è uno strumento potente che fornisce informazioni approfondite sulla visibilità del brand in LLM. Impostando correttamente categorie, argomenti e prompt, puoi garantire che il brand sia ben posizionato per essere visualizzato nelle risposte generate da LLM. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
 
 ![Dashboard configurazione cliente](/help/dashboards/assets/customer-config.png)
 
 Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del brand in diversi mercati e scenari competitivi, puoi accedere alle seguenti schede:
 
 * [Categorie](#categories)
-* [Tracciamento concorrenti](#competitor-tracking)
+* [Tracciamento altri](#others-tracking)
 * [Alias del marchio](#brand-aliases)
 * [Approfondimenti dati](#data-insights)
 * [Configurazione CDN](#agentic-cdn)
 
 >[!IMPORTANT]
 >
-> Per ulteriori dettagli su come impostare categorie, argomenti, prompt e concorrenti, vedere la pagina [Best practice per la configurazione di categorie, argomenti, prompt e concorrenti](/help/overview/best-practices-topics-prompts.md).
+> Per ulteriori dettagli sulla configurazione delle categorie, degli argomenti e delle richieste, vedere la pagina [Best practice per la configurazione di categorie, argomenti e richieste](/help/overview/best-practices-topics-prompts.md).
 
 ## Categorie {#categories}
 
-Dalla scheda Categorie è possibile definire le categorie commerciali o le linee di prodotti di cui si desidera tenere traccia e associarle ad aree specifiche. Nel complesso, la scheda Categorie fa riferimento a quasi tutte le altre personalizzazioni in questa pagina, perché le categorie verranno visualizzate nel campo categoria per le altre personalizzazioni (tracciamento dei concorrenti, alias e così via). Per aggiungere una nuova categoria:
+Dalla scheda Categorie è possibile definire le categorie commerciali o le linee di prodotti di cui si desidera tenere traccia e associarle ad aree specifiche. Nel complesso, la scheda Categorie fa riferimento a quasi tutte le altre personalizzazioni in questa pagina, perché le categorie verranno visualizzate nel campo categoria per le altre personalizzazioni (tracciamento di altri utenti, alias e così via). Per aggiungere una nuova categoria:
 
 1. Fai clic sul pulsante **Aggiungi**.
 2. Nella nuova finestra di configurazione, aggiungi **Nome categoria**.
@@ -38,19 +38,19 @@ Dalla scheda Categorie è possibile definire le categorie commerciali o le linee
 
 L&#39;aggiunta di nuove categorie non genererà automaticamente argomenti e prompt, che dovranno essere aggiunti manualmente dalla scheda [Data Insights](#data-insights).
 
-Per eliminare una categoria, fare clic sull&#39;icona Elimina nell&#39;elenco delle categorie. Fai attenzione, perché **l&#39;eliminazione di una categoria comporta anche l&#39;eliminazione degli elementi associati**, ad esempio i concorrenti che potresti aver configurato o gli alias del brand collegati a quella categoria specifica.
+Per eliminare una categoria, fare clic sull&#39;icona Elimina nell&#39;elenco delle categorie. Fai attenzione, perché **l&#39;eliminazione di una categoria comporta anche l&#39;eliminazione degli elementi associati**, come gli alias del brand collegati a quella categoria specifica.
 
-## Tracciamento concorrenti {#competitor-tracking}
+## Tracciamento altri {#others-tracking}
 
-Utilizzando il monitoraggio dei concorrenti, puoi monitorare in che modo i tuoi concorrenti vengono menzionati in relazione al tuo marchio, in diverse categorie e aree geografiche. Monitorarne la presenza e le prestazioni nei segmenti di mercato. Per personalizzare il monitoraggio della concorrenza:
+Utilizzando questa scheda, puoi tenere traccia di come vengono menzionati gli altri in relazione al tuo marchio in diverse categorie e aree geografiche. Monitorarne la presenza e le prestazioni nei segmenti di mercato. Per personalizzare il tracciamento:
 
-1. Per aggiungere un nuovo concorrente, fare clic sul pulsante **Aggiungi**.
+1. Fai clic sul pulsante **Aggiungi**.
 2. Nella nuova finestra di configurazione, seleziona la **Categoria**. Le categorie create in precedenza verranno visualizzate qui.
-3. Aggiungere il nome del concorrente.
-4. Se necessario, personalizza l’alias e i domini del concorrente.
-5. Fare clic su **Salva** per visualizzare il nuovo concorrente nell&#39;elenco dei concorrenti.
+3. Aggiungi il nome dell’altro.
+4. Se necessario, personalizza gli altri alias e domini.
+5. Fai clic su **Salva**.
 
-Per eliminare un concorrente, fare clic sull&#39;icona Elimina nell&#39;elenco dei concorrenti.
+Per eliminare una voce dall’elenco, fai clic sull’icona Elimina.
 
 ## Alias del marchio {#brand-aliases}
 

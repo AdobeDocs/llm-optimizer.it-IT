@@ -1,9 +1,9 @@
 ---
 title: Presenza del brand
 description: Scopri come utilizzare la dashboard Presenza marchio per comprendere come il tuo marchio viene percepito a livello di risposte generate dall’intelligenza artificiale.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Presenza del brand {#brand-presence}
 
-La dashboard Presenza marchio offre una panoramica dettagliata del modo in cui il brand viene percepito a livello di risposte generate dall’intelligenza artificiale. Mostra dove, con quale frequenza e in quale contesto viene menzionato il tuo marchio. Puoi utilizzare la dashboard per misurare la visibilità, tenere traccia delle citazioni, confrontare i concorrenti ed esplorare le tendenze del sentiment. Il dashboard è suddiviso in diverse sezioni, ciascuna delle quali fornisce informazioni diverse. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
+La dashboard Presenza marchio offre una panoramica dettagliata del modo in cui il brand viene percepito a livello di risposte generate dall’intelligenza artificiale. Mostra dove, con quale frequenza e in quale contesto viene menzionato il tuo marchio. Puoi utilizzare la dashboard per misurare la visibilità, tenere traccia delle citazioni ed esplorare le tendenze del sentiment. Il dashboard è suddiviso in diverse sezioni, ciascuna delle quali fornisce informazioni diverse. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
-![Presenza marchio](/help/dashboards/assets/brand-main.png)
+![Presenza marchio](/help/dashboards/assets/brand-main1.png)
 
 In questa pagina sono disponibili i dettagli riportati di seguito.
 
 * [Filtri](#filters)
 * [Metriche di panoramica](##key-metrics)
-* [Confronto con la concorrenza](##competitor-comparison)
+* [Altro confronto](##others-comparison)
 * [Tendenza valutazione](#sentiment-trend)
 * [Approfondimenti dati](#data-insights)
 
@@ -56,13 +56,13 @@ Questa metrica rappresenta il numero di volte in cui si è fatto riferimento al 
 
 Gli indicatori di tendenza per ciascuna metrica chiave mostrano le modifiche di questi valori nel tempo rispetto al periodo precedente.
 
-## Confronto con la concorrenza {#competitor-comparison}
+## Altro confronto {#others-comparison}
 
-Nella sezione confronto con i concorrenti puoi selezionare fino a cinque concorrenti e confrontare le loro menzioni e citazioni con il tuo marchio. In questo modo, puoi visualizzare e confrontare le tue prestazioni rispetto alla concorrenza.
+Nella sezione altri confronti puoi selezionare fino a cinque altri marchi e confrontarne menzioni e citazioni con il tuo marchio. In questo modo, puoi visualizzare e confrontare le tue prestazioni rispetto ad altri marchi.
 
-![Confronto tra concorrenti](/help/dashboards/assets/competitor-comparison.png)
+![Confronto altri](/help/dashboards/assets/competitor-comparison1.png)
 
-I concorrenti vengono selezionati dall&#39;elenco a discesa e i grafici vengono aggiornati quando si fa clic su **Applica filtri**. I grafici visualizzano le menzioni settimanali e le citazioni settimanali affiancate. Puoi anche passare il cursore del mouse lungo il grafico per vedere l’evoluzione dei dati nell’intervallo di tempo settimanale.
+Gli altri marchi vengono selezionati dall&#39;elenco a discesa e i grafici vengono aggiornati quando si fa clic su **Applica filtri**. I grafici visualizzano le menzioni settimanali e le citazioni settimanali affiancate. Puoi anche passare il cursore del mouse lungo il grafico per vedere l’evoluzione dei dati nell’intervallo di tempo settimanale.
 
 ## Analisi tendenza sentimento {#sentiment-trend}
 
@@ -74,7 +74,7 @@ Nella sezione analisi delle tendenze del sentiment puoi monitorare come il tuo b
 
 Per arrotondare il dashboard, abbiamo due tabelle importanti: approfondimenti dei dati e condivisione della voce. Le informazioni presentate in queste tabelle ti aiuteranno a identificare la forza del tuo marchio e dove è necessaria l’ottimizzazione.
 
-Utilizzando la tabella **approfondimenti dati** puoi esplorare argomenti e domande degli utenti per valutare e ottimizzare l&#39;impatto dei contenuti. I risultati sono dettagliati da argomenti e prompt. Nel frattempo, la tabella **share of voice** confronta la tua voce del brand con quella di altri concorrenti su argomenti diversi e ti aiuta a identificare le lacune e assegnare priorità ad argomenti futuri.
+Utilizzando la tabella **approfondimenti dati** puoi esplorare argomenti e domande degli utenti per valutare e ottimizzare l&#39;impatto dei contenuti. I risultati sono dettagliati da argomenti e prompt. Nel frattempo, la tabella **share of voice** confronta la voce del tuo marchio con quella di altri marchi su argomenti diversi, consentendoti di identificare le lacune e assegnare priorità ad argomenti futuri.
 
 ![Informazioni dati](/help/dashboards/assets/data-insights.png)
 
@@ -105,9 +105,9 @@ La tabella Share of Voice (Condividi voce) fornisce un’analisi comparativa del
 * **Argomento** - L&#39;argomento analizzato.
 * **Popolarità**: il volume di ricerca dell&#39;argomento relativo a tutti gli altri argomenti dell&#39;analisi.
 * **Menzioni** - Numero di volte in cui il tuo marchio è stato menzionato nelle risposte AI per l&#39;argomento o la combinazione argomento/prompt.
-* **Classifica**: la classificazione della quota di voce del tuo marchio, relativa a tutti i concorrenti identificati.
+* **Classifica** - Classificazione della quota di voce del tuo marchio, relativa a tutti gli altri marchi identificati.
 * **Share of voice** - La percentuale del totale delle menzioni che il tuo marchio contiene nelle risposte generate dall&#39;intelligenza artificiale.
-* **Primi 5 concorrenti** - I primi cinque marchi menzionati più frequentemente per gli stessi argomenti. I concorrenti sono organizzati in base al loro Share of Voice (dal più alto al più basso).
+* **Altri 5 principali** - I cinque marchi più frequentemente menzionati per gli stessi argomenti. I brand sono organizzati in base alla loro Share of Voice (dal più alto al più basso).
 
 >[!ENDTABS]
 
@@ -119,5 +119,5 @@ Metodi principali per utilizzare la tabella:
 
 * Dai priorità agli argomenti di elevata popolarità con visibilità ridotta: ottimizzazione dell’focus in cui la domanda di pubblico è forte ma la presenza del tuo marchio è debole.
 * Tracciare i cambiamenti di sentimento: individua gli argomenti in cui le menzioni tendono a essere negative o neutre e coordina la risposta.
-* Confronto tra citazioni e citazioni di proprietà: identifica i prompt in cui viene menzionato il tuo marchio ma viene citato il contenuto della concorrenza, segnalando una lacuna nei contenuti.
+* Confrontare le citazioni con le citazioni di proprietà: identifica i prompt in cui viene menzionato il tuo marchio ma viene citato il contenuto di altri marchi, segnalando una lacuna nei contenuti.
 * Valuta l’intervallo di posizioni: monitora se il brand compare nelle prime risposte AI (posizioni 1-3) o più in basso (6-10).

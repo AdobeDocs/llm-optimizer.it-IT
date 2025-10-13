@@ -1,7 +1,7 @@
 ---
 title: Ispettore URL
 description: Scopri come utilizzare l’Ispettore URL per analizzare le prestazioni di pagine specifiche sul dominio nelle ricerche AI.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Gli URL di tendenza in competizione per la visualizzazione delle citazioni evide
 Vengono fornite le metriche seguenti:
 
 * **URL** - URL analizzato
-* **Tipo di contenuto** - Il tipo di contenuto (di proprietà, social, guadagnato, concorrente).
+* **Tipo di contenuto** - Il tipo di contenuto (di proprietà, social, guadagnato, altro).
 * **Volte citate** - Il numero di volte in cui l&#39;URL è stato citato nelle risposte generate da IA.
 * **Prompt citati in** - Numero di prompt di IA univoci che hanno citato l&#39;URL.
 * **Categorie** - Le categorie di prodotti o gli argomenti associati all&#39;URL.
