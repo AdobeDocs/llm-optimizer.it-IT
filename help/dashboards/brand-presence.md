@@ -1,7 +1,7 @@
 ---
 title: Presenza del brand
 description: Scopri come utilizzare la dashboard Presenza marchio per comprendere come il tuo marchio viene percepito a livello di risposte generate dall’intelligenza artificiale.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La dashboard Presenza marchio offre una panoramica dettagliata del modo in cui il brand viene percepito a livello di risposte generate dall’intelligenza artificiale. Mostra dove, con quale frequenza e in quale contesto viene menzionato il tuo marchio. Puoi utilizzare la dashboard per misurare la visibilità, tenere traccia delle citazioni ed esplorare le tendenze del sentiment. Il dashboard è suddiviso in diverse sezioni, ciascuna delle quali fornisce informazioni diverse. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
-![Presenza marchio](/help/dashboards/assets/brand-main1.png)
+![Presenza marchio](/help/dashboards/assets/brand-main.png)
 
 In questa pagina sono disponibili i dettagli riportati di seguito.
 
@@ -60,7 +60,7 @@ Gli indicatori di tendenza per ciascuna metrica chiave mostrano le modifiche di 
 
 Nella sezione altri confronti puoi selezionare fino a cinque altri marchi e confrontarne menzioni e citazioni con il tuo marchio. In questo modo, puoi visualizzare e confrontare le tue prestazioni rispetto ad altri marchi.
 
-![Confronto altri](/help/dashboards/assets/competitor-comparison1.png)
+![Confronto altri](/help/dashboards/assets/other-comparison.png)
 
 Gli altri marchi vengono selezionati dall&#39;elenco a discesa e i grafici vengono aggiornati quando si fa clic su **Applica filtri**. I grafici visualizzano le menzioni settimanali e le citazioni settimanali affiancate. Puoi anche passare il cursore del mouse lungo il grafico per vedere l’evoluzione dei dati nell’intervallo di tempo settimanale.
 
