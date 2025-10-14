@@ -1,9 +1,9 @@
 ---
 title: Traffico di riferimento
 description: Scopri come utilizzare il dashboard Traffico di riferimento per vedere come i visitatori arrivano al tuo sito da piattaforme esterne, citazioni AI e collegamenti di riferimento.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Traffico di riferimento
 
-Il traffico di riferimento mostra come i visitatori arrivano al sito da piattaforme esterne, citazioni AI e collegamenti di riferimento. Tiene traccia e analizza le origini del traffico, i pattern di riferimento e le metriche di conversione da siti web e piattaforme esterni. Questo ti aiuterà a capire quali origini, aree geografiche e pagine generano il traffico più coinvolto. I dati provengono dai registri CDN o dalla [telemetria operativa di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Entrambe queste fonti tutelano la privacy e non acquisiscono dati personali degli utenti. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
+Il traffico di riferimento mostra come i visitatori arrivano al sito da piattaforme esterne, citazioni AI e collegamenti di riferimento. Tiene traccia e analizza le origini del traffico, i pattern di riferimento e le metriche di conversione da siti web e piattaforme esterni. Questo ti aiuterà a capire quali origini, aree geografiche e pagine generano il traffico più coinvolto. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Sono inoltre disponibili filtri personalizzabili che consentono di perfezionare i dati visualizzati.
 
 ![Pagina di riferimento](/help/dashboards/assets/referral-traffic.png)
 
@@ -25,7 +25,7 @@ In questa pagina sono disponibili i dettagli riportati di seguito.
 
 ## Configurazione {#setup}
 
-Al primo accesso, il dashboard Traffico di riferimento potrebbe apparire vuoto. Per visualizzare i dati, è necessario configurare un provider del traffico di riferimento selezionando **Vai alla configurazione**.
+Al primo accesso, il dashboard Traffico di riferimento potrebbe apparire vuoto. Per visualizzare i dati, devi configurare [Inoltro registro CDN](/help/dashboards/customer-configuration.md#cdn-configuration) selezionando **Vai alla configurazione**.
 
 ![Impostazione riferimento](/help/dashboards/assets/referral-setup1.png)
 
@@ -33,7 +33,7 @@ Al primo accesso, il dashboard Traffico di riferimento potrebbe apparire vuoto. 
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Dopo aver selezionato un provider del traffico di riferimento, il dashboard viene popolato con le metriche del traffico di riferimento.
+Una volta attivata, la dashboard viene compilata con le metriche del traffico di riferimento.
 
 ## Filtri {#filters}
 

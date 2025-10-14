@@ -1,7 +1,7 @@
 ---
 title: Traffico agente
 description: Scopri come utilizzare la dashboard Traffico agente per vedere come gli agenti di IA interagiscono con il tuo sito.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Nella finestra **Provider CDN integrato**:
 1. Seleziona il provider CDN (ad esempio Akamai, Fastly, Fastly, Fastly, AWS Cloudfront, Azure CDN, Cloudflare o Altro) gestito da Adobe.
 2. Fai clic su **Onboard** per abilitare l&#39;inoltro del registro.
 
-Se selezioni **Altro**, dovrai contattare Adobe per assistenza.
+Se selezioni **Altro**, dovrai contattare llmo-now@adobe.com per assistenza.
 
 Una volta attivati, i registri vengono acquisiti e la dashboard viene compilata con metriche quali interazioni totali dell’agente, tasso di successo, hit per mercato, analisi dell’agente utente e prestazioni a livello di URL.
 
