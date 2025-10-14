@@ -1,7 +1,8 @@
 ---
 title: Opportunità di ottimizzazione
 description: Scopri come utilizzare la dashboard delle opportunità per rilevare automaticamente come migliorare il sito al fine di aumentare la visibilità del marchio.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+feature: Opportunities
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%

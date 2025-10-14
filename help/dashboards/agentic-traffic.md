@@ -1,7 +1,8 @@
 ---
 title: Traffico agente
 description: Scopri come utilizzare la dashboard Traffico agente per vedere come gli agenti di IA interagiscono con il tuo sito.
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+feature: Agentic Traffic
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -117,7 +118,7 @@ La tabella delle prestazioni URL contiene un campo di ricerca per l’accesso ra
 
 ![Dettagli URL](/help/dashboards/assets/details.png)
 
-La vista Dettagli URL fornisce una comprensione olistica delle prestazioni di una pagina, mostrando la frequenza con cui viene citata, la sensazione delle risposte AI in cui viene menzionata, gli argomenti e i prompt in cui viene visualizzata e le tendenze nel traffico agenziale e di riferimento nel tempo.
+La visualizzazione Dettagli URL offre una comprensione olistica delle prestazioni di una pagina, mostrando la frequenza con cui viene citata, la sensazione delle risposte AI in cui viene menzionata, gli argomenti e i prompt in cui viene visualizzata e le tendenze nel traffico agenziale e di riferimento nel tempo.
 
 >[!ENDTABS]
 

@@ -1,7 +1,8 @@
 ---
 title: Panoramica di LLM Optimizer
 description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’intelligenza artificiale. Tracciare menzioni, citazioni e informazioni. Inizia a ottimizzare oggi stesso per un coinvolgimento e un’influenza migliori.
-source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
+feature: Onboarding
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -10,6 +11,8 @@ ht-degree: 0%
 
 
 # Panoramica di LLM Optimizer
+
+>[!SLIDE](llm-optimizer-overview)
 
 Questa pagina illustra tutto ciò che devi sapere su Adobe LLM Optimizer prima di iniziare a utilizzare lo strumento:
 

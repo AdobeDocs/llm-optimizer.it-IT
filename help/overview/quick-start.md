@@ -1,7 +1,8 @@
 ---
 title: Avvio rapido
 description: 'Inizia a usare Adobe LLM Optimizer: integra il tuo marchio, sfrutta le informazioni sulla visibilità AI ed esplora le dashboard per migliorare le prestazioni di ricerca.'
-source-git-commit: 7a945ab37c7f45742cff093ef8f3133cf5971991
+feature: Quickstart, Onboarding
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Consulta la sezione seguente per informazioni su come attivare la versione di pr
 
 ### Clienti AEM Cloud
 
-Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Le nuove richieste aggiunte non verranno visualizzate nel [dashboard della presenza del marchio](/help/dashboards/brand-presence.md) fino al completamento dell&#39;elaborazione. I clienti di AEM Cloud possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contatta il rappresentante del tuo account.
