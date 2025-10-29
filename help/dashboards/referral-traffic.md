@@ -2,9 +2,9 @@
 title: Traffico di riferimento
 description: Scopri come utilizzare il dashboard Traffico di riferimento per vedere come i visitatori arrivano al tuo sito da piattaforme esterne, citazioni AI e collegamenti di riferimento.
 feature: Referral Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Al primo accesso, il dashboard Traffico di riferimento potrebbe apparire vuoto. 
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Una volta attivata, la dashboard viene compilata con le metriche del traffico di riferimento.
+Una volta attivata, la dashboard verrà compilata con le metriche del traffico di riferimento.
 
 ## Filtri {#filters}
 
@@ -54,12 +54,13 @@ Dopo aver selezionato il filtro desiderato, fare clic su **Applica filtri** per 
 La dashboard evidenzia le prestazioni complessive del riferimento visualizzando metriche chiave, tra cui:
 
 * **Traffico di riferimento totale** - Traffico di riferimento totale da tutte le origini.
+* **Traffico di riferimento da LLM** - Totale del traffico di riferimento da LLM.
 * **Percentuale di consenso** - La percentuale di visitatori che accettano una richiesta di consenso.
 * **Percentuale di mancato recapito** - Percentuale di sessioni da origini di riferimento che non hanno avuto alcun evento di coinvolgimento.
 
 ![Pagina di riferimento](/help/dashboards/assets/referral-traffic.png)
 
-Oltre alle metriche delle prestazioni complessive presentate qui sopra, il pannello **Prime aree geografiche** suddivide il traffico per area geografica. Nel frattempo, il pannello **Origini di riferimento principali** mostra le piattaforme che generano il maggior numero di visite. Gli indicatori di tendenza per le metriche mostrano le modifiche di questi valori nel tempo rispetto al periodo precedente.
+Oltre alle metriche delle prestazioni complessive presentate in precedenza, sono disponibili tre pannelli aggiuntivi che mostrano la distribuzione del traffico tra diversi mercati, origini di riferimento e categorie di intento pagina <!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
 <!--## Top Referral URLs {#top-referrals}
 
@@ -90,4 +91,4 @@ La vista Analisi delle prestazioni degli URL classifica le pagine con le prestaz
 
 >[!ENDTABS]
 
-In entrambe le tabelle, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il team oppure includere la tabella del traffico di riferimento nei report esecutivi.
+In entrambe le tabelle è possibile utilizzare l&#39;opzione **Esporta** per scaricare il file .csv della tabella e condividere le informazioni con il team oppure includere le tabelle nel reporting esecutivo. Inoltre, per entrambe le tabelle, è possibile personalizzare le metriche da visualizzare facendo clic sul pulsante **Configura colonne**.

@@ -2,9 +2,9 @@
 title: Presenza del brand
 description: Scopri come utilizzare la dashboard Presenza marchio per comprendere come il tuo marchio viene percepito a livello di risposte generate dall’intelligenza artificiale.
 feature: Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ Nella parte superiore della pagina, puoi applicare i filtri per perfezionare la 
 
 * **Intervallo date** - Selezionare l&#39;intervallo di tempo per i dati visualizzati. Ad esempio, le ultime 4 settimane. Puoi anche personalizzare il periodo di tempo selezionando l&#39;opzione **Settimane personalizzate**.
 * **Categoria** - Filtra i risultati visualizzati in base a categorie predefinite o personalizzate.
+* **Argomento** - Filtra per argomento per analizzare i temi del contenuto e le aree dell&#39;oggetto in cui il brand appare nelle risposte AI.
 * **Piattaforma** - Scegli quale motore di intelligenza artificiale analizzare.
 * **Prompts Origin** - Scegli l&#39;origine dei prompt. L’origine può essere inserita dall’utente o generata tramite IA.
 * **Chiedi branding** - Filtra i risultati in base a prompt con brand o non con brand.
@@ -47,9 +48,9 @@ La dashboard evidenzia tre metriche molto importanti nella parte superiore della
 
 Il punteggio di visibilità è composto da fattori come: menzioni, citazioni, sentiment e rank. Ogni fattore ha un certo &quot;peso&quot; associato ad esso che si aggiunge al punteggio finale.
 
-### Citazioni {#mentions}
+### Citazioni del brand {#mentions}
 
-Questa metrica rappresenta il numero totale di volte in cui il brand o le categorie sono stati menzionati nei prompt di IA campionati. Ad esempio, disponi del marchio &quot;Coffe B&quot; con le categorie &quot;Macchine&quot; e &quot;Accessori&quot; e questa metrica conta il numero totale di volte che questi compaiono nelle risposte AI campionate.
+Questa metrica rappresenta il numero totale di volte in cui il brand o le categorie sono stati menzionati nei prompt di IA campionati. Ad esempio, se hai il marchio &quot;Coffe B&quot;, con le categorie &quot;Macchine&quot; e &quot;Accessori&quot; questa metrica conta il numero totale di volte che questi compaiono nelle risposte AI campionate.
 
 ### Citazioni {#citations}
 
@@ -63,11 +64,11 @@ Nella sezione altri confronti puoi selezionare fino a cinque altri marchi e conf
 
 ![Confronto altri](/help/dashboards/assets/other-comparison.png)
 
-Gli altri marchi vengono selezionati dall&#39;elenco a discesa e i grafici vengono aggiornati quando si fa clic su **Applica filtri**. I grafici visualizzano le menzioni settimanali e le citazioni settimanali affiancate. Puoi anche passare il cursore del mouse lungo il grafico per vedere l’evoluzione dei dati nell’intervallo di tempo settimanale.
+Gli altri marchi vengono selezionati dall&#39;elenco a discesa e i grafici vengono aggiornati quando si fa clic su **Applica filtri**. I grafici mostrano le citazioni settimanali del marchio e le citazioni settimanali affiancate. Puoi anche passare il cursore del mouse lungo il grafico per vedere l’evoluzione dei dati nell’intervallo di tempo settimanale.
 
 ## Analisi tendenza sentimento {#sentiment-trend}
 
-Nella sezione analisi delle tendenze del sentiment puoi monitorare come il tuo brand viene percepito nelle risposte di IA campionate. La metrica di tendenza del sentiment può essere positiva, neutra o negativa. Ad esempio, può essere positivo se le risposte evidenziano la qualità del prodotto o negativo se menzionano un servizio scadente. Il grafico di tendenza mostra i cambiamenti nella percezione del brand settimana dopo settimana. La sezione viene compilata solo dopo che il tuo marchio è menzionato.
+Nella sezione analisi delle tendenze del sentiment puoi monitorare come il tuo brand viene percepito nelle risposte di IA campionate. La metrica di tendenza del sentiment può essere positiva, neutra o negativa. Ad esempio, può essere positivo se le risposte evidenziano la qualità del prodotto o negativo se menzionano un servizio scadente. Il grafico di tendenza mostra i cambiamenti nella percezione del brand settimana dopo settimana. Questa sezione viene compilata solo dopo che il tuo marchio è menzionato.
 
 ![Tendenza valutazione](/help/dashboards/assets/sentiment-trend.png)
 
@@ -79,7 +80,7 @@ Utilizzando la tabella **approfondimenti dati** puoi esplorare argomenti e doman
 
 ![Informazioni dati](/help/dashboards/assets/data-insights.png)
 
-Entrambe le tabelle dispongono di un campo di ricerca per accedere rapidamente agli argomenti. Inoltre, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il tuo team oppure includere la tabella nei report manageriali.
+Entrambe le tabelle dispongono di un campo di ricerca per l&#39;accesso rapido agli argomenti ed è possibile personalizzare le metriche visualizzate facendo clic sul pulsante **Configura colonne**. Inoltre, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il tuo team oppure includere le tabelle nei report manageriali.
 
 Per informazioni dettagliate su ciascuna tabella e sulle metriche associate, fai clic sulle schede seguenti.
 
@@ -98,6 +99,9 @@ La tabella Approfondimenti dati consente di esplorare argomenti e prompt degli u
 * **Posizione** - La rilevanza relativa del tuo marchio nelle risposte AI, calcolata come media in tutte le settimane.
 * **Tutte le citazioni** - Il numero di origini univoche citate nelle risposte AI per questo argomento o per questa combinazione argomento/prompt (include le citazioni di proprietà).
 * **Citazioni di proprietà**: il numero di volte in cui il brand è stato citato nelle risposte AI per questa parola chiave o per questa combinazione di parola chiave/domanda.
+  <!--* **Executions**-->
+
+Puoi anche visualizzare ulteriori dettagli per ogni argomento facendo clic sull&#39;icona **Dettagli** alla fine di ogni riga.
 
 >[!TAB Condivisione di voce]
 
@@ -119,6 +123,6 @@ La tabella Approfondimenti dati consente di passare dalle metriche alle azioni s
 Metodi principali per utilizzare la tabella:
 
 * Dai priorità agli argomenti di elevata popolarità con visibilità ridotta: ottimizzazione dell’focus in cui la domanda di pubblico è forte ma la presenza del tuo marchio è debole.
-* Tracciare i cambiamenti di sentimento: individua gli argomenti in cui le menzioni tendono a essere negative o neutre e coordina la risposta.
+* Tracciare i cambiamenti di sentimento: individua gli argomenti in cui le menzioni tendono in negativo o neutro e coordina la risposta.
 * Confrontare le citazioni con le citazioni di proprietà: identifica i prompt in cui viene menzionato il tuo marchio ma viene citato il contenuto di altri marchi, segnalando una lacuna nei contenuti.
 * Valuta l’intervallo di posizioni: monitora se il brand compare nelle prime risposte AI (posizioni 1-3) o più in basso (6-10).

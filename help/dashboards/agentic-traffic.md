@@ -2,9 +2,9 @@
 title: Traffico agente
 description: Scopri come utilizzare la dashboard Traffico agente per vedere come gli agenti di IA interagiscono con il tuo sito.
 feature: Agentic Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Nella parte superiore della pagina è necessario conoscere tre metriche chiave:
 
 * **Interazioni agente** - Questa metrica rappresenta il numero totale di richieste effettuate dagli agenti di IA al sito Web. Questo include tutto il traffico proveniente da motori di ricerca, chatbot e altro traffico non umano.
 * **Percentuale di successo** - Questa metrica rappresenta la percentuale di richieste HTTP riuscite, incluse sia le risposte dirette che i reindirizzamenti.
-* **TTFB medio** - Time To First Byte (TTFB) misura il tempo necessario per ricevere il primo byte di dati dal server. Valori più bassi indicano tempi di risposta del server più rapidi.
+* **TTFB medio** - Time To First Byte (TTFB) misura il tempo necessario per ricevere il primo byte di dati dal server. Il valore medio è ponderato in base al numero di richieste che restituiscono ciascun codice ed esclude le richieste che hanno prodotto risposte 5xx. Valori più bassi indicano tempi di risposta del server più rapidi.
 
 Gli indicatori di tendenza per ciascuna metrica chiave mostrano le modifiche di questi valori nel tempo rispetto al periodo precedente.
 
@@ -82,7 +82,7 @@ Utilizza il grafico delle tendenze del traffico agente per tenere traccia dei to
 
 ## Spostamenti superiore e inferiore {#top-bottom-movers}
 
-La vista Spostamenti in alto e in basso evidenzia gli URL con le modifiche più grandi, settimana dopo settimana, nel traffico agente: visite o hit dai sistemi di intelligenza artificiale che accedono al contenuto. In Primi spostamenti le pagine acquistano visibilità o coinvolgimento, mentre in Ultimi spostamenti gli URL presentano le riduzioni più accentuate. Questo consente di identificare rapidamente quale contenuto ha una tendenza verso l’alto, che può richiedere attenzione e dove i modelli di individuazione basati sull’intelligenza artificiale si stanno spostando.
+La vista Spostamenti in alto e in basso evidenzia gli URL con le modifiche più grandi, settimana dopo settimana, nel traffico agente: visite o hit dai sistemi di intelligenza artificiale che accedono al contenuto. **Primi spostamenti** mostra le pagine che acquistano visibilità o coinvolgimento, mentre **Ultimi spostamenti** rivela gli URL con i rifiuti più accentuati. Questo consente di identificare rapidamente quale contenuto ha una tendenza verso l’alto, che può richiedere attenzione e dove i modelli di individuazione basati sull’intelligenza artificiale si stanno spostando.
 
 ![Spostamenti superiore e inferiore](/help/dashboards/assets/movers.png)
 
@@ -102,6 +102,8 @@ La tabella Analisi agente utente fornisce un raggruppamento del traffico per tip
 * **Tipo di agente** - Agente di IA che esegue la ricerca per indicizzazione della pagina, un crawler o un chatbot.
 * **Hit** - Numero totale di richieste effettuate dagli agenti di IA per quel tipo di pagina specifico.
 
+Puoi personalizzare le metriche da visualizzare facendo clic sul pulsante **Configura colonne**.
+
 >[!TAB Analisi prestazioni URL]
 
 La tabella Analisi delle prestazioni degli URL mostra una visualizzazione dettagliata dei singoli URL. Ciò include hit, agenti univoci, agente principale, tassi di successo e categorie. In questo modo puoi identificare pagine di alto valore, rilevare spazi vuoti di ricerca per indicizzazione e ottimizzare i contenuti per i motori di intelligenza artificiale. Gli URL sono classificati per volume di traffico. La tabella contiene le seguenti categorie:
@@ -113,13 +115,15 @@ La tabella Analisi delle prestazioni degli URL mostra una visualizzazione dettag
 * **Tipo di agente principale**: il tipo dell&#39;agente di IA che ha generato più traffico per questo URL.
 * **Percentuale di successo** - Percentuale di richieste HTTP riuscite, incluse risposte dirette riuscite e reindirizzamenti.
 * **Categoria**: la categoria che corrisponde maggiormente al contenuto della pagina.
+* **TTFB medio (ms)** - Time To First Byte (TTFB) misura il tempo necessario per ricevere il primo byte di dati dal server (in millisecondi). Il valore medio è ponderato in base al numero di richieste che restituiscono ciascun codice ed esclude le richieste che hanno prodotto risposte 5xx. Valori più bassi indicano tempi di risposta del server più rapidi.
+* **Codici di risposta** - Codici di stato HTTP osservati per l&#39;URL.
 
-La tabella delle prestazioni URL contiene un campo di ricerca per l’accesso rapido agli URL. Puoi anche visualizzare ulteriori dettagli per ogni URL facendo clic sull’icona delle informazioni alla fine di ogni riga.
+La tabella delle prestazioni degli URL contiene un campo di ricerca per l&#39;accesso rapido agli URL ed è possibile personalizzare le metriche visualizzate facendo clic sul pulsante **Configura colonne**. Puoi anche visualizzare ulteriori dettagli per ogni URL facendo clic sull&#39;icona **Dettagli** alla fine di ogni riga.
 
 ![Dettagli URL](/help/dashboards/assets/details.png)
 
-La visualizzazione Dettagli URL offre una comprensione olistica delle prestazioni di una pagina, mostrando la frequenza con cui viene citata, la sensazione delle risposte AI in cui viene menzionata, gli argomenti e i prompt in cui viene visualizzata e le tendenze nel traffico agenziale e di riferimento nel tempo.
+La vista Dettagli URL fornisce una comprensione olistica delle prestazioni di una pagina, mostrando la frequenza con cui viene citata, la sensazione delle risposte AI in cui viene menzionata, gli argomenti e i prompt in cui viene visualizzata e le tendenze nel traffico agenziale e di riferimento nel tempo.
 
 >[!ENDTABS]
 
-In entrambe le tabelle è possibile utilizzare l&#39;opzione **Esporta** per scaricare il file .csv della tabella e condividere le informazioni con il team oppure includere la tabella nel reporting esecutivo.
+In entrambe le tabelle è possibile utilizzare l&#39;opzione **Esporta** per scaricare il file .csv della tabella e condividere le informazioni con il team oppure includere le tabelle nel reporting esecutivo.
