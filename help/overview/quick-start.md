@@ -2,9 +2,9 @@
 title: Avvio rapido
 description: 'Inizia a usare Adobe LLM Optimizer: integra il tuo marchio, sfrutta le informazioni sulla visibilità AI ed esplora le dashboard per migliorare le prestazioni di ricerca.'
 feature: Quickstart, Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Consulta la sezione seguente per informazioni su come attivare la versione di pr
 
 ### Clienti AEM Cloud
 
-Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Le nuove richieste aggiunte non verranno visualizzate nel [dashboard della presenza del marchio](/help/dashboards/brand-presence.md) fino al completamento dell&#39;elaborazione. I clienti di AEM Cloud possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contatta il rappresentante del tuo account.
@@ -47,7 +47,7 @@ Dopo aver fatto clic sul pulsante **Prova LLM Optimizer**, verrai reindirizzato 
 >[!NOTE]
 >Il dominio fornito verrà utilizzato da tutti gli utenti dell’organizzazione e non può essere modificato.
 
-Per attivare l’analisi della presenza del brand, devi fornire categorie, argomenti e prompt.
+Durante la fase di onboarding verrà generato un piccolo set di categorie, argomenti e prompt. L’analisi della presenza del brand su tali prompt sarà disponibile subito dopo l’onboarding del sito.
 
 ![Analisi della presenza del marchio](/help/overview/assets/bp-analysis.png)
 
@@ -59,7 +59,7 @@ Dopo aver finalizzato il contratto di business, potrai iniziare a utilizzare il 
 
 ### Passaggio 2: personalizzare categorie, argomenti e prompt
 
-Per attivare l’analisi della presenza del brand e popolare la dashboard con informazioni sulla visibilità del brand, è necessario personalizzare categorie, argomenti e prompt. Questa configurazione viene creata nel [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md).
+Una volta effettuato l’onboarding del sito, puoi visualizzare l’analisi della presenza del marchio in base a un piccolo insieme di prompt generati automaticamente durante la fase di onboarding. In futuro, potrai personalizzare le categorie, gli argomenti e i prompt per il tuo marchio. Questa configurazione viene creata nel [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md).
 
 ![Dashboard configurazione cliente](/help/overview/assets/prompt-creation.png)
 
@@ -78,9 +78,9 @@ Da questa dashboard è possibile:
 >
 > Per ulteriori dettagli sulla configurazione delle categorie, degli argomenti e delle richieste, vedere la pagina [Best practice per la configurazione di categorie, argomenti e richieste](/help/overview/best-practices-topics-prompts.md).
 
-### Passaggio 3: precompilazione automatica di approfondimenti
+### Passaggio 3: approfondimenti sulla presenza del brand
 
-Una volta effettuato l’onboarding del dominio e dopo aver fornito categorie e argomenti, LLM Optimizer attiva automaticamente l’analisi della presenza del brand.
+Dopo che il dominio è stato acquisito, vedrai le informazioni iniziali nella visualizzazione Presenza marchio in base alle richieste generate automaticamente durante l’onboarding. Dopo aver personalizzato le categorie, gli argomenti e i prompt, LLM Optimizer attiva automaticamente l&#39;analisi della presenza del marchio sui prompt forniti e i risultati saranno disponibili in 24 ore.
 
 ### Passaggio 4: fornire informazioni per l’inoltro del registro CDN {#step-4}
 
