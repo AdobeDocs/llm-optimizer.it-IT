@@ -2,9 +2,9 @@
 title: Best practice per LLM Optimizer
 description: Scopri le best practice per l’ottimizzazione LLM per aumentare la visibilità del brand nella ricerca AI. Informazioni per il benchmark e l’ottimizzazione dei contenuti.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ L’ottimizzazione in loco migliora i contenuti di proprietà per la visibilità
 
 >[!TIP]
 >
->LLM Optimizer consiglia di ottimizzare le opportunità in loco e fuori sede nel dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Spesso può distribuire le ottimizzazioni direttamente sul sito.
+>LLM Optimizer consiglia di ottimizzare le opportunità in loco e fuori sede nel dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere distribuiti direttamente sul sito utilizzando LLM Optimizer.
 
 Di seguito sono riportate alcune best practice di ottimizzazione:
 
@@ -118,7 +118,7 @@ L’ottimizzazione offsite si concentra sul miglioramento della visibilità del 
 
 >[!TIP]
 >
->LLM Optimizer consiglia di ottimizzare le opportunità in loco e fuori sede nel dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Spesso può distribuire le ottimizzazioni direttamente sul sito.
+>LLM Optimizer consiglia di ottimizzare le opportunità in loco e fuori sede nel dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere distribuiti direttamente sul sito utilizzando LLM Optimizer.
 
 
 Principali canali fuori sede:
