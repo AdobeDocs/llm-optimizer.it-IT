@@ -2,9 +2,9 @@
 title: Avvio rapido
 description: 'Inizia a usare Adobe LLM Optimizer: integra il tuo marchio, sfrutta le informazioni sulla visibilità AI ed esplora le dashboard per migliorare le prestazioni di ricerca.'
 feature: Quickstart, Onboarding
-source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
+source-git-commit: 3068247d9d13d0c3cd22e2077daa06fd1680d6b3
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,17 @@ Per iniziare a utilizzare l’ottimizzatore LLM, devi completare il processo di 
 ## Panoramica sull’onboarding
 
 Il processo di onboarding inizia con l’onboarding del dominio. Il processo varia a seconda che tu sia o meno un cliente di AEM Cloud. Dopo aver completato il processo, è necessario fornire informazioni sull’inoltro del registro CDN e infine personalizzare categorie, argomenti e prompt. Di seguito sono riportate tutte le fasi del processo, insieme a suggerimenti utili su come iniziare a utilizzare LLM Optimizer il prima possibile.
+
+### Consentire a Adobe LLM Optimizer di accedere alle pagine pubbliche
+
+Per fornire contenuti accurati e consigli tecnici, Adobe LLM Optimizer richiede l’accesso alle tue pagine pubbliche. Ciò si ottiene tramite un crawler interno sicuro (agente utente Spacecat/1.0).
+
+Requisiti di configurazione:
+
+* Aggiungi l’agente utente di Spacecat/1.0 al Inserisco nell&#39;elenco Consentiti di gestione del traffico dei robot del sito o nelle regole di gestione del traffico dei bot
+* Assicurati che le pagine non siano bloccate a livello di dominio o CDN. Le pagine bloccate non possono essere indicizzate, il che significa che non è possibile generare attività e approfondimenti di ottimizzazione per esse.
+
+Se la visibilità del contenuto appare bassa nel dashboard, verifica che il crawler abbia accesso ai tuoi domini. L’accesso limitato è una causa comune dell’indicizzazione incompleta.
 
 ## Passaggio 1: integrare il dominio
 
@@ -33,7 +44,7 @@ Consulta la sezione seguente per informazioni su come attivare la versione di pr
 
 ### Clienti AEM Cloud
 
-Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Le nuove richieste aggiunte non verranno visualizzate nel [dashboard della presenza del marchio](/help/dashboards/brand-presence.md) fino al completamento dell&#39;elaborazione. I clienti di AEM Cloud possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contatta il rappresentante del tuo account.
