@@ -1,0 +1,560 @@
+---
+title: Ottimizza in Edge
+description: Scopri come distribuire le ottimizzazioni in LLM Optimizer al server Edge di CDN senza alcuna modifica di authoring necessaria.
+feature: Opportunities
+source-git-commit: 3c6f287b3c3787cee95f99b7031412f26692a88b
+workflow-type: tm+mt
+source-wordcount: '2291'
+ht-degree: 1%
+
+---
+
+
+# Ottimizza in Edge
+
+Questa sezione ...
+
+## Cos’è l’ottimizzazione in Edge?
+
+Ottimizza in Edge è una funzionalità di distribuzione basata su Edge in LLM Optimizer che può fornire modifiche di facile utilizzo all’intelligenza artificiale agli agenti utente LLM. Poiché fornisce ottimizzazioni al server Edge di CDN, non sono necessarie modifiche di authoring in Content Management System (CMS). Inoltre, esegue il targeting solo del traffico agente e non influisce sugli utenti umani o sui bot SEO (Search Engine Optimization).
+
+Quando LLM Optimizer rileva opportunità di ottimizzazione di una pagina, gli utenti possono distribuire correzioni direttamente al perimetro senza dover apportare modifiche alla piattaforma.
+
+Questa funzionalità è attualmente in fase di accesso anticipato.
+
+## Perché un cliente dovrebbe essere interessato?
+
+L’ottimizzazione in Edge è un’alternativa più veloce e più snella alle correzioni tradizionali che richiedono interventi di progettazione complessi. Una volta completata la configurazione una tantum, non sono necessari cambiamenti di piattaforma o lunghi cicli di sviluppo per applicare le modifiche alle pagine web. L’utente può pubblicare miglioramenti in pochi minuti, non in settimane, senza richiedere il coinvolgimento degli sviluppatori. Si tratta di un modo a basso rischio e senza codice per ottimizzare il sito web per gli agenti di intelligenza artificiale.
+
+### Vantaggi chiave e value proposition
+
+* **Distribuzione solo IA:** fornisce HTML ottimizzato agli agenti di IA senza alcun impatto sui visitatori umani o sui bot SEO.
+* **Cicli più veloci:** Pubblicare le modifiche in pochi minuti, non in settimane. Non sono necessari cambiamenti di piattaforma o lunghi cicli tecnici.
+* **Rischio ridotto e reversibile:** supportato con funzionalità di rollback con un solo clic che consente di ripristinare la pagina in pochi minuti.
+* **Nessun impatto sulle prestazioni:** le ottimizzazioni e la memorizzazione nella cache basate su Edge non influiscono sulla latenza del sito.
+* **CDN e CMS-agnostic:** funziona con qualsiasi configurazione CDN e configurazione front-end indipendentemente da CMS.
+
+## Chi dovrebbe usarla?
+
+L’ottimizzazione in Edge è progettata per gli utenti aziendali nei team di marketing, SEO (Search Engine Optimization), contenuti e strategia digitale. Consente agli utenti aziendali di completare l’intero percorso in LLM Optimizer: identificando le opportunità, comprendendo i suggerimenti e distribuendo facilmente le correzioni. Con Ottimizza in Edge, gli utenti possono visualizzare in anteprima le modifiche, distribuirle rapidamente al limite e verificare che le ottimizzazioni siano attive. Le prestazioni possono essere tracciate nell’ecosistema LLM Optimizer.
+
+## Quali opportunità sono ottimizzate in Edge?
+
+Le opportunità che possono migliorare l’esperienza agentica sul web sono supportate con l’ottimizzazione in Edge. Ulteriori informazioni su ogni opportunità nella sezione [Opportunità](/help/dashboards/opportunities.md).
+
+## Onboarding
+
+Puoi abilitare l’ottimizzazione in Edge dopo aver effettuato l’onboarding in LLM Optimizer e aver inoltrato i registri CDN.
+
+È necessario un tecnico CDN per completare la configurazione iniziale per abilitare l’opzione Ottimizza in Edge.
+
+Requisiti per la configurazione:
+
+* Genera una chiave API.
+* Aggiungi le regole di instradamento Ottimizza in Edge nella rete CDN.
+* Inserire nell&#39;elenco Consentiti percorsi definiti dall&#39;utente o l&#39;intero dominio.
+* Aggiungere un elenco definito dall&#39;utente di agenti utente LLM per la destinazione.
+* Assicurati che robots.txt non blocchi gli agenti utente destinati a essere utilizzati come destinazione.
+* Il routing di conferma ottimizzazione in Edge si trova nell’interfaccia utente di LLM Optimizer.
+
+Adobe fornisce snippet di configurazione di esempio per la maggior parte delle principali reti CDN per guidare il processo di configurazione. Gli esempi di frammenti inclusi nelle nostre linee guida devono essere adattati alla configurazione live effettiva. Adobe consiglia di implementare prima le modifiche negli ambienti inferiori.
+
+>[!BEGINTABS]
+
+>[!TAB CDN gestito da AEM Cloud Service (Fastly)]
+
+**Tokowaka BYOCDN - CDN gestito da Adobe**
+
+Utilizza solo originSelectors per selezionare l’origine Tokowaka.
+
+L’esempio seguente indirizza le richieste degli agenti LLM su un dominio specifico che corrisponde al pattern &quot;/es/*&quot; o ai percorsi esatti (vengono instradate solo le pagine html). L’esempio deve fornire un punto di partenza e, nel caso in cui siano presenti più originSelectors nella configurazione, si consiglia di inserirlo per primo.
+
+Note importanti:
+
+* x-tokowaka-request deve essere controllato prima di instradare al backend di Tokowaka. Solo le richieste che non hanno questa intestazione devono essere indirizzate al backend Tokowaka.
+* la regola originSelector che instrada al backend Tokowaka deve essere la prima nell&#39;elenco se sono presenti più regole.
+* È necessario distribuire il segreto TOKOWAKA_API_KEY prima di distribuire il file cdn.yaml
+
+```
+kind: "CDN"
+version: "1"
+data:
+  # Origin selectors to route to Tokowaka backend
+  originSelectors:
+    rules:
+      - name: route-to-tokowaka-backend
+        when:
+          allOf:
+            - reqHeader: x-tokowaka-request
+              exists: false # avoid loops when requests comes from Tokowaka
+            - reqHeader: user-agent
+              matches: "(?i)(Tokowaka-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)" # routed user agents
+            - reqProperty: domain
+              equals: "example.com" # routed domain
+            - reqProperty: originalPath
+              matches: '(/[^./]+|\.html|/)$' # routed extensions, with .html extension or without extension
+            - anyOf:
+              - { reqProperty: originalPath, in: [ "/page.html" ] } # routed pages, exact path matching
+              - { reqProperty: originalPath, like: "/dir/*" } # routed pages, wildcard path matching
+        action:
+          type: selectOrigin
+          originName: tokowaka-backend
+          headers:
+            x-tokowaka-api-key: "${{TOKOWAKA_API_KEY}}"
+    origins:
+      - name: tokowaka-backend
+        domain: "edge.tokowaka.now"
+```
+
+>[!TAB Akamai (BYOCDN)]
+
+**Tokowaka BYOCDN - Akamai**
+
+```
+{
+    "name": "Project Tokowaka CDN Rule",
+    "children": [
+        {
+            "name": "Connection settings",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "advanced",
+                    "options": {
+                        "description": "",
+                        "xml": "<forward:availability.health-detect.status>off</forward:availability.health-detect.status>\n<forward:availability>\n<max-reforwards>1</max-reforwards>\n<max-reconnects>1</max-reconnects>\n</forward:availability>\n<match:forward.server-type value=\"CUSTOMER_ORIGIN\">\n<network:http.read>%(PMUSER_HTTP_READ)</network:http.read>\n<network:http.first-byte-timeout>%(PMUSER_FIRST_BYTE_TIMEOUT)</network:http.first-byte-timeout>\n<network:http.connect-timeout>%(PMUSER_HTTP_CONNECT_TIMEOUT)</network:http.connect-timeout> \n</match:forward.server-type>"
+                    },
+                    "uuid": "4a8c027b-1b23-44a7-8e12-f8d07e453679",
+                    "templateUuid": "41c77091-419f-43f2-9a84-0b406b050cc8"
+                }
+            ],
+            "uuid": "4759571b-8036-4c16-9b60-d3aeb84958f1",
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Site Failover Behavior",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "failAction",
+                    "options": {
+                        "actionType": "RECREATED_CO",
+                        "contentCustomPath": false,
+                        "contentHostname": "www.adobe.com",
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "advanced",
+                    "options": {
+                        "description": "",
+                        "xml": "<forward:availability.fail-action2>\n<add-header>\n<status>on</status>\n<name>x-tokowaka-request</name>\n<value>fo</value>\n</add-header>\n</forward:availability.fail-action2>"
+                    }
+                }
+            ],
+            "uuid": "b3000c12-1ab8-49b1-a5d0-75e58bb18c9c",
+            "criteria": [
+                {
+                    "name": "matchResponseCode",
+                    "options": {
+                        "lowerBound": 400,
+                        "matchOperator": "IS_BETWEEN",
+                        "upperBound": 599
+                    }
+                },
+                {
+                    "name": "originTimeout",
+                    "options": {
+                        "matchOperator": "ORIGIN_TIMED_OUT"
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "any",
+            "comments": "If Tokowaka origin returns a 4xx or 5xx error (or times out), failover condition is to send the request back to Akamai and set the x-tokowaka-request header so we don't re-send the request to Tokowaka"
+        }
+    ],
+    "behaviors": [
+        {
+            "name": "origin",
+            "options": {
+                "cacheKeyHostname": "ORIGIN_HOSTNAME",
+                "compress": true,
+                "customValidCnValues": [
+                    "{{Origin Hostname}}",
+                    "{{Forward Host Header}}",
+                    "*.tokowaka.now"
+                ],
+                "enableTrueClientIp": true,
+                "forwardHostHeader": "ORIGIN_HOSTNAME",
+                "hostname": "edge.tokowaka.now",
+                "httpPort": 80,
+                "httpsPort": 443,
+                "ipVersion": "IPV4",
+                "minTlsVersion": "DYNAMIC",
+                "originCertificate": "",
+                "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                "originSni": true,
+                "originType": "CUSTOMER",
+                "ports": "",
+                "standardCertificateAuthorities": [
+                    "akamai-permissive",
+                    "THIRD_PARTY_AMAZON"
+                ],
+                "tlsVersionTitle": "",
+                "trueClientIpClientSetting": true,
+                "trueClientIpHeader": "True-Client-IP",
+                "verificationMode": "CUSTOM"
+            }
+        },
+        {
+            "name": "setVariable",
+            "options": {
+                "transform": "NONE",
+                "valueSource": "EXPRESSION",
+                "variableName": "PMUSER_LLMCLIENT",
+                "variableValue": "TRUE"
+            }
+        },
+        {
+            "name": "setVariable",
+            "options": {
+                "caseSensitive": false,
+                "extractLocation": "CLIENT_REQUEST_HEADER",
+                "globalSubstitution": false,
+                "headerName": "Accept-Language ",
+                "regex": "^([a-zA-Z]{2}).*",
+                "replacement": "$1",
+                "transform": "SUBSTITUTE",
+                "valueSource": "EXTRACT",
+                "variableName": "PMUSER_LANG"
+            }
+        },
+        {
+            "name": "setVariable",
+            "options": {
+                "transform": "NONE",
+                "valueSource": "EXPRESSION",
+                "variableName": "PMUSER_X_FORWARDED_HOST",
+                "variableValue": "{{builtin.AK_HOST}}"
+            }
+        },
+        {
+            "name": "setVariable",
+            "options": {
+                "transform": "NONE",
+                "valueSource": "EXPRESSION",
+                "variableName": "PMUSER_TOKOWAKA_CACHE_KEY",
+                "variableValue": "LLMCLIENT={{user.PMUSER_LLMCLIENT}};LANG={{user.PMUSER_LANG}};X_FORWARDED_HOST={{user.PMUSER_X_FORWARDED_HOST}}"
+            }
+        },
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "CACHE_CONTROL_AND_EXPIRES",
+                "cacheControlDirectives": "",
+                "defaultTtl": "1d",
+                "enhancedRfcSupport": false,
+                "honorMustRevalidate": false,
+                "honorPrivate": false,
+                "mustRevalidate": false
+            }
+        },
+        {
+            "name": "modifyIncomingRequestHeader",
+            "options": {
+                "action": "MODIFY",
+                "avoidDuplicateHeaders": true,
+                "customHeaderName": "X-tokowaka-api-key",
+                "newHeaderValue": "<your api-key here>",
+                "standardModifyHeaderName": "OTHER"
+            }
+        },
+        {
+            "name": "modifyIncomingRequestHeader",
+            "options": {
+                "action": "MODIFY",
+                "avoidDuplicateHeaders": true,
+                "customHeaderName": "x-tokowaka-config",
+                "newHeaderValue": "LLMCLIENT={{user.PMUSER_LLMCLIENT}};LANG={{user.PMUSER_LANG}}",
+                "standardModifyHeaderName": "OTHER"
+            }
+        },
+        {
+            "name": "modifyIncomingRequestHeader",
+            "options": {
+                "action": "MODIFY",
+                "avoidDuplicateHeaders": true,
+                "customHeaderName": "x-tokowaka-url",
+                "newHeaderValue": "{{builtin.AK_URL}}",
+                "standardModifyHeaderName": "OTHER"
+            }
+        },
+        {
+            "name": "cacheId",
+            "options": {
+                "rule": "INCLUDE_VARIABLE",
+                "variableName": "PMUSER_TOKOWAKA_CACHE_KEY"
+            }
+        },
+        {
+            "name": "modifyIncomingResponseHeader",
+            "options": {
+                "action": "DELETE",
+                "customHeaderName": "Age",
+                "standardDeleteHeaderName": "OTHER"
+            }
+        },
+        {
+            "name": "prefreshCache",
+            "options": {
+                "enabled": true,
+                "prefreshval": 90
+            }
+        },
+        {
+            "name": "modifyOutgoingRequestHeader",
+            "options": {
+                "action": "MODIFY",
+                "avoidDuplicateHeaders": true,
+                "customHeaderName": "X-Forwarded-Host",
+                "newHeaderValue": "{{builtin.AK_HOST}}",
+                "standardModifyHeaderName": "OTHER"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "userAgent",
+            "options": {
+                "matchCaseSensitive": false,
+                "matchOperator": "IS_ONE_OF",
+                "matchWildcard": true,
+                "values": [
+                    "*Tokowaka-AI*",
+                    "*ChatGPT-User*",
+                    "*GPTBot*",
+                    "*OAI-SearchBot*"
+                ]
+            }
+        },
+        {
+            "name": "path",
+            "options": {
+                "matchCaseSensitive": false,
+                "matchOperator": "MATCHES_ONE_OF",
+                "normalize": false,
+                "values": [
+                ]
+            }
+        },
+        {
+            "name": "requestHeader",
+            "options": {
+                "headerName": "x-tokowaka-request",
+                "matchOperator": "DOES_NOT_EXIST",
+                "matchWildcardName": false
+            }
+        },
+        {
+            "name": "matchVariable",
+            "options": {
+                "matchCaseSensitive": true,
+                "matchOperator": "IS",
+                "matchWildcard": false,
+                "variableExpression": "FALSE",
+                "variableName": "PMUSER_TOKOWAKA_DISABLE"
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}
+```
+
+Considerazioni importanti:
+
+* La regola Tokowaka sarà attivata in base alla variabile User-Agent + Path + x-tokowaka-request (se non presente) + TOKOWAKA_DISABLE (per consentire lo spegnimento utilizzando una singola variabile)
+* Imposta le regole su **Modifica intestazioni richieste in ingresso** regola per impostare intestazioni personalizzate
+* Imposta la chiave cache in Akamai utilizzando la variabile definita dall&#39;utente tramite il meccanismo di modifica dell&#39;ID cache. È consentita una sola variabile definita dall&#39;utente, quindi crea una variabile separata per cache_key e impostala di conseguenza.
+* Lingua: estratta dall&#39;intestazione Accept-Language utilizzando &quot;regex&quot;: &quot;^([a-zA-Z]{2}).*&quot;
+* Con la modifica dell’ID cache all’interno di una corrispondenza nell’agente utente, il contenuto non può essere eliminato dall’URL (solo per informazione)
+* Meccanismo di failover del sito: con la corrispondenza nella regola dell’agente utente, Akamai non consente il failover in base al controllo dello stato di integrità, ma solo in base alla risposta/connettività di origine per richiesta. Imposta l&#39;intestazione resp **x-tokowaka-fo:true** in caso di risposta di failover.
+* SWR non supportato da Akamai. Quindi, solo il caching basato su TTL è disponibile. Pertanto, configura una regola in Akamai per rimuovere l’intestazione Age dalla risposta dell’origine, altrimenti il caching basato su TTL non funzionerebbe.
+* Assicurati che la regola Tokowaka sia la regola più in basso nella gerarchia delle regole (in modo che sostituisca tutte le altre regole).
+
+>[!TAB Fastly (BYOCDN)]
+
+**Tokowaka BYOCDN - Fastly - VCL**
+
+![VCL Fastly](/help/assets/optimize-at-edge/fastly-vcl.png)
+
+![Aggiungi snippet VCL](/help/assets/optimize-at-edge/add-vcl-snippets.png)
+
+**snippet vcl_recv**
+
+```
+unset req.http.x-tokowaka-url;
+unset req.http.x-tokowaka-config;
+unset req.http.x-tokowaka-api-key;
+
+if (!req.http.x-tokowaka-request
+    && req.http.user-agent ~ "(?i)(Tokowaka-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
+  set req.http.x-fowarded-host = req.http.host; # required for identifying the original host
+  set req.http.x-tokowaka-url = req.url; # required for identifying the original url
+  set req.http.x-tokowaka-config = "LLMCLIENT=true"; # required for cache key
+  set req.http.x-tokowaka-api-key = "<YOUR API KEY>"; # required for identifying the client
+  set req.backend = F_Tokowaka;
+}
+```
+
+**frammento vcl_hash**
+
+```
+if (req.http.x-tokowaka-config) {
+  set req.hash += "tokowaka";
+  set req.hash += req.http.x-tokowaka-config;
+}
+```
+
+**vcl_deliver snippet**
+
+```
+if (req.http.x-tokowaka-config && resp.status >= 400) {
+  set req.http.x-tokowaka-request = "failover";
+  set req.backend = F_Default_Origin;
+  restart;
+}
+
+if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
+  set resp.http.x-tokowaka-fo = "1";
+}
+```
+
+>[!ENDTABS]
+
+
+Per gli altri provider CDN, contatta llmo-at-edge@adobe.com per assistere i team IT/CDN nell’onboarding.
+
+<!--This should probably be included Opportunities dashboard content. Content also needs serious editing - lots of "customer needs"and business user" etc.-->
+
+Una volta completate le configurazioni, gli utenti aziendali possono distribuire suggerimenti per Ottimizzare alle opportunità Edge in LLM Optimizer.
+
+## Opportunità
+
+| Opportunità | Tipo | Identificazione automatica | Suggerimento automatico | Ottimizzazione automatica |
+|---------|----------|----------|----------|----------|
+| Recupera visibilità contenuto | GEO tecnico | Rileva le pagine in cui il contenuto critico è nascosto dagli agenti di intelligenza artificiale. Mostra gli URL interessati e il contenuto previsto che può essere recuperato. | Evidenzia i contenuti che possono essere resi disponibili per gli agenti di intelligenza artificiale e consiglia di abilitare il pre-rendering per tali pagine. | Distribuisce un’istantanea di HTML completamente renderizzata e compatibile con l’intelligenza artificiale al traffico agente che recupera il contenuto precedentemente nascosto. |
+| Ottimizzare le intestazioni per IA | Ottimizzazione dei contenuti | Esegue la scansione delle intestazioni per rilevare intestazioni vuote, duplicate, mancanti o ambigue che possono ridurre la leggibilità della macchina. | Propone una gerarchia di titoli più pulita e etichette migliorate e mostra un’anteprima della struttura aggiornata per ogni pagina. | Inserisce la struttura di intestazione migliorata per gli agenti di intelligenza artificiale, preservando la progettazione visiva e rendendo la pagina più comprensibile per i moduli LLM. |
+| Aggiungi riepiloghi descrittivi per l’intelligenza artificiale | Ottimizzazione dei contenuti | Identifica pagine lunghe o complesse prive di riepiloghi concisi a livello di pagina o di sezione, rendendo più difficile l’analisi e la comprensione da parte dell’intelligenza artificiale. | Consiglia brevi riepiloghi generati dall’intelligenza artificiale a livello di pagina e di sezione, per l’acquisizione di contenuti chiave. | Inserisce i riepiloghi nelle sezioni pertinenti di HTML, migliorando il modo in cui i modelli interpretano e descrivono il contenuto della pagina. |
+| Aggiungi domande frequenti pertinenti | Ottimizzazione dei contenuti | Rileva le lacune nelle finalità del contenuto della pagina esistente che potrebbero trarre vantaggio dalle domande frequenti. | Suggerisce contenuti FAQ generati dall’intelligenza artificiale in linea con le intenzioni dell’utente e gli argomenti esistenti. | Inserisce i contenuti delle domande frequenti in HTML, rendendo le pagine più individuabili e rilevanti nelle risposte basate sull’intelligenza artificiale. |
+| Semplificare contenuti complessi | Ottimizzazione dei contenuti | Contrassegna le pagine con testo complesso che può ostacolare la comprensione dell’intelligenza artificiale. | Fornisce versioni semplificate generate dall’intelligenza artificiale di test complessi mantenendo il significato originale. | Riscrive sezioni complesse nella pagina, migliorando la leggibilità dell’intelligenza artificiale. |
+
+### Recupera visibilità contenuto
+
+Questa opportunità contrassegna le pagine in cui il contenuto chiave è nascosto per gli agenti AI a causa del rendering lato client. Per ogni pagina identificata, mostra esattamente quale contenuto manca dalla vista dell’agente di intelligenza artificiale, evidenzia le lacune di visibilità e consente di applicare direttamente le modifiche per recuperare il contenuto nascosto. Quando distribuisci questa opportunità con Optimize at Edge, agli agenti utente LLM viene distribuita una versione della pagina pre-renderizzata e ottimizzata per l’intelligenza artificiale, in modo che possano accedere al contesto completo senza eseguire Javascript.
+
+**Questa funzionalità di pre-rendering si applica automaticamente a tutte le opportunità successive quando distribuite con Optimize at Edge.** In questo modo la pagina sarà completamente visibile agli agenti di intelligenza artificiale. Ulteriori miglioramenti vengono applicati al HTML pre-renderizzato.
+
+#### Strumenti aggiuntivi
+
+È citabile la tua pagina web? [Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
+
+Con un solo clic, puoi valutare la leggibilità automatica di qualsiasi sito, visualizzare un confronto affiancato tra ciò che gli agenti di intelligenza artificiale visualizzano e ciò che gli utenti umani vedono e stimare la quantità di contenuto che potrebbe essere recuperato utilizzando LLM Optimizer. Vedi [AI può leggere il tuo sito Web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) per ulteriori informazioni.
+
+### Ottimizzare le intestazioni per i moduli LLM
+
+Questa opportunità rileva le pagine in cui la struttura dell’intestazione rende difficile per gli agenti AI comprendere la pagina a causa di intestazioni vuote, duplicate, mancanti o ambigue. Per ogni pagina interessata, l’opportunità fa emergere i titoli non ottimali e consiglia una gerarchia più chiara. Quando vengono implementati con Ottimizza in Edge, i titoli migliorati vengono applicati nel HTML utilizzato per il traffico agente, il che può contribuire a migliorare la leggibilità del computer lasciando invariato il layout rivolto agli utenti.
+
+### Aggiungi riepiloghi descrittivi LLM
+
+Questa opportunità identifica le pagine che possono trarre vantaggio da riepiloghi concisi per aiutare i moduli LLM a comprendere rapidamente di cosa si tratta la pagina. Per ogni pagina, l’opportunità rileva dove è più necessario un riepilogo e crea riepiloghi generati dall’intelligenza artificiale a livello di pagina e/o di sezione. Quando distribuisci con Ottimizza in Edge, questi riepiloghi vengono inseriti nel HTML che gli agenti di intelligenza artificiale recuperano, migliorando le possibilità di descrizione più accurata del contenuto.
+
+### Aggiungi domande frequenti pertinenti
+
+Questa opportunità segnala le pagine in cui i contenuti aggiuntivi di domande e risposte potrebbero corrispondere meglio alle intenzioni degli utenti e alle richieste nell’individuazione basata sull’intelligenza artificiale. Per ogni pagina, propone blocchi di domande frequenti generati dall’intelligenza artificiale associati alle intenzioni dell’utente e al contenuto della pagina. Con Optimize at Edge, queste domande frequenti vengono inserite in HTML, rendendo la pagina più intuitiva e aumentando la probabilità che le risposte di IA riflettano direttamente la tua guida.
+
+### Semplificare contenuti complessi
+
+Questa opportunità trova pagine con paragrafi lunghi e complessi che possono ridurre la comprensione dell’intelligenza artificiale. Per ogni pagina che supera le soglie di leggibilità, crea contenuti generati dall’intelligenza artificiale più semplici e scansionabili, mantenendo il significato originale. Quando viene distribuito ai server perimetrali, il contenuto semplificato distribuito al traffico agente consente ai moduli LLM di interpretare e riepilogare i contenuti in modo più fedele.
+
+## Suggerimenti
+
+Per ogni opportunità, puoi visualizzare in anteprima, modificare, distribuire, visualizzare in anteprima live e eseguire il rollback delle ottimizzazioni al limite.
+
+### Anteprima
+
+L’anteprima consente agli utenti di visualizzare l’impatto di un suggerimento sulla pagina prima che venga pubblicato qualsiasi elemento. Mette in evidenza una differenza affiancata tra la pagina corrente e la versione ottimizzata per l’intelligenza artificiale prevista dopo l’applicazione del suggerimento. Questa vista utilizza la stessa logica di Ottimizzazione in Edge che alimenta il traffico in tempo reale, ma in una modalità di anteprima sicura e isolata. Questo non influisce sul traffico in tempo reale, in quanto si tratta di una simulazione di sola lettura per la revisione.
+
+![Anteprima](/help/assets/optimize-at-edge/preview.png)
+
+### Modifica
+
+Modifica consente agli utenti di perfezionare o riscrivere completamente il suggerimento generato automaticamente prima di distribuirlo. Invece di accettare passivamente il suggerimento, gli utenti mantengono il controllo completo attraverso questo flusso di lavoro human-in-the-loop. La vista mostra le modifiche proposte in un editor strutturato, dove gli utenti possono modificare il testo per soddisfare meglio le loro intenzioni. La versione modificata verrà quindi trasmessa agli agenti di intelligenza artificiale una volta distribuita.
+
+![Modifica](/help/assets/optimize-at-edge/edit.png)
+
+### Distribuzione
+
+Distribuisci pubblica i suggerimenti selezionati in modo che le esperienze ottimizzate possano essere distribuite dal server Edge agli agenti di IA. Se la rete CDN è completamente instradata, tutte le pagine del dominio vengono pubblicate con le nuove modifiche, in genere entro pochi minuti. Se il routing è stato configurato solo per alcuni percorsi, solo le pagine inserite nell&#39;elenco Consentiti vengono pubblicate con le ottimizzazioni.
+
+![Distribuisci](/help/assets/optimize-at-edge/deploy.png)
+
+### Visualizza in diretta
+
+Visualizza in tempo reale consente agli utenti di verificare che l’ottimizzazione sia in esecuzione e che si comporti come previsto per il traffico agente, una visualizzazione a cui altrimenti sarebbe difficile accedere. Gli utenti possono visualizzare la pagina live in Suggerimenti fissi, che esegue il rendering della pagina come mostrato agli agenti di intelligenza artificiale.
+
+![Visualizza Live](/help/assets/optimize-at-edge/view-live.png)
+
+### Rollback
+
+Il rollback ripristina in modo sicuro un’ottimizzazione distribuita in precedenza. In genere, lo stato della versione solo IA della pagina ritorna a quello precedente in pochi minuti, consentendo agli utenti di sperimentare eventuali ottimizzazioni, se necessario.
+
+![Rollback](/help/assets/optimize-at-edge/rollback.png)
+
+## Domande frequenti
+
+D. Di quali tipi di moduli LLM si esegue il targeting con Optimize at Edge?
+
+L’elenco degli agenti utente di cui eseguire il targeting è completamente definito dal cliente al momento dell’onboarding.
+
+D. Cosa significa &quot;Edge&quot; in Ottimizzare in Edge?
+
+Nel nostro contesto, &quot;Edge&quot; significa che l’ottimizzazione viene applicata a livello di CDN e non all’interno del CMS.
+
+D. Perché questa ottimizzazione richiede una rete CDN?
+
+Nella rete CDN viene assemblata e distribuita agli agenti di intelligenza artificiale la versione ottimizzata della pagina. Sfruttiamo la rete CDN per garantire che il CMS di origine rimanga invariato. Questa separazione consente di migliorare la visibilità LLM senza modificare i flussi di lavoro di pubblicazione esistenti.
+
+D. Cosa succede se non ho ancora effettuato l’onboarding per ottimizzare in Edge?
+
+Se fai clic su **Distribuisci ottimizzazioni** prima di completare la configurazione richiesta, non verrà applicato nulla al tuo sito. Al contrario, una finestra di dialogo a comparsa ti chiede di contattare il nostro team all’indirizzo llmo-at-edge@adobe.com per assistenza sull’onboarding. Fino a quando l’onboarding non è completo, puoi ancora esplorare le opportunità e i suggerimenti rilevati, ma il flusso di lavoro di distribuzione con un solo clic rimarrà inattivo.
+
+D: Cosa succede quando il contenuto viene aggiornato alla sorgente?
+
+Distribuiamo la versione ottimizzata della pagina dalla cache, purché la pagina sorgente sottostante non sia cambiata. Tuttavia, quando l’origine cambia, il sistema si aggiorna automaticamente in modo che gli agenti AI ricevano sempre il contenuto più aggiornato. Questo perché utilizziamo TTL della cache bassi in ordine di minuti, in modo che qualsiasi aggiornamento del contenuto sul sito attivi una nuova ottimizzazione all’interno di tale finestra. Poiché non esiste un TTL universale adatto a ogni sito, possiamo configurarlo in base alle regole di invalidazione della cache per garantire la sincronizzazione di entrambi i sistemi.
+
+D. L’ottimizzazione in Edge è valida solo per i siti che utilizzano Adobe Edge Delivery Service (EDS)?
+
+No. L&#39;ottimizzazione in Edge è indipendente dalla rete CDN e funziona con qualsiasi architettura front-end, non solo quelle distribuite sullo stack EDS di Adobe.
+
+D. In che modo l’ottimizzazione a livello di pre-rendering di Edge è diversa dal rendering lato server tradizionale?
+
+Le due soluzioni risolvono problemi diversi e possono lavorare insieme. La SSR tradizionale esegue il rendering del contenuto lato server, ma non include il contenuto caricato successivamente nel browser. Il pre-rendering Ottimizza in Edge acquisisce la pagina dopo il caricamento di JavaScript e dei dati lato client, producendo la versione completamente assemblata al limite della CDN. SSR si concentra sul miglioramento dell’esperienza umana e Optimize at Edge migliora l’esperienza web per i moduli LLM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
