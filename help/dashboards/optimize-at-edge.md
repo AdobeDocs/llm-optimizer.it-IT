@@ -457,7 +457,7 @@ Questa opportunità contrassegna le pagine in cui il contenuto chiave è nascost
 
 #### Strumenti aggiuntivi
 
-È citabile la tua pagina web? [Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
+È citabile la tua pagina web? [Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
 
 Con un solo clic, puoi valutare la leggibilità automatica di qualsiasi sito, visualizzare un confronto affiancato tra ciò che gli agenti di intelligenza artificiale visualizzano e ciò che gli utenti umani vedono e stimare la quantità di contenuto che potrebbe essere recuperato utilizzando LLM Optimizer. Vedi [AI può leggere il tuo sito Web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) per ulteriori informazioni.
 
