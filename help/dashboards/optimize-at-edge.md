@@ -2,9 +2,9 @@
 title: Ottimizza in Edge
 description: Scopri come distribuire le ottimizzazioni in LLM Optimizer al server Edge di CDN senza alcuna modifica di authoring necessaria.
 feature: Opportunities
-source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
+source-git-commit: 52984ea987ecacbd6d3bb08a6d04ff634fdf2779
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2206'
 ht-degree: 1%
 
 ---
@@ -74,18 +74,16 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configurazione del routing viene eseguita utilizzando una regola CDN [originSelector](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
+La configurazione del routing viene eseguita utilizzando una regola CDN [originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
 
 * decidere il dominio da instradare
 * decidere i percorsi da instradare
 * decidere gli agenti utente da instradare (consigliato regex)
-* ottenere una chiave api da Adobe per il backend `edge.tokowaka.now`
 
 Per distribuire la regola, è necessario:
 
-* crea una [pipeline di configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* crea una [pipeline di configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * eseguire il commit del file di configurazione `cdn.yaml` nel repository
-* distribuire la chiave api come [variabile di ambiente segreta](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 * eseguire la pipeline di configurazione
 
 
@@ -113,8 +111,6 @@ data:
         action:
           type: selectOrigin
           originName: tokowaka-backend
-          headers:
-            x-tokowaka-api-key: "${{TOKOWAKA_API_KEY}}"
     origins:
       - name: tokowaka-backend
         domain: "edge.tokowaka.now"
@@ -471,7 +467,7 @@ Nella tabella seguente sono presentate le opportunità che possono migliorare l�
 
 ### Strumenti aggiuntivi
 
-[Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
+[Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
 
 Con un solo clic, puoi valutare la leggibilità automatica di qualsiasi sito. Puoi visualizzare un confronto affiancato tra ciò che gli agenti di intelligenza artificiale vedono e ciò che gli utenti umani vedono, e stimare quanto contenuto potrebbe essere recuperato utilizzando LLM Optimizer. Consulta [Può AI leggere il tuo sito Web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pagina per ulteriori informazioni.
 
@@ -506,6 +502,8 @@ Questa opportunità trova pagine con paragrafi lunghi e complessi che possono ri
 ## Ottimizzazione automatica in Edge
 
 Per ogni opportunità, puoi visualizzare in anteprima, modificare, distribuire, visualizzare in tempo reale e eseguire il rollback delle ottimizzazioni al limite.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
