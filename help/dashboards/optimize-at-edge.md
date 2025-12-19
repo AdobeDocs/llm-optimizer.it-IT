@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configurazione del routing viene eseguita utilizzando una regola CDN [originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
+La configurazione del routing viene eseguita utilizzando una regola CDN [originSelector](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
 
 * decidere il dominio da instradare
 * decidere i percorsi da instradare
@@ -82,7 +82,7 @@ La configurazione del routing viene eseguita utilizzando una regola CDN [originS
 
 Per distribuire la regola, è necessario:
 
-* crea una [pipeline di configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* crea una [pipeline di configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * eseguire il commit del file di configurazione `cdn.yaml` nel repository
 * eseguire la pipeline di configurazione
 
