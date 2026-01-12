@@ -2,9 +2,9 @@
 title: Ottimizza in Edge
 description: Scopri come distribuire le ottimizzazioni in LLM Optimizer al server Edge di CDN senza alcuna modifica di authoring necessaria.
 feature: Opportunities
-source-git-commit: 24585a5743a3291d2440c98f91495416bbbe1760
+source-git-commit: 3986fec2dcb9537f5b8f94ce9c72558845aba376
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Questa pagina fornisce una panoramica dettagliata su come distribuire ottimizzazioni al server Edge di CDN senza alcuna modifica di authoring. Descrive il processo di onboarding, le opportunità di ottimizzazione disponibili e come ottimizzare automaticamente in Edge.
 
 >[!NOTE]
->Questa funzionalità è attualmente in fase di accesso anticipato. Ulteriori informazioni sui programmi con accesso anticipato [sono disponibili qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Questa funzionalità è attualmente in fase di accesso anticipato. Ulteriori informazioni sui programmi con accesso anticipato [sono disponibili qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Cos’è l’ottimizzazione in Edge?
 
@@ -28,7 +28,7 @@ Ottimizza in Edge è progettato per gli utenti aziendali nei team di marketing, 
 ### Vantaggi chiave
 
 * **Distribuzione solo IA:** fornisce HTML ottimizzato solo agli agenti di IA senza impatto sui visitatori umani o sui bot SEO.
-* **Cicli più veloci:** Pubblicare le modifiche in pochi minuti, non in settimane. Non sono necessari cambiamenti di piattaforma o lunghi cicli tecnici.
+* **Cicli più veloci:** Pubblicare le modifiche in pochi minuti anziché settimane. Non sono necessari cambiamenti di piattaforma o lunghi cicli tecnici.
 * **Reversibile:** supportato con funzionalità di rollback con un solo clic che consente di ripristinare la pagina in pochi minuti.
 * **Nessun impatto sulle prestazioni:** le ottimizzazioni basate su Edge e la memorizzazione nella cache non influiscono sulla latenza del sito.
 * **CDN e CMS-agnostic:** funziona con qualsiasi configurazione CDN e configurazione front-end indipendentemente dal sistema di gestione dei contenuti.
@@ -39,7 +39,7 @@ Le opportunità che possono migliorare l’esperienza agentica sul web sono supp
 
 ## Onboarding
 
-Per avviare il processo di onboarding, contatta il team del tuo account Adobe o il team FDE. Il team IT o CDN deve inoltre completare i prerequisiti e il processo di configurazione. Inoltre, puoi contattare il nostro team all&#39;indirizzo `llmo-at-edge@adobe.com` per ulteriore assistenza sull&#39;onboarding.
+Per avviare il processo di onboarding, contatta il team del tuo account Adobe o il team FDE. Il team IT o CDN deve inoltre completare i prerequisiti e il processo di configurazione. Inoltre, puoi contattare `llmo-at-edge@adobe.com` per ulteriore assistenza sull&#39;onboarding.
 
 Prerequisiti per l’onboarding per l’ottimizzazione in Edge:
 
@@ -55,7 +55,7 @@ Requisiti per il team IT/CDN:
 * Assicurarsi che `robots.txt` non blocchi gli agenti utente destinati alla destinazione.
 * Conferma il routing di ottimizzazione in Edge nell’interfaccia di LLM Optimizer.
 
-Di seguito sono riportati alcuni esempi di configurazione per diverse configurazioni CDN. Questi esempi devono essere adattati alla configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori.
+Di seguito sono riportate alcune configurazioni esemplificative per diverse configurazioni CDN. Tieni presente che questi esempi devono essere adattati alla tua configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori.
 
 >[!NOTE]
 >Negli esempi di codice seguenti, potresti vedere riferimenti a &quot;tokowaka&quot;, che è il nome del progetto di lavoro per Ottimizzare in Edge. Questi identificatori rimangono nel codice a scopo di compatibilità e fanno riferimento alle stesse funzionalità descritte in questa documentazione.
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configurazione del routing viene eseguita utilizzando una regola CDN [originSelector](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
+La configurazione del routing viene eseguita utilizzando una regola CDN [originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
 
 * decidere il dominio da instradare
 * decidere i percorsi da instradare
@@ -82,7 +82,7 @@ La configurazione del routing viene eseguita utilizzando una regola CDN [originS
 
 Per distribuire la regola, è necessario:
 
-* crea una [pipeline di configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* crea una [pipeline di configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * eseguire il commit del file di configurazione `cdn.yaml` nel repository
 * eseguire la pipeline di configurazione
 
@@ -467,7 +467,7 @@ Nella tabella seguente sono presentate le opportunità che possono migliorare l�
 
 ### Strumenti aggiuntivi
 
-[Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
+[Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
 
 Con un solo clic, puoi valutare la leggibilità automatica di qualsiasi sito. Puoi visualizzare un confronto affiancato tra ciò che gli agenti di intelligenza artificiale vedono e ciò che gli utenti umani vedono, e stimare quanto contenuto potrebbe essere recuperato utilizzando LLM Optimizer. Consulta [Può AI leggere il tuo sito Web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pagina per ulteriori informazioni.
 
@@ -503,7 +503,7 @@ Questa opportunità trova pagine con paragrafi lunghi e complessi che possono ri
 
 Per ogni opportunità, puoi visualizzare in anteprima, modificare, distribuire, visualizzare in tempo reale e eseguire il rollback delle ottimizzazioni al limite.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
