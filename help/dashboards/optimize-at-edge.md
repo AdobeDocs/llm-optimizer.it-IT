@@ -2,9 +2,9 @@
 title: Ottimizza in Edge
 description: Scopri come distribuire le ottimizzazioni in LLM Optimizer al server Edge di CDN senza alcuna modifica di authoring necessaria.
 feature: Opportunities
-source-git-commit: 1ef457043d1ad06dc7fa19363fab232562b30d6c
+source-git-commit: 24585a5743a3291d2440c98f91495416bbbe1760
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2188'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Questa pagina fornisce una panoramica dettagliata su come distribuire ottimizzazioni al server Edge di CDN senza alcuna modifica di authoring. Descrive il processo di onboarding, le opportunità di ottimizzazione disponibili e come ottimizzare automaticamente in Edge.
 
 >[!NOTE]
->Questa funzionalità è attualmente in fase di accesso anticipato.
+>Questa funzionalità è attualmente in fase di accesso anticipato. Ulteriori informazioni sui programmi con accesso anticipato [sono disponibili qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Cos’è l’ottimizzazione in Edge?
 
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-La configurazione del routing viene eseguita utilizzando una regola CDN [originSelector](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
+La configurazione del routing viene eseguita utilizzando una regola CDN [originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
 
 * decidere il dominio da instradare
 * decidere i percorsi da instradare
@@ -82,7 +82,7 @@ La configurazione del routing viene eseguita utilizzando una regola CDN [originS
 
 Per distribuire la regola, è necessario:
 
-* crea una [pipeline di configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* crea una [pipeline di configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * eseguire il commit del file di configurazione `cdn.yaml` nel repository
 * eseguire la pipeline di configurazione
 
@@ -467,7 +467,7 @@ Nella tabella seguente sono presentate le opportunità che possono migliorare l�
 
 ### Strumenti aggiuntivi
 
-[Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
+[Adobe LLM Optimizer: la tua pagina Web è consultabile?L&#39;estensione Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) ti consente di vedere esattamente a quanti contenuti della pagina Web possono accedere i moduli LLM e cosa rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto.
 
 Con un solo clic, puoi valutare la leggibilità automatica di qualsiasi sito. Puoi visualizzare un confronto affiancato tra ciò che gli agenti di intelligenza artificiale vedono e ciò che gli utenti umani vedono, e stimare quanto contenuto potrebbe essere recuperato utilizzando LLM Optimizer. Consulta [Può AI leggere il tuo sito Web?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) pagina per ulteriori informazioni.
 
@@ -503,7 +503,7 @@ Questa opportunità trova pagine con paragrafi lunghi e complessi che possono ri
 
 Per ogni opportunità, puoi visualizzare in anteprima, modificare, distribuire, visualizzare in tempo reale e eseguire il rollback delle ottimizzazioni al limite.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
