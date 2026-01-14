@@ -2,9 +2,9 @@
 title: Best practice per categorie, argomenti, prompt e altri
 description: Ottimizza le informazioni di LLM configurando categorie, argomenti, prompt e altri marchi da monitorare, inclusa la concorrenza, per il monitoraggio del marchio personalizzato e l’analisi strategica dei contenuti.
 feature: Best Practices, Customer Configuration
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Best practice per configurare categorie, argomenti, prompt e altri per il tracciamento
 
-Questa sezione descrive le best practice per decidere come impostare categorie, argomenti, prompt e altri da monitorare.
+Questa sezione descrive le best practice per decidere come impostare categorie, argomenti, prompt e altri da monitorare. Include inoltre informazioni sulla libreria Prompt di settore, sviluppata da Adobe con un&#39;ampia ricerca condotta con esperti del settore.
 
 Si tratta di un primo passo fondamentale. Le decisioni prese determinano il modo in cui le informazioni vengono adattate al contesto aziendale. Eventuali modifiche apportate alle categorie in futuro reimposteranno i dati storici.
 
@@ -21,6 +21,45 @@ Nel dashboard [[!UICONTROL Configurazione cliente]](/help/dashboards/customer-co
 ![Finestra di configurazione del cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
 
 Nel dashboard [!UICONTROL Configurazione cliente], puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia di altri marchi e aggiungere alias di menzione del brand per acquisire tutte le varianti del brand nei prompt. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
+
+## Libreria dei prompt di settore
+
+Per aiutarti a iniziare con prompt e argomenti, Adobe ha creato una libreria Prompt di settore sviluppata attraverso approfondite ricerche con esperti del settore e analisi del comportamento di ricerca di intelligenza artificiale in oltre 6.000 clienti. Questa libreria identifica gli argomenti e i prompt più rilevanti in base alle tendenze specifiche del settore, agli obiettivi aziendali convalidati e ai modelli di ricerca dei clienti nel mondo reale.
+
+Per utilizzare la libreria dei prompt di settore:
+
+1. Passa alla dashboard **Configurazione cliente**.
+1. Selezionare **Scarica libreria richieste** per scaricare il file della libreria da LLM Optimizer.
+   ![Download della libreria di richieste di settore](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Rivedi **Argomenti** e **Prompts** suggeriti per il settore del tuo marchio nella relativa scheda e scegli le opzioni più rilevanti.
+1. Rivedi **Colonna fase Percorso clienti** per visualizzare le opzioni dei prompt nel ciclo di vita del cliente (ad esempio, individuazione per la conversione in conservazione). I prompt early stage/top di funnel sono altamente prioritari, ma anche prendere in considerazione opzioni di fase successiva per promuovere la conservazione, abilitare l’assistenza clienti e così via.
+1. Modifica gli argomenti o i prompt in base alle esigenze per supportare al meglio i tuoi obiettivi e obiettivi prima di caricare gli argomenti e i prompt in Adobe LLM Optimizer (ad esempio, aggiungi il nome del tuo marchio o prodotto e aggiungi la terminologia del tuo marchio). I prompt possono essere aggiunti a LLM Optimizer manualmente o tramite il caricamento in blocco utilizzando il modello *.csv* fornito.
+
+>[!TIP]
+>
+> Utilizza una combinazione di prompt specifici del dominio consigliati da LLM Optimizer durante la configurazione iniziale e dalla libreria dei prompt di settore per curare la tua strategia dei prompt.
+
+### Base di ricerca della Libreria Prompt
+
+La libreria Industry Prompt è stata sviluppata attraverso un&#39;iniziativa di ricerca completa che combina:
+
+* **Informazioni sui clienti:** analisi del comportamento e delle preferenze di ricerca di IA in oltre 6.000 clienti
+* **Competenze del settore:** prospettive di esperti nei settori Auto, Financial Services, Healthcare, Telecom e Travel.
+* **Informazioni basate sui dati:** identificazione di argomenti ad alto impatto e modelli di query che determinano il coinvolgimento e la conversione dei clienti.
+
+Argomenti principali ricercati dai clienti nei diversi settori:
+
+* **Auto:** Risoluzione dei problemi relativi all&#39;auto, confronto tra veicoli e finanziamento/leasing
+* **Servizi finanziari:** ricerca prodotti finanziari
+* **Sanità:** ricerca di sintomi o problemi di salute, confronto delle opzioni di trattamento, comprensione dei risultati di laboratorio o dei termini medici
+* **Telecomunicazioni:** Confronto tra piani, termini di contratto e promozioni, verifica del servizio nell&#39;area locale
+* **Viaggi:** Preparazione al viaggio, Ricerca e prenotazione del viaggio
+
+Tendenze dei clienti sulla ricerca di IA e sul comportamento dei prompt negli strumenti LLM:
+
+* I clienti preferiscono porre domande anziché utilizzare parole chiave durante l’utilizzo degli strumenti di ricerca LLM.
+* Utilizzano principalmente strumenti di ricerca LLM per la ricerca e la scoperta in fase iniziale.
+* I clienti tendono a menzionare un marchio o un nome di prodotto specifico nelle loro richieste.
 
 ## Best practice per le categorie
 
@@ -52,7 +91,7 @@ La modalità di impostazione delle categorie dipende da una domanda: **Chi deve 
 >
 > * Scegli un approccio e attieniti ad esso.
 > * Puoi avere solo **un** modello di categoria per account/marchio. Non combinare **SBU** e **URL_DIR** contemporaneamente.
->   <!--Can you mix Product/Service with these?-->
+<!--Can you mix Product/Service with these?-->
 
 Esempio:
 
