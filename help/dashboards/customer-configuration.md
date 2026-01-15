@@ -2,10 +2,10 @@
 title: Configurazione cliente
 description: Utilizza la configurazione del cliente per definire in che modo il tuo marchio verrà monitorato e analizzato all’interno della piattaforma di ottimizzazione LLM.
 feature: Customer Configuration
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 1%
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
@@ -18,15 +18,43 @@ La dashboard di configurazione del cliente è uno strumento potente che fornisce
 
 Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del brand in diversi mercati e scenari competitivi, puoi accedere alle seguenti schede:
 
+* [Prompt](#prompts-brand)
 * [Categorie](#categories)
-* [Tracciamento altri](#others-tracking)
+* [Altri marchi](#other-brands)
 * [Alias del marchio](#brand-aliases)
-* [Approfondimenti dati](#data-insights)
 * [Configurazione CDN](#agentic-cdn)
 
 >[!IMPORTANT]
 >
 > Per ulteriori dettagli sulla configurazione delle categorie, degli argomenti e delle richieste, vedere la pagina [Best practice per la configurazione di categorie, argomenti e richieste](/help/overview/best-practices-topics-prompts.md).
+
+## Prompt {#prompts-brand}
+
+Da questa scheda è possibile rivedere, gestire e personalizzare i prompt. Puoi caricare un file di analisi della [presenza del brand](/help/dashboards/brand-presence.md) .csv e l&#39;elenco verrà compilato con i prompt e gli argomenti di tale analisi o [Scarica una libreria di prompt](/help/overview/best-practices-topics-prompts.md) creata da Adobe. Se necessario, è inoltre possibile eliminare, modificare e aggiungere argomenti e relative richieste.
+
+Per importare un file .csv di approfondimenti dati, devi innanzitutto esportare un file dal dashboard Presenza marchio. Per informazioni su come eseguire questa operazione, consulta la sezione [approfondimenti sui dati](/help/dashboards/brand-presence.md#data-insights). Una volta ottenuto il file:
+
+1. Nel dashboard, fai clic su **Carica CSV**.
+2. Nella finestra Importa approfondimenti dati, trascina e rilascia o scegli manualmente il file.
+3. Fare clic su **Carica dati**.
+
+Puoi anche creare un nuovo file CSV scaricando il modello dalla finestra **Importa dati**. Una volta ottenuto il modello, aprilo e inserisci gli argomenti con i prompt, le categorie e le aree a essi associati in una nuova riga.
+
+Per informazioni su come scaricare e utilizzare la libreria dei prompt di settore creata da Adobe, consulta la sezione Libreria dei prompt di settore in [questa pagina](/help/overview/best-practices-topics-prompts.md)
+
+È inoltre possibile aggiungere argomenti/prompt all&#39;elenco indipendentemente da un file CSV o da una raccolta di prompt. A questo scopo, nel dashboard devi:
+
+1. Fare clic sul pulsante **Aggiungi argomento**.
+2. Nella nuova finestra di configurazione, seleziona la **Categoria**. Le categorie create in precedenza verranno visualizzate qui.
+3. Immettere il nome dell&#39;argomento.
+4. Aggiungete il testo del prompt.
+5. Seleziona la regione.
+6. Fare clic su **Aggiungi prompt** per visualizzare l&#39;argomento con il prompt nell&#39;elenco.
+
+>[!NOTE]
+>Le nuove richieste aggiunte non verranno visualizzate in Presenza marchio fino al completamento dell’elaborazione.
+
+Nell&#39;elenco è possibile fare clic su ogni argomento e verranno visualizzati i prompt associati. Per eliminare l&#39;argomento e i prompt associati, fare clic sull&#39;icona Elimina dall&#39;elenco.
 
 ## Categorie {#categories}
 
@@ -41,7 +69,7 @@ L&#39;aggiunta di nuove categorie non genererà automaticamente argomenti e prom
 
 Per eliminare una categoria, fare clic sull&#39;icona Elimina nell&#39;elenco delle categorie. Fai attenzione, perché **l&#39;eliminazione di una categoria comporta anche l&#39;eliminazione degli elementi associati**, come gli alias del brand collegati a quella categoria specifica.
 
-## Tracciamento altri {#others-tracking}
+## Altri marchi {#others-tracking}
 
 Utilizzando questa scheda, puoi tenere traccia di come vengono menzionati gli altri in relazione al tuo marchio in diverse categorie e aree geografiche. Monitorarne la presenza e le prestazioni nei segmenti di mercato. Per personalizzare il tracciamento:
 
@@ -64,32 +92,6 @@ Utilizzando gli alias del brand, puoi configurare nomi alternativi e varianti de
 5. Fai clic su **Salva** per visualizzare l&#39;alias del brand nell&#39;elenco.
 
 Per eliminare un alias del brand, fai clic sull’icona Elimina dall’elenco degli alias.
-
-## Approfondimenti dati {#data-insights}
-
-Da questa scheda è possibile rivedere, gestire e personalizzare i prompt. Puoi caricare un file con estensione csv di [Informazioni sulla presenza del brand](/help/dashboards/brand-presence.md#data-insights) e compilare l&#39;elenco con i prompt e gli argomenti di tale analisi. Se necessario, è inoltre possibile eliminare, modificare e aggiungere argomenti e relative richieste.
-
-Per importare un file .csv di approfondimenti dati, devi innanzitutto esportare un file dal dashboard Presenza marchio. Per informazioni su come eseguire questa operazione, consulta la sezione [approfondimenti sui dati](/help/dashboards/brand-presence.md#data-insights). Una volta ottenuto il file:
-
-1. Nel dashboard, fai clic su **Carica CSV**.
-2. Nella finestra Importa approfondimenti dati, trascina e rilascia o scegli manualmente il file.
-3. Fare clic su **Carica dati**.
-
-Puoi anche creare un nuovo file CSV scaricando il modello dalla finestra **Importa dati**. Una volta ottenuto il modello, aprilo e inserisci gli argomenti con i prompt, le categorie e le aree a essi associati in una nuova riga.
-
-Inoltre, è possibile aggiungere argomenti/prompt all&#39;elenco indipendentemente da un file CSV. A questo scopo, nel dashboard devi:
-
-1. Fare clic sul pulsante **Aggiungi argomento**.
-2. Nella nuova finestra di configurazione, seleziona la **Categoria**. Le categorie create in precedenza verranno visualizzate qui.
-3. Immettere il nome dell&#39;argomento.
-4. Aggiungete il testo del prompt.
-5. Seleziona la regione.
-6. Fare clic su **Aggiungi prompt** per visualizzare l&#39;argomento con il prompt nell&#39;elenco.
-
->[!NOTE]
->Le nuove richieste aggiunte non verranno visualizzate in Presenza marchio fino al completamento dell’elaborazione.
-
-Nell&#39;elenco è possibile fare clic su ogni argomento e verranno visualizzati i prompt associati. Per eliminare l&#39;argomento e i prompt associati, fare clic sull&#39;icona Elimina dall&#39;elenco.
 
 ## Configurazione CDN {#cdn-configuration}
 
