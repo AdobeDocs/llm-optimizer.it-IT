@@ -2,9 +2,9 @@
 title: Traffico agente
 description: Scopri come utilizzare la dashboard Traffico agente per vedere come gli agenti di IA interagiscono con il tuo sito.
 feature: Agentic Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 2993f840c7451adeccf4f11a0132b91a9bc81803
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,18 @@ Nella finestra **Provider CDN integrato**:
 Se selezioni **Altro**, dovrai contattare llmo-now@adobe.com per assistenza.
 
 Una volta attivati, i registri vengono acquisiti e la dashboard viene compilata con metriche quali interazioni totali dell’agente, tasso di successo, hit per mercato, analisi dell’agente utente e prestazioni a livello di URL.
+
+LLM Optimizer acquisisce ed elabora solo un sottoinsieme di campi dai registri CDN. Anche se i nomi dei campi di registro non elaborati variano a seconda del provider CDN, vengono normalizzati e presentati come:
+
+* URL (solo percorso)
+* user_agent
+* stato
+* referer
+* host
+* Ttfb (tempo al primo byte)
+* cdn_provider
+
+Questi campi normalizzati vengono esposti tramite la vista agente. Nel dashboard [Traffico di riferimento](/help/dashboards/referral-traffic.md), i registri CDN vengono utilizzati per visualizzare le metriche di hit pagina. Non viene elaborata o memorizzata alcuna informazione personale identificabile (PII, Personally Identifiable Information) in nessuna fase dell’acquisizione del registro CDN o della successiva gestione dei dati.
 
 ## Filtri {#filters}
 
