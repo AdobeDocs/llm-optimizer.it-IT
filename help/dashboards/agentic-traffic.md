@@ -2,9 +2,9 @@
 title: Traffico agente
 description: Scopri come utilizzare la dashboard Traffico agente per vedere come gli agenti di IA interagiscono con il tuo sito.
 feature: Agentic Traffic
-source-git-commit: a75ce71dc0ab9ffe7956a3dbd09dca23ea5f7096
+source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -140,4 +140,4 @@ La vista Dettagli URL fornisce una comprensione olistica delle prestazioni di un
 
 >[!ENDTABS]
 
-In entrambe le tabelle è possibile utilizzare l&#39;opzione **Esporta** per scaricare il file .csv della tabella e condividere le informazioni con il team oppure includere le tabelle nel reporting esecutivo.
+In entrambe le tabelle è possibile utilizzare l&#39;opzione **Esporta** per scaricare la tabella `.csv` e condividere le informazioni con il team oppure includere le tabelle nei report esecutivi.
