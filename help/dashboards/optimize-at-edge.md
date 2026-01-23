@@ -500,7 +500,7 @@ Questa opportunità trova pagine con paragrafi lunghi e complessi che possono ri
 
 Per ogni opportunità, puoi visualizzare in anteprima, modificare, distribuire, visualizzare in tempo reale e eseguire il rollback delle ottimizzazioni al limite.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
 
 ### Anteprima
 
