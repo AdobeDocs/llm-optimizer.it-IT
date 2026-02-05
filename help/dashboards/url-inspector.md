@@ -1,16 +1,16 @@
 ---
-title: Ispettore URL
+title: Inspector URL
 description: Scopri come utilizzare l’Ispettore URL per analizzare le prestazioni di pagine specifiche sul dominio nelle ricerche AI.
 feature: URL Inspector
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Ispettore URL
+# Inspector URL
 
 L’Ispettore URL consente di analizzare le prestazioni di pagine specifiche sul dominio nelle ricerche AI. Combina visibilità, traffico agente e dati di riferimento a livello di URL per fornire una visualizzazione granulare degli URL citati e della frequenza con cui compaiono nelle risposte.
 
@@ -41,7 +41,7 @@ L’Ispettore URL fornisce diverse metriche di panoramica che consentono di valu
 
 Gli indicatori di tendenza per ogni metrica panoramica mostrano le modifiche di questi valori nel tempo rispetto al periodo precedente.
 
-## Gli URL citati
+## I tuoi URL citati
 
 La visualizzazione URL citati elenca tutti gli URL del brand citati nelle risposte generate dall’intelligenza artificiale, con metriche di supporto. Entrambe le tabelle dispongono di un campo di ricerca per l&#39;accesso rapido agli argomenti ed è possibile personalizzare le metriche visualizzate facendo clic sul pulsante **Configura colonne**. Inoltre, puoi utilizzare l&#39;opzione **Esporta** per scaricare la tabella .csv e condividere le informazioni con il tuo team oppure includere la tabella nei report manageriali.
 
@@ -74,6 +74,6 @@ Vengono fornite le metriche seguenti:
 
 ### Finestra Dettagli
 
-Sia per la visualizzazione citata che per quella di tendenza, gli URL dispongono di un pulsante **Dettagli** alla fine di ogni riga. Facendo clic sul pulsante viene visualizzata una finestra separata con ulteriori dettagli. La finestra dei dettagli mostra la frequenza con cui l&#39;URL viene citato, <!--the sentiment of AI responses where it is mentioned,--> gli argomenti e le richieste in cui viene visualizzato e le tendenze nel traffico di agenti e di riferimento nel tempo (per gli URL di proprietà).
+Sia per la visualizzazione citata che per quella di tendenza, gli URL dispongono di un pulsante **Dettagli** alla fine di ogni riga. Facendo clic sul pulsante viene visualizzata una finestra separata con ulteriori dettagli. La finestra dei dettagli mostra la frequenza con cui l&#39;URL viene citato, <!--the sentiment of AI responses where it is mentioned,--> gli argomenti e le richieste in cui viene visualizzato e le tendenze in termini di agente e traffico da referral nel tempo (per gli URL di proprietà).
 
 ![Finestra Dettagli](/help/dashboards/assets/details-url.png)

@@ -5,7 +5,7 @@ feature: Customer Configuration
 source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -16,12 +16,12 @@ La dashboard di configurazione del cliente è uno strumento potente che fornisce
 
 ![Dashboard configurazione cliente](/help/dashboards/assets/customer-config.png)
 
-Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del brand in diversi mercati e scenari competitivi, puoi accedere alle seguenti schede:
+Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza dei brand in diversi mercati e scenari competitivi, è possibile accedere alle seguenti schede:
 
 * [Prompt](#prompts-brand)
 * [Categorie](#categories)
 * [Altri marchi](#other-brands)
-* [Alias del marchio](#brand-aliases)
+* [Alias del brand](#brand-aliases)
 * [Configurazione CDN](#agentic-cdn)
 
 >[!IMPORTANT]
@@ -30,9 +30,9 @@ Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del
 
 ## Prompt {#prompts-brand}
 
-Da questa scheda è possibile rivedere, gestire e personalizzare i prompt. Puoi caricare un file di analisi della [presenza del brand](/help/dashboards/brand-presence.md) .csv e l&#39;elenco verrà compilato con i prompt e gli argomenti di tale analisi o [Scarica una libreria di prompt](/help/overview/best-practices-topics-prompts.md) creata da Adobe. Se necessario, è inoltre possibile eliminare, modificare e aggiungere argomenti e relative richieste.
+Da questa scheda è possibile rivedere, gestire e personalizzare i prompt. È possibile caricare un file con estensione csv di [analisi Presenza dei brand](/help/dashboards/brand-presence.md) e l&#39;elenco verrà compilato con i prompt e gli argomenti di tale analisi o [Scaricare una raccolta di prompt](/help/overview/best-practices-topics-prompts.md) creata da Adobe. Se necessario, è inoltre possibile eliminare, modificare e aggiungere argomenti e relative richieste.
 
-Per importare un file .csv di approfondimenti dati, devi innanzitutto esportare un file dal dashboard Presenza marchio. Per informazioni su come eseguire questa operazione, consulta la sezione [approfondimenti sui dati](/help/dashboards/brand-presence.md#data-insights). Una volta ottenuto il file:
+Per importare un file .csv di approfondimenti dati, devi innanzitutto esportare un file dal dashboard delle Presenze dei brand. Per informazioni su come eseguire questa operazione, consulta la sezione [approfondimenti sui dati](/help/dashboards/brand-presence.md#data-insights). Una volta ottenuto il file:
 
 1. Nel dashboard, fai clic su **Carica CSV**.
 2. Nella finestra Importa approfondimenti dati, trascina e rilascia o scegli manualmente il file.
@@ -52,7 +52,7 @@ Per informazioni su come scaricare e utilizzare la libreria dei prompt di settor
 6. Fare clic su **Aggiungi prompt** per visualizzare l&#39;argomento con il prompt nell&#39;elenco.
 
 >[!NOTE]
->Le nuove richieste aggiunte non verranno visualizzate in Presenza marchio fino al completamento dell’elaborazione.
+>I nuovi prompt aggiunti non appariranno nella presenza del brand fino al completamento dell’elaborazione.
 
 Nell&#39;elenco è possibile fare clic su ogni argomento e verranno visualizzati i prompt associati. Per eliminare l&#39;argomento e i prompt associati, fare clic sull&#39;icona Elimina dall&#39;elenco.
 
@@ -81,9 +81,9 @@ Utilizzando questa scheda, puoi tenere traccia di come vengono menzionati gli al
 
 Per eliminare una voce dall’elenco, fai clic sull’icona Elimina.
 
-## Alias del marchio {#brand-aliases}
+## Alias del brand {#brand-aliases}
 
-Utilizzando gli alias del brand, puoi configurare nomi alternativi e varianti del brand da monitorare in diverse categorie e aree geografiche. Ciò assicura un monitoraggio completo di tutte le menzioni del marchio. Per aggiungere un alias del brand:
+Utilizzando gli alias del brand, puoi configurare nomi alternativi e varianti del brand da monitorare in diverse categorie e aree geografiche. Questo garantisce un monitoraggio completo di tutte le menzioni dei brand. Per aggiungere un alias del brand:
 
 1. Fai clic sul pulsante **Aggiungi**.
 2. Nella nuova finestra di configurazione, seleziona la **Categoria**. Le categorie create in precedenza verranno visualizzate qui.

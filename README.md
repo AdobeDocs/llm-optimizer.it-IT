@@ -2,16 +2,16 @@
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 36%
+ht-degree: 0%
 
 ---
-# Contribuire con articoli
+# Contribuisci articolo
 
-Accogliamo con interesse i contributi della nostra community e dei dipendenti Adobe esterni ai team di documentazione.
+Apprezziamo i contributi della nostra community e dei dipendenti Adobe esterni ai team di documentazione.
 
-## Codice di condotta per open source Adobe
+## Codice di condotta di Adobe Open Source
 
-Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Contribuzione](contributing.md).
+Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il codice di condotta di [.NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l&#39;articolo [Contribuzione](contributing.md).
 
 ## Come contribuire ai contenuti di Adobe
 
@@ -29,9 +29,9 @@ Se stai contribuendo con un aggiornamento minore:
 1. In &quot;Questo contenuto è stato utile?&quot; banner visualizzato nella parte inferiore della finestra del browser, fai clic su **Opzioni di feedback dettagliate**.
 1. Fai clic su **Suggerisci una modifica** e invia una richiesta di pull (PR) con le modifiche nell&#39;interfaccia utente di GitHub.
 
-   Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+   Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
-Le correzioni o i chiarimenti di minore entità inviati per la documentazione e gli esempi di codice in questo repository sono coperti dalle condizioni d’uso Adobe.
+Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo archivio sono coperti dalle condizioni d’uso di Adobe.
 
 ### Modifiche principali o nuovi argomenti dalla community
 
@@ -41,9 +41,9 @@ Se fai parte della community Adobe e desideri creare un nuovo argomento o inviar
 
 ### Strumenti
 
-I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per apportare modifiche di base o creare una copia tramite fork dell’archivio e apportare contributi importanti.
+I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per apportare modifiche di base o eseguire il fork dell’archivio per apportare contributi principali.
 
-Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Per informazioni dettagliate, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Collaboratori interni
 
@@ -54,11 +54,11 @@ Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del te
 Tutti gli articoli in questo archivio utilizzano Markdown aromatizzato su GitHub. Se non conosci Markdown, consulta:
 
 * [Nozioni di base su Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Scheda di riferimento Markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Foglio di riferimento per il markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etichette
 
-Nell’archivio pubblico, alle richieste pull vengono assegnate etichette automatizzate per semplificare la gestione del flusso di lavoro delle richieste e aggiornarti sullo stato delle tue richieste:
+Nell’archivio pubblico, alle richieste pull vengono assegnate etichette automatizzate per aiutarci a gestire il flusso di lavoro e aggiornarti sullo stato della tua richiesta:
 
-* **Modifica inviata all’autore**: l’autore è stato informato della richiesta pull in sospeso.
-* **ready-to-merge**: la modifica è pronta per essere rivista dal team di revisione delle richieste pull.
+* **Modifica inviata all&#39;autore**: l&#39;autore ha ricevuto una notifica della richiesta di pull in sospeso.
+* **ready-to-merge**: pronta per la revisione da parte del team di revisione delle richieste di pull.

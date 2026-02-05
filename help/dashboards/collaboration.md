@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Collaborazione
 
-Collaboration consente di invitare i membri del gruppo nell’area di lavoro LLM Optimizer della tua organizzazione in modo che tutti possano accedere a informazioni approfondite e analisi da un’unica posizione. Aggiungendo i tuoi colleghi, potrai collaborare in modo trasparente con team tecnici, di marketing e SEO, per collaborare in modo più efficace ai miglioramenti della visibilità del brand, condividere i risultati e intraprendere azioni coordinate in merito alle opportunità.
+Collaboration consente di invitare i membri del gruppo nell’area di lavoro LLM Optimizer della tua organizzazione in modo che tutti possano accedere a informazioni approfondite e analisi da un’unica posizione. Aggiungendo i colleghi, potrai collaborare in modo trasparente con team tecnici, di marketing e SEO (Search Engine Optimization), nonché con team di PR per migliorare le visibilità dei brand, condividere i risultati e intraprendere azioni coordinate in merito alle opportunità.
 
 ## Come invitare i membri del gruppo
 

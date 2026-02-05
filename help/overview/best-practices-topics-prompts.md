@@ -5,7 +5,7 @@ feature: Best Practices, Customer Configuration
 source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,11 @@ Nel dashboard [[!UICONTROL Configurazione cliente]](/help/dashboards/customer-co
 
 ![Finestra di configurazione del cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
 
-Nel dashboard [!UICONTROL Configurazione cliente], puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia di altri marchi e aggiungere alias di menzione del brand per acquisire tutte le varianti del brand nei prompt. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
+Nel dashboard [!UICONTROL Configurazione cliente], puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia di altri marchi e aggiungere alias di menzione del brand per acquisire tutte le varianti del tuo marchio nei prompt. Questa configurazione garantisce che la piattaforma personalizzi le informazioni sul contesto aziendale, consentendo un’analisi accurata del traffico, delle opportunità e della visibilità.
 
-## Libreria dei prompt di settore
+## Libreria di prompt di settore
 
-Per aiutarti a iniziare con prompt e argomenti, Adobe ha creato una libreria Prompt di settore sviluppata attraverso approfondite ricerche con esperti del settore e analisi del comportamento di ricerca di intelligenza artificiale in oltre 6.000 clienti. Questa libreria identifica gli argomenti e i prompt più rilevanti in base alle tendenze specifiche del settore, agli obiettivi aziendali convalidati e ai modelli di ricerca dei clienti nel mondo reale.
+Per aiutarti a iniziare con suggerimenti e argomenti, Adobe ha creato una libreria di prompt di settore sviluppata attraverso un’ampia ricerca con esperti del settore e l’analisi del comportamento delle Ricerche IA in oltre 6.000 clienti. Questa libreria identifica gli argomenti e i prompt più rilevanti in base alle tendenze specifiche del settore, a obiettivi di business convalidati e ai pattern di ricerca della clientela reale.
 
 Per utilizzare la libreria dei prompt di settore:
 
@@ -43,7 +43,7 @@ Per utilizzare la libreria dei prompt di settore:
 
 La libreria Industry Prompt è stata sviluppata attraverso un&#39;iniziativa di ricerca completa che combina:
 
-* **Informazioni sui clienti:** analisi del comportamento e delle preferenze di ricerca di IA in oltre 6.000 clienti
+* **Informazioni sui clienti:** analisi del comportamento e delle preferenze delle Ricerche IA in oltre 6.000 clienti
 * **Competenze del settore:** prospettive di esperti nei settori Auto, Financial Services, Healthcare, Telecom e Travel.
 * **Informazioni basate sui dati:** identificazione di argomenti ad alto impatto e modelli di query che determinano il coinvolgimento e la conversione dei clienti.
 
@@ -55,7 +55,7 @@ Argomenti principali ricercati dai clienti nei diversi settori:
 * **Telecomunicazioni:** Confronto tra piani, termini di contratto e promozioni, verifica del servizio nell&#39;area locale
 * **Viaggi:** Preparazione al viaggio, Ricerca e prenotazione del viaggio
 
-Tendenze dei clienti sulla ricerca di IA e sul comportamento dei prompt negli strumenti LLM:
+Tendenze dei clienti sulla Ricerca IA e sul comportamento immediato negli strumenti LLM:
 
 * I clienti preferiscono porre domande anziché utilizzare parole chiave durante l’utilizzo degli strumenti di ricerca LLM.
 * Utilizzano principalmente strumenti di ricerca LLM per la ricerca e la scoperta in fase iniziale.

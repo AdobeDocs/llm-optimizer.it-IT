@@ -27,7 +27,7 @@ Requisiti di configurazione:
 * Aggiungi l’agente utente di Spacecat/1.0 al Inserisco nell&#39;elenco Consentiti di gestione del traffico dei robot del sito o nelle regole di gestione del traffico dei bot
 * Assicurati che le pagine non siano bloccate a livello di dominio o CDN. Le pagine bloccate non possono essere indicizzate, il che significa che non è possibile generare attività e approfondimenti di ottimizzazione per esse.
 
-Se la visibilità del contenuto appare bassa nel dashboard, verifica che il crawler abbia accesso ai tuoi domini. L’accesso limitato è una causa comune dell’indicizzazione incompleta.
+Se la visibilità dei contenuti appare in basso nel dashboard, verifica che il crawler abbia accesso ai tuoi domini. L’accesso limitato è una causa comune dell’indicizzazione incompleta.
 
 ## Passaggio 1: integrare il dominio
 
@@ -44,10 +44,10 @@ Consulta la sezione seguente per informazioni su come attivare la versione di pr
 
 ### Clienti AEM Cloud
 
-Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se sei un cliente di AEM Cloud, puoi provare LLM Optimizer utilizzando la scheda Annuncio prodotto in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
->Le nuove richieste aggiunte non verranno visualizzate nel [dashboard della presenza del marchio](/help/dashboards/brand-presence.md) fino al completamento dell&#39;elaborazione. I clienti di AEM Cloud possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contatta il rappresentante del tuo account.
+>Le nuove richieste aggiunte non verranno visualizzate nel [Dashboard di Presenza dei brand](/help/dashboards/brand-presence.md) fino al completamento dell&#39;elaborazione. I clienti di AEM Cloud possono utilizzare la versione di prova gratuita di LLM Optimizer. L&#39;utilizzo di più di 200 prompt richiede un contratto di licenza separato. L’accesso viene fornito &quot;così com’è&quot; e &quot;così come è disponibile&quot; e può essere modificato, limitato o rimosso da Adobe in qualsiasi momento. Per ulteriori informazioni, contatta il rappresentante del tuo account.
 
 ![Versione di valutazione di LLM Optimizer](/help/overview/assets/llm-trial.png)
 
@@ -58,11 +58,11 @@ Dopo aver fatto clic sul pulsante **Prova LLM Optimizer**, verrai reindirizzato 
 >[!NOTE]
 >Il dominio fornito verrà utilizzato da tutti gli utenti dell’organizzazione e non può essere modificato.
 
-Durante la fase di onboarding verrà generato un piccolo set di categorie, argomenti e prompt. L’analisi della presenza del brand su tali prompt sarà disponibile subito dopo l’onboarding del sito.
+Durante la fase di onboarding verrà generato un piccolo set di categorie, argomenti e prompt. L’analisi delle presenze dei brand su tali prompt sarà disponibile subito dopo l’onboarding del sito.
 
 <!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
 
-Inoltre, devi anche configurare [Inoltro registro CDN](#step-4) per l&#39;analisi del traffico. LLM Optimizer richiede dati e informazioni sulla presenza del marchio dal traffico di riferimento e agente per identificare opportunità e fornire raccomandazioni prescrittive al fine di aumentare la visibilità dell’intelligenza artificiale.
+Inoltre, devi anche configurare [Inoltro registro CDN](#step-4) per l&#39;analisi del traffico. LLM Optimizer richiede dati e informazioni Presenza dei brand da parte di agenti e traffichi da referral per identificare opportunità e fornire consigli prescrittivi al fine di aumentare la visibilità dell’intelligenza artificiale.
 
 ### Clienti non AEM Cloud
 
@@ -70,7 +70,7 @@ Dopo aver finalizzato il contratto di business, potrai iniziare a utilizzare il 
 
 ### Passaggio 2: personalizzare categorie, argomenti e prompt
 
-Una volta effettuato l’onboarding del sito, puoi visualizzare l’analisi della presenza del marchio in base a un piccolo insieme di prompt generati automaticamente durante la fase di onboarding. In futuro, potrai personalizzare le categorie, gli argomenti e i prompt per il tuo marchio. Questa configurazione viene creata nel [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md).
+Una volta effettuato l’onboarding del sito, puoi visualizzare l’analisi delle Presenze dei brand in base a un piccolo insieme di prompt generati automaticamente durante la fase di onboarding. In futuro, potrai personalizzare le categorie, gli argomenti e i prompt per il tuo marchio. Questa configurazione viene creata nel [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md).
 
 ![Dashboard configurazione cliente](/help/overview/assets/prompt-creation.png)
 
@@ -89,27 +89,27 @@ Da questa dashboard è possibile:
 >
 > Per ulteriori dettagli sulla configurazione delle categorie, degli argomenti e delle richieste, vedere la pagina [Best practice per la configurazione di categorie, argomenti e richieste](/help/overview/best-practices-topics-prompts.md).
 
-### Passaggio 3: approfondimenti sulla presenza del brand
+### Passaggio 3: Presenza dei brand approfondimenti
 
-Dopo che il dominio è stato acquisito, vedrai le informazioni iniziali nella visualizzazione Presenza marchio in base alle richieste generate automaticamente durante l’onboarding. Dopo aver personalizzato le categorie, gli argomenti e i prompt, LLM Optimizer attiva automaticamente l&#39;analisi della presenza del marchio sui prompt forniti e i risultati saranno disponibili in 24 ore.
+Dopo l’onboarding del dominio, puoi visualizzare le informazioni iniziali nella vista Presenza dei brand in base alle richieste generate automaticamente durante l’onboarding. Dopo aver personalizzato le categorie, gli argomenti e i prompt, LLM Optimizer attiva automaticamente l&#39;analisi delle Presenze dei brand sui prompt specificati e i risultati saranno disponibili in 24 ore.
 
 ### Passaggio 4: fornire informazioni per l’inoltro del registro CDN {#step-4}
 
-Per sbloccare le informazioni sul traffico agente e sul traffico di riferimento, devi fornire informazioni per l’inoltro del registro CDN. Può essere aggiunto dal [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md#cdn-configuration) passando alla scheda **Configurazione CDN** e facendo clic su **CDN integrato**.
+Per sbloccare le informazioni sul traffico agente e sul Traffico da referral, devi fornire informazioni per l’inoltro del registro CDN. Può essere aggiunto dal [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md#cdn-configuration) passando alla scheda **Configurazione CDN** e facendo clic su **CDN integrato**.
 
 ![CDN configurazione cliente](/help/overview/assets/cc-cdn.png)
 
-In alternativa, se in precedenza non è stato aggiunto alcun provider CDN (come descritto in precedenza), ti verrà richiesto di aggiungere l’inoltro del registro CDN quando accedi per la prima volta alle dashboard Traffico agente e Traffico di riferimento. Per ulteriori dettagli, consulta:
+In alternativa, se non è stato aggiunto alcun provider CDN in precedenza (come descritto in precedenza), ti verrà richiesto di aggiungere l’inoltro del registro CDN quando accedi per la prima volta alle dashboard Agentic e Traffico da referral. Per ulteriori dettagli, consulta:
 
-* [Traffico agente](/help/dashboards/agentic-traffic.md#cdn-setup)
-* [Traffico di riferimento](/help/dashboards/referral-traffic.md#setup#setup)
+* [Traffico da IA agentica](/help/dashboards/agentic-traffic.md#cdn-setup)
+* [Traffico da referral](/help/dashboards/referral-traffic.md#setup#setup)
 
 ### Passaggio 5: esplorare le dashboard e intervenire
 
 Dopo aver fornito le informazioni per l’inoltro del registro CDN, puoi:
 
-* Visualizza la dashboard [Presenza marchio](/help/dashboards/brand-presence.md), visualizza il tuo punteggio di visibilità e tieni traccia delle prestazioni rispetto ad altri marchi.
-* Esplora i dashboard [Agentic](/help/dashboards/agentic-traffic.md) e [Referral Traffic](/help/dashboards/referral-traffic.md), se è stato configurato l&#39;inoltro del registro CDN.
+* Visualizza la dashboard di [Presenza dei brand](/help/dashboards/brand-presence.md), visualizza il punteggio di visibilità e tieni traccia delle prestazioni relative ad altri marchi.
+* Esplora i dashboard [Agentic](/help/dashboards/agentic-traffic.md) e [Traffico da referral](/help/dashboards/referral-traffic.md), se è stato configurato l&#39;inoltro del registro CDN.
 * Utilizza [Opportunità](/help/dashboards/opportunities.md) per identificare contenuti e miglioramenti tecnici.
 * Esportare dati e collaborare con il team o invitare il collega a utilizzare il prodotto.
 

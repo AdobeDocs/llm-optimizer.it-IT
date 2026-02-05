@@ -12,9 +12,9 @@ ht-degree: 5%
 
 # Panoramica delle dashboard
 
-Panoramica delle dashboard. Le dashboard in LLM-Optimizer aiutano gli addetti al marketing a monitorare la visibilità e il sentiment del brand nelle piattaforme di ricerca di intelligenza artificiale, identificare le opportunità di ottimizzazione e implementare modifiche prescrittive per migliorare le citazioni e le prestazioni.
+Panoramica delle dashboard. Le dashboard in LLM-Optimizer consentono agli addetti al marketing di tenere traccia di visibilità dei brand e sentiment tra le piattaforme di Ricerca IA, identificare opportunità di ottimizzazione e implementare modifiche prescrittive per migliorare le citazioni e le prestazioni.
 
-Le visualizzazioni chiave includono Presenza marchio, Traffico agente e di riferimento, Ispettore URL, Identificazione opportunità, Collaboration e Configurazione cliente.
+Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da referral, Ispettore URL, Identificazione opportunità, Collaboration e Configurazione cliente.
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ Le visualizzazioni chiave includono Presenza marchio, Traffico agente e di rifer
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="Dashboard di presenza del brand" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboard di presenza del brand"
+                    <a href="./brand-presence.md" title="Presenza dei brand dashboard" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Presenza dei brand dashboard"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,9 +77,9 @@ Le visualizzazioni chiave includono Presenza marchio, Traffico agente e di rifer
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Dashboard di presenza del brand">Dashboard di presenza del marchio</a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Presenza dei brand dashboard">Presenza dei brand dashboard</a>
                     </p>
-                    <p class="is-size-6">Tiene traccia di come il tuo marchio appare nelle piattaforme di ricerca LLM, inclusa l’analisi del sentiment e il benchmark di altri marchi.</p>
+                    <p class="is-size-6">Tiene traccia dell’aspetto del brand sulle piattaforme di ricerca LLM, incluse l’analisi dei sentiment e il benchmarking di altri brand.</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -114,8 +114,8 @@ Le visualizzazioni chiave includono Presenza marchio, Traffico agente e di rifer
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="Dashboard traffico di riferimento" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Dashboard traffico di riferimento"
+                    <a href="./referral-traffic.md" title="Dashboard traffico da referral" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Dashboard traffico da referral"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,7 +123,7 @@ Le visualizzazioni chiave includono Presenza marchio, Traffico agente e di rifer
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Dashboard traffico di riferimento">Dashboard del traffico di riferimento</a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Dashboard traffico da referral">Dashboard di Traffico da referral</a>
                     </p>
                     <p class="is-size-6">Misura le visite umane provenienti da citazioni generate dall’intelligenza artificiale che consentono di scoprire il coinvolgimento effettivo degli utenti di intelligenza artificiale</p>
                 </div>
@@ -171,7 +171,7 @@ Le visualizzazioni chiave includono Presenza marchio, Traffico agente e di rifer
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./opportunities.md" target="_blank" rel="referrer" title="Dashboard opportunità">Dashboard opportunità</a>
                     </p>
-                    <p class="is-size-6">Esamina e assegna priorità a informazioni fruibili che migliorano la visibilità del brand e le prestazioni delle citazioni nelle piattaforme di ricerca basate sull’intelligenza artificiale</p>
+                    <p class="is-size-6">Individua e assegna priorità a informazioni fruibili che migliorano le prestazioni di visibilità dei brand e citazione nelle piattaforme di ricerca basate sull’intelligenza artificiale</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>

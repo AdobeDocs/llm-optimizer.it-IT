@@ -1,16 +1,16 @@
 ---
-title: Traffico agente
+title: Traffico da IA agentica
 description: Scopri come utilizzare la dashboard Traffico agente per vedere come gli agenti di IA interagiscono con il tuo sito.
 feature: Agentic Traffic
 source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
 source-wordcount: '1307'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Traffico agente {#agentic-traffic}
+# Traffico da IA agentica {#agentic-traffic}
 
 Il dashboard Traffico agente mostra come gli agenti di intelligenza artificiale (crawler e chatbot) interagiscono con il sito. Utilizzando questa vista puoi tenere traccia del numero totale di richieste e delle metriche generali relative alle prestazioni. Puoi anche visualizzare la distribuzione del traffico tra mercati, categorie, pagine e agenti. I dati utilizzati da questo dashboard provengono dai registri CDN, pertanto è necessario configurare **Inoltro dei registri CDN** per visualizzare le metriche. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
@@ -21,7 +21,7 @@ In questa pagina sono disponibili i dettagli riportati di seguito.
 * [Filtri](#filters)
 * [Configurazione CDN](#cdn-setup)
 * [Distribuzione traffico](#traffic-distribution)
-* [Tendenze traffico agente](#agentic-trends)
+* [Tendenze traffico da IA agentica](#agentic-trends)
 * [Spostamenti superiore e inferiore](#top-bottom-movers)
 * [Analisi delle prestazioni dell’agente utente e dell’URL](#user-url-performance)
 
@@ -59,7 +59,7 @@ LLM Optimizer elabora un sottoinsieme di campi dai registri CDN. Anche se i nomi
 * Marca temporale
 * Tipo di contenuto
 
-Questi campi normalizzati vengono esposti tramite la vista agente. Nel dashboard [Traffico di riferimento](/help/dashboards/referral-traffic.md), i registri CDN vengono utilizzati per visualizzare le metriche di hit pagina. Non viene elaborata o memorizzata alcuna informazione personale identificabile (PII, Personally Identifiable Information) in nessuna fase dell’acquisizione del registro CDN o della successiva gestione dei dati.
+Questi campi normalizzati vengono esposti tramite la vista agente. Nel dashboard [Traffico da referral](/help/dashboards/referral-traffic.md), i registri CDN vengono utilizzati per visualizzare le metriche hit pagina. Non viene elaborata o memorizzata alcuna informazione personale identificabile (PII, Personally Identifiable Information) in nessuna fase dell’acquisizione del registro CDN o della successiva gestione dei dati.
 
 ## Filtri {#filters}
 
@@ -88,7 +88,7 @@ Nella parte superiore della pagina è necessario conoscere tre metriche chiave:
 
 Gli indicatori di tendenza per ciascuna metrica chiave mostrano le modifiche di questi valori nel tempo rispetto al periodo precedente.
 
-## Tendenze traffico agente {#agentic-trends}
+## Tendenze traffico da IA agentica {#agentic-trends}
 
 Utilizza il grafico delle tendenze del traffico agente per tenere traccia dei totali settimanali degli hit di successo, di errore e complessivi. Di conseguenza, puoi monitorare le modifiche dell’attività e delle prestazioni degli agenti nel tempo. Puoi anche passare il cursore del mouse lungo il grafico per vedere l’evoluzione dei dati nell’intervallo di tempo settimanale.
 
@@ -110,17 +110,17 @@ Le viste Agente utente e Analisi delle prestazioni URL forniscono ulteriori ragg
 
 >[!TAB Analisi agente utente]
 
-La tabella Analisi agente utente fornisce un raggruppamento del traffico per tipo di pagina e di agente (ad esempio, crawler e chatbot). In questo modo, è facile capire quali agenti di intelligenza artificiale strisciano su quali parti del sito. Contiene le seguenti categorie:
+La tabella Analisi agente utente fornisce un raggruppamento del traffico per tipo di pagina e di agente (ad esempio, crawler e chatbot). In questo modo, è facile capire quali agenti di intelligenza artificiale scansionano quali parti del sito. Contiene le seguenti categorie:
 
 * **Tipo di pagina**: il tipo di pagina.
-* **Tipo di agente** - Agente di IA che esegue la ricerca per indicizzazione della pagina, un crawler o un chatbot.
+* **Tipo di agente** - Agente di IA che scansiona la pagina, un crawler o un chatbot.
 * **Hit** - Numero totale di richieste effettuate dagli agenti di IA per quel tipo di pagina specifico.
 
 Puoi personalizzare le metriche da visualizzare facendo clic sul pulsante **Configura colonne**.
 
 >[!TAB Analisi prestazioni URL]
 
-La tabella Analisi delle prestazioni degli URL mostra una visualizzazione dettagliata dei singoli URL. Ciò include hit, agenti univoci, agente principale, tassi di successo e categorie. In questo modo puoi identificare pagine di alto valore, rilevare spazi vuoti di ricerca per indicizzazione e ottimizzare i contenuti per i motori di intelligenza artificiale. Gli URL sono classificati per volume di traffico. La tabella contiene le seguenti categorie:
+La tabella Analisi delle prestazioni degli URL mostra una visualizzazione dettagliata dei singoli URL. Ciò include hit, agenti univoci, agente principale, tassi di successo e categorie. In questo modo, puoi identificare le pagine di alto valore, rilevare le lacune nel scansiono e ottimizzare i contenuti per i motori di intelligenza artificiale. Gli URL sono classificati per volume di traffico. La tabella contiene le seguenti categorie:
 
 * **URL** - L&#39;URL esaminato.
 * **Totale riscontri** - Numero totale di richieste effettuate dagli agenti di IA all&#39;URL.
@@ -136,7 +136,7 @@ La tabella delle prestazioni degli URL contiene un campo di ricerca per l&#39;ac
 
 ![Dettagli URL](/help/dashboards/assets/details.png)
 
-La vista Dettagli URL fornisce una comprensione olistica delle prestazioni di una pagina, mostrando la frequenza con cui viene citata, la sensazione delle risposte AI in cui viene menzionata, gli argomenti e i prompt in cui viene visualizzata e le tendenze nel traffico agenziale e di riferimento nel tempo.
+La vista Dettagli URL fornisce una comprensione olistica delle prestazioni di una pagina, mostrando la frequenza con cui viene citata, il sentiment di risposte AI in cui viene menzionata, gli argomenti e i prompt in cui viene visualizzata e le tendenze in termini di agente e traffico da referral nel tempo.
 
 >[!ENDTABS]
 

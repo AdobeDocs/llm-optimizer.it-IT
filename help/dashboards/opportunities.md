@@ -1,20 +1,20 @@
 ---
 title: Opportunità di ottimizzazione
-description: Scopri come utilizzare la dashboard delle opportunità per rilevare automaticamente come migliorare il sito al fine di aumentare la visibilità del marchio.
+description: Scopri come utilizzare la dashboard delle opportunità per rilevare automaticamente come migliorare il sito per aumentarne la visibilità dei brand.
 feature: Opportunities
 source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Opportunità di ottimizzazione
 
-Le opportunità di ottimizzazione vengono rilevate automaticamente in base a informazioni che mostrano dove è possibile migliorare la presenza sul sito e quella esterna, per aumentare la visibilità del brand nella ricerca basata su intelligenza artificiale.
+Le opportunità di ottimizzazione vengono rilevate automaticamente e forniscono informazioni che mostrano dove è possibile migliorare la presenza sul sito e quella esterna, per aumentare la visibilità dei brand nelle Ricerche IA.
 
-Queste ottimizzazioni includono correzioni su pagina (aggiunta di contenuti strutturati, canonici o riepiloghi), adeguamenti tecnici (sblocco dei crawler di IA o risoluzione di errori) e influenza il contenuto su siti autorevoli di terze parti. Affrontare queste opportunità di ottimizzazione aiuta il tuo marchio ad essere rappresentato accuratamente e a essere citato più probabilmente in risposte generative.
+Queste ottimizzazioni includono correzioni su pagina (aggiunta di contenuti strutturati, canonici o riepiloghi), adeguamenti tecnici (sblocco di crawler di intelligenza artificiale o risoluzione di errori) e influenza il contenuto su siti autorevoli di terze parti. Affrontare queste opportunità di ottimizzazione aiuta il tuo marchio ad essere rappresentato accuratamente e a essere citato più probabilmente in risposte generative.
 
 ![Opportunità di ottimizzazione](/help/dashboards/assets/oport.png)
 
@@ -36,9 +36,9 @@ Di seguito è riportata una tabella delle opportunità attualmente supportate:
 | Rileva Canonici Mancanti | Contenuto (nel sito) | Cerca le pagine senza tag canonici o con tag in conflitto. Elenca URL interessati e duplicati. | Aggiungi tag canonici che puntano alla versione preferita di ogni pagina. Assicurati di utilizzare in modo coerente le diverse varianti. |
 | Rileva intestazioni vuote | Contenuto (nel sito) | Segnala le pagine in cui sono presenti tag di intestazione ma non contengono testo. Mostra URL e posizione di tag vuoti. | Aggiungi testo descrittivo alle intestazioni che riflettono il contenuto al di sotto di esse. |
 | Rileva titoli duplicati | Contenuto (nel sito) | Esegue la scansione dei tag di intestazione di HTML e contrassegna le intestazioni ripetute. Mostra gli URL interessati e i frammenti di testo duplicati. | Modifica le intestazioni in modo che siano univoche e mantieni la gerarchia (H1 → H2 → H3). Unire o rinominare sezioni duplicate. |
-| Rileva traffico agente bloccato | GEO tecnico | Analizza i registri CDN per le richieste bloccate da agenti di intelligenza artificiale noti (ad esempio, GPTBot, PerplexityBot). Segnala gli URL e gli agenti interessati. | Se necessario, aggiorna robots.txt o le configurazioni server per consentire l’accesso ai crawler di IA supportati. |
-| Rileva problemi 404s / 403s / 5xx | GEO tecnico | Esegue il monitoraggio dei registri CDN per le risposte di errore. Segnala la frequenza, gli URL interessati e gli hit stimati persi. | Correggi i collegamenti interrotti, aggiorna le autorizzazioni e risolvi i problemi lato server in modo che il contenuto chiave restituisca 200 risposte. |
-| Recupero visibilità dei contenuti (accesso anticipato) | GEO tecnico | Segnala le pagine in cui il contenuto critico è nascosto dagli agenti di intelligenza artificiale. Mostra gli URL interessati e il contenuto previsto che può essere recuperato. | Esegui il pre-rendering delle pagine in modo che sia disponibile più contenuto per gli agenti di intelligenza artificiale senza esecuzione di JavaScript. |
+| Rileva traffico agente bloccato | GEO tecnica | Analizza i registri CDN per le richieste bloccate da agenti di intelligenza artificiale noti (ad esempio, GPTBot, PerplexityBot). Segnala gli URL e gli agenti interessati. | Se necessario, aggiorna robots.txt o le configurazioni server per consentire l’accesso ai crawler di intelligenza artificiale supportati. |
+| Rileva problemi 404s / 403s / 5xx | GEO tecnica | Esegue il monitoraggio dei registri CDN per le risposte di errore. Segnala la frequenza, gli URL interessati e gli hit stimati persi. | Correggi i collegamenti interrotti, aggiorna le autorizzazioni e risolvi i problemi lato server in modo che il contenuto chiave restituisca 200 risposte. |
+| Recupera Visibilità dei contenuti (accesso anticipato) | GEO tecnica | Segnala le pagine in cui il contenuto critico è nascosto dagli agenti di intelligenza artificiale. Mostra gli URL interessati e il contenuto previsto che può essere recuperato. | Esegui il pre-rendering delle pagine in modo che sia disponibile più contenuto per gli agenti di intelligenza artificiale senza esecuzione di JavaScript. |
 
 ## Ottimizzazione automatica {#auto-optimization}
 
