@@ -1,20 +1,20 @@
 ---
 title: Panoramica delle dashboard
-description: Panoramica dell’articolo.
+description: Questo è un articolo di panoramica.
 feature: Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 5%
+source-wordcount: '262'
+ht-degree: 93%
 
 ---
 
 
 # Panoramica delle dashboard
 
-Panoramica delle dashboard. Le dashboard in LLM-Optimizer consentono agli addetti al marketing di tenere traccia di visibilità dei brand e sentiment tra le piattaforme di Ricerca IA, identificare opportunità di ottimizzazione e implementare modifiche prescrittive per migliorare le citazioni e le prestazioni.
+Ti diamo il benvenuto nella panoramica delle dashboard. Le dashboard in LLM Optimizer consentono ai marketer di tenere traccia della visibilità del brand e del sentiment nelle diverse piattaforme di ricerca IA, individuare opportunità di ottimizzazione e implementare modifiche prescrittive al fine di migliorare le citazioni e le prestazioni.
 
-Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da referral, Ispettore URL, Identificazione opportunità, Collaboration e Configurazione cliente.
+Le visualizzazioni chiave includono Panoramica, Presenza dei brand, Agente e Traffico da referral, Ispettore URL, Opportunità, Collaboration e Configurazione cliente.
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="Presenza dei brand dashboard" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Presenza dei brand dashboard"
+                    <a href="./brand-presence.md" title="Dashboard Presenza del brand" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboard Presenza del brand"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,12 +77,12 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Presenza dei brand dashboard">Presenza dei brand dashboard</a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Dashboard Presenza del brand">Dashboard Presenza del brand</a>
                     </p>
-                    <p class="is-size-6">Tiene traccia dell’aspetto del brand sulle piattaforme di ricerca LLM, incluse l’analisi dei sentiment e il benchmarking di altri brand.</p>
+                    <p class="is-size-6">Tiene traccia di come si colloca il tuo brand sulle piattaforme di ricerca LLM, con analisi del sentiment e benchmarking rispetto ad altri brand.</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -91,8 +91,8 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./agentic-traffic.md" title="Dashboard traffico agente" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="Dashboard traffico agente"
+                    <a href="./agentic-traffic.md" title="Dashboard Traffico da IA agentica" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="Dashboard Traffico da IA agentica"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -100,12 +100,12 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./agentic-traffic.md" target="_blank" rel="referrer" title="Dashboard traffico agente">Dashboard del traffico agente</a>
+                        <a href="./agentic-traffic.md" target="_blank" rel="referrer" title="Dashboard Traffico da IA agentica">Dashboard Traffico da IA agentica</a>
                     </p>
-                    <p class="is-size-6">Genera traffico da moduli LLM non utilizzati nelle analisi tradizionali, consentendo di collegare l’individuazione basata sull’intelligenza artificiale a coinvolgimento e ricavi.</p>
+                    <p class="is-size-6">Fa emergere il traffico proveniente da LLM, che non viene considerato nelle analisi tradizionali, per aiutarti a collegare l’individuazione basata sull’IA al coinvolgimento e alle entrate.</p>
                 </div>
                 <a href="./agentic-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -114,8 +114,8 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="Dashboard traffico da referral" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Dashboard traffico da referral"
+                    <a href="./referral-traffic.md" title="Dashboard Traffico da referral" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Dashboard Traffico da referral"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,12 +123,12 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Dashboard traffico da referral">Dashboard di Traffico da referral</a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Dashboard Traffico da referral">Dashboard Traffico da referral</a>
                     </p>
-                    <p class="is-size-6">Misura le visite umane provenienti da citazioni generate dall’intelligenza artificiale che consentono di scoprire il coinvolgimento effettivo degli utenti di intelligenza artificiale</p>
+                    <p class="is-size-6">Misura le visite da parte di persone reali provenienti da citazioni generate dall’IA, per aiutarti a riconoscere l’effettivo coinvolgimento da parte di utenti dell’IA</p>
                 </div>
                 <a href="./referral-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -137,8 +137,8 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./collaboration.md" title="Dashboard di Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/collaboration-card.png" alt="Dashboard di Collaboration"
+                    <a href="./collaboration.md" title="Dashboard Collaborazione" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/collaboration-card.png" alt="Dashboard Collaborazione"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -146,12 +146,12 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./collaboration.md" target="_blank" rel="referrer" title="Dashboard di Collaboration">Dashboard di Collaboration</a>
+                        <a href="./collaboration.md" target="_blank" rel="referrer" title="Dashboard Collaborazione">Dashboard Collaborazione</a>
                     </p>
-                    <p class="is-size-6">Consente di abilitare il lavoro di squadra interfunzionale consentendo di invitare colleghi in un’area di lavoro condivisa.</p>
+                    <p class="is-size-6">Favorisce il lavoro tra team interfunzionali consentendoti di invitare altre persone in un’area di lavoro condivisa.</p>
                 </div>
                 <a href="./collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -160,8 +160,8 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./opportunities.md" title="Dashboard opportunità" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/opportunities-card.png" alt="Dashboard opportunità"
+                    <a href="./opportunities.md" title="Dashboard Opportunità" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/opportunities-card.png" alt="Dashboard Opportunità"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -169,12 +169,12 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./opportunities.md" target="_blank" rel="referrer" title="Dashboard opportunità">Dashboard opportunità</a>
+                        <a href="./opportunities.md" target="_blank" rel="referrer" title="Dashboard Opportunità">Dashboard Opportunità</a>
                     </p>
-                    <p class="is-size-6">Individua e assegna priorità a informazioni fruibili che migliorano le prestazioni di visibilità dei brand e citazione nelle piattaforme di ricerca basate sull’intelligenza artificiale</p>
+                    <p class="is-size-6">Rileva e assegna priorità a insight fruibili per migliorare le visibilità del brand e le prestazioni delle citazioni nelle piattaforme di ricerca basate sull’IA</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -183,8 +183,8 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./url-inspector.md" title="Dashboard di ispezione URL" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/url-inspector-card.png" alt="Dashboard di ispezione URL"
+                    <a href="./url-inspector.md" title="Dashboard Inspector URL" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/url-inspector-card.png" alt="Dashboard Inspector URL"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -192,12 +192,12 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./url-inspector.md" target="_blank" rel="referrer" title="Dashboard di ispezione URL">Dashboard controllo URL</a>
+                        <a href="./url-inspector.md" target="_blank" rel="referrer" title="Dashboard Inspector URL">Dashboard Inspector URL</a>
                     </p>
-                    <p class="is-size-6">Fornisce visibilità sulle prestazioni degli URL di proprietà negli ambienti di ricerca basati sull’intelligenza artificiale.</p>
+                    <p class="is-size-6">Fornisce visibilità sulle prestazioni degli URL di tua proprietà in ambienti di ricerca basati sull’IA.</p>
                 </div>
                 <a href="./url-inspector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -206,8 +206,8 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./customer-configuration.md" title="Dashboard di configurazione del cliente" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Dashboard di configurazione del cliente"
+                    <a href="./customer-configuration.md" title="Dashboard Configurazione cliente" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Dashboard Configurazione cliente"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -215,7 +215,7 @@ Le visualizzazioni chiave includono Presenza dei brand, Agentic e Traffico da re
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="Dashboard di configurazione del cliente">Dashboard configurazione cliente</a>
+                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="Dashboard Configurazione cliente">Dashboard Configurazione cliente</a>
                     </p>
                     <p class="is-size-6">Consente alle organizzazioni di controllare il funzionamento di Adobe LLM Optimizer in base alle proprie esigenze specifiche.</p>
                 </div>
