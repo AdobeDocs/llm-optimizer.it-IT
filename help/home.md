@@ -1,17 +1,17 @@
 ---
 title: Adobe LLM Optimizer
-description: Consolida il tuo brand con Adobe LLM Optimizer. Tieni traccia delle citazioni, scopri insight e domina la ricerca basata sull’IA. Assumi il controllo della visibilità del tuo brand e inizia subito a ottimizzarla!
+description: Rafforza il tuo brand con Adobe LLM Optimizer. Tieni traccia delle menzioni, scopri insight e domina la ricerca basata sull’IA. Assumi il controllo della visibilità e inizia subito a ottimizzarla.
 source-git-commit: 0714b6c83e384ff21ddceafa941e3fe8c7305467
-workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 12%
+workflow-type: ht
+source-wordcount: '374'
+ht-degree: 100%
 
 ---
 
 
 # Adobe LLM Optimizer
 
-Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza artificiale per l’ottimizzazione dei motori generativi, progettata per aiutare i brand a migliorare la visibilità, l’accuratezza e l’influenza in ambienti di ricerca basati sull’intelligenza artificiale. Fornisce informazioni sulla presenza dei brand nelle risposte generate dall’intelligenza artificiale, offre consigli sui contenuti prescrittivi e automatizza le correzioni di ottimizzazione.
+Adobe LLM Optimizer è un’applicazione basata sull’IA generativa per l’ottimizzazione per i motori generativi, concepita per aiutare i brand a migliorare la propria visibilità, accuratezza e influenza in ambienti di ricerca basati sull’IA. Fornisce insight sulla presenza dei brand nelle risposte generate dall’IA, offre consigli prescrittivi sui contenuti e automatizza le correzioni di ottimizzazione.
 
 ## Introduzione a LLM Optimizer
 
@@ -53,10 +53,10 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./overview/overview.md" target="_blank" rel="referrer" title="Panoramica di LLM Optimizer">Panoramica di LLM Optimizer</a>
                     </p>
-                    <p class="is-size-6">Scopri come Adobe LLM Optimizer migliora la visibilità dei brand nelle ricerche basate sull’intelligenza artificiale.</p>
+                    <p class="is-size-6">Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’IA.</p>
                 </div>
                 <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -76,10 +76,10 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./overview/quick-start.md" target="_blank" rel="referrer" title="Guida rapida">Guida rapida</a>
                     </p>
-                    <p class="is-size-6">Scopri come iniziare a utilizzare LLM Optimizer.</p>
+                    <p class="is-size-6">Scopri come iniziare a utilizzare subito LLM Optimizer.</p>
                 </div>
                 <a href="./overview/quick-start.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -97,12 +97,12 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Panoramica delle dashboard">Panoramica dei dashboard</a>
+                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Panoramica delle dashboard">Panoramica delle dashboard</a>
                     </p>
-                    <p class="is-size-6">Scopri come ottenere informazioni approfondite e consigli per il tuo sito con le dashboard.</p>
+                    <p class="is-size-6">Scopri come ottenere insight e consigli per il tuo sito con le dashboard.</p>
                 </div>
                 <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -126,7 +126,7 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/it/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -139,8 +139,8 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="Best practice per impostare categorie, argomenti, prompt e tenere traccia degli altri" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best practice per impostare categorie, argomenti, prompt e tenere traccia degli altri"
+                    <a href="./overview/best-practices-topics-prompts.md" title="Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri brand" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri brand"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -148,12 +148,12 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best practice per impostare categorie, argomenti, prompt e tenere traccia degli altri">Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri brand">Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri brand</a>
                     </p>
-                    <p class="is-size-6">Scopri come configurare LLM Optimizer per il monitoraggio del brand personalizzato e l’analisi strategica dei contenuti.</p>
+                    <p class="is-size-6">Scopri come configurare LLM Optimizer per il monitoraggio personalizzato del brand e l’analisi strategica dei contenuti.</p>
                 </div>
                 <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -162,8 +162,8 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./tutorials/best-practices.md" title="Best practice per l’ottimizzazione LLM tramite Adobe LLM Optimizer" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/best-practices-card.png" alt="Best practice per l’ottimizzazione LLM tramite Adobe LLM Optimizer"
+                    <a href="./tutorials/best-practices.md" title="Best practice per l’ottimizzazione LLM con Adobe LLM Optimizer" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/best-practices-card.png" alt="Best practice per l’ottimizzazione LLM con Adobe LLM Optimizer"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -171,12 +171,12 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" title="Best practice per l’ottimizzazione LLM tramite Adobe LLM Optimizer">Best practice per l'ottimizzazione LLM tramite Adobe LLM Optimizer</a>
+                        <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" title="Best practice per l’ottimizzazione LLM con Adobe LLM Optimizer">Best practice per l’ottimizzazione LLM con Adobe LLM Optimizer</a>
                     </p>
-                    <p class="is-size-6">Scopri in che modo LLM Optimizer può aiutarti a promuovere l’autorità del brand nelle Ricerche IA e nella scoperta.</p>
+                    <p class="is-size-6">Scopri in che modo LLM Optimizer può aiutarti a promuovere l’autorevolezza del tuo brand nelle ricerche e nell’individuazione basate sull’IA.</p>
                 </div>
                 <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -185,8 +185,8 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://business.adobe.com/it/products/llm-optimizer.html" title="Esplorare le funzionalità di Adobe LLM Optimizer" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="Esplorare le funzionalità di Adobe LLM Optimizer"
+                    <a href="https://business.adobe.com/it/products/llm-optimizer.html" title="Esplora le funzionalità di Adobe LLM Optimizer" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="Esplora le funzionalità di Adobe LLM Optimizer"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -194,12 +194,12 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://business.adobe.com/it/products/llm-optimizer.html" target="_blank" rel="referrer" title="Esplorare le funzionalità di Adobe LLM Optimizer">Esplora le funzionalità di Adobe LLM Optimizer</a>
+                        <a href="https://business.adobe.com/it/products/llm-optimizer.html" target="_blank" rel="referrer" title="Esplora le funzionalità di Adobe LLM Optimizer">Esplora le funzionalità di Adobe LLM Optimizer</a>
                     </p>
-                    <p class="is-size-6">Dai forma alla presenza del tuo marchio nei risultati di Ricerca IA con Adobe LLM Optimizer. Ottieni informazioni GEO, aumenta la visibilità tra le soluzioni LLM e stimola una crescita del traffico misurabile.</p>
+                    <p class="is-size-6">Dai forma alla presenza del tuo brand nei risultati delle ricerche IA con Adobe LLM Optimizer. Ottieni insight per la GEO, aumenta la visibilità su varie piattaforme LLM e promuovi una crescita misurabile del traffico.</p>
                 </div>
                 <a href="https://business.adobe.com/it/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
                 </a>
             </div>
         </div>
@@ -207,7 +207,7 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## Ottimizza in Edge
+## Ottimizzazione nella rete Edge
 
 <!-- CARDS
 
@@ -225,8 +225,8 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./dashboards/optimize-at-edge.md" title="Ottimizza in Edge" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/optimize-on-edge-card.png" alt="Ottimizza in Edge"
+                    <a href="./dashboards/optimize-at-edge.md" title="Ottimizzazione nella rete Edge" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/optimize-on-edge-card.png" alt="Ottimizzazione nella rete Edge"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -234,9 +234,9 @@ Adobe LLM Optimizer è un’applicazione generativa basata sull’intelligenza a
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" title="Ottimizza in Edge">Ottimizza in Edge</a>
+                        <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" title="Ottimizzazione nella rete Edge">Ottimizzazione nella rete Edge</a>
                     </p>
-                    <p class="is-size-6">Scopri come distribuire le ottimizzazioni in LLM Optimizer senza la necessità di apportare modifiche all’authoring.</p>
+                    <p class="is-size-6">Scopri come distribuire le ottimizzazioni in LLM Optimizer senza la necessità di apportare modifiche di authoring.</p>
                 </div>
                 <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
