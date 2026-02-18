@@ -2,7 +2,7 @@
 title: Nozioni di base su LLM Optimizer
 description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’IA. Tieni traccia di menzioni, citazioni e insight. Inizia subito a ottimizzare per migliorare il coinvolgimento e la tua influenza.
 source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 
