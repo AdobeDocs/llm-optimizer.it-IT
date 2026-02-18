@@ -1,48 +1,46 @@
 ---
 title: Opportunità di ottimizzazione
-description: Scopri come utilizzare la dashboard delle opportunità per rilevare automaticamente come migliorare il sito per aumentarne la visibilità dei brand.
+description: Scopri come utilizzare la dashboard Opportunità per rilevare automaticamente come migliorare il tuo sito per aumentare la visibilità del brand.
 feature: Opportunities
-source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
+source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 1%
+source-wordcount: '575'
+ht-degree: 100%
 
 ---
 
 
 # Opportunità di ottimizzazione
 
-Le opportunità di ottimizzazione vengono rilevate automaticamente e forniscono informazioni che mostrano dove è possibile migliorare la presenza sul sito e quella esterna, per aumentare la visibilità dei brand nelle Ricerche IA.
+Le opportunità di ottimizzazione vengono rilevate automaticamente e forniscono insight che mostrano dove è possibile migliorare la presenza sul sito e quella esterna, per aumentare la visibilità del brand nelle ricerche IA.
 
-Queste ottimizzazioni includono correzioni su pagina (aggiunta di contenuti strutturati, canonici o riepiloghi), adeguamenti tecnici (sblocco di crawler di intelligenza artificiale o risoluzione di errori) e influenza il contenuto su siti autorevoli di terze parti. Affrontare queste opportunità di ottimizzazione aiuta il tuo marchio ad essere rappresentato accuratamente e a essere citato più probabilmente in risposte generative.
+Le ottimizzazioni includono correzioni nella pagina (aggiunta di contenuti strutturati, canonici o riepiloghi); adeguamenti tecnici (sblocco di crawler IA o risoluzione di errori); e influenza dei contenuti su siti autorevoli di terze parti. Intervenendo sulla base di queste opportunità di ottimizzazione, potrai assicurarti che il tuo brand sia rappresentato accuratamente e aumentare le probabilità che venga citato nelle risposte generative.
 
 ![Opportunità di ottimizzazione](/help/dashboards/assets/oport.png)
 
-## Dashboard opportunità
+## Dashboard Opportunità
 
-Le opportunità di ottimizzazione presentate nel dashboard vengono prioritizzate in base alle lacune del lettore, agli argomenti relativi alle tendenze e ai dati sulle prestazioni e presentate come un elenco. Puoi cercare un’opportunità specifica utilizzando il campo di ricerca. Inoltre, le opportunità sono raggruppate per tag ed è possibile fare clic direttamente su un tag per mostrare tutte le opportunità raggruppate sotto tale tag.
+Nella dashboard, le opportunità di ottimizzazione sono ordinate per priorità in base a lacune rispetto alla concorrenza, argomenti di tendenza e dati sulle prestazioni; quindi vengono presentate sotto forma di elenco. Utilizzando il campo di ricerca puoi ricercare un’opportunità specifica. Inoltre, le opportunità sono raggruppate per tag: fai clic direttamente su un tag per mostrare tutte le opportunità raggruppate sotto tale tag.
 
-Facendo clic su **Dettagli** verrà aperta una finestra separata in cui vengono fornite ulteriori informazioni e indicazioni aggiuntive.
+Facendo clic su **Dettagli** si apre una finestra separata contente informazioni e indicazioni aggiuntive.
 
-## opportunità supportate
+## Opportunità supportate
 
 Di seguito è riportata una tabella delle opportunità attualmente supportate:
 
-| Opportunità | Tipo | Problemi identificati | Correggi suggerimenti |
+| Opportunità | Tipo | Problemi identificati | Suggerimenti per la correzione |
 |---------|----------|----------|----------|
-| Riepiloga paragrafi lunghi | Contenuto (nel sito) | Rileva i paragrafi che superano le soglie di lunghezza consigliate. Mostra gli URL interessati e frammenti di testo di dimensioni eccessive. | Creare riassunti o dividere testo lungo in sezioni più brevi e digitalizzabili. |
-| Consigliare contenuti strutturati (FAQ) | Contenuto (nel sito) | Rileva i prompt a popolarità elevata senza le voci di domanda corrispondenti. Mostra i prompt correlati, le categorie e gli URL interessati. | Aggiungi blocchi di schema di domande frequenti con risposte concise per far corrispondere le query comuni. |
-| Rileva hreflang mancante | Contenuto (nel sito) | Segnala le pagine prive di attributi hreflang. Fornisce gli URL interessati e la copertura prevista per lingua/area geografica. | Implementa tag hreflang per indicare le versioni localizzate corrette. |
-| Rileva Canonici Mancanti | Contenuto (nel sito) | Cerca le pagine senza tag canonici o con tag in conflitto. Elenca URL interessati e duplicati. | Aggiungi tag canonici che puntano alla versione preferita di ogni pagina. Assicurati di utilizzare in modo coerente le diverse varianti. |
-| Rileva intestazioni vuote | Contenuto (nel sito) | Segnala le pagine in cui sono presenti tag di intestazione ma non contengono testo. Mostra URL e posizione di tag vuoti. | Aggiungi testo descrittivo alle intestazioni che riflettono il contenuto al di sotto di esse. |
-| Rileva titoli duplicati | Contenuto (nel sito) | Esegue la scansione dei tag di intestazione di HTML e contrassegna le intestazioni ripetute. Mostra gli URL interessati e i frammenti di testo duplicati. | Modifica le intestazioni in modo che siano univoche e mantieni la gerarchia (H1 → H2 → H3). Unire o rinominare sezioni duplicate. |
-| Rileva traffico agente bloccato | GEO tecnica | Analizza i registri CDN per le richieste bloccate da agenti di intelligenza artificiale noti (ad esempio, GPTBot, PerplexityBot). Segnala gli URL e gli agenti interessati. | Se necessario, aggiorna robots.txt o le configurazioni server per consentire l’accesso ai crawler di intelligenza artificiale supportati. |
-| Rileva problemi 404s / 403s / 5xx | GEO tecnica | Esegue il monitoraggio dei registri CDN per le risposte di errore. Segnala la frequenza, gli URL interessati e gli hit stimati persi. | Correggi i collegamenti interrotti, aggiorna le autorizzazioni e risolvi i problemi lato server in modo che il contenuto chiave restituisca 200 risposte. |
-| Recupera Visibilità dei contenuti (accesso anticipato) | GEO tecnica | Segnala le pagine in cui il contenuto critico è nascosto dagli agenti di intelligenza artificiale. Mostra gli URL interessati e il contenuto previsto che può essere recuperato. | Esegui il pre-rendering delle pagine in modo che sia disponibile più contenuto per gli agenti di intelligenza artificiale senza esecuzione di JavaScript. |
+| Riepiloga paragrafi lunghi | Contenuto (nel sito) | Rileva i paragrafi che superano le soglie di lunghezza consigliate. Mostra gli URL interessati e snippet del testo tropo lungo. | Crea sunti o dividi i testi lunghi in sezioni più brevi e più facili da analizzare. |
+| Consiglia contenuti strutturati (domande frequenti) | Contenuto (nel sito) | Rileva l’assenza di voci di tipo “Domande frequenti” necessarie per rispondere ai prompt più diffusi. Mostra i prompt correlati, le categorie e gli URL interessati. | Aggiungi blocchi di schema per sezioni “Domande frequenti” con risposte concise, in linea con le richieste più comuni. |
+| Rileva hreflang mancante | Contenuto (nel sito) | Segnala le pagine prive di attributi hreflang. Fornisce gli URL interessati e la copertura prevista per lingua/area geografica. | Implementa i tag hreflang per indicare le versioni localizzate corrette. |
+| Rileva tag canonici mancanti | Contenuto (nel sito) | Cerca eventuali pagine prive di tag canonici o con tag in conflitto. Elenca gli URL interessati e duplicati. | Aggiungi tag canonici che puntano alla versione preferita di ogni pagina. Assicurati di utilizzarli in modo coerente in tutte le varianti. |
+| Rileva traffico da IA agentica bloccato | GEO tecnica | Analizza i registri CDN per le richieste bloccate da agenti IA noti, ad esempio, GPTBot, PerplexityBot. Segnala gli URL e gli agenti interessati. | Se necessario, aggiorna il file robots.txt o le configurazioni server per consentire l’accesso ai crawler IA supportati. |
+| Rileva problemi 404s / 403s / 5xx | GEO tecnica | Esegue il monitoraggio dei registri CDN per le risposte di errore. Segnala la frequenza, gli URL interessati e gli hit persi stimati. | Correggi i collegamenti interrotti, aggiorna le autorizzazioni e risolvi i problemi lato server in modo che il contenuto chiave restituisca 200 risposte. |
+| Recupera visibilità dei contenuti (accesso anticipato) | GEO tecnica | Contrassegna le pagine in cui il contenuto critico è nascosto dagli agenti IA. Mostra gli URL interessati e i contenuti previsti che possono essere recuperati. | Esegui il pre-rendering delle pagine in modo che sia disponibile più contenuto per gli agenti IA senza l’esecuzione di JavaScript. |
 
 ## Ottimizzazione automatica {#auto-optimization}
 
-L’ottimizzazione automatica consente l’implementazione con un solo clic delle ottimizzazioni consigliate, riducendo l’impegno manuale e il time-to-value. Le ottimizzazioni possono essere applicate all’origine di contenuto o al server Edge della rete CDN. L’ottimizzazione automatica basata su Edge è attualmente disponibile in Accesso anticipato per opportunità selezionate. Per ulteriori dettagli, vedere la pagina [Ottimizza in Edge](/help/dashboards/optimize-at-edge.md).
+L’ottimizzazione automatica consente la distribuzione con un solo clic delle ottimizzazioni consigliate, riducendo le attività manuali e il TTV (Time-To-Value). Puoi applicare le ottimizzazioni all’origine del contenuto o sul lato CDN. L’ottimizzazione automatica basata su Edge è attualmente disponibile in Accesso anticipato per alcune opportunità. Per ulteriori dettagli, consulta la pagina [Ottimizzazione nella rete Edge](/help/dashboards/optimize-at-edge.md).
 
 <!--### Recover Content Visibility Opportunity {#recover-contet}
 
@@ -50,4 +48,4 @@ As stated above, the content visibility opportunity, flags pages where key conte
 
 ### Strumenti aggiuntivi
 
-Il controllo di visibilità [LLM](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) è un&#39;estensione di Chrome che consente di visualizzare esattamente la quantità di contenuto della pagina Web a cui i moduli LLM possono accedere e ciò che rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto. Con un solo clic, gli utenti possono valutare la leggibilità automatica di qualsiasi sito, visualizzando un confronto affiancato tra ciò che gli agenti di intelligenza artificiale visualizzano e ciò che gli utenti umani vedono. Inoltre, stima la quantità di contenuto che può essere recuperata utilizzando LLM Optimizer.
+Il [controllo di visibilità degli LLM](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) è un’estensione di Chrome che consente di visualizzare esattamente la quantità di contenuto della pagina web a cui gli LLM possono accedere e ciò che rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto. Con un solo clic, gli utenti possono valutare la leggibilità automatica di qualsiasi sito, visualizzando un confronto affiancato tra ciò che gli agenti IA visualizzano e ciò che gli utenti vedono. Inoltre, stima la quantità di contenuto che può essere recuperata utilizzando LLM Optimizer.
