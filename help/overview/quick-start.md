@@ -2,9 +2,9 @@
 title: Avvio rapido
 description: 'Inizia a usare Adobe LLM Optimizer: effettua l’onboarding del tuo brand, sfrutta gli insight sulla visibilità IA ed esplora le dashboard per migliorare le prestazioni di ricerca.'
 feature: Quickstart, Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1152'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ I clienti di AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) 
 Nella versione gratuita, alcune funzionalità del prodotto non sono disponibili:
 
 * La versione di prova è limitata a un solo dominio. Dopo aver completato la configurazione, non potrai cambiare il dominio specificato.
-* La possibilità di distribuire ottimizzazioni è disponibile in Accesso anticipato. Per ulteriori informazioni, consulta [Ottimizzare alle domande frequenti su Edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions).
+* La possibilità di distribuire ottimizzazioni è disponibile in Accesso anticipato. Per ulteriori informazioni, consulta [Ottimizzare alle domande frequenti su Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Consulta la sezione seguente per informazioni su come attivare la versione di prova gratuita e sull’onboarding del tuo dominio.
 
