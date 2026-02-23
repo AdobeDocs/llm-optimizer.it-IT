@@ -2,10 +2,10 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
 workflow-type: tm+mt
-source-wordcount: '2172'
-ht-degree: 85%
+source-wordcount: '2181'
+ht-degree: 84%
 
 ---
 
@@ -62,6 +62,7 @@ Per guidare il processo di configurazione, seleziona il provider CDN e segui la 
 | Fastly (BIOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
 | Akamai (BYOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
+| CloudFront (BYOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
 >Se il provider CDN non è elencato in precedenza o se il dominio o l&#39;e-mail non sono presenti nell&#39;interfaccia utente di LLM Optimizer, contatta `llmo-at-edge@adobe.com` per assistenza sull&#39;onboarding. Una volta completate le configurazioni, puoi implementare i suggerimenti per le opportunità di ottimizzazione nella rete Edge in LLM Optimizer.
@@ -113,7 +114,7 @@ Questa opportunità trova le pagine con paragrafi lunghi e complessi che potrebb
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
