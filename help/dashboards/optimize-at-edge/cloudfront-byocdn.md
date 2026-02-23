@@ -193,7 +193,7 @@ Se il tuo comportamento utilizza un criterio di cache gestita di AWS (ad esempio
 
 6. Fare clic su **Distribuisci** per salvare il codice.
 
-7. Nota il nome del ruolo di esecuzione **** visualizzato in **Configurazione** > **Autorizzazioni** (ad esempio, `edgeoptimize-origin-role-xxxxx`). È necessario eseguire questa operazione nei passaggi seguenti.
+7. Nota il nome del ruolo di esecuzione **&#x200B;**&#x200B;visualizzato in **Configurazione** > **Autorizzazioni** (ad esempio, `edgeoptimize-origin-role-xxxxx`). È necessario eseguire questa operazione nei passaggi seguenti.
 
 **Aggiorna i criteri di attendibilità del ruolo di esecuzione**
 
