@@ -2,10 +2,10 @@
 title: Avvio rapido
 description: 'Inizia a usare Adobe LLM Optimizer: effettua l’onboarding del tuo brand, sfrutta gli insight sulla visibilità IA ed esplora le dashboard per migliorare le prestazioni di ricerca.'
 feature: Quickstart, Onboarding
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 93%
+source-wordcount: '1169'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ I clienti di AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) 
 Nella versione gratuita, alcune funzionalità del prodotto non sono disponibili:
 
 * La versione di prova è limitata a un solo dominio. Dopo aver completato la configurazione, non potrai cambiare il dominio specificato.
-* La possibilità di distribuire ottimizzazioni è disponibile in Accesso anticipato. Per ulteriori informazioni, consulta [Ottimizzare alle domande frequenti su Edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+* La possibilità di distribuire ottimizzazioni è disponibile in Accesso anticipato. Per ulteriori informazioni, consulta [Ottimizzare alle domande frequenti su Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Consulta la sezione seguente per informazioni su come attivare la versione di prova gratuita e sull’onboarding del tuo dominio.
 
@@ -103,6 +103,9 @@ In alternativa, se non hai già aggiunto un provider CDN, come descritto in prec
 
 * [Traffico da IA agentica](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Traffico da referral](/help/dashboards/referral-traffic.md#setup#setup)
+
+>[!NOTE]
+>Per informazioni dettagliate sull&#39;inoltro di log quando si utilizza una rete CDN gestita dal cliente (BYOCDN), vedere [Panoramica sull&#39;inoltro di log BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 ## Passaggio 5: esplorare le dashboard e intervenire
 

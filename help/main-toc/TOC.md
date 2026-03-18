@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: Rafforza il tuo brand con Adobe LLM Optimizer. Tieni traccia delle menzioni, scopri insight e domina la ricerca basata sull’IA. Assumi il controllo della visibilità e inizia subito a ottimizzarla.
-source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
+source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 83%
+source-wordcount: '98'
+ht-degree: 77%
 
 ---
 
@@ -27,6 +27,14 @@ ht-degree: 83%
    + [Opportunità](/help/dashboards/opportunities.md)
    + [Configurazione cliente](/help/dashboards/customer-configuration.md)
    + [Collaborazione](/help/dashboards/collaboration.md)
++ Inoltro registro BYOCDN{#log-forwarding}
+   + [Panoramica](/help/overview/log-forwarding/log-forwarding-overview.md)
+   + [Akamai](/help/overview/log-forwarding/akamai.md)
+   + [Cloudflare](/help/overview/log-forwarding/cloudflare.md)
+   + [CloudFront](/help/overview/log-forwarding/cloudfront.md)
+   + [Fastly](/help/overview/log-forwarding/fastly.md)
+   + [Imperva](/help/overview/log-forwarding/imperva.md)
+   + [Altro (caricamento manuale)](/help/overview/log-forwarding/other.md)
 + Risorse aggiuntive{#resources}
    + Ottimizzazione nella rete Edge{#optimize-at-edge}
       + [Panoramica](/help/dashboards/optimize-at-edge/overview.md)
