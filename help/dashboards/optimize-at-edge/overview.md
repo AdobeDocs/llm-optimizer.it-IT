@@ -2,7 +2,7 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
 workflow-type: tm+mt
 source-wordcount: '2181'
 ht-degree: 84%
@@ -15,6 +15,7 @@ ht-degree: 84%
 Questa pagina fornisce una panoramica dettagliata su come applicare le ottimizzazioni a livello di CDN senza alcuna modifica all’authoring. Descrive il processo di onboarding, le opportunità di ottimizzazione disponibili e la procedura di ottimizzazione automatica nella rete Edge.
 
 >[!NOTE]
+>
 >Questa funzionalità è attualmente in fase di accesso anticipato. Ulteriori informazioni su i programmi di accesso anticipato sono disponibili [qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Che cos’è l’ottimizzazione nella rete Edge?
@@ -47,6 +48,7 @@ Prerequisiti per l’onboarding per l’ottimizzazione nella rete Edge:
 * Completamento del processo di inoltro dei registri per i registri della CDN.
 
 Requisiti per il team IT/CDN:
+
 * Aggiungi l&#39;agente utente `*AdobeEdgeOptimize/1.0*` al Inserisco nell&#39;elenco Consentiti di gestione del traffico da bot nel file robots.txt del sito o alle regole di gestione del traffico da bot.
 * Assicurati che le pagine non siano bloccate a livello di dominio o CDN.
 * Aggiungere le regole di indirizzamento per l’ottimizzazione della rete Edge nella CDN.
@@ -65,6 +67,7 @@ Per guidare il processo di configurazione, seleziona il provider CDN e segui la 
 | CloudFront (BYOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
+>
 >Se il provider CDN non è elencato in precedenza o se il dominio o l&#39;e-mail non sono presenti nell&#39;interfaccia utente di LLM Optimizer, contatta `llmo-at-edge@adobe.com` per assistenza sull&#39;onboarding. Una volta completate le configurazioni, puoi implementare i suggerimenti per le opportunità di ottimizzazione nella rete Edge in LLM Optimizer.
 
 Ogni guida alla configurazione della rete CDN riportata sopra include passaggi di verifica dettagliati alla fine per verificare che il traffico agenziale sia instradato correttamente e che il traffico umano non venga interessato.
@@ -114,7 +117,7 @@ Questa opportunità trova le pagine con paragrafi lunghi e complessi che potrebb
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
@@ -152,13 +155,15 @@ D. Per quali tipi di LLM viene eseguito il targeting con l’ottimizzazione nell
 
 Puoi definire l’elenco degli agenti utente di cui eseguire il targeting durante il processo di onboarding.
 
-<!--Q. What does "Edge" in Optimize at Edge mean?
+<!--
+Q. What does "Edge" in Optimize at Edge mean?
 
 In our context, "Edge" means that the optimization is applied at the CDN layer and not inside your CMS.
 
 Q. Why does this optimization require a CDN?
 
-The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.-->
+The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.
+-->
 
 D. Cosa succede se non ho ancora effettuato l’onboarding per l’otttimizzazione nella rete Edge?
 

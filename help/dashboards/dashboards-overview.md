@@ -2,7 +2,7 @@
 title: Panoramica delle dashboard
 description: Questo è un articolo di panoramica.
 feature: Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 93%
@@ -16,7 +16,8 @@ Ti diamo il benvenuto nella panoramica delle dashboard. Le dashboard in LLM Opti
 
 Le visualizzazioni chiave includono Panoramica, Presenza dei brand, Agente e Traffico da referral, Ispettore URL, Opportunità, Collaboration e Configurazione cliente.
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./brand-presence.md
   {title= Brand presence dashboard}

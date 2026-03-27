@@ -2,7 +2,7 @@
 title: Opportunità di ottimizzazione
 description: Scopri come utilizzare la dashboard Opportunità per rilevare automaticamente come migliorare il tuo sito per aumentare la visibilità del brand.
 feature: Opportunities
-source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
+source-git-commit: f62148a9073e79d63e6ae19f0585aa87c16bcd3e
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 97%
@@ -41,13 +41,17 @@ Di seguito è riportata una tabella delle opportunità attualmente supportate:
 
 L’ottimizzazione automatica consente la distribuzione con un solo clic delle ottimizzazioni consigliate, riducendo le attività manuali e il TTV (Time-To-Value). Puoi applicare le ottimizzazioni all’origine del contenuto o sul lato CDN. L’ottimizzazione automatica basata su Edge è attualmente disponibile in Accesso anticipato per alcune opportunità. Per ulteriori dettagli, consulta la pagina [Ottimizzazione nella rete Edge](/help/dashboards/optimize-at-edge/overview.md).
 
-<!--### Recover Content Visibility Opportunity {#recover-contet}
+<!--
+### Recover Content Visibility Opportunity {#recover-contet}
 
-As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.-->
+As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.
+-->
 
 ### Strumenti aggiuntivi
 
 Il [controllo di visibilità degli LLM](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) è un’estensione di Chrome che consente di visualizzare esattamente la quantità di contenuto della pagina web a cui gli LLM possono accedere e ciò che rimane nascosto. Progettato come strumento diagnostico indipendente e gratuito, non richiede alcuna licenza o configurazione del prodotto. Con un solo clic, gli utenti possono valutare la leggibilità automatica di qualsiasi sito, visualizzando un confronto affiancato tra ciò che gli agenti IA visualizzano e ciò che gli utenti vedono. Inoltre, stima la quantità di contenuto che può essere recuperata utilizzando LLM Optimizer.
 
-<!--| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
-| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |-->
+<!--
+| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
+| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |
+-->

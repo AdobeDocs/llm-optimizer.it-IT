@@ -2,8 +2,8 @@
 title: Best practice per LLM Optimizer
 description: Scopri le best practice per l’ottimizzazione degli LLM per migliorare la visibilità del brand nella ricerca IA. Insight per il benchmarking e l’ottimizzazione dei contenuti.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 L’ottimizzazione per gli LLM, denominata anche GEO (Generative Engine Optimization), AEO (Answer Engine Optimization) o AIO (AI Optimization), è il modo in cui rendi il tuo brand e contenuti visibili, affidabili e reperibili all’interno delle risposte generate dall’IA, tramite ChatGPT, Perplexity, Copilot, Gemini e altri assistenti basati su LLM.
 
-Se la SEO tradizionale ti aiutava a ottenere le prime posizioni nel ranking, l’ottimizzazione LLM ti aiuta a ottenere citazioni e visibilità all’interno dei motori di risposta basati sull’IA.Adobe LLM Optimizer ti consente di misurare e migliorare la visibilità del brand all’interno dei motori di risposta.
+Se la SEO tradizionale ti aiutava a ottenere le prime posizioni nel ranking, l’ottimizzazione LLM ti aiuta a ottenere citazioni e visibilità all’interno dei motori di risposta basati sull’IA. Adobe LLM Optimizer ti consente di misurare e migliorare la visibilità del brand all’interno dei motori di risposta.
 
 Questo articolo descrive le best practice per misurare e migliorare la visibilità e l’influenza negli ambienti di ricerca basati sull’IA con Adobe LLM Optimizer.
 
@@ -56,7 +56,7 @@ Altre considerazioni sull’ottimizzazione degli LLM:
 
 La creazione di una campagna di ottimizzazione LLM di successo comporta:
 
-* L’identificazione di argomenti di valore elevato in linea con l’intento dei clienti.L’allineamento dell’intento dei prompt agli obiettivi di business e alle esigenze dei clienti.
+* L’identificazione di argomenti di valore elevato in linea con l’intento dei clienti. L’allineamento dell’intento dei prompt agli obiettivi di business e alle esigenze dei clienti.
 * L’individuazione di menzioni di altri brand, inclusa la concorrenza, per individuare lacune e opportunità. La concentrazione sui prompt in cui vengono citati altri brand indicando l’opportunità di inclusione.
 * Il raggruppamento di prompt per intento utilizzando il cluster per argomenti. Utilizza argomenti e campi di ricerca per aggregare obiettivi utente simili per eseguire il benchmarking della visibilità.
 * La valutazione della credibilità del brand utilizzando gli standard EEAT (Experience, Expertise, Authoritativeness, Trustworthiness) e YMYL (Your Money or Your Life).
@@ -86,7 +86,7 @@ L’ottimizzazione all’interno sito migliora i contenuti di proprietà per la 
 
 >[!TIP]
 >
->LLM Optimizer suggerisce le opportunità di ottimizzazione all’interno e all’ esterno del sito nella dashboard [Opportunità](/help/dashboards/opportunities.md).Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere implementati direttamente sul sito utilizzando LLM Optimizer.
+>LLM Optimizer suggerisce le opportunità di ottimizzazione all’interno e all’esterno del sito nella dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere implementati direttamente sul sito utilizzando LLM Optimizer.
 
 Di seguito sono riportate alcune best practice per l’ottimizzazione:
 
@@ -114,11 +114,11 @@ Di seguito sono riportate alcune best practice per l’ottimizzazione:
 
 ## Ottimizzazione all’esterno del sito: espandere la presenza del brand
 
-L’ottimizzazione all’esterno del sito è incentrata sul miglioramento della visibilità del brand nelle risposte generate dall’IA influenzando le origini di contenuto di terze parti citate di frequente dagli LLM.Si tratta di azioni intraprese al di fuori delle tue proprietà dirette per influenzare il modo in cui gli LLM trovano e citano il tuo brand.
+L’ottimizzazione all’esterno del sito è incentrata sul miglioramento della visibilità del brand nelle risposte generate dall’IA influenzando le origini di contenuto di terze parti citate di frequente dagli LLM. Si tratta di azioni intraprese al di fuori delle tue proprietà dirette per influenzare il modo in cui gli LLM trovano e citano il tuo brand.
 
 >[!TIP]
 >
->LLM Optimizer suggerisce le opportunità di ottimizzazione all’interno e all’esterno del sito nella dashboard [Opportunità](/help/dashboards/opportunities.md).Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere implementati direttamente sul sito utilizzando LLM Optimizer.
+>LLM Optimizer suggerisce le opportunità di ottimizzazione all’interno e all’esterno del sito nella dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere implementati direttamente sul sito utilizzando LLM Optimizer.
 
 
 Principali canali esterni al sito:
@@ -141,7 +141,7 @@ L’esecuzione coerente di questi passaggi può migliorare in modo significativo
 
 ## Misurazione della visibilità LLM e tracciamento delle modifiche
 
-Comprendere come il tuo brand appare nelle risposte generate dall’IA è essenziale per l’ottimizzazione degli LLM.Adobe LLM Optimizer offre un modo strutturato per misurare la visibilità, valutare le prestazioni mediante benchmarking e tenere traccia dei miglioramenti nel tempo
+Comprendere come il tuo brand appare nelle risposte generate dall’IA è essenziale per l’ottimizzazione degli LLM. Adobe LLM Optimizer offre un modo strutturato per misurare la visibilità, valutare le prestazioni mediante benchmarking e tenere traccia dei miglioramenti nel tempo
 
 Puoi tenere traccia di queste metriche chiave:
 
@@ -167,7 +167,7 @@ Di seguito sono riportati i passaggi da seguire per monitorare l’avanzamento:
    * Presta attenzione ai picchi o ai cali nel punteggio di visibilità.
    * Analizza le tendenze del sentiment per comprendere la percezione del brand.
 1. Correla la visibilità con traffico, coinvolgimento e conversioni.
-   * Utilizza le funzioni di attribuzione per collegare i miglioramenti della visibilità a traffico, coinvolgimento e conversioni.Le funzioni di attribuzione di Adobe LLM Optimizer ti consentono di collegare i miglioramenti nelle metriche di visibilità, menzioni, citazioni, sentiment, a risultati di business reali come il traffico del sito, il coinvolgimento utente e le conversioni. Questo il ROI per le tue attività di ottimizzazione.
+   * Utilizza le funzioni di attribuzione per collegare i miglioramenti della visibilità a traffico, coinvolgimento e conversioni. Le funzioni di attribuzione di Adobe LLM Optimizer ti consentono di collegare i miglioramenti nelle metriche di visibilità, menzioni, citazioni, sentiment, a risultati di business reali come il traffico del sito, il coinvolgimento utente e le conversioni. Questo il ROI per le tue attività di ottimizzazione.
    * Tieni traccia delle modifiche nel traffico da IA agentica e da referral per convalidare il ROI dell’ottimizzazione.
 1. Migliora i contenuti
    * Utilizza la [dashboard Opportunità](/help/dashboards/opportunities.md) di LLM Optimizer per identificare e apportare modifiche immediate al sito consigliate in modo specifico. Consulta [Opportunità](/help/dashboards/opportunities.md), quindi misura i risultati. Rivedi regolarmente la sezione Opportunità e intervieni sui consigli forniti.
@@ -193,7 +193,7 @@ Il traffico da IA agentica viene visualizzato in due modi: esperienze con zero c
 
 ### Esperienze “zero-click”
 
-Nella ricerca tradizionale, gli utenti fanno clic sui siti web per utilizzare i contenuti.Mentre con LLM gli utenti spesso ottengono risposte complete direttamente nell’interfaccia della chat o nella pagina risultati del motore di ricerca, senza mai visitare il tuo sito.Questa viene definita un’esperienza “zero-click”.
+Nella ricerca tradizionale, gli utenti fanno clic sui siti web per utilizzare i contenuti. Mentre con LLM gli utenti spesso ottengono risposte complete direttamente nell’interfaccia della chat o nella pagina risultati del motore di ricerca, senza mai visitare il tuo sito. Questa viene definita un’esperienza “zero-click”.
 
 Che cosa significa per il tuo brand:
 
@@ -227,7 +227,7 @@ Per ottimizzare il traffico da IA agentica:
 * Assicurati della ricercabilità per indicizzazione esaminando le impostazioni robots.txt e CDN.
 * Utilizza [Inspector URL](/help/dashboards/url-inspector.md) per analizzare le prestazioni degli URL.
 * Tieni traccia del comportamento dei bot accedendo ai registri CDN nella [dashboard Traffico da IA agentica](/help/dashboards/agentic-traffic.md).
-* Segmenta il traffico per comprendere i risultati di business.Consulta [Best practice per categorie, argomenti e prompt](/help/overview/best-practices-topics-prompts.md).
+* Segmenta il traffico per comprendere i risultati di business. Consulta [Best practice per categorie, argomenti e prompt](/help/overview/best-practices-topics-prompts.md).
 
 Di seguito sono riportate le metriche da monitorare:
 
@@ -237,12 +237,14 @@ Di seguito sono riportate le metriche da monitorare:
 * Sentiment e posizionamento delle menzioni del brand
 * Tendenze del punteggio di visibilità nel tempo
 
-<!-- Add screenshot when available in demo environment>
-
+<!--
+Add screenshot when available in demo environment>
+-->
 
 <!-- Use the "Share of Voice" feature to see which competitors are dominating specific topics and adjust your strategy accordingly.-->
 
-<!-- Purpose: Measure how much of the conversation your brand owns compared to competitors.
+<!--
+Purpose: Measure how much of the conversation your brand owns compared to competitors.
 Insight:
 
 This feature shows the percentage of visibility your brand has for specific topics compared to competitors.
@@ -250,9 +252,11 @@ This feature shows the percentage of visibility your brand has for specific topi
 
 Best Practice:
 
-Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.-->
+Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.
+-->
 
-<!--6. Content Visibility
+<!--
+6. Content Visibility
 
 Purpose: Ensure LLMs can access and render your content.
 Insight:
@@ -264,7 +268,5 @@ It provides a percentage of content visibility, highlighting areas where LLMs ma
 Best Practice:
 
 Use nametbd feature to render static HTML versions of your pages for LLM bots, ensuring full content visibility.
-Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.-->
-
-
-
+Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.
+-->

@@ -5,12 +5,12 @@ type: Documentation
 description: Documentazione di LLM Optimizer.
 mini-toc-levels: 2
 feature-set: LLM Optimizer
-git-repo: https://github.com/AdobeDocs/llm-optimizer.it-IT
-index: y
+git-repo: https://github.com/AdobeDocs/llm-optimizer.en
+index: true
 recommendations: noDisplay
-source-git-commit: 43372ded8691adbbbbcfd859b4d2176c17115ba8
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Il file metadata.md include metadati a livello di repository che passano attraverso i file TOC.md della guida utente nel repository. Se desideri modificare il contenuto di metadata.md per qualsiasi guida utente, effettua questa operazione in qualsiasi file TOC.md.
 
-Per un elenco di valori validi per [soluzione](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html), **prodotto** e **tipo**, vedere **metadati**.
+Per un elenco di valori validi per **soluzione**, **prodotto** e **tipo**, vedere [metadati](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html).

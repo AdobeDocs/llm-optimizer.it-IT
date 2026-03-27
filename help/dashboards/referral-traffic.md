@@ -2,8 +2,8 @@
 title: Traffico da referral
 description: Scopri come utilizzare la dashboard Traffico da referral per vedere come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral.
 feature: Referral Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Traffico da referral
 
-Traffico da referral mostra come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral. Tieni traccia e analizza le origini del traffico, i pattern di referral e le metriche di conversione da siti web e piattaforme esterni. Ti aiuterà a capire da quali origini, aree geografiche e pagine proviene il traffico con maggior coinvolgimento. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.-->Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
+Traffico da referral mostra come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral. Tieni traccia e analizza le origini del traffico, i pattern di referral e le metriche di conversione da siti web e piattaforme esterni. Ti aiuterà a capire da quali origini, aree geografiche e pagine proviene il traffico con maggior coinvolgimento. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
 ![Pagina Referral](/help/dashboards/assets/referral-traffic.png)
 
@@ -30,9 +30,11 @@ Al primo accesso, la dashboard Traffico da referral potrebbe apparire vuota. Per
 
 ![Configurazione di referral](/help/dashboards/assets/referral-setup1.png)
 
-<!--- 1. Select your Source (either CDN logs or AEM Operational Telemetry).
+<!--
+1. Select your Source (either CDN logs or AEM Operational Telemetry).
 2. Enter a primary contact email.
-3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
+3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM
+-->
 
 Una volta attivato, nella dashboard verranno inserite le metriche del traffico da referral.
 
@@ -40,7 +42,7 @@ Una volta attivato, nella dashboard verranno inserite le metriche del traffico d
 
 Nella parte superiore della pagina, puoi applicare i filtri per definire la vista. I filtri che scegli influiranno su **tutte** le sezioni presenti nella dashboard. Puoi personalizzare quanto segue:
 
-* **Intervallo di date**: seleziona l’arco temporale per i dati visualizzati. Ad esempio, le ultime 4 settimane. Puoi anche personalizzare il periodo di tempo selezionando l’opzione **Settimane personalizzate**.
+* **Intervallo di date**: seleziona l’arco temporale per i dati da visualizzare. Ad esempio, le ultime 4 settimane. Puoi anche personalizzare il periodo di tempo selezionando l’opzione **Settimane personalizzate**.
 * **Piattaforma**: scegli un’origine del traffico specifica, ad esempio Google, OpenAI o social media.
 * **Intento pagina**: filtra il traffico da referral in base all’intento degli utenti.
 * **Origine canale**: filtra in base all’origine del canale. Le opzioni includono: LLM, earned media, a pagamento, o canali di referral misti.
@@ -62,11 +64,13 @@ La dashboard evidenzia le prestazioni di referral complessive visualizzando metr
 
 Oltre alle metriche delle prestazioni complessive presentate in precedenza, sono disponibili tre pannelli aggiuntivi che mostrano la distribuzione del traffico per diversi mercati, origini di referral e categorie di intento delle pagina. <!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
-<!--## Top Referral URLs {#top-referrals}
+<!--
+## Top Referral URLs {#top-referrals}
 
 The Top Referral URLs list surfaces your site's most visited pages from referrals.
 
-![Top Referral URLs](/help/dashboards/assets/top-url.png)-->
+![Top Referral URLs](/help/dashboards/assets/top-url.png)
+-->
 
 ## Dettagli origini di referral e Analisi prestazioni URL {#traffic-details}
 

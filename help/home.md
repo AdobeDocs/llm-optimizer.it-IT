@@ -1,7 +1,7 @@
 ---
 title: Adobe LLM Optimizer
 description: Rafforza il tuo brand con Adobe LLM Optimizer. Tieni traccia delle menzioni, scopri insight e domina la ricerca basata sull’IA. Assumi il controllo della visibilità e inizia subito a ottimizzarla.
-source-git-commit: 5af79711014a44e34a43babd60a5a7e18e333b92
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
@@ -15,7 +15,8 @@ Adobe LLM Optimizer è un’applicazione basata sull’IA generativa per l’ott
 
 ## Introduzione a LLM Optimizer
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./overview/overview.md
   {title= LLM Optimizer overview}
@@ -112,7 +113,8 @@ Adobe LLM Optimizer è un’applicazione basata sull’IA generativa per l’ott
 
 ## Ulteriori informazioni su LLM Optimizer
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./overview/best-practices-topics-prompts.md
   {title= Best practices for setting up categories, topics, prompts, and tracking others}
@@ -126,7 +128,7 @@ Adobe LLM Optimizer è un’applicazione basata sull’IA generativa per l’ott
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/it/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -209,7 +211,8 @@ Adobe LLM Optimizer è un’applicazione basata sull’IA generativa per l’ott
 
 ## Ottimizzazione nella rete Edge
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./dashboards/optimize-at-edge/overview.md
   {title= Optimize at Edge}
