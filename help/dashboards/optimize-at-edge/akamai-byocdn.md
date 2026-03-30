@@ -2,10 +2,10 @@
 title: Ottimizza in Edge - Akamai (BYOCDN)
 description: Scopri come configurare Akamai BYOCDN per ottimizzare in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 14%
+source-wordcount: '745'
+ht-degree: 11%
 
 ---
 
@@ -47,6 +47,10 @@ Imposta routing per i seguenti agenti utente:image.png
 **2. Imposta il comportamento di origine e SSL**
 
 Imposta origine come `live.edgeoptimize.net` e abbina SAN a `*.edgeoptimize.net`
+
+>[!NOTE]
+>
+>Se l&#39;attivazione della proprietà non riesce dopo aver aggiunto la regola Ottimizza in Edge, verifica se la regola utilizza una modalità di verifica SSL del server di origine diversa da quella predefinita. In caso contrario, aggiorna la regola Ottimizza in Edge in modo che corrisponda alla regola predefinita. Se ad esempio la regola predefinita utilizza **Impostazioni piattaforma**, utilizzare anche **Impostazioni piattaforma**. Se non riesci a utilizzare l’impostazione richiesta, contatta il supporto Akamai.
 
 ![Imposta il comportamento di origine e SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -91,6 +95,10 @@ La configurazione di failover del sito è composta da due parti: il comportament
 
 All&#39;interno della regola di routing principale, configurare il comportamento Failover del sito e lo snippet XML avanzato come indicato di seguito:
 
+>[!IMPORTANT]
+>
+>Il frammento XML in questo passaggio richiede il comportamento **Avanzato**. In alcuni ambienti Akamai, questo comportamento non è disponibile per la modifica self-service. Se non trovi l&#39;opzione **Avanzate**, contatta il team dell&#39;account Akamai o il supporto di Akamai per abilitare la configurazione richiesta.
+
 ![Failover del sito](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
 Aggiungere l&#39;intestazione della richiesta `x-edgeoptimize-request` con il valore `fo` tramite XML avanzato:
@@ -120,6 +128,8 @@ Aggiungere l&#39;intestazione della richiesta `x-edgeoptimize-request` con il va
 >```
 >
 >In questo modo la regola di intestazione del test di failover valuta **tutte** le regole di routing, non solo una.
+>
+>Inoltre, assicurati che la regola **Ottimizza su routing Edge** non sia sostituita da alcuna regola corrispondente successiva che modifichi l&#39;origine, il comportamento di caching o l&#39;ID cache per le stesse richieste. Se un’altra regola corrispondente ripristina questi comportamenti, il comando Ottimizza in fase di routing o caching di Edge potrebbe non funzionare come previsto.
 
 Se il valore dell&#39;intestazione di richiesta `x-edgeoptimize-request` è `fo`, impostare l&#39;intestazione di risposta in uscita `x-edgeoptimize-fo` su `true`.
 
