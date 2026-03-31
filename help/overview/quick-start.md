@@ -89,7 +89,7 @@ Per iniziare a utilizzare LLM Optimizer, effettua l’onboarding del nome commer
 
 Durante la fase di onboarding verrà generato un piccolo set di categorie, argomenti e prompt. L’analisi della presenza del brand su tali prompt sarà disponibile subito dopo l’onboarding del sito.
 
-È inoltre disponibile la possibilità di distribuire ottimizzazioni in Edge. Ulteriori informazioni in [Ottimizza in Edge — Domande frequenti](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+È inoltre disponibile la possibilità di distribuire ottimizzazioni in Edge. Ulteriori informazioni in [Ottimizza in Edge — Domande frequenti](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Inoltre, configura [l&#39;inoltro del registro CDN](#step-4) per l&#39;analisi del traffico. LLM Optimizer richiede dati e informazioni Presenza dei brand da agenti e traffichi da referral per identificare opportunità e fornire consigli prescrittivi che migliorano la visibilità dell’intelligenza artificiale.
 
