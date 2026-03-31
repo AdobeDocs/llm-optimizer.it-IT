@@ -2,10 +2,10 @@
 title: Traffico da referral
 description: Scopri come utilizzare la dashboard Traffico da referral per vedere come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral.
 feature: Referral Traffic
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 90%
 
 ---
 
@@ -13,6 +13,9 @@ ht-degree: 100%
 # Traffico da referral
 
 Traffico da referral mostra come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral. Tieni traccia e analizza le origini del traffico, i pattern di referral e le metriche di conversione da siti web e piattaforme esterni. Ti aiuterà a capire da quali origini, aree geografiche e pagine proviene il traffico con maggior coinvolgimento. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
+
+>[!NOTE]
+>Per impostazione predefinita, questo dashboard crea informazioni sul traffico da **registri CDN**. Se la tua organizzazione è su un&#39;offerta a pagamento, puoi connettere **Adobe Analytics** per aggiungere dati che misurino l&#39;individuazione basata sull&#39;intelligenza artificiale e il coinvolgimento del sito. Questi dati sono disponibili nella scheda **Impatto aziendale**. Senza l’integrazione in Adobe Analytics, la scheda non viene compilata. Per ulteriori dettagli, consulta [Integrazione Adobe Analytics](/help/dashboards/adobe-analytics-integration.md).
 
 ![Pagina Referral](/help/dashboards/assets/referral-traffic.png)
 
@@ -47,7 +50,7 @@ Nella parte superiore della pagina, puoi applicare i filtri per definire la vist
 * **Intento pagina**: filtra il traffico da referral in base all’intento degli utenti.
 * **Origine canale**: filtra in base all’origine del canale. Le opzioni includono: LLM, earned media, a pagamento, o canali di referral misti.
 * **Tipo di dispositivo**: analizza il traffico in base al tipo di dispositivo del visitatore, ossia desktop, dispositivi mobili o tutti i dispositivi.
-  **Area geografica**: visualizza i pattern di referral da aree geografiche diverse.
+* **Area geografica**: visualizza i pattern di referral da aree geografiche diverse.
 
 Una volta selezionato il filtro, fai clic su **Applica filtri** per applicare la selezione alla dashboard.
 
