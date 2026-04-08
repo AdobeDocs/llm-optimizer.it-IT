@@ -2,9 +2,9 @@
 title: Ottimizza in Edge - Fastly (BYOCDN)
 description: Scopri come configurare Fastly BYOCDN per ottimizzare in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '407'
 ht-degree: 5%
 
 ---
@@ -22,8 +22,11 @@ Prima di impostare le regole VCL Fastly, assicurati di disporre di:
 * Processo di onboarding in LLM Optimizer completato.
 * Inoltro del registro CDN a LLM Optimizer completato.
 * Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer.
+* (Facoltativo) Una chiave API di ottimizzazione di Edge per la gestione temporanea se esegui prima il test del routing su un nome host per la gestione temporanea.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Configurazione**
 
@@ -121,8 +124,17 @@ La risposta deve **non** contenere l&#39;intestazione `x-edgeoptimize-request-id
 | `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
 | `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
 
-Lo stato del routing del traffico può essere controllato anche nell’interfaccia utente di LLM Optimizer. Passa a **Configurazione cliente** e seleziona la scheda **Configurazione rete CDN**.
+**4. Dominio di gestione temporanea (facoltativo)**
 
-![Stato routing traffico IA con routing abilitato](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Se utilizzi un nome host di staging e una chiave API di staging di LLM Optimizer, aggiungi gli stessi snippet VCL al servizio Fastly **staging** utilizzando la chiave API **staging**. Quindi verifica il traffico da bot sull’host di staging:
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Sostituisci `https://staging.example.com/page.html` con il tuo URL e percorso di staging effettivo. Una risposta corretta include l&#39;intestazione `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

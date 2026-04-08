@@ -2,7 +2,7 @@
 title: Ottimizza in Edge - CDN gestita da AEM Cloud Service (Fastly)
 description: Scopri come configurare AEM Cloud Service Managed CDN (Fastly) per l’ottimizzazione in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: 0c7ccadbb40c8c119cb2a57cf8118708c33c4236
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 12%
@@ -18,19 +18,21 @@ Questa configurazione indirizza il traffico agente (richieste da bot di IA e age
 
 Per iniziare a instradare il traffico agente ad Edge Optimize:
 
-1. Passa a **Configurazione cliente** e seleziona la scheda **Configurazione rete CDN**.
+1. In LLM Optimizer, apri **Configurazione cliente** e seleziona la scheda **Configurazione CDN**.
 
    ![Passa a Configurazione cliente](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
 
-2. In **Routing traffico IA per distribuire ottimizzazioni**, selezionare la casella di controllo **Distribuisci ottimizzazioni agli agenti IA**. Il team Adobe gestirà la configurazione di indirizzamento per tuo conto.
+2. Individua la sezione **Distribuire le ottimizzazioni agli agenti di IA**. Selezionare la casella di controllo **Abilita motore di ottimizzazione**.
 
-   ![Distribuisci ottimizzazioni agli agenti di intelligenza artificiale](/help/assets/optimize-at-edge/prereq-deploy-checkbox.png)
+   ![Distribuzione ottimizzazioni agli agenti di IA - in sospeso](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
 
-3. Dopo aver attivato la casella di controllo, lo stato indica che la configurazione è in corso. Il team Adobe completerà la configurazione di indirizzamento.
+3. Nella finestra di dialogo di conferma, seleziona **Abilita**. Il team Adobe gestirà la configurazione di indirizzamento per tuo conto.
 
-   ![Configurazione del routing del traffico AI in corso](/help/assets/optimize-at-edge/prereq-traffic-routing-progress.png)
+   ![Abilita la finestra di dialogo di conferma del motore di ottimizzazione](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
 
-   Una volta configurato e attivato il routing, lo stato viene aggiornato in modo da mostrare un segno di spunta verde che indica che il routing è stato abilitato correttamente. Non sono richieste ulteriori azioni da parte tua.
+   Una volta configurato e attivato il routing, lo stato diventa **Completato** con un segno di spunta verde a conferma dell&#39;abilitazione del routing. Non sono richieste ulteriori azioni da parte tua.
+
+   ![Distribuzione delle ottimizzazioni agli agenti di IA - completata](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 Inoltre, se hai bisogno di assistenza per i passaggi precedenti, contatta il team del tuo account Adobe o `llmo-at-edge@adobe.com`.
 
@@ -115,8 +117,10 @@ La risposta deve **non** contenere l&#39;intestazione `x-edgeoptimize-request-id
 | `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
 | `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
 
-Lo stato del routing del traffico può essere controllato anche nell’interfaccia utente di LLM Optimizer. Passa a **Configurazione cliente** e seleziona la scheda **Configurazione rete CDN**.
+**4. Verifica stato routing in LLM Optimizer**
 
-![Stato routing traffico IA con routing abilitato](/help/assets/optimize-at-edge/adobe-CDN-traffic-routed-tick.png)
+Puoi anche confermare il routing nell’interfaccia utente di LLM Optimizer. Apri **Configurazione del cliente** e seleziona la scheda **Configurazione CDN**. Quando il routing è attivo, nella sezione **Distribuisci ottimizzazioni agli agenti di IA** viene visualizzato **Completato**.
+
+![Distribuzione delle ottimizzazioni agli agenti di IA - completata](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 {{return-to-overview}}

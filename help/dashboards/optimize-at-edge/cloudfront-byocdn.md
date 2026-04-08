@@ -2,9 +2,9 @@
 title: Ottimizza in Edge - CloudFront (BYOCDN)
 description: Scopri come configurare CloudFront BYOCDN per ottimizzare in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 1253d0f0a58f6523699c52fbfab23028dc469c82
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,11 @@ Prima di configurare la configurazione CloudFront, assicurati di disporre di:
 * Processo di onboarding in LLM Optimizer completato.
 * Inoltro del registro CDN a LLM Optimizer completato.
 * Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer.
+* (Facoltativo) Una chiave API di ottimizzazione di Edge per la gestione temporanea se esegui prima il test del routing su un nome host per la gestione temporanea.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Passaggio 1: creare l&#39;origine di Edge Optimize**
 
@@ -193,7 +196,7 @@ Se il tuo comportamento utilizza un criterio di cache gestita di AWS (ad esempio
 
 6. Fare clic su **Distribuisci** per salvare il codice.
 
-7. Nota il nome del ruolo di esecuzione **&#x200B;**&#x200B;visualizzato in **Configurazione** > **Autorizzazioni** (ad esempio, `edgeoptimize-origin-role-xxxxx`). È necessario eseguire questa operazione nei passaggi seguenti.
+7. Nota il nome del ruolo di esecuzione **** visualizzato in **Configurazione** > **Autorizzazioni** (ad esempio, `edgeoptimize-origin-role-xxxxx`). È necessario eseguire questa operazione nei passaggi seguenti.
 
 **Aggiorna i criteri di attendibilità del ruolo di esecuzione**
 
@@ -296,11 +299,20 @@ La risposta deve **non** contenere l&#39;intestazione `x-edgeoptimize-request-id
 | `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
 | `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
 
-Lo stato del routing del traffico può essere controllato anche nell’interfaccia utente di LLM Optimizer. Passa a **Configurazione cliente** e seleziona la scheda **Configurazione rete CDN**.
+**4. Dominio di gestione temporanea (facoltativo)**
 
-![Stato routing traffico IA con routing abilitato](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Se utilizzi un nome host di gestione temporanea e una chiave API di gestione temporanea di LLM Optimizer, distribuisci la stessa configurazione CloudFront nella distribuzione **gestione temporanea** utilizzando la chiave API **gestione temporanea**. Quindi verifica il traffico da bot sull’host di staging:
 
-**4. Verifica del corretto flusso dei registri**
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Sostituisci `https://staging.example.com/page.html` con il tuo URL e percorso di staging effettivo. Una risposta corretta include l&#39;intestazione `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
+
+**5. Verifica del corretto flusso dei registri**
 
 Dopo aver eseguito le richieste di test di cui sopra, verifica che i registri vengano scritti sia per la funzione CloudFront che per la funzione Lambda@Edge.
 
