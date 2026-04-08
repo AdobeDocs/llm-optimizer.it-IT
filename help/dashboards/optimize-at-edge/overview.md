@@ -2,10 +2,10 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 77%
+source-wordcount: '2348'
+ht-degree: 73%
 
 ---
 
@@ -40,7 +40,7 @@ Con l’ottimizzazione nella rete Edge, sono supportate le opportunità che poss
 
 Avvia il processo di onboarding nel tuo account LLM Optimizer:
 
-1. Nel dashboard **Configurazione cliente** n selezionare la scheda **Configurazione CDN**.
+1. Nel dashboard **Configurazione cliente** selezionare la scheda **Configurazione rete CDN**.
 1. Fai clic su **CDN integrato**.
    ![Scheda Configurazione CDN](/help/overview/assets/cc-cdn.png)
 1. Per i clienti AEM Fastly, Adobe può fornire assistenza per completare il processo di onboarding. Per i clienti che utilizzano altri provider CDN, il team IT/CDN deve completare la configurazione e i prerequisiti richiesti. Per ulteriori informazioni, consulta anche le guide CDN di esempio fornite di seguito.
@@ -60,7 +60,14 @@ Requisiti per il team IT/CDN:
 * Aggiungere le regole di indirizzamento per l’ottimizzazione della rete Edge nella CDN.
 * Confermare l’indirizzamento dell’ottimizzazione della rete Edge nell’interfaccia di LLM Optimizer.
 
+>[!IMPORTANT]
+>Il routing deve essere configurato nel CDN esterno (il CDN più vicino al client). Se disponi di più CDN, l’indirizzamento può essere eseguito solo sul CDN esterno.
+
 Per guidare il processo di configurazione, seleziona il provider CDN e segui la guida alla configurazione corrispondente. Tieni presente che questi esempi devono essere adattati alla tua configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori.
+
+### Chiavi API del dominio di staging (facoltative)
+
+Se esegui il test su un nome host di staging prima della produzione, utilizza LLM Optimizer per registrare il dominio di staging **one** e copiarne la chiave API **staging** di Edge Optimize da **Configurazione cliente** → **Configurazione CDN** → **Distribuisci ottimizzazioni agli agenti AI** → **Aggiungi dominio stage** (o **Dominio stage**). Il nome host dell’area di gestione temporanea deve condividere lo stesso dominio registrabile del sito di produzione. Le guide di **Bring Your Own CDN** includono i passaggi completi per recuperare la chiave di gestione temporanea e verificare il routing nell&#39;URL di gestione temporanea.
 
 ### Guide alla configurazione CDN
 
@@ -123,7 +130,7 @@ Questa opportunità trova le pagine con paragrafi lunghi e complessi che potrebb
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
