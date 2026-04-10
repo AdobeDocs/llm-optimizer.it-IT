@@ -2,9 +2,9 @@
 title: Inoltro log - CloudFront (AWS CLI)
 description: Inoltra i registri CDN di CloudFront al bucket S3 di Adobe utilizzando AWS CLI per la configurazione e le operazioni di consegna.
 feature: Agentic Traffic
-source-git-commit: 0d51bbde954c399dc6595522fa70b576461f458a
+source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Nella pagina LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
 1. Immetti l&#39;**account AWS** ID.
 
-   ![ID account AWS](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
+<!--  ![AWS Account ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)-->
 
 1. Selezionare **CloudFront (BYOCDN)**.
 
@@ -48,7 +48,7 @@ Nella pagina LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
 1. Fare clic su **Onboard**.
 
-   ![Pulsante Onboard](/help/overview/assets/log-forwarding/common/onboard-button.png)
+<!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
 ## Passaggio 2: configurare l’inoltro del registro CDN con AWS CLI {#step-2-cli}
 
