@@ -1,7 +1,7 @@
 ---
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del te
 Tutti gli articoli in questo archivio utilizzano Markdown aromatizzato su GitHub. Se non conosci Markdown, consulta:
 
 * [Nozioni di base su Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Foglio di riferimento per il markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Foglio di riferimento per markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etichette
 
