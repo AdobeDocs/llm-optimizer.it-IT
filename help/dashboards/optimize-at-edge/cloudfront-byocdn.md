@@ -2,9 +2,9 @@
 title: Ottimizza in Edge - CloudFront (BYOCDN)
 description: Scopri come configurare CloudFront BYOCDN per ottimizzare in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: 001ed59e25975c718367f543b2e35fedbce686f5
 workflow-type: tm+mt
-source-wordcount: '2265'
+source-wordcount: '2223'
 ht-degree: 1%
 
 ---
@@ -23,11 +23,9 @@ Prima di configurare la configurazione CloudFront, assicurati di disporre di:
 * Processo di onboarding in LLM Optimizer completato.
 * Inoltro del registro CDN a LLM Optimizer completato.
 * Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer.
-* (Facoltativo) Una chiave API di ottimizzazione di Edge per la gestione temporanea se esegui prima il test del routing su un nome host per la gestione temporanea.
+* (Facoltativo) Per verificare il routing di gestione temporanea, vedere **Facoltativo: Test del routing su un nome host di gestione temporanea** alla fine di questa pagina.
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **Passaggio 1: creare l&#39;origine di Edge Optimize**
 
@@ -261,6 +259,10 @@ Il ruolo creato automaticamente viene fornito con un criterio `AWSLambdaBasicExe
 
 4. Fai clic su **Salva modifiche**.
 
+**Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)**
+
+{{waf-allowlist-setup}}
+
 **Passaggio 6: verifica la configurazione**
 
 **1. Verifica traffico da bot (deve essere ottimizzato)**
@@ -299,20 +301,9 @@ La risposta deve **non** contenere l&#39;intestazione `x-edgeoptimize-request-id
 | `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
 | `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
 
-**4. Dominio di gestione temporanea (facoltativo)**
-
-Se utilizzi un nome host di gestione temporanea e una chiave API di gestione temporanea di LLM Optimizer, distribuisci la stessa configurazione CloudFront nella distribuzione **gestione temporanea** utilizzando la chiave API **gestione temporanea**. Quindi verifica il traffico da bot sull’host di staging:
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-Sostituisci `https://staging.example.com/page.html` con il tuo URL e percorso di staging effettivo. Una risposta corretta include l&#39;intestazione `x-edgeoptimize-request-id`.
-
 {{verify-routing-status-in-ui}}
 
-**5. Verifica del corretto flusso dei registri**
+**4. Verifica del corretto flusso dei registri**
 
 Dopo aver eseguito le richieste di test di cui sopra, verifica che i registri vengano scritti sia per la funzione CloudFront che per la funzione Lambda@Edge.
 
@@ -412,5 +403,12 @@ Una volta implementati, tutti i percorsi del traffico arrivano direttamente all�
 4. Fai clic su **Salva modifiche**.
 
 5. Attendi che la distribuzione finisca, quindi verifica che le richieste dell&#39;agente restituiscano l&#39;intestazione `x-edgeoptimize-request-id` come descritto nel passaggio 6.
+
+{{retrieve-staging-edge-optimize-api-key}}
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
 
 {{return-to-overview}}
