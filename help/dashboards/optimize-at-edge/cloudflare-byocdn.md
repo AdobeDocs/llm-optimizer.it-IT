@@ -2,9 +2,9 @@
 title: Ottimizza in Edge - Cloudflare (BYOCDN)
 description: Scopri come configurare Cloudflare BYOCDN per l’ottimizzazione in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 66b058734597c378040e77a23a4023bed9273427
+source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Le seguenti intestazioni devono essere impostate sulle richieste al backend di E
 Sono disponibili due modi per impostare Cloud Worker per Edge Optimize:
 
 * [**Opzione 1: distribuisci su Cloudflare (scelta consigliata)**](#option-1-deploy-to-cloudflare): crea automaticamente un nuovo processo di lavoro e richiede di specificare le variabili di ambiente e i segreti richiesti. Utilizzare questa opzione se per questo dominio non è disponibile un Cloud Worker esistente.
-* [**Opzione 2: installazione manuale**](#option-2-manual-setup): istruzioni dettagliate per la creazione e la configurazione del worker. Utilizzare questa opzione se si dispone già di un Cloud Worker esistente che si desidera estendere o se si preferisce il controllo completo della distribuzione.
+* [**Opzione 2: installazione manuale**](#option-2-manual-setup): istruzioni dettagliate per la creazione e la configurazione del worker. Utilizzare questa opzione se nel dominio è già configurato un lavoro Cloudflare Worker. Sarà necessario unire il codice Edge Optimize nel processo di lavoro esistente (vedere [Passaggio 2: aggiungere il codice di lavoro](#option-2-manual-setup)) oppure se si preferisce il controllo completo sulla distribuzione.
 
 Indipendentemente dall&#39;opzione scelta, è necessario collegare manualmente il processo di lavoro al dominio. Vedere [Passaggio: aggiunta di una route al dominio](#add-a-route-to-your-domain).
 
@@ -113,7 +113,7 @@ Per creare e configurare manualmente il processo di lavoro, eseguire la procedur
 
 **Passaggio 2: aggiungere il codice Worker**
 
-Dopo aver creato il processo di lavoro, fare clic su **Modifica codice** e sostituire il codice predefinito con il seguente:
+Dopo aver creato il processo di lavoro, fare clic su **Modifica codice** e sostituire il codice predefinito con il seguente. Se disponi già di un lavoro Cloudflare, unisci il codice seguente con il codice del lavoro esistente invece di sostituirlo completamente.
 
 ```javascript
 /**
