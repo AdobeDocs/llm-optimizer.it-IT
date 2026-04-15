@@ -2,10 +2,10 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
+source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 73%
+source-wordcount: '2312'
+ht-degree: 75%
 
 ---
 
@@ -58,16 +58,13 @@ Requisiti per il team IT/CDN:
 * Aggiungi l&#39;agente utente `*AdobeEdgeOptimize/1.0*` al Inserisco nell&#39;elenco Consentiti di gestione del traffico da bot nel file robots.txt del sito o alle regole di gestione del traffico da bot.
 * Assicurati che le pagine non siano bloccate a livello di dominio o CDN.
 * Aggiungere le regole di indirizzamento per l’ottimizzazione della rete Edge nella CDN.
+* Se la rete CDN dispone di regole di WAF o Bot Manager, inserire nell&#39;elenco Consentiti l&#39;agente utente `*AdobeEdgeOptimize/1.0*`. Se è necessaria una verifica aggiuntiva, configurare l&#39;intestazione `x-edgeoptimize-fetcher-key`. Ogni guida BYOCDN riportata di seguito include i passaggi necessari.
 * Confermare l’indirizzamento dell’ottimizzazione della rete Edge nell’interfaccia di LLM Optimizer.
 
 >[!IMPORTANT]
 >Il routing deve essere configurato nel CDN esterno (il CDN più vicino al client). Se disponi di più CDN, l’indirizzamento può essere eseguito solo sul CDN esterno.
 
-Per guidare il processo di configurazione, seleziona il provider CDN e segui la guida alla configurazione corrispondente. Tieni presente che questi esempi devono essere adattati alla tua configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori.
-
-### Chiavi API del dominio di staging (facoltative)
-
-Se esegui il test su un nome host di staging prima della produzione, utilizza LLM Optimizer per registrare il dominio di staging **one** e copiarne la chiave API **staging** di Edge Optimize da **Configurazione cliente** → **Configurazione CDN** → **Distribuisci ottimizzazioni agli agenti AI** → **Aggiungi dominio stage** (o **Dominio stage**). Il nome host dell’area di gestione temporanea deve condividere lo stesso dominio registrabile del sito di produzione. Le guide di **Bring Your Own CDN** includono i passaggi completi per recuperare la chiave di gestione temporanea e verificare il routing nell&#39;URL di gestione temporanea.
+Per guidare il processo di configurazione, seleziona il provider CDN e segui la guida alla configurazione corrispondente. Tieni presente che questi esempi devono essere adattati alla tua configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori. **Porta la tua rete CDN** le guide includono test facoltativi per i nomi host di staging alla fine di ogni pagina.
 
 ### Guide alla configurazione CDN
 
@@ -130,7 +127,7 @@ Questa opportunità trova le pagine con paragrafi lunghi e complessi che potrebb
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
