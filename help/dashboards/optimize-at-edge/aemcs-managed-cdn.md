@@ -2,125 +2,146 @@
 title: Ottimizza in Edge - CDN gestita da AEM Cloud Service (Fastly)
 description: Scopri come configurare AEM Cloud Service Managed CDN (Fastly) per l’ottimizzazione in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 0c7ccadbb40c8c119cb2a57cf8118708c33c4236
+source-git-commit: 184d6008c2579014c6ff453e8bfff4bb898f4b82
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 12%
+source-wordcount: '836'
+ht-degree: 0%
 
 ---
 
 
 # CDN gestito da AEM Cloud Service (Fastly)
 
-Questa configurazione indirizza il traffico agente (richieste da bot di IA e agenti utente LLM) al servizio back-end Edge Optimize (`live.edgeoptimize.net`). I visitatori umani e i bot SEO continuano a essere serviti dalla tua origine come al solito. Per verificare la configurazione, al termine dell&#39;installazione, cercare l&#39;intestazione `x-edgeoptimize-request-id` nella risposta.
+Questa configurazione indirizza il traffico agente (richieste da bot di IA e agenti utente LLM) al servizio back-end Edge Optimize (`live.edgeoptimize.net`). I visitatori umani e i bot SEO continuano a essere serviti dalla tua origine come al solito. Per verificare la configurazione, al termine dell&#39;installazione, controllare l&#39;intestazione `x-edgeoptimize-request-id` nella risposta.
 
-**Prerequisiti**
+## Prerequisiti
+
+Per accedere a questa funzione:
+
+- I clienti a pagamento devono avere accesso al profilo di prodotto IMS **Utenti Adobe LLM Optimizer**. Contatta l’amministratore della tua organizzazione per richiedere l’accesso.
+  ![Aggiungi utente a un profilo di prodotto](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
+- I clienti di prova devono far parte del gruppo IMS **LLMO Admin**. Se il gruppo non esiste, l’amministratore dell’organizzazione può crearlo e aggiungerti.
+  ![Crea gruppo IMS di amministrazione LLMO](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
+
+>[!NOTE]
+> Questa funzione non è supportata in Safari o nelle modalità di navigazione in incognito/privata.
+
+## Passaggi per abilitare l’instradamento
 
 Per iniziare a instradare il traffico agente ad Edge Optimize:
 
 1. In LLM Optimizer, apri **Configurazione cliente** e seleziona la scheda **Configurazione CDN**.
 
-   ![Passa a Configurazione cliente](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
+   ![Passa a Configurazione cliente](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
 
-2. Individua la sezione **Distribuire le ottimizzazioni agli agenti di IA**. Selezionare la casella di controllo **Abilita motore di ottimizzazione**.
+2. Individua la sezione **Distribuire le ottimizzazioni agli agenti di IA**. Fare clic sul pulsante **Abilita**.
 
-   ![Distribuzione ottimizzazioni agli agenti di IA - in sospeso](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
+   ![Distribuzione ottimizzazioni agli agenti di IA - in sospeso](/help/assets/optimize-at-edge/cs-fastly-enable-button.png)
 
-3. Nella finestra di dialogo di conferma, seleziona **Abilita**. Il team Adobe gestirà la configurazione di indirizzamento per tuo conto.
+3. Nella finestra di dialogo di conferma, selezionare **Abilita** per confermare che si desidera abilitare il routing. Se viene visualizzato un errore, fare riferimento alla sezione [Risoluzione dei problemi](#troubleshooting) per risolverlo.
 
-   ![Abilita la finestra di dialogo di conferma del motore di ottimizzazione](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
+   ![Abilita la finestra di dialogo di conferma del motore di ottimizzazione](/help/assets/optimize-at-edge/cs-fastly-enable-dialog.png)
 
-   Una volta configurato e attivato il routing, lo stato diventa **Completato** con un segno di spunta verde a conferma dell&#39;abilitazione del routing. Non sono richieste ulteriori azioni da parte tua.
+4. Una volta confermato, il completamento del routing richiede alcuni minuti.
 
-   ![Distribuzione delle ottimizzazioni agli agenti di IA - completata](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+   ![Routing in corso](/help/assets/optimize-at-edge/cs-fastly-enable-button-clicked-routing-in-progress.png)
+
+   Ricarica la pagina dopo 5 minuti per verificare che il routing sia stato completato. Una volta configurato e attivato il routing, lo stato diventa **Completato** con un segno di spunta verde a conferma dell&#39;abilitazione del routing. Non sono richieste ulteriori azioni da parte tua.
+
+   ![Distribuzione delle ottimizzazioni agli agenti di IA - completata](/help/assets/optimize-at-edge/cs-fastly-disable-button.png)
+
+   Per disabilitare il routing in qualsiasi momento, tornare alla sezione **Distribuisci ottimizzazioni agli agenti AI** nella scheda **Configurazione CDN** e fare clic su **Disabilita**.
 
 Inoltre, se hai bisogno di assistenza per i passaggi precedenti, contatta il team del tuo account Adobe o `llmo-at-edge@adobe.com`.
 
-**Routing self-service tramite pipeline Cloud Manager**
+## Risoluzione dei problemi
 
-Se preferisci configurare autonomamente l’instradamento tramite la pipeline Cloud Manager, segui i passaggi seguenti. La configurazione dell’indirizzamento viene eseguita utilizzando una [regola CDN originSelector](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). I prerequisiti sono i seguenti:
+Se viene visualizzato un errore durante l&#39;attivazione o la disattivazione del routing, l&#39;aspetto sarà simile al seguente:
 
-* Decidi il dominio da instradare.
-* Decidere i percorsi da instradare.
-* Decidi gli agenti utente da instradare (regime consigliato).
+![Errore finestra di conferma](/help/assets/optimize-at-edge/cs-fastly-confirmation-dialog-error.png)
 
-Per distribuire la regola, devi:
+Utilizza l’elenco seguente per identificare l’errore e seguire le indicazioni.
 
-* Crea una [pipeline di configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/config-pipeline).
-* Eseguire il commit del file di configurazione `cdn.yaml` nel repository.
-* Esegui la pipeline di configurazione.
+1. **L&#39;utente non dispone dell&#39;accesso al prodotto LLMO**
 
-```
-kind: "CDN"
-version: "1"
-data:
-  # Origin selectors to route to Edge Optimize backend
-  originSelectors:
-    rules:
-      - name: route-to-edge-optimize-backend
-        when:
-          allOf:
-            - reqHeader: x-edgeoptimize-request
-              exists: false # avoid loops when requests comes from Edge Optimize
-            - reqHeader: user-agent
-              matches: "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)" # routed user agents
-            - reqProperty: domain
-              equals: "example.com" # routed domain
-            - reqProperty: originalPath
-              matches: '(/[^./]+|\.html|/)$' # routed extensions, with .html extension or without extension
-            - anyOf:
-              - { reqProperty: originalPath, in: [ "/page.html" ] } # routed pages, exact path matching
-              - { reqProperty: originalPath, like: "/dir/*" } # routed pages, wildcard path matching
-        action:
-          type: selectOrigin
-          originName: edge-optimize-backend
-    origins:
-      - name: edge-optimize-backend
-        domain: "live.edgeoptimize.net"
-```
+   **Causa:** l&#39;account utente non dispone del contesto di prodotto LLM Optimizer nel profilo Adobe IMS. Questo è necessario per i clienti a pagamento per configurare il routing CDN.
 
-**Verifica installazione**
+   **Consiglio:** verifica che il tuo amministratore organizzazione ti abbia assegnato il profilo di prodotto **Utenti Adobe LLM Optimizer** in Adobe Admin Console.
 
-Dopo aver completato la configurazione, verifica che il traffico da bot venga indirizzato ad Edge Optimize e che non venga influenzato dal traffico umano.
+2. **Solo i membri del gruppo di amministrazione LLMO possono configurare il routing CDN**
 
-**1. Verifica traffico da bot (deve essere ottimizzato)**
+   **Causa:** il tuo account non è membro del gruppo IMS **LLMO Admin**. Questo è necessario per i clienti di prova che devono configurare il routing CDN.
 
-Simulare una richiesta bot di intelligenza artificiale utilizzando un agente utente:
+   **Consiglio:** verifica di essere stato aggiunto al gruppo IMS **LLMO Admin** in Adobe Admin Console dall&#39;amministratore organizzazione.
 
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
+3. **Il tipo di CDN richiesto aem-cs-fastly non corrisponde al CDN rilevato per questo dominio**
 
-Una risposta corretta include l&#39;intestazione `x-edgeoptimize-request-id`, a conferma che la richiesta è stata instradata tramite Edge Optimize:
+   **Causa:** indica che il tipo di rete CDN rilevato per il sito non è *rete CDN gestita AEM Cloud Service (Fastly)*.
 
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
+   **Consiglio:** verifica che il tuo sito sia gestito tramite CDN gestito da AEM Cloud Service (Fastly).
 
-**2. Test del traffico umano (non dovrebbe essere interessato)**
+4. **Errore durante il probe del sito**
 
-Simula una richiesta browser umana regolare:
+   **Causa:** LLM Optimizer non è stato in grado di raggiungere il sito durante la configurazione del routing. Ciò può accadere se il sito non è accessibile, se non è raggiungibile o se la richiesta è scaduta.
 
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
+   **Consiglio:** Verificare che il sito sia accessibile al pubblico e restituire una risposta valida, quindi riprovare.
 
-La risposta deve **non** contenere l&#39;intestazione `x-edgeoptimize-request-id`. Il contenuto della pagina e il tempo di risposta devono rimanere identici a prima di abilitare l’opzione Ottimizza in Edge.
+5. **Il sito non ha restituito una risposta valida per il probe di routing**
 
-**3. Come distinguere tra i due scenari**
+   **Causa:** il sito ha restituito uno stato HTTP imprevisto (non 2xx o 301) quando è stato analizzato durante l&#39;installazione.
 
-| Intestazione | Traffico bot (ottimizzato) | Traffico umano (non interessato) |
-|---|---|---|
-| `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
-| `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
+   **Consiglio:** Verificare che il sito restituisca una risposta corretta (2xx) per l&#39;URL di base registrato in LLM Optimizer, quindi riprovare.
 
-**4. Verifica stato routing in LLM Optimizer**
+6. **Autenticazione non riuscita con il servizio IMS upstream**
 
-Puoi anche confermare il routing nell’interfaccia utente di LLM Optimizer. Apri **Configurazione del cliente** e seleziona la scheda **Configurazione CDN**. Quando il routing è attivo, nella sezione **Distribuisci ottimizzazioni agli agenti di IA** viene visualizzato **Completato**.
+   **Causa:** La sessione potrebbe essere scaduta o si è verificato un problema di autenticazione con Adobe IMS durante la richiesta di routing.
 
-![Distribuzione delle ottimizzazioni agli agenti di IA - completata](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+   **Consiglio:** Esci da LLM Optimizer e accedi di nuovo, quindi prova ad abilitare di nuovo il routing.
+
+Se il problema persiste, contatta il team del tuo account Adobe o `llmo-at-edge@adobe.com`.
+
+## (Facoltativo) Verifica l’installazione
+
+Una volta completata la configurazione di indirizzamento, puoi facoltativamente verificare che il traffico da bot AI sia instradato ad Edge Optimize e che il traffico umano non venga influenzato.
+
+1. **Verifica traffico da bot (deve essere ottimizzato)**
+
+   Simulare una richiesta bot di intelligenza artificiale utilizzando un agente utente:
+
+   ```
+   curl -svo /dev/null https://www.example.com/page.html \
+     --header "user-agent: chatgpt-user"
+   ```
+
+   Una risposta corretta include l&#39;intestazione `x-edgeoptimize-request-id`, a conferma che la richiesta è stata instradata tramite Edge Optimize:
+
+   ```
+   < HTTP/2 200
+   < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+   ```
+
+2. **Test del traffico umano (non dovrebbe essere interessato)**
+
+   Simula una richiesta browser umana regolare:
+
+   ```
+   curl -svo /dev/null https://www.example.com/page.html \
+     --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+   ```
+
+   La risposta non deve contenere l&#39;intestazione `x-edgeoptimize-request-id`. Il contenuto della pagina e il tempo di risposta devono rimanere identici a prima di abilitare l’opzione Ottimizza in Edge.
+
+3. **Come distinguere tra i due scenari**
+
+   | Intestazione | Traffico bot (ottimizzato) | Traffico umano (non interessato) |
+   |---|---|---|
+   | `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
+   | `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
+
+4. **Verifica stato routing in LLM Optimizer**
+
+   Puoi anche confermare il routing nell’interfaccia utente di LLM Optimizer. Apri **Configurazione del cliente** e seleziona la scheda **Configurazione CDN**. Quando il routing è attivo, nella sezione **Distribuisci ottimizzazioni agli agenti di IA** viene visualizzato **Completato**.
+
+   ![Distribuzione delle ottimizzazioni agli agenti di IA - completata](/help/assets/optimize-at-edge/cs-fastly-disable-button.png)
 
 {{return-to-overview}}

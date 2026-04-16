@@ -2,10 +2,10 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
+source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 75%
+source-wordcount: '2323'
+ht-degree: 74%
 
 ---
 
@@ -43,7 +43,7 @@ Avvia il processo di onboarding nel tuo account LLM Optimizer:
 1. Nel dashboard **Configurazione cliente** selezionare la scheda **Configurazione rete CDN**.
 1. Fai clic su **CDN integrato**.
    ![Scheda Configurazione CDN](/help/overview/assets/cc-cdn.png)
-1. Per i clienti AEM Fastly, Adobe può fornire assistenza per completare il processo di onboarding. Per i clienti che utilizzano altri provider CDN, il team IT/CDN deve completare la configurazione e i prerequisiti richiesti. Per ulteriori informazioni, consulta anche le guide CDN di esempio fornite di seguito.
+1. Per i clienti Fastly gestiti da AEM Cloud Service, la configurazione dell’indirizzamento è self-service e può essere completata direttamente nell’interfaccia utente di LLM Optimizer. Per i clienti che utilizzano altri provider CDN, il team IT/CDN deve completare la configurazione e i prerequisiti richiesti. Per ulteriori informazioni, consulta anche le guide CDN di esempio fornite di seguito.
 
 >[!NOTE]
 >Fai riferimento alle guide dettagliate riportate di seguito che descrivono l’intero flusso di onboarding. Per i problemi non risolti dalle guide, puoi contattare `llmo-at-edge@adobe.com`.
