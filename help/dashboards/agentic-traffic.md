@@ -2,10 +2,10 @@
 title: Traffico da IA agentica
 description: Scopri come utilizzare la dashboard Traffico da IA agentica per scoprire come gli agenti IA interagiscono con il tuo sito.
 feature: Agentic Traffic
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 98%
+source-wordcount: '1335'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Una volta attivata, i registri vengono acquisiti e la dashboard sarà popolata c
 
 LLM Optimizer elabora un sottoinsieme di campi dai registri CDN. Anche se i nomi dei campi del registro non elaborati variano a seconda del provider CDN, vengono normalizzati e riportati come:
 
-* URL (solo percorso)
+* URL (percorso e parametri di query)
 * Agente utente
 * Codice stato
 * Intestazione referrer
@@ -99,7 +99,7 @@ Utilizza il grafico delle tendenze del traffico da IA agentica per tenere tracci
 
 ## Risultati migliori e peggiori {#top-bottom-movers}
 
-La vista Risultati migliori e peggiori evidenzia gli URL che hanno registrato le maggiori variazioni nel traffico da IA agentica su base settimanale: visite o hit provenienti dai sistemi di IA che accedono ai tuoi contenuti. **Fattori principali** mostra le pagine che acquisicono visibilità o coinvolgimento, mentre **Fattori minori** rivela gli URL che hanno registrato i cali più drastici. Questo ti consente di identificare rapidamente quali contenuti sono in crescita, quali potrebbero richiedere attenzione e dove i pattern di individuazione basati sull’IA stanno cambiando.
+La vista Spostamenti in alto e in basso evidenzia gli URL con le modifiche più grandi, settimana dopo settimana, nel traffico agente: visite o hit dai sistemi di intelligenza artificiale che accedono al contenuto. **Primi spostamenti** mostra le pagine che acquistano visibilità o coinvolgimento, mentre **Ultimi spostamenti** rivela gli URL con i rifiuti più accentuati. Questo ti consente di identificare rapidamente quali contenuti sono in crescita, quali potrebbero richiedere attenzione e dove i pattern di individuazione basati sull’IA stanno cambiando.
 
 ![Risultati migliori e peggior](/help/dashboards/assets/movers.png)
 
