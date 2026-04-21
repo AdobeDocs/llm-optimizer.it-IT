@@ -2,10 +2,10 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
+source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 74%
+source-wordcount: '2283'
+ht-degree: 75%
 
 ---
 
@@ -48,11 +48,6 @@ Avvia il processo di onboarding nel tuo account LLM Optimizer:
 >[!NOTE]
 >Fai riferimento alle guide dettagliate riportate di seguito che descrivono l’intero flusso di onboarding. Per i problemi non risolti dalle guide, puoi contattare `llmo-at-edge@adobe.com`.
 
-Prerequisiti per l’onboarding per l’ottimizzazione nella rete Edge:
-
-* Completamento del processo di onboarding in LLM Optimizer.
-* Completamento del processo di inoltro dei registri per i registri della CDN.
-
 Requisiti per il team IT/CDN:
 
 * Aggiungi l&#39;agente utente `*AdobeEdgeOptimize/1.0*` al Inserisco nell&#39;elenco Consentiti di gestione del traffico da bot nel file robots.txt del sito o alle regole di gestione del traffico da bot.
@@ -64,7 +59,7 @@ Requisiti per il team IT/CDN:
 >[!IMPORTANT]
 >Il routing deve essere configurato nel CDN esterno (il CDN più vicino al client). Se disponi di più CDN, l’indirizzamento può essere eseguito solo sul CDN esterno.
 
-Per guidare il processo di configurazione, seleziona il provider CDN e segui la guida alla configurazione corrispondente. Tieni presente che questi esempi devono essere adattati alla tua configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori. **Porta la tua rete CDN** le guide includono test facoltativi per i nomi host di staging alla fine di ogni pagina.
+Per guidare il processo di configurazione, seleziona il provider CDN e segui la guida alla configurazione corrispondente. Tieni presente che questi esempi devono essere adattati alla tua configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori.
 
 ### Guide alla configurazione CDN
 

@@ -2,9 +2,9 @@
 title: Ottimizza in Edge - CloudFront (BYOCDN)
 description: Scopri come configurare CloudFront BYOCDN per ottimizzare in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 001ed59e25975c718367f543b2e35fedbce686f5
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Prima di configurare la configurazione CloudFront, assicurati di disporre di:
 
 * Una distribuzione CloudFront esistente che serve il sito web.
 * Le autorizzazioni IAM di AWS per creare funzioni Lambda, ruoli IAM, distribuzioni CloudFront e criteri di cache.
-* Processo di onboarding in LLM Optimizer completato.
-* Inoltro del registro CDN a LLM Optimizer completato.
-* Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer.
-* (Facoltativo) Per verificare il routing di gestione temporanea, vedere **Facoltativo: Test del routing su un nome host di gestione temporanea** alla fine di questa pagina.
-
-{{retrieve-byocdn-api-key}}
+* Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer. Per i passaggi, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facoltativo) Per verificare il routing dell&#39;area di gestione temporanea, vedere [Chiave API di gestione temporanea](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Passaggio 1: creare l&#39;origine di Edge Optimize**
 
@@ -403,12 +399,5 @@ Una volta implementati, tutti i percorsi del traffico arrivano direttamente all�
 4. Fai clic su **Salva modifiche**.
 
 5. Attendi che la distribuzione finisca, quindi verifica che le richieste dell&#39;agente restituiscano l&#39;intestazione `x-edgeoptimize-request-id` come descritto nel passaggio 6.
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}
