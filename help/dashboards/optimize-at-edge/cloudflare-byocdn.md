@@ -2,9 +2,9 @@
 title: Ottimizza in Edge - Cloudflare (BYOCDN)
 description: Scopri come configurare Cloudflare BYOCDN per l’ottimizzazione in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1906'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Prima di impostare le regole di instradamento di Cloud Worker, verificare di dis
 
 * Un account Cloudflare con processi di lavoro abilitati nel dominio.
 * Accedere alle impostazioni DNS del dominio in Cloud Flare.
-* Processo di onboarding in LLM Optimizer completato.
-* Inoltro del registro CDN a LLM Optimizer completato.
-* Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer.
-* (Facoltativo) Per verificare il routing di gestione temporanea, vedere **Facoltativo: Test del routing su un nome host di gestione temporanea** alla fine di questa pagina.
-
-{{retrieve-byocdn-api-key}}
+* Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer. Per i passaggi, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facoltativo) Per verificare il routing dell&#39;area di gestione temporanea, vedere [Chiave API di gestione temporanea](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Funzionamento del routing**
 
@@ -478,12 +474,5 @@ La risposta deve **non** contenere l&#39;intestazione `x-edgeoptimize-request-id
 | `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}
