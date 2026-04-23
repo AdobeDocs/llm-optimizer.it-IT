@@ -2,10 +2,10 @@
 title: Inspector URL
 description: Scopri come utilizzare l’Inspector URL per analizzare le prestazioni a livello di ricerche IA di pagine specifiche nel tuo dominio.
 feature: URL Inspector
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: 7ba417a568d21c1e56de218e023df243b73f6357
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 95%
 
 ---
 
@@ -16,9 +16,13 @@ L’Inspector URL consente di analizzare le prestazioni a livello di ricerche IA
 
 ![Inspector URL](/help/dashboards/assets/url-insp.png)
 
+Se ti trovi nell&#39;esperienza incentrata sul brand, passa a **URL Inspector** e seleziona il sito per il quale desideri visualizzare le informazioni.
+
+![Ispettore URL — selettore del sito (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
+
 ## Filtri
 
-Nella parte superiore della pagina, puoi applicare i filtri per definire la vista. I filtri scelti influiranno su **tutte** le sezioni presenti nella dashboard. Puoi personalizzare quanto segue:
+Nella parte superiore della pagina, puoi applicare i filtri per definire la vista. I filtri che scegli influiranno su **tutte** le sezioni presenti nella dashboard. Puoi personalizzare quanto segue:
 
 * **Intervallo di date**: seleziona l’arco temporale per i dati da visualizzare. Ad esempio, le ultime 4 settimane. Puoi anche personalizzare il periodo di tempo selezionando l’opzione **Settimane personalizzate**.
 * **Categoria**: filtra i risultati visualizzati per categorie.

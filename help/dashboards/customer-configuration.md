@@ -2,10 +2,10 @@
 title: Configurazione cliente
 description: Utilizza la configurazione cliente per definire in che modo il tuo brand verrà monitorato e analizzato all’interno della piattaforma LLM Optimizer.
 feature: Customer Configuration
-source-git-commit: 3fab5f21311a741e51e7a31cd3a26de79fcbff95
+source-git-commit: ef6b4ec9dcb3b5234add6e82cbc54ab29d363509
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 40%
+source-wordcount: '2249'
+ht-degree: 37%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 40%
 # Configurazione cliente {#customer-configuration}
 
 La dashboard Configurazione cliente è uno strumento potente che fornisce insight sulla visibilità del brand in LLM. Impostando correttamente categorie, argomenti e prompt, puoi assicurarti che il brand sia ben posizionato per essere visualizzato nelle risposte generate da LLM. Grazie a questa configurazione, la piattaforma è in grado di personalizzare gli insight in base al contesto del tuo business, per un’analisi accurata della visibilità, del traffico e delle opportunità.
+
+La dashboard Configurazione cliente (mostrata di seguito) si applica quando l’organizzazione utilizza ancora questa navigazione.
 
 ![Dashboard Configurazione cliente](/help/dashboards/assets/customer-config.png)
 
@@ -25,13 +27,19 @@ Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del
 * [Configurazione CDN](#agentic-cdn)
 * [Google Search Console](#google-console)
 
+Se sei un utente attento al brand, passa a **Gestione dei brand** per impostare e configurare brand, alias dei brand e definire i concorrenti su cui tenere traccia. **Gestione marchi** viene utilizzato anche per configurare integrazioni quali Google Search Console, Adobe Analytics e l&#39;inoltro di registri CDN relativi agli URL associati ai brand. Per farlo, fai clic sulle schede corrispondenti: SGC, CDN e così via.
+
+![Gestione dei marchi: navigazione nelle app (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+![Gestione dei marchi: panoramica della configurazione (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+
 >[!IMPORTANT]
 >
 > Per ulteriori dettagli sulla configurazione delle categorie, degli argomenti e dei prompt, consulta la pagina [Best practice per la configurazione di categorie, argomenti e prompt](/help/overview/best-practices-topics-prompts.md).
 
 ## Prompt {#prompts-brand}
 
-Da questa scheda puoi rivedere, gestire e personalizzare i prompt. Puoi caricare un file con .csv di [analisi della presenza del brand](/help/dashboards/brand-presence.md), e l’elenco verrà popolato con i prompt e gli argomenti di tale analisi. Oppure, [scarica una libreria di prompt](/help/overview/best-practices-topics-prompts.md) creata da Adobe. Se necessario, puoi anche eliminare, modificare e aggiungere argomenti e relativi prompt.
+Dalla scheda **Prompts** è possibile esaminare, gestire e personalizzare i prompt. Puoi caricare un file con .csv di [analisi della presenza del brand](/help/dashboards/brand-presence.md), e l’elenco verrà popolato con i prompt e gli argomenti di tale analisi. Oppure, [scarica una libreria di prompt](/help/overview/best-practices-topics-prompts.md) creata da Adobe. Se necessario, puoi anche eliminare, modificare e aggiungere argomenti e relativi prompt.
 
 Per importare un file .csv con insight sui dati, devi innanzitutto esportare un file dalla dashboard Presenza del brand. Per informazioni su come eseguire questa operazione, consulta la sezione [Insight sui dati](/help/dashboards/brand-presence.md#data-insights). Una volta che disponi del file:
 
@@ -51,6 +59,10 @@ Puoi inoltre aggiungere argomenti e prompt all’elenco indipendentemente da un 
 4. Aggiungi il testo del prompt.
 5. Seleziona l’area geografica.
 6. Fai clic su **Aggiungi prompt** per visualizzare nell’elenco l’argomento con il prompt.
+
+Per i clienti che si trovano nell&#39;esperienza incentrata sul brand, per aggiungere argomenti e prompt, passa a **Gestione dei prompt**.
+
+![Gestione dei prompt (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/prompts-management.png)
 
 >[!NOTE]
 >I nuovi prompt aggiunti appariranno nella presenza del brand solo al termine dell’elaborazione.
@@ -177,7 +189,7 @@ Segui i passaggi descritti di seguito per integrare e utilizzare le query della 
 
 Prima di utilizzare questa funzione è necessario integrare l’account Google Search Console con l’ottimizzatore LLM.
 
-1. Apri la dashboard Configurazione cliente.
+1. Apri il dashboard **Configurazione cliente** (navigazione classica) o **Gestione marchi** (esperienza incentrata sul marchio), quindi vai all&#39;integrazione di Google Search Console (tag GSC nell&#39;esperienza incentrata sul marchio).
 1. Passare alla scheda Console Google Search e fare clic su **Connetti account**.
    ![Console di Google Search](/help/dashboards/assets/google-console.png)
 1. Accedi con un account Google che abbia accesso alla proprietà della console di ricerca desiderata.
@@ -200,7 +212,7 @@ Dopo aver integrato l’account Google Search Console con l’ottimizzatore LLM,
 
 #### Visualizzare le query aggiunte nell&#39;elenco Prompt {#prompts-list}
 
-Una volta aggiunta, la query viene visualizzata nella scheda [Prompts](#prompts-brand) del dashboard Configurazione cliente. I prompt originati da Google Search Console sono contrassegnati con l&#39;icona di Google Search Console nella colonna **Origin**. L’icona consente di distinguere tra i prompt basati sul comportamento effettivo di ricerca dell’utente e quelli aggiunti manualmente o da altre origini.
+Dopo l&#39;aggiunta di una query, questa viene visualizzata nella scheda [Prompts](#prompts-brand) nel dashboard Configurazione cliente (esperienza classica) o in **Gestione prompt** (esperienza incentrata sul marchio). I prompt originati da Google Search Console sono contrassegnati con l&#39;icona di Google Search Console nella colonna **Origin**. L’icona consente di distinguere tra i prompt basati sul comportamento effettivo di ricerca dell’utente e quelli aggiunti manualmente o da altre origini.
 
 ### Domande frequenti {#gsc-faq}
 
@@ -220,7 +232,7 @@ Il numero dipende dalle dimensioni della distribuzione e dalla quantità di cate
 
 Il nostro obiettivo è quello di fornire set di prompt che soddisfino gli obiettivi di qualità comunicati durante le fasi di prova e onboarding: almeno 20 prompt per argomento, con 3-4 argomenti per categoria e un equilibrio salutare tra branding e non branding.
 
-D: quanto tempo dopo la connessione alla console di Google Google Search visualizzerò le richieste provenienti da tale console?
+D: quanto tempo dopo la connessione alla console di Google Search visualizzerò le richieste provenienti da tale console?
 
 Le richieste sono in genere disponibili **entro poche ore** dopo l&#39;attivazione della connessione alla console di Google Search. La pipeline estrae automaticamente i dati di ricerca, li elabora attraverso i passaggi di generazione e controllo della qualità e distribuisce il prompt finale impostato su LLM Optimizer.
 
