@@ -2,9 +2,9 @@
 title: Avvio rapido
 description: Scopri come integrare il nome commerciale e il dominio, attivare la versione di prova da Experience Hub o Experience Cloud e completare la configurazione per Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 37%
 
 ---
@@ -128,7 +128,7 @@ Dalla dashboard Configurazione cliente puoi effettuare le seguenti operazioni:
 >
 > Per ulteriori dettagli sulla configurazione delle categorie, degli argomenti e dei prompt, consulta la pagina [Best practice per la configurazione di categorie, argomenti e prompt](/help/overview/best-practices-topics-prompts.md).
 
-### Esperienza incentrata sul brand
+### Categorie di esperienza, argomenti e prompt incentrati sul brand
 
 Per i clienti che utilizzano l’esperienza incentrata sul marchio, puoi aggiungere categorie, argomenti e prompt come segue:
 

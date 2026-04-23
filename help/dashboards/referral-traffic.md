@@ -2,10 +2,10 @@
 title: Traffico da referral
 description: Scopri come utilizzare la dashboard Traffico da referral per vedere come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral.
 feature: Referral Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 79%
+source-wordcount: '734'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +35,7 @@ Se sei sulla [esperienza incentrata sul marchio](/help/overview/quick-start.md#b
 
 Al primo accesso, la dashboard Traffico da referral potrebbe apparire vuota. Per visualizzare i dati, devi configurare l’inoltro del registro CDN.
 
-Per i clienti che si trovano nella [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), puoi aggiungere informazioni sull&#39;inoltro del registro CDN passando a **Gestione marchi** e facendo clic sull&#39;etichetta **CDN**. Vedi anche [Traffico agente - Configurazione CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
+Per i clienti che si trovano nella [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), puoi aggiungere informazioni sull&#39;inoltro del registro CDN passando a **Gestione marchi** e facendo clic sull&#39;etichetta **CDN**.
 
 **Configurazione del cliente (esperienza classica):** Configura [Inoltro del registro CDN](/help/dashboards/customer-configuration.md#cdn-configuration) selezionando **Vai alla configurazione**.
 

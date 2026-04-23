@@ -2,7 +2,7 @@
 title: Traffico da IA agentica
 description: Scopri come utilizzare la dashboard Traffico da IA agentica per scoprire come gli agenti IA interagiscono con il tuo sito.
 feature: Agentic Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 90%
@@ -33,7 +33,7 @@ Se ti trovi nella [esperienza incentrata sul marchio](/help/overview/quick-start
 
 Senza l’**inoltro del registro CDN**, la dashboard Traffico da IA agentica è vuota. Per visualizzare le interazioni agentiche, devi configurare l’**Inoltro del registro CDN**.
 
-### Configurazione cliente (navigazione classica):
+### Configurazione cliente (navigazione classica)
 
 Al primo accesso, visualizzerai un messaggio come mostrato nell’immagine seguente.
 
