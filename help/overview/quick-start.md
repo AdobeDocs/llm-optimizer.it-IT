@@ -2,9 +2,9 @@
 title: Avvio rapido
 description: Scopri come integrare il nome commerciale e il dominio, attivare la versione di prova da Experience Hub o Experience Cloud e completare la configurazione per Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1459'
 ht-degree: 37%
 
 ---
@@ -12,11 +12,13 @@ ht-degree: 37%
 
 # Avvio rapido
 
-Per iniziare a utilizzare LLM Optimizer, completa l’onboarding. Quindi personalizza categorie, argomenti e prompt, configura l&#39;inoltro del registro CDN e apri le [dashboard](/help/dashboards/dashboards-overview.md) per ottenere informazioni più complete.
-
-**Esperienza incentrata sul marchio:** Per impostazione predefinita, i nuovi clienti iniziano con un&#39;interfaccia incentrata sul marchio con una configurazione basata sull&#39;onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un marchio attivo e altri marchi suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente a questa esperienza incentrata sul marchio.
+Per iniziare a utilizzare LLM Optimizer, completa il processo di onboarding. Quindi personalizza categorie, argomenti e prompt, configura l&#39;inoltro del registro CDN e apri le [dashboard](/help/dashboards/dashboards-overview.md) per ottenere informazioni più complete.
 
 <!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
+
+## Esperienza incentrata sul brand {#brand-centric-experience}
+
+Per impostazione predefinita, i nuovi clienti iniziano con un’interfaccia mirata e brand-first con una configurazione basata sull’onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un marchio attivo e altri marchi suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente a questa esperienza incentrata sul marchio.
 
 ## Panoramica sull’onboarding
 
@@ -128,7 +130,7 @@ Dalla dashboard Configurazione cliente puoi effettuare le seguenti operazioni:
 
 ### Esperienza incentrata sul brand
 
-Per i clienti che si avvalgono dell’esperienza incentrata sul brand, puoi aggiungere categorie, argomenti e prompt come segue:
+Per i clienti che utilizzano l’esperienza incentrata sul marchio, puoi aggiungere categorie, argomenti e prompt come segue:
 
 * **Categorie** — Passare a **Gestione marchi** e fare clic su **Categorie**. Le categorie sono definite a livello globale e si applicano a tutti i marchi in Gestione marchi.
 
@@ -144,7 +146,7 @@ Una volta effettuato l’onboarding del dominio, puoi visualizzare gli insight i
 
 >[!NOTE]
 >
-> Per i clienti che usano un&#39;esperienza incentrata sul brand, passa a **Presenza dei brand** e seleziona il brand di cui vuoi visualizzare la Presenza dei brand utilizzando il menu a discesa del brand. Puoi anche visualizzare la visibilità dei brand a un livello **Tutti i marchi** con questa esperienza.
+> Per i clienti che utilizzano l&#39;esperienza Brand Center, passa a **Presenza dei brand** e seleziona il marchio di cui desideri visualizzare la Presenza dei brand utilizzando il menu a discesa del marchio. Puoi anche visualizzare la visibilità dei brand a un livello **Tutti i marchi** con questa esperienza.
 
 ## Passaggio 4: fornire informazioni per l’inoltro del registro CDN {#step-4}
 
@@ -164,9 +166,9 @@ In alternativa, se non hai già aggiunto un provider CDN, come descritto in prec
 >[!NOTE]
 >Per informazioni dettagliate sull&#39;inoltro di log quando si utilizza una rete CDN gestita dal cliente (BYOCDN), vedere [Panoramica sull&#39;inoltro di log BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### Esperienza incentrata sul brand
+### Inoltro registro CDN esperienza incentrato sul marchio
 
-Per i clienti che fanno parte dell&#39;esperienza incentrata sul brand, puoi aggiungere le informazioni di inoltro del registro CDN da **Gestione marchi** come segue: apri **Gestione marchi** e fai clic sull&#39;etichetta **CDN**.
+Per i clienti che si trovano nell&#39;esperienza incentrata sul marchio, puoi aggiungere le informazioni di inoltro del registro CDN da **Gestione marchi** come segue: apri **Gestione marchi** e fai clic sull&#39;etichetta **CDN**.
 
 ![Gestione marchi - Inoltro registro CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 

@@ -2,7 +2,7 @@
 title: Configurazione cliente
 description: Utilizza la configurazione cliente per definire in che modo il tuo brand verrà monitorato e analizzato all’interno della piattaforma LLM Optimizer.
 feature: Customer Configuration
-source-git-commit: ef6b4ec9dcb3b5234add6e82cbc54ab29d363509
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '2249'
 ht-degree: 37%
@@ -27,7 +27,7 @@ Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del
 * [Configurazione CDN](#agentic-cdn)
 * [Google Search Console](#google-console)
 
-Se sei un utente attento al brand, passa a **Gestione dei brand** per impostare e configurare brand, alias dei brand e definire i concorrenti su cui tenere traccia. **Gestione marchi** viene utilizzato anche per configurare integrazioni quali Google Search Console, Adobe Analytics e l&#39;inoltro di registri CDN relativi agli URL associati ai brand. Per farlo, fai clic sulle schede corrispondenti: SGC, CDN e così via.
+Se sei sulla [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), passa a **Gestione dei marchi** per impostare e configurare marchi, alias dei marchi e definire i concorrenti su cui tenere traccia. **Gestione marchi** viene utilizzato anche per configurare integrazioni quali Google Search Console, Adobe Analytics e l&#39;inoltro di registri CDN relativi agli URL associati ai brand. Per farlo, fai clic sulle schede corrispondenti: SGC, CDN e così via.
 
 ![Gestione dei marchi: navigazione nelle app (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
@@ -60,7 +60,7 @@ Puoi inoltre aggiungere argomenti e prompt all’elenco indipendentemente da un 
 5. Seleziona l’area geografica.
 6. Fai clic su **Aggiungi prompt** per visualizzare nell’elenco l’argomento con il prompt.
 
-Per i clienti che si trovano nell&#39;esperienza incentrata sul brand, per aggiungere argomenti e prompt, passa a **Gestione dei prompt**.
+Per i clienti che si trovano nella [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), per aggiungere argomenti e prompt, passa a **Gestione dei prompt**.
 
 ![Gestione dei prompt (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -212,7 +212,7 @@ Dopo aver integrato l’account Google Search Console con l’ottimizzatore LLM,
 
 #### Visualizzare le query aggiunte nell&#39;elenco Prompt {#prompts-list}
 
-Dopo l&#39;aggiunta di una query, questa viene visualizzata nella scheda [Prompts](#prompts-brand) nel dashboard Configurazione cliente (esperienza classica) o in **Gestione prompt** (esperienza incentrata sul marchio). I prompt originati da Google Search Console sono contrassegnati con l&#39;icona di Google Search Console nella colonna **Origin**. L’icona consente di distinguere tra i prompt basati sul comportamento effettivo di ricerca dell’utente e quelli aggiunti manualmente o da altre origini.
+Dopo l&#39;aggiunta di una query, questa viene visualizzata nella scheda [Prompts](#prompts-brand) nel dashboard Configurazione cliente (navigazione classica) o in **Gestione prompt** (esperienza incentrata sul marchio). I prompt originati da Google Search Console sono contrassegnati con l&#39;icona di Google Search Console nella colonna **Origin**. L’icona consente di distinguere tra i prompt basati sul comportamento effettivo di ricerca dell’utente e quelli aggiunti manualmente o da altre origini.
 
 ### Domande frequenti {#gsc-faq}
 

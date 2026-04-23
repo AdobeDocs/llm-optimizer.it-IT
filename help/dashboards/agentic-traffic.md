@@ -2,10 +2,10 @@
 title: Traffico da IA agentica
 description: Scopri come utilizzare la dashboard Traffico da IA agentica per scoprire come gli agenti IA interagiscono con il tuo sito.
 feature: Agentic Traffic
-source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1404'
-ht-degree: 89%
+source-wordcount: '1407'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +25,7 @@ Questa pagina descrive quanto segue:
 * [Risultati migliori e peggiori](#top-bottom-movers)
 * [Analisi prestazioni URL e agente utente](#user-url-performance)
 
-Se ti trovi nell&#39;esperienza incentrata sul brand, passa a **Traffico agente** e seleziona il sito per il quale desideri visualizzare le informazioni sul traffico agente.
+Se ti trovi nella [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), passa a **Traffico agente** e seleziona il sito per il quale desideri visualizzare le informazioni sul traffico agente.
 
 ![Traffico agente - Selettore siti (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
@@ -33,11 +33,9 @@ Se ti trovi nell&#39;esperienza incentrata sul brand, passa a **Traffico agente*
 
 Senza l’**inoltro del registro CDN**, la dashboard Traffico da IA agentica è vuota. Per visualizzare le interazioni agentiche, devi configurare l’**Inoltro del registro CDN**.
 
-Se ti trovi nell&#39;esperienza incentrata sul brand, puoi aggiungere le informazioni di inoltro del registro CDN passando a **Gestione dei brand** e facendo clic sull&#39;etichetta **CDN**.
+### Configurazione cliente (navigazione classica):
 
-![Gestione marchi - Inoltro registro CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
-
-**Configurazione del cliente (navigazione classica):** Al primo accesso verrà visualizzato un messaggio come illustrato nell&#39;immagine seguente.
+Al primo accesso, visualizzerai un messaggio come mostrato nell’immagine seguente.
 
 ![Configurazione CDN](/help/dashboards/assets/ag-log-forward1.png)
 
@@ -59,6 +57,12 @@ Se selezioni **Altro**, dovrai contattare llmo-now@adobe.com per assistenza.
 >Per informazioni dettagliate sull&#39;inoltro di log quando si utilizza una rete CDN gestita dal cliente (BYOCDN), vedere [Panoramica sull&#39;inoltro di log BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Una volta attivata, i registri vengono acquisiti e la dashboard sarà popolata con metriche quali il totale delle interazioni degli agenti, il tasso di successo, gli hit per mercato, l’analisi dell’agente utente e prestazioni a livello di URL.
+
+### Esperienza incentrata sul brand
+
+Se ti trovi nella [esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), puoi aggiungere le informazioni di inoltro del registro CDN passando a **Gestione marchi** e facendo clic sull&#39;etichetta **CDN**.
+
+![Gestione marchi - Inoltro registro CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 LLM Optimizer elabora un sottoinsieme di campi dai registri CDN. Anche se i nomi dei campi del registro non elaborati variano a seconda del provider CDN, vengono normalizzati e riportati come:
 

@@ -2,7 +2,7 @@
 title: Best practice per categorie, argomenti, prompt e altri brand
 description: Ottimizza gli insight LLM configurando categorie, argomenti, prompt e altri brand da tracciare, inclusa la concorrenza, per il monitoraggio personalizzato del brand e l’analisi strategica dei contenuti.
 feature: Best Practices, Customer Configuration
-source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 93%
@@ -26,7 +26,7 @@ Nella dashboard [!UICONTROL Configurazione cliente], puoi personalizzare le cate
 
 Per impostazione predefinita, i nuovi clienti iniziano con un’interfaccia mirata e brand-first con una configurazione basata sull’onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un marchio attivo e altri marchi suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente a questa esperienza incentrata sul marchio.
 
-Se stai seguendo un&#39;esperienza incentrata sul brand, **Gestione dei brand** è il punto in cui puoi definire come monitorare e analizzare il tuo brand.
+Per chi utilizza un&#39;esperienza incentrata sul marchio, la **gestione dei marchi** è il punto in cui puoi definire il modo in cui il tuo marchio viene monitorato e analizzato.
 
 ![Gestione dei marchi: navigazione nelle app (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
