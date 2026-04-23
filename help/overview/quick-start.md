@@ -2,9 +2,9 @@
 title: Avvio rapido
 description: Scopri come integrare il nome commerciale e il dominio, attivare la versione di prova da Experience Hub o Experience Cloud e completare la configurazione per Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 37%
 
 ---
@@ -95,7 +95,7 @@ Per iniziare a utilizzare LLM Optimizer, effettua l’onboarding del nome commer
 
 Durante la fase di onboarding verrà generato un piccolo set di categorie, argomenti e prompt. L’analisi della presenza del brand su tali prompt sarà disponibile subito dopo l’onboarding del sito.
 
-È inoltre disponibile la possibilità di distribuire ottimizzazioni in Edge. Ulteriori informazioni in [Ottimizza in Edge — Domande frequenti](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+È inoltre disponibile la possibilità di distribuire ottimizzazioni in Edge. Ulteriori informazioni in [Ottimizza in Edge — Domande frequenti](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Inoltre, configura [l&#39;inoltro del registro CDN](#step-4) per l&#39;analisi del traffico. LLM Optimizer richiede dati e informazioni Presenza dei brand da agenti e traffichi da referral per identificare opportunità e fornire consigli prescrittivi che migliorano la visibilità dell’intelligenza artificiale.
 
@@ -128,7 +128,7 @@ Dalla dashboard Configurazione cliente puoi effettuare le seguenti operazioni:
 >
 > Per ulteriori dettagli sulla configurazione delle categorie, degli argomenti e dei prompt, consulta la pagina [Best practice per la configurazione di categorie, argomenti e prompt](/help/overview/best-practices-topics-prompts.md).
 
-### Esperienza incentrata sul brand
+### Categorie di esperienza, argomenti e prompt incentrati sul brand
 
 Per i clienti che utilizzano l’esperienza incentrata sul marchio, puoi aggiungere categorie, argomenti e prompt come segue:
 
