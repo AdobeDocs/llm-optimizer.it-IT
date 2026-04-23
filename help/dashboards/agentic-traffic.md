@@ -2,10 +2,10 @@
 title: Traffico da IA agentica
 description: Scopri come utilizzare la dashboard Traffico da IA agentica per scoprire come gli agenti IA interagiscono con il tuo sito.
 feature: Agentic Traffic
-source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 94%
+source-wordcount: '1404'
+ht-degree: 89%
 
 ---
 
@@ -25,9 +25,19 @@ Questa pagina descrive quanto segue:
 * [Risultati migliori e peggiori](#top-bottom-movers)
 * [Analisi prestazioni URL e agente utente](#user-url-performance)
 
+Se ti trovi nell&#39;esperienza incentrata sul brand, passa a **Traffico agente** e seleziona il sito per il quale desideri visualizzare le informazioni sul traffico agente.
+
+![Traffico agente - Selettore siti (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
 ## Inoltro del registro CDN {#cdn-setup}
 
-Senza l’**inoltro del registro CDN**, la dashboard Traffico da IA agentica è vuota. Per visualizzare le interazioni agentiche, devi configurare l’**Inoltro del registro CDN**.  Al primo accesso, visualizzerai un messaggio come mostrato nell’immagine seguente.
+Senza l’**inoltro del registro CDN**, la dashboard Traffico da IA agentica è vuota. Per visualizzare le interazioni agentiche, devi configurare l’**Inoltro del registro CDN**.
+
+Se ti trovi nell&#39;esperienza incentrata sul brand, puoi aggiungere le informazioni di inoltro del registro CDN passando a **Gestione dei brand** e facendo clic sull&#39;etichetta **CDN**.
+
+![Gestione marchi - Inoltro registro CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+**Configurazione del cliente (navigazione classica):** Al primo accesso verrà visualizzato un messaggio come illustrato nell&#39;immagine seguente.
 
 ![Configurazione CDN](/help/dashboards/assets/ag-log-forward1.png)
 

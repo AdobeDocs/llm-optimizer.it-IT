@@ -2,17 +2,21 @@
 title: Avvio rapido
 description: Scopri come integrare il nome commerciale e il dominio, attivare la versione di prova da Experience Hub o Experience Cloud e completare la configurazione per Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: dcbeb1c61dd9dcefd83908f65f8303d36c0fb78e
+source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 47%
+source-wordcount: '1454'
+ht-degree: 37%
 
 ---
 
 
 # Avvio rapido
 
-Per iniziare a utilizzare LLM Optimizer, devi completare il processo di onboarding. Dopo l&#39;onboarding, potrai personalizzare categorie, argomenti, richieste e configurare l&#39;inoltro dei registri per ottenere informazioni più precise e accedere a [dashboard di LLM Optimizer](/help/dashboards/dashboards-overview.md) e ad altre funzionalità.
+Per iniziare a utilizzare LLM Optimizer, completa l’onboarding. Quindi personalizza categorie, argomenti e prompt, configura l&#39;inoltro del registro CDN e apri le [dashboard](/help/dashboards/dashboards-overview.md) per ottenere informazioni più complete.
+
+**Esperienza incentrata sul marchio:** Per impostazione predefinita, i nuovi clienti iniziano con un&#39;interfaccia incentrata sul marchio con una configurazione basata sull&#39;onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un marchio attivo e altri marchi suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente a questa esperienza incentrata sul marchio.
+
+<!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
 
 ## Panoramica sull’onboarding
 
@@ -89,7 +93,7 @@ Per iniziare a utilizzare LLM Optimizer, effettua l’onboarding del nome commer
 
 Durante la fase di onboarding verrà generato un piccolo set di categorie, argomenti e prompt. L’analisi della presenza del brand su tali prompt sarà disponibile subito dopo l’onboarding del sito.
 
-È inoltre disponibile la possibilità di distribuire ottimizzazioni in Edge. Ulteriori informazioni in [Ottimizza in Edge — Domande frequenti](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+È inoltre disponibile la possibilità di distribuire ottimizzazioni in Edge. Ulteriori informazioni in [Ottimizza in Edge — Domande frequenti](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Inoltre, configura [l&#39;inoltro del registro CDN](#step-4) per l&#39;analisi del traffico. LLM Optimizer richiede dati e informazioni Presenza dei brand da agenti e traffichi da referral per identificare opportunità e fornire consigli prescrittivi che migliorano la visibilità dell’intelligenza artificiale.
 
@@ -97,13 +101,17 @@ Inoltre, configura [l&#39;inoltro del registro CDN](#step-4) per l&#39;analisi d
 
 Dopo che l’organizzazione avrà finalizzato il contratto di business, potrai iniziare a utilizzare LLM Optimizer con il dominio selezionato dalla tua organizzazione. Al termine dell&#39;onboarding, accedi a [https://llmo.now](https://llmo.now).
 
-## Passaggio 2: personalizzare categorie, argomenti e prompt
+## Passaggio 2: personalizzare categorie, argomenti e prompt {#step-2-customize-categories-topics-and-prompts}
 
-Una volta effettuato l’onboarding del sito, puoi visualizzare l’analisi della Presenza del brand in base a un piccolo set di prompt generati automaticamente durante la fase di onboarding. In futuro, potrai personalizzare le categorie, gli argomenti e i prompt per il tuo brand. Questa configurazione viene creata nella [dashboard Configurazione cliente](/help/dashboards/customer-configuration.md).
+Una volta effettuato l’onboarding del sito, puoi visualizzare l’analisi della Presenza del brand in base a un piccolo set di prompt generati automaticamente durante la fase di onboarding. In futuro, potrai personalizzare categorie, argomenti e prompt per il tuo marchio.
+
+### Configurazione cliente (navigazione classica)
+
+Se utilizzi la navigazione classica (non l&#39;esperienza incentrata sul marchio), puoi personalizzare categorie, argomenti e prompt per il tuo marchio dal [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md).
 
 ![Dashboard Configurazione cliente](/help/overview/assets/prompt-creation.png)
 
-Da questa dashboard puoi:
+Dalla dashboard Configurazione cliente puoi effettuare le seguenti operazioni:
 
 * Aggiungere **nuove categorie** in linea con le tue priorità di business. Le categorie possono essere ampie aree di contenuto rilevanti per il dominio.
 * Inserisci **argomenti personalizzati** o argomenti secondari da tracciare. Gli argomenti possono essere temi specifici associati a volumi elevati di parole chiave senza brand associate al dominio.
@@ -118,13 +126,33 @@ Da questa dashboard puoi:
 >
 > Per ulteriori dettagli sulla configurazione delle categorie, degli argomenti e dei prompt, consulta la pagina [Best practice per la configurazione di categorie, argomenti e prompt](/help/overview/best-practices-topics-prompts.md).
 
+### Esperienza incentrata sul brand
+
+Per i clienti che si avvalgono dell’esperienza incentrata sul brand, puoi aggiungere categorie, argomenti e prompt come segue:
+
+* **Categorie** — Passare a **Gestione marchi** e fare clic su **Categorie**. Le categorie sono definite a livello globale e si applicano a tutti i marchi in Gestione marchi.
+
+  ![Gestione dei marchi con categorie nella navigazione](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+* **Argomenti e prompt** — Passare a **Gestione prompt** per creare argomenti e prompt, inclusi i prompt per un marchio specifico.
+
+  ![Gestione richieste](/help/assets/brand-centric-experience/prompts-management.png)
+
 ## Passaggio 3: insight sulla presenza del brand
 
 Una volta effettuato l’onboarding del dominio, puoi visualizzare gli insight iniziali nella vista Presenza del brand in base ai prompt generati automaticamente durante l’onboarding. Dopo aver personalizzato le categorie, gli argomenti e i prompt, LLM Optimizer attiva automaticamente l’analisi della Presenza del brand sui prompt specificati e i risultati saranno disponibili in 24 ore.
 
+>[!NOTE]
+>
+> Per i clienti che usano un&#39;esperienza incentrata sul brand, passa a **Presenza dei brand** e seleziona il brand di cui vuoi visualizzare la Presenza dei brand utilizzando il menu a discesa del brand. Puoi anche visualizzare la visibilità dei brand a un livello **Tutti i marchi** con questa esperienza.
+
 ## Passaggio 4: fornire informazioni per l’inoltro del registro CDN {#step-4}
 
-Per sbloccare le informazioni sul traffico e sul Traffico da referral agenti, aggiungi le informazioni di inoltro del registro CDN dal [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Apri la scheda **Configurazione rete CDN** e seleziona **Rete CDN integrata**.
+Per sbloccare le informazioni sul traffico e sul Traffico da referral agenti, registra l’inoltro dei registri CDN in modo che LLM Optimizer possa leggere i registri di accesso.
+
+### Configurazione cliente (navigazione classica)
+
+Se utilizzi la navigazione classica, puoi aggiungere le informazioni di inoltro del registro CDN dal [dashboard di configurazione del cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Apri la scheda **Configurazione rete CDN** e seleziona **Rete CDN integrata**.
 
 ![Configurazione CDN cliente](/help/overview/assets/cc-cdn.png)
 
@@ -136,6 +164,12 @@ In alternativa, se non hai già aggiunto un provider CDN, come descritto in prec
 >[!NOTE]
 >Per informazioni dettagliate sull&#39;inoltro di log quando si utilizza una rete CDN gestita dal cliente (BYOCDN), vedere [Panoramica sull&#39;inoltro di log BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
+### Esperienza incentrata sul brand
+
+Per i clienti che fanno parte dell&#39;esperienza incentrata sul brand, puoi aggiungere le informazioni di inoltro del registro CDN da **Gestione marchi** come segue: apri **Gestione marchi** e fai clic sull&#39;etichetta **CDN**.
+
+![Gestione marchi - Inoltro registro CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
 ## Passaggio 5: esplorare le dashboard e intervenire
 
 Una volta fornite le informazioni per l’inoltro del registro CDN, puoi:
@@ -144,5 +178,8 @@ Una volta fornite le informazioni per l’inoltro del registro CDN, puoi:
 * Esplora le dashboard [Agentic](/help/dashboards/agentic-traffic.md) e [Traffico da referral](/help/dashboards/referral-traffic.md), se è stato configurato l&#39;inoltro del registro CDN.
 * Utilizzare [Opportunità](/help/dashboards/opportunities.md) per identificare contenuti e miglioramenti tecnici.
 * Esportare dati e collaborare con il team o invitare un collega a utilizzare il prodotto.
+
+>[!NOTE]
+> Nell’esperienza incentrata sul marchio, accedi alla vista desiderata dalla sezione navigazione a sinistra.
 
 Infine, per comprendere appieno le funzionalità di LLM Optimizer, puoi esplorare tutte le [dashboard](/help/dashboards/dashboards-overview.md) disponibili.
