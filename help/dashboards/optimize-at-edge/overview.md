@@ -2,10 +2,10 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
+source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
 workflow-type: tm+mt
-source-wordcount: '2301'
-ht-degree: 74%
+source-wordcount: '2315'
+ht-degree: 73%
 
 ---
 
@@ -87,7 +87,7 @@ Nella tabella seguente sono presentate le opportunità che possono migliorare l�
 
 | Opportunità | Tipo | Identificazione automatica | Suggerimento automatico | Ottimizzazione automatica |
 |---------|----------|----------|----------|----------|
-| Recupera visibilità dei contenuti | GEO tecnica | Rileva le pagine in cui i contenuti critici sono nascosti dagli agenti IA. Mostra gli URL interessati e i contenuti previsti che possono essere recuperati. | Evidenzia i contenuti che possono essere resi disponibili per gli agenti IA e consiglia di abilitare il pre-rendering per le pagine. | Fornisce al traffico da IA agentica un’istantanea HTML completamente sottoposta a rendering e ottimizzata per l’IA che recupera i contenuti precedentemente nascosti. |
+| [Ripristina Visibilità dei contenuti](/help/dashboards/opportunities/recover-content-visibility.md) | GEO tecnica | Rileva le pagine in cui i contenuti critici sono nascosti dagli agenti IA. Mostra gli URL interessati e i contenuti previsti che possono essere recuperati. | Evidenzia i contenuti che possono essere resi disponibili per gli agenti IA e consiglia di abilitare il pre-rendering per le pagine. | Fornisce al traffico da IA agentica un’istantanea HTML completamente sottoposta a rendering e ottimizzata per l’IA che recupera i contenuti precedentemente nascosti. |
 | Aggiungi riepiloghi ottimizzati per gli LLM | Ottimizzazione dei contenuti | Identifica pagine lunghe o complesse prive di riepiloghi concisi a livello di pagina o di sezione che risultano più difficili da scansionare e comprendere rapidamente per l’IA. | Consiglia brevi riepiloghi generati dall’IA a livello di pagina e di sezione, per l’acquisizione di contenuti chiave. | Inserisce i riepiloghi nelle sezioni HTML pertinenti, migliorando il modo in cui i modelli interpretano e descrivono i contenuti della pagina. |
 | Aggiungi domande frequenti pertinenti | Ottimizzazione dei contenuti | Rileva le lacune nell’intento dei contenuti della pagina esistente che potrebbero trarre vantaggio dalle domande frequenti. | Suggerisce contenuti per le domande frequenti generati dall’IA in linea con l’intento utente e gli argomenti esistenti. | Inserisce i contenuti delle domande frequenti nell’HTML, rendendo le pagine più individuabili e pertinenti nelle risposte basate sull’IA. |
 | Semplifica contenuti complessi | Ottimizzazione dei contenuti | Contrassegna le pagine con testi complessi che possono ostacolare la comprensione da parte dell’IA. | Fornisce versioni semplificate generate dall’IA di testi complessi mantenendone il significato originale. | Riscrive sezioni complesse della pagina, migliorando la leggibilità per l’IA. |
@@ -110,6 +110,8 @@ In questo modo la pagina sarà completamente visibile agli agenti IA. Ulteriori 
 >[!IMPORTANT]
 >Questa funzionalità di pre-rendering si applica in automatico a tutte le opportunità presentate di seguito quando vengono implementate con la funzione Ottimizzazione nella rete Edge, affinché la pagina sia completamente visibile agli agenti IA.
 
+Per una procedura dettagliata, i passaggi di distribuzione e le domande frequenti relative al dashboard, vedere [Recupera Visibilità dei contenuti](/help/dashboards/opportunities/recover-content-visibility.md).
+
 ### Aggiungi riepiloghi ottimizzati per gli LLM
 
 Questa opportunità identifica le pagine che possono trarre vantaggio da riepiloghi concisi per aiutare gli LLM a comprendere rapidamente il contenuto della pagina. Per ogni pagina, l’opportunità rileva dove è più necessario un riepilogo e crea riepiloghi generati dall’IA a livello di pagina o di sezione. Quando vengono implementati con Ottimizzazione nella rete Edge, questi riepiloghi vengono inseriti nell’HTML recuperato dagli agenti IA, in modo da migliorare le probabilità di una descrizione più accurata del tuo contenuto.
@@ -126,7 +128,7 @@ Questa opportunità trova le pagine con paragrafi lunghi e complessi che potrebb
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
