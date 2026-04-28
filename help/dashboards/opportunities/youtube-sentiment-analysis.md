@@ -2,9 +2,9 @@
 title: Analisi Sentiment YouTube
 description: Scopri come LLM Optimizer analizza i video e i commenti di YouTube per formulare consigli per migliorare la percezione e la visibilità del tuo marchio nella Ricerca IA dei risultati.
 feature: Opportunities
-source-git-commit: 101a0582a5112c7fdf1871a938b773b7159a9d4c
+source-git-commit: 91fcd44f97e996fa7eb712928aba5dda250ea55b
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1255'
 ht-degree: 0%
 
 ---
