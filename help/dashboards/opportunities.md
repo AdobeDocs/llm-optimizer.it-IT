@@ -2,10 +2,10 @@
 title: Opportunità di ottimizzazione
 description: Scopri come utilizzare la dashboard Opportunità per rilevare automaticamente come migliorare il tuo sito per aumentare la visibilità del brand.
 feature: Opportunities
-source-git-commit: f62148a9073e79d63e6ae19f0585aa87c16bcd3e
+source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 97%
+source-wordcount: '780'
+ht-degree: 58%
 
 ---
 
@@ -31,11 +31,15 @@ Di seguito è riportata una tabella delle opportunità attualmente supportate:
 | Opportunità | Tipo | Problemi identificati | Suggerimenti per la correzione |
 |---------|----------|----------|----------|
 | Riepiloga paragrafi lunghi | Contenuto (nel sito) | Rileva i paragrafi che superano le soglie di lunghezza consigliate. Mostra gli URL interessati e snippet del testo tropo lungo. | Crea sunti o dividi i testi lunghi in sezioni più brevi e più facili da analizzare. |
-| Consiglia contenuti strutturati (domande frequenti) | Contenuto (nel sito) | Rileva l’assenza di voci di tipo “Domande frequenti” necessarie per rispondere ai prompt più diffusi. Mostra i prompt correlati, le categorie e gli URL interessati. | Aggiungi blocchi di schema per sezioni “Domande frequenti” con risposte concise, in linea con le richieste più comuni. |
-| Rileva traffico da IA agentica bloccato | GEO tecnica | Analizza i registri CDN per le richieste bloccate da agenti IA noti, ad esempio, GPTBot, PerplexityBot. Segnala gli URL e gli agenti interessati. | Se necessario, aggiorna il file robots.txt o le configurazioni server per consentire l’accesso ai crawler IA supportati. |
-| Rileva problemi 404s / 403s / 5xx | GEO tecnica | Esegue il monitoraggio dei registri CDN per le risposte di errore. Segnala la frequenza, gli URL interessati e gli hit persi stimati. | Correggi i collegamenti interrotti, aggiorna le autorizzazioni e risolvi i problemi lato server in modo che il contenuto chiave restituisca 200 risposte. |
+| Consigliare contenuti strutturati | Contenuto (nel sito) | Rileva l’assenza di voci di tipo “Domande frequenti” necessarie per rispondere ai prompt più diffusi. Mostra i prompt correlati, le categorie e gli URL interessati. | Aggiungi blocchi di schema per sezioni “Domande frequenti” con risposte concise, in linea con le richieste più comuni. |
+| [Traffico bloccato da robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md) | GEO tecnica | Analizza il file robots.txt per individuare le regole che bloccano selettivamente gli agenti di intelligenza artificiale da contenuti altrimenti accessibili pubblicamente. Segnala gli URL interessati e gli agenti bloccati. | Se necessario, aggiorna il file robots.txt per consentire l’accesso ai crawler di intelligenza artificiale supportati. |
+| [Errori di traffico agente](/help/dashboards/opportunities/agentic-traffic-errors.md) | GEO tecnica | Monitora i registri CDN per le risposte di errore 404, 403 e 5xx restituite agli agenti AI. I rapporti sugli URL interessati e sugli hit totali sono stati persi. | Correggi i collegamenti interrotti, aggiorna le autorizzazioni e risolvi i problemi lato server in modo che il contenuto chiave restituisca 200 risposte. |
 | Semplifica contenuti complessi | Contenuto (nel sito) | Identifica paragrafi lunghi e complessi che superano le soglie di leggibilità che possono ridurre la comprensione dell’intelligenza artificiale. | Esegui il pre-rendering delle pagine in modo che sia disponibile più contenuto per gli agenti IA senza l’esecuzione di JavaScript. |
-| Recupera visibilità dei contenuti (accesso anticipato) | GEO tecnica | Contrassegna le pagine in cui il contenuto critico è nascosto dagli agenti IA. Mostra gli URL interessati e i contenuti previsti che possono essere recuperati. | Esegui il pre-rendering delle pagine in modo che sia disponibile più contenuto per gli agenti IA senza l’esecuzione di JavaScript. |
+| [Ripristina Visibilità dei contenuti](/help/dashboards/opportunities/recover-content-visibility.md) | GEO tecnica | Contrassegna le pagine in cui il contenuto critico è nascosto dagli agenti IA. Mostra gli URL interessati e i contenuti previsti che possono essere recuperati. | Esegui il pre-rendering delle pagine a livello di CDN utilizzando Ottimizza in Edge, in modo che sia disponibile più contenuto per gli agenti di IA senza esecuzione di JavaScript. |
+| [Analisi Wikipedia](/help/dashboards/opportunities/wikipedia-analysis.md) | Fuori sede | Analizza la pagina di Wikipedia della tua azienda rispetto ai concorrenti del settore per riferimenti, sezioni, lunghezza dei contenuti, immagini e completezza della Infobox. Identifica lacune specifiche quando la pagina è inferiore ai benchmark di settore. | Rivedi le raccomandazioni strategiche generate dall’intelligenza artificiale per migliorare la presenza su Wikipedia, inclusi l’aggiunta di riferimenti, l’arricchimento della tua infobox, l’espansione delle sezioni e il miglioramento della qualità degli articoli. |
+| [Analisi Sentiment YouTube (Beta)](/help/dashboards/opportunities/youtube-sentiment-analysis.md) | Fuori sede, social network e community | Analizza i video YouTube citati per il prompt di Presenza dei brand impostato per menzione del brand, sentiment, share of voice e argomenti ricorrenti. Viene visualizzato solo quando i video di YouTube vengono rilevati come citazioni per il set di prompt. | Rivedi i consigli con priorità per migliorare la percezione del brand in tutti i contenuti di YouTube, incluse le azioni suggerite e i team responsabili della loro implementazione. |
+| [Analisi Sentiment Reddit (Beta)](/help/dashboards/opportunities/reddit-sentiment-analysis.md) | Fuori sede, social network e community | Analizza i thread Reddit citati per il prompt di Presenza dei brand impostato per gli argomenti menzione del brand, sentiment, share of voice e ricorrenti. Viene visualizzato solo quando i thread di Reddit vengono rilevati come citazioni per il set di prompt. | Rivedi le raccomandazioni prioritarie per migliorare la percezione del brand in tutti i contenuti Reddit, incluse le azioni suggerite e i team responsabili della loro implementazione. |
+| [Analisi Sentiment Citato (Beta)](/help/dashboards/opportunities/cited-sentiment-analysis.md) | Fuori sede, social network e community | Analizza gli URL più citati rilevati per il set di prompt Presenza dei brand per menzioni dei brand, sentiment, share of voice e argomenti ricorrenti. | Rivedi i consigli con priorità per migliorare la percezione del brand nelle pagine che i sistemi di intelligenza artificiale citano di più quando rispondono alle richieste sul tuo brand. |
 
 ## Ottimizzazione automatica {#auto-optimization}
 
