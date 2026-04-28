@@ -2,7 +2,7 @@
 title: Avvio rapido
 description: Scopri come integrare il nome commerciale e il dominio, attivare la versione di prova da Experience Hub o Experience Cloud e completare la configurazione per Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 37%
@@ -95,7 +95,7 @@ Per iniziare a utilizzare LLM Optimizer, effettua l’onboarding del nome commer
 
 Durante la fase di onboarding verrà generato un piccolo set di categorie, argomenti e prompt. L’analisi della presenza del brand su tali prompt sarà disponibile subito dopo l’onboarding del sito.
 
-È inoltre disponibile la possibilità di distribuire ottimizzazioni in Edge. Ulteriori informazioni in [Ottimizza in Edge — Domande frequenti](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+È inoltre disponibile la possibilità di distribuire ottimizzazioni in Edge. Ulteriori informazioni in [Ottimizza in Edge — Domande frequenti](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Inoltre, configura [l&#39;inoltro del registro CDN](#step-4) per l&#39;analisi del traffico. LLM Optimizer richiede dati e informazioni Presenza dei brand da agenti e traffichi da referral per identificare opportunità e fornire consigli prescrittivi che migliorano la visibilità dell’intelligenza artificiale.
 
@@ -178,7 +178,7 @@ Una volta fornite le informazioni per l’inoltro del registro CDN, puoi:
 
 * Visualizzare la dashboard di [Presenza del brand](/help/dashboards/brand-presence.md), visualizzare il punteggio di visibilità e tenere traccia delle prestazioni relative ad altri brand.
 * Esplora le dashboard [Agentic](/help/dashboards/agentic-traffic.md) e [Traffico da referral](/help/dashboards/referral-traffic.md), se è stato configurato l&#39;inoltro del registro CDN.
-* Utilizzare [Opportunità](/help/dashboards/opportunities.md) per identificare contenuti e miglioramenti tecnici.
+* Utilizzare [Opportunità](/help/dashboards/opportunities-overview.md) per identificare contenuti e miglioramenti tecnici.
 * Esportare dati e collaborare con il team o invitare un collega a utilizzare il prodotto.
 
 >[!NOTE]

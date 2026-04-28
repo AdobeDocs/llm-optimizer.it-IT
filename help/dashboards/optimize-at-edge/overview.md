@@ -2,7 +2,7 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
 workflow-type: tm+mt
 source-wordcount: '2315'
 ht-degree: 73%
@@ -32,7 +32,7 @@ L’ottimizzazione nella rete Edge è progettata per gli utenti business nei tea
 
 ### Quali opportunità sono supportate con l’ottimizzazione nella rete Edge?
 
-Con l’ottimizzazione nella rete Edge, sono supportate le opportunità che possono migliorare l’esperienza da IA agentica sul web. Ulteriori informazioni su ciascuna opportunità sono disponibili sia nella pagina della [Dashboard Opportunità](/help/dashboards/opportunities.md) che nella sezione Opportunità della pagina corrente.
+Con l’ottimizzazione nella rete Edge, sono supportate le opportunità che possono migliorare l’esperienza da IA agentica sul web. Ulteriori informazioni su ciascuna opportunità sono disponibili sia nella pagina della [Dashboard Opportunità](/help/dashboards/opportunities-overview.md) che nella sezione Opportunità della pagina corrente.
 
 ## Onboarding
 
@@ -128,7 +128,7 @@ Questa opportunità trova le pagine con paragrafi lunghi e complessi che potrebb
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 

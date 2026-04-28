@@ -2,7 +2,7 @@
 title: Best practice per LLM Optimizer
 description: Scopri le best practice per l’ottimizzazione degli LLM per migliorare la visibilità del brand nella ricerca IA. Insight per il benchmarking e l’ottimizzazione dei contenuti.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
@@ -86,7 +86,7 @@ L’ottimizzazione all’interno sito migliora i contenuti di proprietà per la 
 
 >[!TIP]
 >
->LLM Optimizer suggerisce le opportunità di ottimizzazione all’interno e all’esterno del sito nella dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere implementati direttamente sul sito utilizzando LLM Optimizer.
+>LLM Optimizer suggerisce le opportunità di ottimizzazione all’interno e all’esterno del sito nella dashboard [Opportunità](/help/dashboards/opportunities-overview.md). Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere implementati direttamente sul sito utilizzando LLM Optimizer.
 
 Di seguito sono riportate alcune best practice per l’ottimizzazione:
 
@@ -108,7 +108,7 @@ Di seguito sono riportate alcune best practice per l’ottimizzazione:
 
 4. Monitora e ripeti
 
-   * Utilizza la [dashboard Opportunità](/help/dashboards/opportunities.md) per identificare e agire in base ai consigli.
+   * Utilizza la [dashboard Opportunità](/help/dashboards/opportunities-overview.md) per identificare e agire in base ai consigli.
    * Tieni traccia del punteggio di visibilità, del sentiment e della frequenza delle citazioni.
    * Effettua regolazioni in base all’attività degli altri brand (inclusa la concorrenza) e alle tendenze del prompt.
 
@@ -118,7 +118,7 @@ L’ottimizzazione all’esterno del sito è incentrata sul miglioramento della 
 
 >[!TIP]
 >
->LLM Optimizer suggerisce le opportunità di ottimizzazione all’interno e all’esterno del sito nella dashboard [Opportunità](/help/dashboards/opportunities.md). Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere implementati direttamente sul sito utilizzando LLM Optimizer.
+>LLM Optimizer suggerisce le opportunità di ottimizzazione all’interno e all’esterno del sito nella dashboard [Opportunità](/help/dashboards/opportunities-overview.md). Queste opportunità sono specifiche per il tuo sito. Molti di questi suggerimenti possono essere implementati direttamente sul sito utilizzando LLM Optimizer.
 
 
 Principali canali esterni al sito:
@@ -170,7 +170,7 @@ Di seguito sono riportati i passaggi da seguire per monitorare l’avanzamento:
    * Utilizza le funzioni di attribuzione per collegare i miglioramenti della visibilità a traffico, coinvolgimento e conversioni. Le funzioni di attribuzione di Adobe LLM Optimizer ti consentono di collegare i miglioramenti nelle metriche di visibilità, menzioni, citazioni, sentiment, a risultati di business reali come il traffico del sito, il coinvolgimento utente e le conversioni. Questo il ROI per le tue attività di ottimizzazione.
    * Tieni traccia delle modifiche nel traffico da IA agentica e da referral per convalidare il ROI dell’ottimizzazione.
 1. Migliora i contenuti
-   * Utilizza la [dashboard Opportunità](/help/dashboards/opportunities.md) di LLM Optimizer per identificare e apportare modifiche immediate al sito consigliate in modo specifico. Consulta [Opportunità](/help/dashboards/opportunities.md), quindi misura i risultati. Rivedi regolarmente la sezione Opportunità e intervieni sui consigli forniti.
+   * Utilizza la [dashboard Opportunità](/help/dashboards/opportunities-overview.md) di LLM Optimizer per identificare e apportare modifiche immediate al sito consigliate in modo specifico. Consulta [Opportunità](/help/dashboards/opportunities-overview.md), quindi misura i risultati. Rivedi regolarmente la sezione Opportunità e intervieni sui consigli forniti.
    * Dai priorità alle pagine con visibilità in calo.
    * Aggiorna il tuo sito web e altri contenuti per renderli più pertinenti ai prompt che desideri raggiungere.
    * Aggiungi alle pagine le domande frequenti che rispondono alle domande più frequenti delle persone.
