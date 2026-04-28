@@ -2,10 +2,10 @@
 title: Panoramica di LLM Optimizer
 description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’IA. Tieni traccia di menzioni, citazioni e insight. Inizia subito a ottimizzare per migliorare il coinvolgimento e la tua influenza.
 feature: Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
-workflow-type: ht
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -57,11 +57,11 @@ L’ottimizzazione per motori generativi è per sua natura interfunzionale. LLM 
 
 Adobe LLM Optimizer offre le seguenti possibilità:
 
-**Misurare la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il tuo brand viene menzionato nei risultati di ricerca basati sull’IA. Supera le supposizioni grazie a un punteggio di visibilità chiaro, che potrai monitorare e confrontare nel tempo.Consulta la [dashboard Presenza del brand](/help/dashboards/brand-presence.md).
-**Benchmarking di altri brand**: scopri come il tuo brand si posiziona rispetto ad altri brand, inclusa la concorrenza, nei motori generativi. Identifica le lacune della quota di voce e scopri i vantaggi competitivi. Consulta la [dashboard Presenza del brand](/help/dashboards/brand-presence.md).
-**Scoprire opportunità fruibili**: individua le opportunità di contenuto, ad esempio, domande frequenti, riassunti, schemi, e le opportunità tecniche, ad esempio ricercabilità per indicizzazione, problemi di indicizzazione, che aumentano direttamente le menzioni e le citazioni. Consulta la [dashboard Opportunità](/help/dashboards/opportunities.md).
-**Tenere traccia dell’impatto del traffico da AI**: monitora il traffico da IA agentica (dagli Assistenti IA) e da referral (quando l’utente fa clic sulle citazioni) nelle tue proprietà. Collega la visibilità GEO a un coinvolgimento reale. Consulta la [dashboard Traffico da IA agentica](/help/dashboards/agentic-traffic.md) e la [dashboard Traffico da referral](/help/dashboards/referral-traffic.md).
-**Abilitare la collaborazione del team**: condividi le dashboard, assegna i proprietari per prompt o categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO e comunicazione. Consulta la [dashboard Collaborazione](/help/dashboards/collaboration.md).
+**Misurare la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il tuo brand viene menzionato nei risultati di ricerca basati sull’IA. Supera le supposizioni grazie a un punteggio di visibilità chiaro, che potrai monitorare e confrontare nel tempo. Consulta la [dashboard Presenza del brand](/help/dashboards/brand-presence.md).
+**Benchmark Others** - Guarda come il tuo marchio si confronta con altri, inclusi i concorrenti nei motori generativi. Identifica le lacune della quota di voce e scopri i vantaggi competitivi. Consulta la [dashboard Presenza del brand](/help/dashboards/brand-presence.md).
+**Scopri opportunità fruibili**: individua opportunità di contenuto (ad esempio, domande frequenti, riassunti, schema) e opportunità tecniche (crawlability, problemi di indicizzazione) che aumentano direttamente menzioni e citazioni. Vedi [Dashboard opportunità](/help/dashboards/opportunities-overview.md).
+**Tracciare l&#39;impatto del traffico dall&#39;intelligenza artificiale** - Monitorare il traffico agente (dagli assistenti di intelligenza artificiale) e il traffico da referral (l&#39;utente fa clic dalle citazioni) nelle proprietà di tua proprietà. Collega la visibilità GEO a un coinvolgimento reale. Vedi [Dashboard traffico agente](/help/dashboards/agentic-traffic.md) e [Dashboard Traffico da referral](/help/dashboards/referral-traffic.md).
+**Abilita Team Collaboration** - Condividi dashboard, assegna i proprietari per le richieste o le categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO (Search Engine Optimization) e comunicazione. Consulta la [dashboard Collaborazione](/help/dashboards/collaboration.md).
 
 ## Ulteriori informazioni
 

@@ -2,7 +2,7 @@
 title: Avvio rapido
 description: Scopri come integrare il nome commerciale e il dominio, attivare la versione di prova da Experience Hub o Experience Cloud e completare la configurazione per Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 37%
@@ -178,7 +178,7 @@ Una volta fornite le informazioni per l’inoltro del registro CDN, puoi:
 
 * Visualizzare la dashboard di [Presenza del brand](/help/dashboards/brand-presence.md), visualizzare il punteggio di visibilità e tenere traccia delle prestazioni relative ad altri brand.
 * Esplora le dashboard [Agentic](/help/dashboards/agentic-traffic.md) e [Traffico da referral](/help/dashboards/referral-traffic.md), se è stato configurato l&#39;inoltro del registro CDN.
-* Utilizzare [Opportunità](/help/dashboards/opportunities.md) per identificare contenuti e miglioramenti tecnici.
+* Utilizzare [Opportunità](/help/dashboards/opportunities-overview.md) per identificare contenuti e miglioramenti tecnici.
 * Esportare dati e collaborare con il team o invitare un collega a utilizzare il prodotto.
 
 >[!NOTE]

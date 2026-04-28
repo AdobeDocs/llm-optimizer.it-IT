@@ -2,10 +2,10 @@
 title: Panoramica delle dashboard
 description: Questo è un articolo di panoramica.
 feature: Onboarding
-source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 93%
+ht-degree: 87%
 
 ---
 
@@ -43,7 +43,7 @@ CARDS
   {description= Lets you enable cross-functional teamwork by allowing you to invite colleagues into a shared workspace.}
   {target=_blank}
   {cta=Learn more}
-* ./opportunities.md
+* ./opportunities-overview.md
   {title= Opportunities dashboard}
   {image= /help/assets/overview/opportunities-card.png}
   {description= Surfaces and prioritizes actionable insights that improve brand visibility and citation performance across AI-powered search platforms}
@@ -83,7 +83,7 @@ CARDS
                     <p class="is-size-6">Tiene traccia di come si colloca il tuo brand sulle piattaforme di ricerca LLM, con analisi del sentiment e benchmarking rispetto ad altri brand.</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -106,7 +106,7 @@ CARDS
                     <p class="is-size-6">Fa emergere il traffico proveniente da LLM, che non viene considerato nelle analisi tradizionali, per aiutarti a collegare l’individuazione basata sull’IA al coinvolgimento e alle entrate.</p>
                 </div>
                 <a href="./agentic-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -129,7 +129,7 @@ CARDS
                     <p class="is-size-6">Misura le visite da parte di persone reali provenienti da citazioni generate dall’IA, per aiutarti a riconoscere l’effettivo coinvolgimento da parte di utenti dell’IA</p>
                 </div>
                 <a href="./referral-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -152,7 +152,7 @@ CARDS
                     <p class="is-size-6">Favorisce il lavoro tra team interfunzionali consentendoti di invitare altre persone in un’area di lavoro condivisa.</p>
                 </div>
                 <a href="./collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -161,7 +161,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./opportunities.md" title="Dashboard Opportunità" target="_blank" rel="referrer">
+                    <a href="./opportunities-overview.md" title="Dashboard Opportunità" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/opportunities-card.png" alt="Dashboard Opportunità"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -170,12 +170,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./opportunities.md" target="_blank" rel="referrer" title="Dashboard Opportunità">Dashboard Opportunità</a>
+                        <a href="./opportunities-overview.md" target="_blank" rel="referrer" title="Dashboard Opportunità">Dashboard Opportunità</a>
                     </p>
                     <p class="is-size-6">Rileva e assegna priorità a insight fruibili per migliorare le visibilità del brand e le prestazioni delle citazioni nelle piattaforme di ricerca basate sull’IA</p>
                 </div>
-                <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                <a href="./opportunities-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -198,7 +198,7 @@ CARDS
                     <p class="is-size-6">Fornisce visibilità sulle prestazioni degli URL di tua proprietà in ambienti di ricerca basati sull’IA.</p>
                 </div>
                 <a href="./url-inspector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
