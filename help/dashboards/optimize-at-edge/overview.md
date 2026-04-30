@@ -2,10 +2,10 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
+source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 73%
+source-wordcount: '3108'
+ht-degree: 57%
 
 ---
 
@@ -50,7 +50,7 @@ Avvia il processo di onboarding nel tuo account LLM Optimizer:
 
 Requisiti per il team IT/CDN:
 
-* Aggiungi l&#39;agente utente `*AdobeEdgeOptimize/1.0*` al Inserisco nell&#39;elenco Consentiti di gestione del traffico da bot nel file robots.txt del sito o alle regole di gestione del traffico da bot.
+* Aggiungi l’agente utente `*AdobeEdgeOptimize/1.0*` all’elenco Consentiti nel file robots.txt del sito o nelle regole di gestione del traffico da bot.
 * Assicurati che le pagine non siano bloccate a livello di dominio o CDN.
 * Aggiungere le regole di indirizzamento per l’ottimizzazione della rete Edge nella CDN.
 * Se la rete CDN dispone di regole di WAF o Bot Manager, inserire nell&#39;elenco Consentiti l&#39;agente utente `*AdobeEdgeOptimize/1.0*`. Se è necessaria una verifica aggiuntiva, configurare l&#39;intestazione `x-edgeoptimize-fetcher-key`. Ogni guida BYOCDN riportata di seguito include i passaggi necessari.
@@ -63,23 +63,23 @@ Il diagramma seguente illustra il flusso delle richieste in una configurazione B
 >[!IMPORTANT]
 >Il routing deve essere configurato nel CDN esterno (il CDN più vicino al client). Se disponi di più CDN, l’indirizzamento può essere eseguito solo sul CDN esterno.
 
-Per guidare il processo di configurazione, seleziona il provider CDN e segui la guida alla configurazione corrispondente. Tieni presente che questi esempi devono essere adattati alla tua configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori.
+Per una guida al processo di configurazione, seleziona il tuo provider CDN e segui la guida alla configurazione corrispondente. Tieni presente che questi esempi devono essere adattati alla tua configurazione live effettiva. È consigliabile applicare prima le modifiche negli ambienti inferiori.
 
-### Guide alla configurazione CDN
+### Guide per la configurazione della CDN
 
 | Fornitore CDN | Tipo | Guida |
 |---|---|---|
-| CDN gestito da AEM Cloud Service (Fastly) | Gestito da Adobe | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md) |
-| Fastly (BIOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
-| Akamai (BYOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
-| Cloudflare (BYOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
-| CloudFront (BYOCDN) | Porta il tuo CDN | [Visualizza guida all&#39;installazione](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
+| CDN gestita da AEM Cloud Service (Fastly) | Gestito da Adobe | [Vedi guida alla configurazione](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md) |
+| Fastly (BYOCDN) | CDN propria (BYOCDN) | [Vedi guida alla configurazione](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
+| Akamai (BYOCDN) | CDN propria (BYOCDN) | [Vedi guida alla configurazione](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
+| Cloudflare (BYOCDN) | CDN propria (BYOCDN) | [Vedi guida alla configurazione](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
+| CloudFront (BYOCDN) | CDN propria (BYOCDN) | [Vedi guida alla configurazione](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
 >
->Se il provider CDN non è elencato in precedenza o se il dominio o l&#39;e-mail non sono presenti nell&#39;interfaccia utente di LLM Optimizer, contatta `llmo-at-edge@adobe.com` per assistenza sull&#39;onboarding. Una volta completate le configurazioni, puoi implementare i suggerimenti per le opportunità di ottimizzazione nella rete Edge in LLM Optimizer.
+>Se il tuo provider CDN non è tra quelli qui elencati o se il tuo dominio o e-mail non sono presenti nell’interfaccia di LLM Optimizer, contatta `llmo-at-edge@adobe.com` per richiedere assistenza nell’onboarding. Una volta completate le configurazioni, puoi implementare i suggerimenti per le opportunità di ottimizzazione nella rete Edge in LLM Optimizer.
 
-Ogni guida alla configurazione della rete CDN riportata sopra include passaggi di verifica dettagliati alla fine per verificare che il traffico agenziale sia instradato correttamente e che il traffico umano non venga interessato.
+Tutte le guida alla configurazione della CDN riportate qui sopra includono i passaggi dettagliati per la verifica finale, che dovrai seguire per accertarti che il traffico da IA agentica sia indirizzato correttamente e che il traffico da persone non sia interessato da alcuna modifica.
 
 ## Opportunità
 
@@ -88,9 +88,12 @@ Nella tabella seguente sono presentate le opportunità che possono migliorare l�
 | Opportunità | Tipo | Identificazione automatica | Suggerimento automatico | Ottimizzazione automatica |
 |---------|----------|----------|----------|----------|
 | [Ripristina Visibilità dei contenuti](/help/dashboards/opportunities/recover-content-visibility.md) | GEO tecnica | Rileva le pagine in cui i contenuti critici sono nascosti dagli agenti IA. Mostra gli URL interessati e i contenuti previsti che possono essere recuperati. | Evidenzia i contenuti che possono essere resi disponibili per gli agenti IA e consiglia di abilitare il pre-rendering per le pagine. | Fornisce al traffico da IA agentica un’istantanea HTML completamente sottoposta a rendering e ottimizzata per l’IA che recupera i contenuti precedentemente nascosti. |
-| Aggiungi riepiloghi ottimizzati per gli LLM | Ottimizzazione dei contenuti | Identifica pagine lunghe o complesse prive di riepiloghi concisi a livello di pagina o di sezione che risultano più difficili da scansionare e comprendere rapidamente per l’IA. | Consiglia brevi riepiloghi generati dall’IA a livello di pagina e di sezione, per l’acquisizione di contenuti chiave. | Inserisce i riepiloghi nelle sezioni HTML pertinenti, migliorando il modo in cui i modelli interpretano e descrivono i contenuti della pagina. |
-| Aggiungi domande frequenti pertinenti | Ottimizzazione dei contenuti | Rileva le lacune nell’intento dei contenuti della pagina esistente che potrebbero trarre vantaggio dalle domande frequenti. | Suggerisce contenuti per le domande frequenti generati dall’IA in linea con l’intento utente e gli argomenti esistenti. | Inserisce i contenuti delle domande frequenti nell’HTML, rendendo le pagine più individuabili e pertinenti nelle risposte basate sull’IA. |
-| Semplifica contenuti complessi | Ottimizzazione dei contenuti | Contrassegna le pagine con testi complessi che possono ostacolare la comprensione da parte dell’IA. | Fornisce versioni semplificate generate dall’IA di testi complessi mantenendone il significato originale. | Riscrive sezioni complesse della pagina, migliorando la leggibilità per l’IA. |
+| [Arricchisci pagine dettagli prodotto](/help/dashboards/opportunities/enrich-product-detail-pages.md) | GEO tecnica | Per le vetrine di Adobe Commerce, confronta i dati del catalogo completo con quelli a cui gli agenti AI possono accedere in ogni pagina dei dettagli del prodotto; mette in evidenza delle PDP in cui varianti, specifiche, attributi e campi catalogo correlati non sono presenti nel HTML visibile dall’agente, con priorità per il traffico agente. | Evidenzia le informazioni del catalogo recuperabili mancanti dalla vista agente e il motivo per cui sono importanti per l&#39;individuazione dei prodotti basata su LLM. | Distribuisce un’istantanea di HTML completamente pre-renderizzata e compatibile con l’intelligenza artificiale al traffico agente sul server Edge CDN, in modo che gli agenti ricevano un contesto di prodotto avanzato dal catalogo senza modifiche a CMS o al catalogo. |
+| [Aggiungi riepiloghi descrittivi LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | Ottimizzazione dei contenuti | Identifica pagine a traffico elevato che non dispongono di riepiloghi concisi e punti chiave strutturati a livello di pagina o di sezione, rendendo più difficile la scansione e l’interpretazione da parte degli agenti di intelligenza artificiale. | Consiglia brevi riepiloghi e punti chiave generati dall’intelligenza artificiale basati sul contenuto esistente. | Inserisce riepiloghi e punti chiave nelle sezioni pertinenti di HTML, migliorando il modo in cui i modelli interpretano e descrivono il contenuto della pagina. |
+| [Aggiungi domande frequenti pertinenti](/help/dashboards/opportunities/add-relevant-faqs.md) | Ottimizzazione dei contenuti | Identifica le pagine a traffico elevato prive di contenuti Q&amp;A strutturati allineati al set di prompt, rendendo più difficile per gli agenti AI far corrispondere le domande degli utenti alla pagina. | Suggerisce contenuti FAQ generati dall’intelligenza artificiale in linea con le intenzioni dell’utente e gli argomenti della pagina esistenti. | Inserisce i contenuti delle domande frequenti nell’HTML, rendendo le pagine più individuabili e pertinenti nelle risposte basate sull’IA. |
+| [Semplifica contenuti complessi](/help/dashboards/opportunities/simplify-complex-content.md) | Ottimizzazione dei contenuti | Contrassegna le pagine con testi complessi che possono ostacolare la comprensione da parte dell’IA. | Fornisce versioni semplificate generate dall’IA di testi complessi mantenendone il significato originale. | Riscrive sezioni complesse della pagina, migliorando la leggibilità per l’IA. |
+| [Aggiungi sommario](/help/dashboards/opportunities/add-table-of-contents.md) | GEO tecnica | Rileva le pagine prive di chiare intestazioni strutturali di organizzazione o navigazione, rendendo difficile per gli agenti AI analizzare e mappare il contenuto alle query degli utenti. | Suggerisce un sommario strutturato con intestazioni collegate ad ancoraggio che riflettano le sezioni principali della pagina. | Inserisce un sommario in HTML, migliorando la struttura della pagina in modo che i modelli AI possano estrarre, mappare e citare più facilmente le sezioni pertinenti. |
+| [Aggiungi riepiloghi di trascrizioni multimediali](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) | Ottimizzazione dei contenuti | Identifica le pagine in cui le informazioni chiave sono incorporate in video o altri supporti senza trascrizioni o riepiloghi leggibili automaticamente, rendendo difficile l’utilizzo di tali contenuti per gli agenti di intelligenza artificiale. Mostra gli URL interessati e il testo consigliato. | Raccomanda riepiloghi di trascrizioni generati dall’intelligenza artificiale basati sui media e sulla pagina. | Inserisce i riepiloghi delle trascrizioni in HTML in modo che il traffico agente riceva testo leggibile da un computer (ad esempio, vicino al video rilevante). |
 
 ### Strumenti aggiuntivi
 
@@ -112,23 +115,47 @@ In questo modo la pagina sarà completamente visibile agli agenti IA. Ulteriori 
 
 Per una procedura dettagliata, i passaggi di distribuzione e le domande frequenti relative al dashboard, vedere [Recupera Visibilità dei contenuti](/help/dashboards/opportunities/recover-content-visibility.md).
 
+### Arricchisci pagine dettagli prodotto
+
+Questa opportunità è rivolta alle pagine dei dettagli dei prodotti Adobe Commerce in cui gli acquirenti vedono il contesto completo del prodotto attraverso esperienze di vetrina interattive, ma gli agenti di intelligenza artificiale ricevono solo un’istantanea superficiale di HTML. L’agente catalogo confronta il catalogo Commerce autorevole con il PDP visibile dall’agente, elenca ogni lacuna significativa (ad esempio varianti o specifiche che non vengono mai visualizzate in HTML statico) e consente di distribuire una risposta Edge di solo bot che ripristina la parità per i crawler LLM senza modificare i record del catalogo o l’interfaccia utente umana.
+
+Per informazioni dettagliate sulla dashboard, passaggi di distribuzione e domande frequenti, vedere [Arricchire le pagine dei dettagli del prodotto](/help/dashboards/opportunities/enrich-product-detail-pages.md).
+
 ### Aggiungi riepiloghi ottimizzati per gli LLM
 
-Questa opportunità identifica le pagine che possono trarre vantaggio da riepiloghi concisi per aiutare gli LLM a comprendere rapidamente il contenuto della pagina. Per ogni pagina, l’opportunità rileva dove è più necessario un riepilogo e crea riepiloghi generati dall’IA a livello di pagina o di sezione. Quando vengono implementati con Ottimizzazione nella rete Edge, questi riepiloghi vengono inseriti nell’HTML recuperato dagli agenti IA, in modo da migliorare le probabilità di una descrizione più accurata del tuo contenuto.
+Questa opportunità identifica pagine con traffico elevato che possono trarre vantaggio da riepiloghi concisi e punti chiave strutturati in modo che i moduli LLM possano comprendere rapidamente le attestazioni sulla pagina. Per ogni pagina, rileva dove è più necessario un riepilogo e propone riepiloghi generati dall’intelligenza artificiale (e punti chiave, se pertinenti) a livello di pagina o di sezione, basati sul contenuto esistente. Quando distribuisci con Ottimizza in Edge, tale contenuto viene inserito in HTML che gli agenti di intelligenza artificiale recuperano, migliorando la precisione con cui il brand viene rappresentato nelle risposte di intelligenza artificiale.
+
+Per ulteriori dettagli su questa opportunità, consulta [Aggiungi riepiloghi compatibili con LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md).
 
 ### Aggiungi domande frequenti pertinenti
 
-Questa opportunità segnala le pagine in cui contenuti aggiuntivi composti da domande e risposte potrebbero rispondere meglio all’intento degli utenti e ai prompt utilizzati nella ricerca basata sull’IA. Per ogni pagina, propone blocchi di domande frequenti generati dall’IA associati all’intento degli utenti e al contenuto della pagina. Con Ottimizzazione nella rete Edge, le domande frequenti vengono inserite nell’HTML, in modo da rendere la pagina maggiormente compatibile con l’IA e aumentare la probabilità che le risposte fornite dall’IA siano in linea con le tue indicazioni.
+Questa opportunità contrassegna le pagine a traffico elevato in cui contenuti aggiuntivi di domande e risposte potrebbero corrispondere meglio alle intenzioni degli utenti e alle richieste nell’individuazione basata sull’intelligenza artificiale. Per ogni pagina, propone blocchi di domande frequenti generati dall’intelligenza artificiale associati al set di prompt e al contenuto della pagina. Con Ottimizza in Edge, queste domande frequenti vengono inserite in HTML, rendendo la pagina più intuitiva e aumentando la probabilità che le risposte di IA riflettano direttamente la tua guida.
+
+Per una procedura dettagliata, i passaggi di distribuzione e le domande frequenti relative a un dashboard, vedere [Aggiungi domande frequenti rilevanti](/help/dashboards/opportunities/add-relevant-faqs.md).
 
 ### Semplifica contenuti complessi
 
 Questa opportunità trova le pagine con paragrafi lunghi e complessi che potrebbero non essere compresi correttamente dall’IA. Per ogni pagina che supera le soglie di leggibilità, vengono creati contenuti generati dall’IA più semplici e facili da analizzare, mantenendo il significato originale. Quando viene implementata sulla rete Edge, il contenuto semplificato viene presentato al traffico da IA agentica e consente agli LLM di interpretare e riepilogare i contenuti in modo più fedele.
 
+Per informazioni dettagliate, passaggi di distribuzione e domande frequenti, vedere [Semplificare contenuti complessi](/help/dashboards/opportunities/simplify-complex-content.md).
+
+### Aggiungi sommario
+
+Questa opportunità rileva pagine difficili da navigare per gli agenti di intelligenza artificiale perché le intestazioni e la struttura della sezione non sono chiare o mancanti. Per ogni pagina interessata, propone un sommario strutturato con voci collegate a un ancoraggio allineate alle sezioni principali. Quando distribuisci con Ottimizza in Edge, tale sommario viene inserito in HTML, in modo che i modelli possano mappare in modo più affidabile le query dell’utente nelle parti giuste della pagina e citarle.
+
+Per una procedura dettagliata, i passaggi di distribuzione e le linee guida per l&#39;accesso anticipato, vedere [Aggiungi sommario](/help/dashboards/opportunities/add-table-of-contents.md).
+
+### Aggiungi riepiloghi di trascrizioni multimediali
+
+Questa opportunità esegue il targeting delle pagine in cui le informazioni importanti risiedono solo all’interno della riproduzione video, senza trascrizioni o riepiloghi di testo che gli agenti di intelligenza artificiale possono leggere. Per ogni pagina, consiglia le trascrizioni generate dall’intelligenza artificiale e brevi riassunti dei punti chiave dei media. Con Ottimizza in Edge, quei riepiloghi vengono aggiunti al HTML come testo leggibile al computer, in modo che gli agenti possano utilizzare la stessa sostanza che i visitatori umani ottengono guardando il video.
+
+Per informazioni dettagliate sulla dashboard, i passaggi di distribuzione e le domande frequenti, vedere [Aggiungi riepilogo delle trascrizioni multimediali](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md).
+
 ## Ottimizzazione automatica sulla rete Edge
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
@@ -160,6 +187,10 @@ Il rollback ripristina in modo sicuro un’ottimizzazione implementata in preced
 
 ![Rollback](/help/assets/optimize-at-edge/rollback.png)
 
+## Risorse aggiuntive
+
+Per ulteriori dettagli sulla funzionalità Ottimizza in Edge, vedi la seguente playlist [LLM Optimizer — Ottimizza in Edge](https://www.youtube.com/playlist?list=PLzbVcr6JHocVSMWBCaCw4xxjQ_VFVvFh0).
+
 ## Domande frequenti
 
 D: I clienti di prova possono provare a ottimizzare in Edge?
@@ -186,7 +217,7 @@ Se fai clic su **Implementa ottimizzazioni** prima aver completato la configuraz
 
 D. Cosa succede quando i contenuti vengono aggiornati all’origine?
 
-Distribuiamo la versione ottimizzata della pagina dalla cache, purché la pagina sorgente sottostante non sia cambiata. Tuttavia, quando l&#39;origine cambia per **Recupera Visibilità dei contenuti**, il sistema si aggiorna automaticamente in modo che gli agenti di IA ricevano sempre il contenuto più aggiornato. Questo perché utilizziamo impostazioni TTL (time-to-live) della cache ridotte (in ordine di minuti) in modo che qualsiasi aggiornamento del contenuto sul sito attivi una nuova ottimizzazione all’interno di tale finestra. Per opportunità di contenuto come **Aggiungi riepiloghi compatibili con LLM**, LLM Optimizer controlla la pagina di origine per eventuali modifiche. Se viene rilevata una modifica, l’ottimizzazione viene sospesa e contrassegnata per la revisione umana per evitare la deviazione del contenuto tra la pagina visibile dall’agente e la pagina visibile dall’uomo.
+La versione ottimizzata della pagina viene fornita dalla cache, a meno che la pagina di origine sottostante non sia cambiata. Tuttavia, quando l’origine cambia per **Recupera visibilità dei contenuti**, il sistema si aggiorna automaticamente in modo che gli agenti IA ricevano sempre i contenuti più aggiornati. Questo perché vengono utilizzate impostazioni TTL (Time To Live) ridotte per la cache, nell’ordine di pochi minuti, in modo che ogni aggiornamento dei contenuti sul tuo sito attivi una nuova ottimizzazione all’interno di tale intervallo. Per opportunità di contenuto come **Aggiungi riepiloghi ottimizzati per gli LLM**, LLM Optimizer monitora la pagina di origine per rilevare eventuali modifiche. Se viene rilevata una modifica, l’ottimizzazione viene sospesa e contrassegnata per la revisione umana per evitare la deviazione del contenuto tra la pagina visibile dall’agente e la pagina visibile dall’uomo.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 D. L’ottimizzazione nella rete Edge è valida solo per i siti che utilizzano il servizio Adobe Edge Delivery (EDS)?
@@ -197,6 +228,14 @@ D. In che modo il pre-rendering dell’ottimizzazione nella rete Edge è diverso
 
 Entrambi risolvono problemi diversi e possono essere utilizzati insieme. Il rendering SSR tradizionale esegue il rendering dei contenuti lato server, ma non include i contenuti caricati successivamente nel browser. Il pre-rendering dell’ottimizzazione nella rete Edge acquisisce la pagina dopo il caricamento di JavaScript e dei dati lato client, generando la versione completamente assemblata sul lato della CDN. Il rendering SSR si concentra sul miglioramento dell’esperienza utente, mentre l’ottimizzazione nella rete Edge migliora l’esperienza web per gli LLM.
 
-D. Cosa succede se distribuisco ottimizzazioni per alcuni URL nel mio dominio ma non per tutti?
+D. Recover Visibilità dei contenuti (pre-rendering) è un cloaking? Sembra che agli agenti di intelligenza artificiale venga distribuita una versione diversa della pagina.
 
-Vengono modificati solo gli URL esplicitamente ottimizzati. Per gli URL con opportunità distribuite, gli agenti di IA ricevono la versione ottimizzata. Per gli URL senza opportunità distribuite, il nostro servizio effettua semplicemente il proxy della pagina originale così com’è, senza applicare modifiche o memorizzarla nel livello della cache di ottimizzazione. In questo modo puoi distribuire selettivamente le ottimizzazioni senza influire sul resto del sito.
+No. Il pre-rendering assicura che gli agenti AI possano visualizzare gli stessi contenuti già visualizzati dai visitatori e dai bot SEO. Molti siti caricano contenuti significativi con JavaScript, che i tipici agenti di intelligenza artificiale non eseguono, pertanto gli agenti possono perdere parti importanti della pagina. Il pre-rendering produce un’istantanea statica che acquisisce il testo completo, in modo che gli agenti ricevano le stesse informazioni degli esseri umani e dei motori di ricerca. **ripristina** la parità del contenuto per i moduli LLM; non aggiunge né modifica il contenuto effettivo.
+
+D. E per quanto riguarda altre opportunità di contenuto, come l’aggiunta di riepiloghi compatibili con LLM, dove viene visualizzata una nuova copia nella pagina fornita agli agenti? È un cloaking?
+
+No. L’ottimizzazione in Edge non introduce informazioni a cui gli utenti umani e i crawler SEO non possono accedere. Il servizio riorganizza o riepiloga i contenuti già esistenti nella pagina in modo che gli agenti di intelligenza artificiale possano interpretarli più facilmente. Quando qualcuno segue un collegamento da una risposta AI al tuo sito, può comunque trovare le stesse informazioni sottostanti sulla pagina live.
+
+D. Cosa succede se vengono implementate ottimizzazioni per alcuni URL nel dominio ma non per tutti?
+
+Vengono modificati solo gli URL esplicitamente ottimizzati. Per gli URL per i quali sono state implementate le opportunità, gli agenti IA ricevono la versione ottimizzata. Per gli URL per i quali non sono state implementate opportunità, il servizio effettua semplicemente il proxy della pagina originale così com’è, senza applicare modifiche o senza memorizzarla nel livello della cache di ottimizzazione. In questo modo puoi implementare selettivamente specifiche ottimizzazioni senza alcun impatto sul resto del sito.
