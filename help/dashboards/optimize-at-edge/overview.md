@@ -2,9 +2,14 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e9001ce2-5245-4a8e-8601-dd958009072f
+autotag-review: '2026-04-30T18:15:36.189Z'
+source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: 3108
 ht-degree: 57%
 
 ---
@@ -155,7 +160,7 @@ Per informazioni dettagliate sulla dashboard, i passaggi di distribuzione e le d
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Anteprima
 
