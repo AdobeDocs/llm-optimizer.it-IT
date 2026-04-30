@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: Rafforza il tuo brand con Adobe LLM Optimizer. Tieni traccia delle menzioni, scopri insight e domina la ricerca basata sull’IA. Assumi il controllo della visibilità e inizia subito a ottimizzarla.
-source-git-commit: 5504c3b7fe6880a4ea2d8334137d949f87f4e1cf
+source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 60%
+source-wordcount: '161'
+ht-degree: 62%
 
 ---
 
@@ -29,10 +29,17 @@ ht-degree: 60%
       + [Errori di traffico agente](/help/dashboards/opportunities/agentic-traffic-errors.md)
       + [Traffico bloccato da robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [Recupera visibilità dei contenuti](/help/dashboards/opportunities/recover-content-visibility.md)
+      + [Aggiungi riepiloghi compatibili con LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
+      + [Aggiungi domande frequenti pertinenti](/help/dashboards/opportunities/add-relevant-faqs.md)
+      + [Aggiungi riepiloghi di trascrizioni multimediali](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
+      + [Aggiungi sommario](/help/dashboards/opportunities/add-table-of-contents.md)
+      + [Semplifica contenuti complessi](/help/dashboards/opportunities/simplify-complex-content.md)
       + [Analisi Wikipedia](/help/dashboards/opportunities/wikipedia-analysis.md)
       + [Analisi Sentiment YouTube](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
       + [Analisi Sentiment Reddit](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
       + [Analisi Sentiment citati](/help/dashboards/opportunities/cited-sentiment-analysis.md)
+      + [Arricchisci catalogo prodotti](/help/dashboards/opportunities/enrich-product-catalog.md)
+      + [Arricchisci pagine dettagli prodotto](/help/dashboards/opportunities/enrich-product-detail-pages.md)
    + [Configurazione cliente](/help/dashboards/customer-configuration.md)
    + [Collaborazione](/help/dashboards/collaboration.md)
 + Inoltro registro BYOCDN{#log-forwarding}
@@ -48,8 +55,8 @@ ht-degree: 60%
    + Ottimizzazione nella rete Edge{#optimize-at-edge}
       + [Panoramica sull’ottimizzazione in Edge](/help/dashboards/optimize-at-edge/overview.md)
       + [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
-      + [CDN gestito da AEM Cloud Service (Fastly)](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md)
-      + [Fastly (BIOCDN)](/help/dashboards/optimize-at-edge/fastly-byocdn.md)
+      + [CDN gestita da AEM Cloud Service (Fastly)](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md)
+      + [Fastly (BYOCDN)](/help/dashboards/optimize-at-edge/fastly-byocdn.md)
       + [Akamai (BYOCDN)](/help/dashboards/optimize-at-edge/akamai-byocdn.md)
       + [Cloudflare (BYOCDN)](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md)
       + [CloudFront (BYOCDN)](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md)
