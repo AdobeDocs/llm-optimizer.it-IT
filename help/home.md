@@ -1,13 +1,27 @@
 ---
 title: Adobe LLM Optimizer
 description: Rafforza il tuo brand con Adobe LLM Optimizer. Tieni traccia delle menzioni, scopri insight e domina la ricerca basata sull’IA. Assumi il controllo della visibilità e inizia subito a ottimizzarla.
-source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
+TQID: https://experienceleague.adobe.com/ACuRLzs9s5fVE0HdY0ZPUIavO5-sqi-yLiBc64Cb8wc
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+  - id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2:
+  - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
+  - id: c898dfb2-0885-42fb-b2af-b2d756752646
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+autotag-review: '2026-04-30T18:10:07.393Z'
+source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 100%
+source-wordcount: 374
+ht-degree: 96%
 
 ---
-
 
 # Adobe LLM Optimizer
 
@@ -57,7 +71,7 @@ CARDS
                     <p class="is-size-6">Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’IA.</p>
                 </div>
                 <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -80,7 +94,7 @@ CARDS
                     <p class="is-size-6">Scopri come iniziare a utilizzare subito LLM Optimizer.</p>
                 </div>
                 <a href="./overview/quick-start.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -103,7 +117,7 @@ CARDS
                     <p class="is-size-6">Scopri come ottenere insight e consigli per il tuo sito con le dashboard.</p>
                 </div>
                 <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -155,7 +169,7 @@ CARDS
                     <p class="is-size-6">Scopri come configurare LLM Optimizer per il monitoraggio personalizzato del brand e l’analisi strategica dei contenuti.</p>
                 </div>
                 <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -178,7 +192,7 @@ CARDS
                     <p class="is-size-6">Scopri in che modo LLM Optimizer può aiutarti a promuovere l’autorevolezza del tuo brand nelle ricerche e nell’individuazione basate sull’IA.</p>
                 </div>
                 <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
@@ -201,7 +215,7 @@ CARDS
                     <p class="is-size-6">Dai forma alla presenza del tuo brand nei risultati delle ricerche IA con Adobe LLM Optimizer. Ottieni insight per la GEO, aumenta la visibilità su varie piattaforme LLM e promuovi una crescita misurabile del traffico.</p>
                 </div>
                 <a href="https://business.adobe.com/it/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
