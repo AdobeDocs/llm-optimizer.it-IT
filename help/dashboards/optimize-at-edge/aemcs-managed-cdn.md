@@ -1,18 +1,18 @@
 ---
-title: Ottimizza in Edge - CDN gestita da AEM Cloud Service (Fastly)
-description: Scopri come configurare AEM Cloud Service Managed CDN (Fastly) per l’ottimizzazione in Edge in LLM Optimizer.
+title: Ottimizzazione sulla rete edge - CDN gestita da AEM Cloud Service (Fastly)
+description: Scopri come configurare la rete CDN gestita da AEM Cloud Service (Fastly) per l’ottimizzazione su rete edge in LLM Optimizer.
 feature: Opportunities
 source-git-commit: 184d6008c2579014c6ff453e8bfff4bb898f4b82
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
 
-# CDN gestito da AEM Cloud Service (Fastly)
+# CDN gestita da AEM Cloud Service (Fastly)
 
-Questa configurazione indirizza il traffico agente (richieste da bot di IA e agenti utente LLM) al servizio back-end Edge Optimize (`live.edgeoptimize.net`). I visitatori umani e i bot SEO continuano a essere serviti dalla tua origine come al solito. Per verificare la configurazione, al termine dell&#39;installazione, controllare l&#39;intestazione `x-edgeoptimize-request-id` nella risposta.
+Questa configurazione indirizza il traffico da IA agentica (richieste da bot IA e da agenti utente LLM) al servizio back-end Edge Optimize (`live.edgeoptimize.net`). Le persone e i bot SEO continuano a ricevere come al solito i contenuti trasmessi dalla tua origine. Per verificare la configurazione, al termine dell&#39;installazione, controllare l&#39;intestazione `x-edgeoptimize-request-id` nella risposta.
 
 ## Prerequisiti
 
@@ -28,7 +28,7 @@ Per accedere a questa funzione:
 
 ## Passaggi per abilitare l’instradamento
 
-Per iniziare a instradare il traffico agente ad Edge Optimize:
+Per iniziare a indirizzare il traffico da IA agentica al servizio Edge Optimize:
 
 1. In LLM Optimizer, apri **Configurazione cliente** e seleziona la scheda **Configurazione CDN**.
 
@@ -46,13 +46,13 @@ Per iniziare a instradare il traffico agente ad Edge Optimize:
 
    ![Routing in corso](/help/assets/optimize-at-edge/cs-fastly-enable-button-clicked-routing-in-progress.png)
 
-   Ricarica la pagina dopo 5 minuti per verificare che il routing sia stato completato. Una volta configurato e attivato il routing, lo stato diventa **Completato** con un segno di spunta verde a conferma dell&#39;abilitazione del routing. Non sono richieste ulteriori azioni da parte tua.
+   Ricarica la pagina dopo 5 minuti per verificare che il routing sia stato completato. Una volta configurato e attivato il routing, lo stato diventa **Completato** con un segno di spunta verde a conferma dell&#39;abilitazione del routing. Non sono richiesti ulteriori interventi da parte tua.
 
    ![Distribuzione delle ottimizzazioni agli agenti di IA - completata](/help/assets/optimize-at-edge/cs-fastly-disable-button.png)
 
    Per disabilitare il routing in qualsiasi momento, tornare alla sezione **Distribuisci ottimizzazioni agli agenti AI** nella scheda **Configurazione CDN** e fare clic su **Disabilita**.
 
-Inoltre, se hai bisogno di assistenza per i passaggi precedenti, contatta il team del tuo account Adobe o `llmo-at-edge@adobe.com`.
+Inoltre, se hai bisogno di assistenza per i passaggi precedenti, contatta il team Adobe Account o `llmo-at-edge@adobe.com`.
 
 ## Risoluzione dei problemi
 
@@ -106,14 +106,14 @@ Una volta completata la configurazione di indirizzamento, puoi facoltativamente 
 
 1. **Verifica traffico da bot (deve essere ottimizzato)**
 
-   Simulare una richiesta bot di intelligenza artificiale utilizzando un agente utente:
+   Simula una richiesta da un bot IA utilizzando un agente utente da IA agentica:
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
      --header "user-agent: chatgpt-user"
    ```
 
-   Una risposta corretta include l&#39;intestazione `x-edgeoptimize-request-id`, a conferma che la richiesta è stata instradata tramite Edge Optimize:
+   Se il test ha esito positivo, la risposta contiene l’intestazione `x-edgeoptimize-request-id`, a conferma che la richiesta è stata indirizzata tramite il servizio Edge Optimize:
 
    ```
    < HTTP/2 200
@@ -122,21 +122,21 @@ Una volta completata la configurazione di indirizzamento, puoi facoltativamente 
 
 2. **Test del traffico umano (non dovrebbe essere interessato)**
 
-   Simula una richiesta browser umana regolare:
+   Simula una normale richiesta inserita da una persona nel browser:
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
      --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
    ```
 
-   La risposta non deve contenere l&#39;intestazione `x-edgeoptimize-request-id`. Il contenuto della pagina e il tempo di risposta devono rimanere identici a prima di abilitare l’opzione Ottimizza in Edge.
+   La risposta non deve contenere l&#39;intestazione `x-edgeoptimize-request-id`. Il contenuto della pagina e il tempo di risposta devono risultare identici rispetto a prima che sia stata abilitata la funzione Ottimizza su rete edge.
 
 3. **Come distinguere tra i due scenari**
 
-   | Intestazione | Traffico bot (ottimizzato) | Traffico umano (non interessato) |
+   | Intestazione | Traffico da bot (ottimizzato) | Traffico da persone (non interessato da modifiche) |
    |---|---|---|
-   | `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
-   | `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
+   | `x-edgeoptimize-request-id` | Presente: contiene un ID di richiesta univoco | Assente |
+   | `x-edgeoptimize-fo` | Presente solo in caso di failover (valore: `1`) | Assente |
 
 4. **Verifica stato routing in LLM Optimizer**
 

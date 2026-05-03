@@ -1,30 +1,30 @@
 ---
-title: Ottimizza in Edge - Fastly (BYOCDN)
-description: Scopri come configurare Fastly BYOCDN per ottimizzare in Edge in LLM Optimizer.
+title: Ottimizzazione nella rete edge - Fastly (BYOCDN)
+description: Scopri come configurare Fastly BYOCDN per l’ottimizzazione nella rete edge in LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 6%
+ht-degree: 93%
 
 ---
 
 
-# Fastly (BIOCDN)
+# Fastly (BYOCDN)
 
-Questa configurazione indirizza il traffico agente (richieste da bot di IA e agenti utente LLM) al servizio back-end Edge Optimize (`live.edgeoptimize.net`). I visitatori umani e i bot SEO continuano a essere serviti dalla tua origine come al solito. Per verificare la configurazione, al termine dell&#39;installazione, cercare l&#39;intestazione `x-edgeoptimize-request-id` nella risposta.
+Questa configurazione indirizza il traffico da IA agentica (richieste da bot IA e da agenti utente LLM) al servizio back-end Edge Optimize (`live.edgeoptimize.net`). Le persone e i bot SEO continuano a ricevere come al solito i contenuti trasmessi dalla tua origine. Per testare la configurazione, al termine cerca nella risposta l’intestazione `x-edgeoptimize-request-id`.
 
 **Prerequisiti**
 
-Prima di impostare le regole VCL Fastly, assicurati di disporre di:
+Prima di configurare le regole Fastly VCL, assicurati di:
 
-* Accesso a Fastly per il dominio.
-* Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer. Per i passaggi, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* aver accesso a Fastly per il tuo dominio;
+* aver recuperato una chiave API di ottimizzazione edge dall’interfaccia di LLM Optimizer. Per i passaggi, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facoltativo) Per verificare il routing dell&#39;area di gestione temporanea, vedere [Chiave API di gestione temporanea](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configurazione**
 
-Aggiungi i tre snippet VCL seguenti al tuo servizio Fastly. Questi snippet gestiscono il routing delle richieste di agenti ad Edge Optimize, la separazione delle chiavi della cache e il failover all’origine predefinita.
+Aggiungi al tuo servizio Fastly i tre snippet VCL seguenti. Questi snippet gestiscono l’indirizzamento delle richieste agentiche al servizio Edge Optimize, la separazione delle chiavi nella cache e il failover all’origine predefinita.
 
 ![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
 
@@ -74,55 +74,55 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 
 **Failover**
 
-Lo snippet `vcl_deliver` gestisce automaticamente il failover. Se Edge Optimize restituisce un errore `4XX` o `5XX`, la richiesta viene riavviata e indirizzata all&#39;origine predefinita in modo che l&#39;utente finale riceva comunque una risposta. Le risposte di failover includono l&#39;intestazione `x-edgeoptimize-fo: 1`.
+Lo snippet `vcl_deliver` gestisce il failover in automatico. Se il servizio Edge Optimize restituisce un errore `4XX` o `5XX`, la richiesta viene riavviata e indirizzata all’origine predefinita, affinché l’utente finale riceva comunque una risposta. Le risposte di failover includono l’intestazione `x-edgeoptimize-fo: 1`.
 
 | Scenario | Comportamento |
 | --- | --- |
-| Edge Optimize restituisce `2XX` | Al client viene fornita una risposta ottimizzata. |
-| Edge Optimize restituisce `4XX` o `5XX` | La richiesta viene riavviata e servita dall’origine predefinita. |
-| Risposta di failover | Include l&#39;intestazione `x-edgeoptimize-fo: 1`. |
+| Il servizio Edge Optimize restituisce `2XX` | Al client viene trasmessa una risposta ottimizzata. |
+| Il servizio Edge Optimize restituisce `4XX` o `5XX` | La richiesta viene riavviata e trasmessa dall’origine predefinita. |
+| Risposta in caso di failover | Include l’intestazione `x-edgeoptimize-fo: 1`. |
 
 **Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)**
 
 {{waf-allowlist-setup}}
 
-**Verifica installazione**
+**Verificare la configurazione**
 
-Dopo aver completato la configurazione, verifica che il traffico da bot venga indirizzato ad Edge Optimize e che non venga influenzato dal traffico umano.
+Dopo aver completato la configurazione, verifica che il traffico proveniente da bot venga indirizzato al servizio Edge Optimize e che il traffico da persone non sia interessato da alcuna modifica.
 
-**1. Verifica traffico da bot (deve essere ottimizzato)**
+**1. Test del traffico da bot (deve risultare ottimizzato)**
 
-Simulare una richiesta bot di intelligenza artificiale utilizzando un agente utente:
+Simula una richiesta da un bot IA utilizzando un agente utente da IA agentica:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-Una risposta corretta include l&#39;intestazione `x-edgeoptimize-request-id`, a conferma che la richiesta è stata instradata tramite Edge Optimize:
+Se il test ha esito positivo, la risposta contiene l’intestazione `x-edgeoptimize-request-id`, a conferma che la richiesta è stata indirizzata tramite il servizio Edge Optimize:
 
 ```
 < HTTP/2 200
 < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-**2. Test del traffico umano (non dovrebbe essere interessato)**
+**2. Test del traffico da persone (deve risultare NON interessato da modifiche)**
 
-Simula una richiesta browser umana regolare:
+Simula una normale richiesta inserita da una persona nel browser:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-La risposta deve **non** contenere l&#39;intestazione `x-edgeoptimize-request-id`. Il contenuto della pagina e il tempo di risposta devono rimanere identici a prima di abilitare l’opzione Ottimizza in Edge.
+La risposta **non** deve contenere l’intestazione `x-edgeoptimize-request-id`. Il contenuto della pagina e il tempo di risposta devono risultare identici rispetto a prima che sia stata abilitata la funzione Ottimizza su rete edge.
 
-**3. Come distinguere tra i due scenari**
+**3. Differenze tra i due scenari**
 
-| Intestazione | Traffico bot (ottimizzato) | Traffico umano (non interessato) |
+| Intestazione | Traffico da bot (ottimizzato) | Traffico da persone (non interessato da modifiche) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
-| `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
+| `x-edgeoptimize-request-id` | Presente: contiene un ID di richiesta univoco | Assente |
+| `x-edgeoptimize-fo` | Presente solo in caso di failover (valore: `1`) | Assente |
 
 {{verify-routing-status-in-ui}}
 
