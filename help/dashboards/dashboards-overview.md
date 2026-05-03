@@ -5,7 +5,7 @@ feature: Onboarding
 source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 Ti diamo il benvenuto nella panoramica delle dashboard. Le dashboard in LLM Optimizer consentono ai marketer di tenere traccia della visibilità del brand e del sentiment nelle diverse piattaforme di ricerca IA, individuare opportunità di ottimizzazione e implementare modifiche prescrittive al fine di migliorare le citazioni e le prestazioni.
 
-Le visualizzazioni chiave includono Panoramica, Presenza dei brand, Agente e Traffico da referral, Ispettore URL, Opportunità, Collaboration e Configurazione cliente.
+Le viste principali includono Panoramica, Presenza del brand, Traffico da referral, Traffico da IA agentica, Inspector URL, Opportunità, Collaborazione e Configurazione cliente.
 
 <!--
 CARDS

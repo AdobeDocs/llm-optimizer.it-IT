@@ -1,35 +1,35 @@
 ---
-title: Ottimizza in Edge - Cloudflare (BYOCDN)
-description: Scopri come configurare Cloudflare BYOCDN per l’ottimizzazione in Edge in LLM Optimizer.
+title: Ottimizzazione nella rete edge - Cloudflare (BYOCDN)
+description: Scopri come configurare Cloudflare BYOCDN per l’ottimizzazione nella rete edge in LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 1%
+ht-degree: 68%
 
 ---
 
 
 # Cloudflare (BYOCDN)
 
-Questa configurazione indirizza il traffico agente (richieste da bot di IA e agenti utente LLM) al servizio back-end Edge Optimize (`live.edgeoptimize.net`). I visitatori umani e i bot SEO continuano a essere serviti dalla tua origine come al solito. Per verificare la configurazione, al termine dell&#39;installazione, cercare l&#39;intestazione `x-edgeoptimize-request-id` nella risposta.
+Questa configurazione indirizza il traffico da IA agentica (richieste da bot IA e da agenti utente LLM) al servizio back-end Edge Optimize (`live.edgeoptimize.net`). Le persone e i bot SEO continuano a ricevere come al solito i contenuti trasmessi dalla tua origine. Per testare la configurazione, al termine cerca nella risposta l’intestazione `x-edgeoptimize-request-id`.
 
 **Prerequisiti**
 
-Prima di impostare le regole di instradamento di Cloud Worker, verificare di disporre dei seguenti elementi:
+Prima configurare le regole di indirizzamento di un processo di lavoro Cloudflare, assicurati di:
 
-* Un account Cloudflare con processi di lavoro abilitati nel dominio.
-* Accedere alle impostazioni DNS del dominio in Cloud Flare.
-* Chiave API di ottimizzazione Edge recuperata dall’interfaccia utente di LLM Optimizer. Per i passaggi, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* disporre di un account Cloudflare con processi di lavoro abilitati nel tuo dominio.
+* avere acceso alle impostazioni DNS del tuo dominio in Cloudflare.
+* aver recuperato una chiave API di ottimizzazione edge dall’interfaccia di LLM Optimizer. Per i passaggi, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facoltativo) Per verificare il routing dell&#39;area di gestione temporanea, vedere [Chiave API di gestione temporanea](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Funzionamento del routing**
+**Come funziona l’indirizzamento**
 
-Una volta configurata correttamente, una richiesta al tuo dominio (ad esempio, `www.example.com/page.html`) da un agente utente agente viene intercettata da Cloud Worker e indirizzata al backend Edge Optimize. La richiesta di back-end include le intestazioni richieste.
+Una volta configurata correttamente, una richiesta al tuo dominio (ad esempio, `www.example.com/page.html`) proveniente da un agente utente agentico viene intercettata dal processo di lavoro Cloudflare e indirizzata al back-end del servizio Edge Optimize. La richiesta al back-end include le intestazioni necessarie.
 
-**Verifica della richiesta di back-end**
+**Test della richiesta al back-end**
 
-Puoi verificare il ciclo effettuando una richiesta diretta al backend di Edge Optimize.
+Puoi verificare l’indirizzamento effettuando una richiesta diretta al back-end del servizio Edge Optimize.
 
 ```
 curl -svo /dev/null https://live.edgeoptimize.net/page.html \
@@ -39,16 +39,16 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
   -H 'x-edgeoptimize-config: LLMCLIENT=TRUE;'
 ```
 
-**Intestazioni richieste**
+**Intestazioni necessarie**
 
-Le seguenti intestazioni devono essere impostate sulle richieste al backend di Edge Optimize:
+Le seguenti intestazioni devono essere impostate sulle richieste al back-end del servizio Edge Optimize:
 
 | Intestazione | Descrizione | Esempio |
 |--------|-------------|---------|
-| `x-forwarded-host` | Host originale della richiesta. Obbligatorio per identificare il dominio del sito. | `www.example.com` |
+| `x-forwarded-host` | Host originale della richiesta. Necessario per identificare il dominio del sito. | `www.example.com` |
 | `x-edgeoptimize-url` | Percorso URL originale e stringa di query della richiesta. | `/page.html` oppure `/products?id=123` |
-| `x-edgeoptimize-api-key` | La chiave API fornita da Adobe per il dominio. | `your-api-key-here` |
-| `x-edgeoptimize-config` | Stringa di configurazione per la differenziazione della chiave della cache. | `LLMCLIENT=TRUE;` |
+| `x-edgeoptimize-api-key` | Chiave API fornita da Adobe per il tuo dominio. | `your-api-key-here` |
+| `x-edgeoptimize-config` | Stringa di configurazione per la differenziazione delle chiavi nella cache. | `LLMCLIENT=TRUE;` |
 
 ## Opzioni di configurazione
 
@@ -99,15 +99,15 @@ Per creare e configurare manualmente il processo di lavoro, eseguire la procedur
 
 **Passaggio 1: creare il processo di lavoro Cloudflare**
 
-1. Accedi al dashboard di Cloudflare.
-2. Passa a **Lavoratori e pagine** nella barra laterale.
-3. Fare clic su **Crea applicazione** e quindi su **Crea lavoratore**.
-4. Assegna un nome al lavoratore (ad esempio, `edge-optimize-router`).
-5. Fare clic su **Distribuisci** per creare il processo di lavoro con il codice predefinito.
+1. Accedi alla dashboard di Cloudflare.
+2. Passa a **Workers &amp; Pages** (Processi di lavoro e pagine) nella barra laterale.
+3. Fai clic su **Create application** (Crea applicazione), quindi su **Create Worker** (Crea processo di lavoro).
+4. Assegna un nome al processo di lavoro, ad esempio `edge-optimize-router`.
+5. Fai clic su **Deploy** (Implementa) per creare il processo di lavoro con il codice predefinito.
 
 ![Dashboard dei processi di lavoro Cloudflare](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
 
-**Passaggio 2: aggiungere il codice Worker**
+**Passaggio 2: aggiungere il codice del processo di lavoro**
 
 Dopo aver creato il processo di lavoro, fare clic su **Modifica codice** e sostituire il codice predefinito con il seguente. Se disponi già di un lavoro Cloudflare, unisci il codice seguente con il codice del lavoro esistente invece di sostituirlo completamente.
 
@@ -279,25 +279,25 @@ async function failoverToOrigin(request, env, url) {
 }
 ```
 
-Fai clic su **Salva e distribuisci** per pubblicare il processo di lavoro.
+Fai clic su **Save and deploy** (Salva e implementa) per pubblicare il processo di lavoro.
 
-![Editor codice di lavoro Cloudflare](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
+![Editor codice del processo di lavoro Cloudflare](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
 
 **Passaggio 3: configurare variabili di ambiente e segreti**
 
-Le variabili di ambiente memorizzano in modo sicuro la configurazione sensibile come la chiave API.
+Le variabili di ambiente memorizzano in modo sicuro le configurazioni sensibili, come la chiave API.
 
-1. Nelle impostazioni del lavoratore, passa a **Impostazioni** > **Variabili**.
-2. In **Variabili di ambiente**, fare clic su **Aggiungi variabile**.
+1. Nelle impostazioni del processo di lavoro, passa a **Settings** > **Variables** (Impostazioni > Variabili).
+2. In **Environment Variables** (Variabili ambiente), fai clic su **Add variable** (Aggiungi variabile).
 3. Aggiungi le seguenti variabili:
 
    | Nome della variabile | Descrizione | Obbligatorio |
    |---------------|-------------|----------|
-   | `EDGE_OPTIMIZE_API_KEY` | La chiave API Edge Optimize fornita da Adobe. | Sì |
-   | `EDGE_OPTIMIZE_TARGET_HOST` | L&#39;host di destinazione per le richieste Edge Optimize (inviate come intestazione `x-forwarded-host`) e il dominio di origine per il failover. Deve essere solo il dominio senza protocollo (ad esempio, `www.example.com`, non `https://www.example.com`). | Sì |
+   | `EDGE_OPTIMIZE_API_KEY` | Chiave API del servizio Edge Optimize fornita da Adobe. | Sì |
+   | `EDGE_OPTIMIZE_TARGET_HOST` | Host target per le richieste al servizio Edge Optimize (inviate come intestazione `x-forwarded-host`) e il dominio di origine per il failover. Deve essere solo il dominio, senza protocollo (ad esempio: `www.example.com`, e non `https://www.example.com`). | Sì |
 
-4. Per la chiave API, fai clic su **Crittografa** per memorizzarla in modo sicuro.
-5. Fare clic su **Salva e distribuisci**.
+4. Per la chiave API, fai clic su **Encrypt** (Crittografa) per memorizzarla in modo sicuro.
+5. Fai clic su **Save and deploy** (Salva e implementa).
 
 ![Variabili di ambiente Cloudflare](/help/assets/optimize-at-edge/cloudflare-env-variables.png)
 
@@ -305,60 +305,60 @@ Le variabili di ambiente memorizzano in modo sicuro la configurazione sensibile 
 
 Indipendentemente dall&#39;opzione di configurazione utilizzata, è necessario collegare manualmente il worker al dominio. Questo passaggio attiva il lavoratore nel traffico.
 
-1. Vai a **Impostazioni** del tuo lavoratore > **Trigger**.
-2. In **Routes**, fare clic su **Aggiungi route**.
-3. Immettere il proprio modello di dominio, ad esempio `www.example.com/*` o `example.com/*`.
+1. Per il tuo processo di lavoro, passa a **Settings** > **Triggers** (Impostazioni > Trigger).
+2. In **Routes** (Indirizzamenti), fai clic su **Add route** (Aggiungi indirizzamento).
+3. Inserisci il pattern del tuo dominio, ad esempio `www.example.com/*` o `example.com/*`.
 4. Seleziona la zona dal menu a discesa.
 5. Fai clic su **Salva**.
 
-In alternativa, è possibile configurare le route a livello di zona:
+In alternativa, puoi configurare gli indirizzamenti a livello di zona:
 
-1. Passa al dominio in Cloud Flare.
-2. Vai a **Route processi di lavoro**.
-3. Fare clic su **Aggiungi route** e specificare il pattern e il worker.
+1. Passa al tuo dominio in Cloudflare.
+2. Passa a **Workers Routes** (Indirizzamenti dei processi di lavoro).
+3. Fai clic su **Add route** (Aggiungi indirizzamento) e specifica il pattern e il processo di lavoro.
 
-![Route di lavoro Cloudflare](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
+![Indirizzamenti del processo di lavoro Cloudflare](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
 
 **Verifica del comportamento di failover**
 
-Se Edge Optimize non è disponibile o restituisce un errore, il processo di lavoro passa automaticamente all&#39;origine. Le risposte di failover includono l&#39;intestazione `x-edgeoptimize-fo`:
+Se il servizio Edge Optimize non è disponibile o restituisce un errore, il processo di lavoro esegue automaticamente il failover sulla tua origine. Le risposte di failover includono l’intestazione `x-edgeoptimize-fo`:
 
 ```
 < HTTP/2 200
 < x-edgeoptimize-fo: 1
 ```
 
-È possibile monitorare gli eventi di failover nei registri di Cloud Workers per la risoluzione dei problemi.
+Per la risoluzione di eventuali problemi, puoi monitorare gli eventi di failover nei registri dei processi di lavoro di Cloudflare.
 
-**Informazioni sulla logica di lavoro**
+**Logica del processo di lavoro**
 
-Cloudflare Worker implementa la logica seguente:
+Il processo di lavoro Cloudflare implementa la logica seguente:
 
-1. **Rilevamento agente utente:** verifica se l&#39;agente utente della richiesta in ingresso corrisponde ai bot dell&#39;agente definiti (senza distinzione tra maiuscole e minuscole).
+1. **Rilevamento dell’agente utente:** verifica se l’agente utente della richiesta in ingresso corrisponde a uno dei bot agentici definiti, senza distinzione maiuscole/minuscole.
 
-2. **Il targeting del percorso:** filtra facoltativamente le richieste in base ai percorsi di destinazione. Per impostazione predefinita, tutte le pagine HTML (URL che terminano con `/`, nessuna estensione o `.html`) sono instradate. È possibile specificare percorsi specifici utilizzando l&#39;array `TARGETED_PATHS`.
+2. **Targeting del percorso:** facoltativamente, filtra le richieste in base ai percorsi di destinazione. Per impostazione predefinita, vengono indirizzate tutte le pagine HTML (URL che terminano con `/`, nessuna estensione o `.html`). Per percorsi specifici, puoi utilizzare l’array `TARGETED_PATHS`.
 
-3. **Protezione loop:** L&#39;intestazione `x-edgeoptimize-request` impedisce cicli infiniti. Quando Edge Optimize invia nuovamente le richieste all&#39;origine, questa intestazione viene impostata su `"1"` e il processo di lavoro trasmette la richiesta senza inviarla nuovamente ad Edge Optimize.
+3. **Protezione da cicli infiniti:** l’intestazione `x-edgeoptimize-request` impedisce cicli infiniti. Quando il servizio Edge Optimize invia richieste alla tua origine, questa intestazione viene impostata su `"1"` e il processo di lavoro trasmette la richiesta senza indirizzarla nuovamente al servizio Edge Optimize.
 
-4. **Sicurezza intestazione:** Prima di impostare le intestazioni Edge Optimize, il processo di lavoro rimuove le intestazioni esistenti `x-edgeoptimize-*` dalla richiesta in ingresso per evitare attacchi di inserimento di intestazioni.
+4. **Sicurezza delle intestazioni:** prima di impostare le intestazioni del servizio Edge Optimize, il processo di lavoro rimuove le intestazioni `x-edgeoptimize-*` esistenti dalla richiesta in ingresso per evitare attacchi di inserimento di intestazioni.
 
-5. **Mappatura intestazione:** Il processo di lavoro imposta le intestazioni richieste per Edge Optimize:
+5. **Mappatura delle intestazione:** il processo di lavoro imposta le intestazioni necessarie per Edge Optimize:
    * `x-forwarded-host` - Identifica il dominio del sito originale.
    * `x-edgeoptimize-url` - Mantiene il percorso della richiesta originale e la stringa di query.
-   * `x-edgeoptimize-api-key` - Autentica la richiesta con Edge Optimize.
-   * `x-edgeoptimize-config` - Fornisce la configurazione della chiave della cache.
+   * `x-edgeoptimize-api-key` - Autentica la richiesta con il servizio Edge Optimize.
+   * `x-edgeoptimize-config` - Fornisce la configurazione delle chiavi nella cache.
 
-6. **Logica di failover:** Se Edge Optimize restituisce un codice di stato di errore (errori del client 4XX o errori del server 5XX) o la richiesta non riesce a causa di un errore di rete, il processo di lavoro esegue automaticamente il failover all&#39;origine utilizzando `EDGE_OPTIMIZE_TARGET_HOST`. La risposta di failover include l&#39;intestazione `x-edgeoptimize-fo: 1` per indicare che si è verificato il failover.
+6. **Logica di failover:** se il servizio Edge Optimize restituisce un codice di stato di errore (errori client 4XX o errori server 5XX) o la richiesta non riesce a causa di un errore di rete, il processo di lavoro esegue automaticamente il failover sulla tua origine utilizzando `EDGE_OPTIMIZE_TARGET_HOST`. La risposta di failover include l’intestazione `x-edgeoptimize-fo: 1` per indicare che si tratta di failover.
 
-7. **Gestione reindirizzamento:** L&#39;opzione `redirect: "manual"` garantisce che le risposte di reindirizzamento da Edge Optimize vengano passate al client senza che il processo di lavoro le segua.
+7. **Gestione del reindirizzamento:** l’opzione `redirect: "manual"` fa sì che le risposte di reindirizzamento dal servizio Edge Optimize vengano trasmesse al client senza che il processo di lavoro le segua.
 
 **Personalizzazione della configurazione**
 
-Puoi personalizzare il comportamento del lavoratore modificando le costanti di configurazione nella parte superiore del codice:
+Puoi personalizzare il comportamento del processo di lavoro modificando le costanti di configurazione all’inizio del codice:
 
-**Elenco bot agenti**
+**Elenco dei bot agentici**
 
-Modificare l&#39;array `AGENTIC_BOTS` per aggiungere o rimuovere agenti utente:
+Modifica l’array `AGENTIC_BOTS` per aggiungere o rimuovere agenti utente:
 
 ```javascript
 const AGENTIC_BOTS = [
@@ -376,7 +376,7 @@ const AGENTIC_BOTS = [
 
 **Percorsi di destinazione**
 
-Per impostazione predefinita, tutte le pagine HTML vengono instradate ad Edge Optimize. Per limitare il routing a percorsi specifici, modificare l&#39;array `TARGETED_PATHS`:
+Per impostazione predefinita, tutte le pagine HTML vengono indirizzate al servizio Edge Optimize. Per limitare l’indirizzamento a percorsi specifici, modifica l’array `TARGETED_PATHS`:
 
 ```javascript
 // Route all HTML pages (default)
@@ -386,9 +386,9 @@ const TARGETED_PATHS = null;
 const TARGETED_PATHS = ['/', '/page.html', '/products', '/about-us'];
 ```
 
-**Configurazione failover**
+**Cofigurazione del failover**
 
-Per impostazione predefinita, il processo di lavoro esegue il failover in caso di errori 4XX o 5XX di Edge Optimize. Personalizza questo comportamento:
+Per impostazione predefinita, il processo di lavoro esegue il failover in caso di errori 4XX o 5XX dal servizio Edge Optimize. Personalizza questo comportamento:
 
 ```javascript
 // Default: failover on any 4XX or 5XX error
@@ -406,72 +406,72 @@ const FAILOVER_ON_5XX = false;
 
 **Considerazioni importanti**
 
-* **Comportamento di failover:** Se Edge Optimize restituisce un errore (codici di stato 4XX o 5XX) o se la richiesta non riesce a causa di un errore di rete, il processo di lavoro esegue automaticamente il failover nell&#39;origine. Il failover utilizza `EDGE_OPTIMIZE_TARGET_HOST` come dominio di origine (simile al `F_Default_Origin` di Fastly o al `Default_Origin` di CloudFront). Le risposte di failover includono l&#39;intestazione `x-edgeoptimize-fo: 1`, che è possibile utilizzare per il monitoraggio e il debug.
+* **Comportamento di failover:** se il servizio Edge Optimize restituisce un errore (con codici di stato 4XX o 5XX) o se la richiesta non riesce a causa di un errore di rete, il processo di lavoro esegue automaticamente il failover sull’origine. Il failover utilizza `EDGE_OPTIMIZE_TARGET_HOST` come dominio di origine, simile a `F_Default_Origin` di Fastly o `Default_Origin` di CloudFront. Le risposte di failover includono l’intestazione `x-edgeoptimize-fo: 1`, che puoi utilizzare a scopo di monitoraggio e debug.
 
-* **Memorizzazione in cache:** Cloudflare memorizza nella cache le risposte in base all&#39;URL per impostazione predefinita. Poiché il traffico agente riceve contenuti diversi dal traffico umano, assicurati che gli account di configurazione della cache siano corretti. Prendi in considerazione l’utilizzo delle intestazioni cache API o cache per distinguere i contenuti memorizzati in cache. L&#39;intestazione `x-edgeoptimize-config` deve essere inclusa nella chiave cache.
+* **Memorizzazione in cache:** per impostazione predefinita, Cloudflare memorizza le risposte nella cache in base all’URL. Poiché il traffico da IA agentica riceve contenuti diversi rispetto al traffico da persone, assicurati che la configurazione della cache tenga conto di tali differenze. Per distinguere i contenuti memorizzati in cache, puoi utilizzare l’API cache o intestazioni per la cache. L’intestazione `x-edgeoptimize-config` deve essere inclusa nella chiave della cache.
 
-* **Limitazione di frequenza:** Monitora l&#39;utilizzo di Edge Optimize e, se necessario, valuta l&#39;implementazione di una limitazione di frequenza per il traffico agente.
+* **Limite di frequenza:** monitora l’utilizzo del servizio Edge Optimize e, se necessario, puoi implementare un limite di frequenza per il traffico da IA agentica.
 
-* **Test:** Prima di distribuire la configurazione in produzione, verifica sempre la configurazione in un ambiente di staging. Verifica che il traffico sia agente che umano si comporti come previsto. Verificare il comportamento di failover simulando gli errori di Edge Optimize.
+* **Test:** prima di implementare in produzione, verifica sempre la configurazione in un ambiente di staging. Verifica che il sia traffico agentico sia quello da persone si comportino come previsto. Verifica il comportamento di failover simulando errori del servizio Edge Optimize.
 
-* **Registrazione:** abilita la registrazione di Cloudflare Workers per monitorare le richieste e risolvere i problemi. Passa a **Lavoratori** > **il tuo lavoratore** > **Registri** per visualizzare i registri in tempo reale. Il processo di lavoro registra gli eventi di failover a scopo di debug.
+* **Registrazione:** abilita la registrazione dei processi di lavoro Cloudflare per monitorare le richieste e risolvere eventuali problemi. Passa a **Workers** (Processi di lavoro) > **tuo processo di lavoro** > **Logs** (Registri) per visualizzare i registri in tempo reale. Il processo di lavoro registra gli eventi di failover a scopo di debug.
 
 **Risoluzione dei problemi**
 
 | Problema | Causa possibile | Soluzione |
 |-------|----------------|----------|
-| Nessuna intestazione `x-edgeoptimize-request-id` nella risposta | Route di lavoro non corrispondente o agente utente non presente nell&#39;elenco dei bot agente. | Verifica che il pattern di indirizzamento corrisponda all’URL della richiesta. Verificare che l&#39;agente utente si trovi nell&#39;array `AGENTIC_BOTS`. |
-| Errori 401 o 403 da Edge Optimize | Chiave API non valida o mancante. | Verificare che `EDGE_OPTIMIZE_API_KEY` sia impostato correttamente nelle variabili di ambiente e nei segreti. Contatta Adobe per verificare che la chiave API sia attiva. |
-| Reindirizzamenti o cicli infiniti | Intestazione di protezione del ciclo non impostata o controllata correttamente. | Verificare che il controllo dell&#39;intestazione `x-edgeoptimize-request` sia attivo. |
-| Traffico umano interessato | Logica di routing dei lavoratori troppo ampia. | Verifica che la logica di corrispondenza dell’agente utente sia corretta e senza distinzione tra maiuscole e minuscole. Verificare che `TARGETED_PATHS` sia configurato correttamente. |
-| Tempi di risposta lenti | Latenza di rete per il back-end Edge Optimize. | Ciò è previsto per la prima richiesta; le richieste successive vengono memorizzate nella cache in Edge Optimize. |
-| Intestazione `x-edgeoptimize-fo: 1` in risposta | Edge Optimize ha restituito un errore e si è verificato il failover all’origine. | Controlla i registri di Cloud Workers per il codice di errore specifico. Verifica lo stato del servizio Edge Optimize con Adobe. |
-| Failover non funzionante | Flag di failover disabilitati o errore nella logica di failover. | Verificare che `FAILOVER_ON_4XX` e `FAILOVER_ON_5XX` siano impostati su `true`. Verificare la presenza di messaggi di errore nei registri di lavoro. |
-| Alcuni percorsi non vengono ottimizzati | Il percorso non corrisponde ai percorsi di destinazione o al pattern di pagina HTML. | Verificare che il percorso sia in `TARGETED_PATHS` (se specificato) e che corrisponda al pattern regex della pagina HTML. |
-| Richieste non riuscite con host non valido | `EDGE_OPTIMIZE_TARGET_HOST` include il protocollo, ad esempio `https://`. | Utilizzare solo il nome di dominio senza protocollo, ad esempio `example.com` e non `https://example.com`. |
-| Errore 530 durante il failover | Cloudflare non è in grado di connettersi all&#39;origine oppure la richiesta di failover contiene intestazioni non valide. | Assicurati che la funzione di failover rimuova le intestazioni Edge Optimize. Verificare che l&#39;origine sia accessibile e che il DNS sia configurato correttamente. |
+| Nessuna intestazione `x-edgeoptimize-request-id` nella risposta | Indirizzamento del processo di lavoro non corrispondente oppure agente utente non presente nell’elenco dei bot agentici. | Verifica che il pattern di indirizzamento corrisponda all’URL della richiesta. Verifica che l’agente utente si trovi nell’array `AGENTIC_BOTS`. |
+| Errori 401 o 403 dal servizio Edge Optimize | Chiave API non valida o mancante. | Verificare che `EDGE_OPTIMIZE_API_KEY` sia impostato correttamente nelle variabili di ambiente e nei segreti. Contatta Adobe per verificare che la tua chiave API sia attiva. |
+| Reindirizzamenti o cicli infiniti | Intestazione di protezione del ciclo non impostata o controllata correttamente. | Assicurati che il controllo dell’intestazione `x-edgeoptimize-request` sia attivo. |
+| Traffico da persone interessato da modifiche | Logica di indirizzamento del processo di lavoro troppo ampia. | Verifica che la logica di corrispondenza dell’agente utente sia corretta e senza distinzione minuscole/maiuscole. Verifica che `TARGETED_PATHS` sia configurato correttamente. |
+| Tempi di risposta lenti | Latenza di rete verso il back-end del servizio Edge Optimize. | È un comportamento normale per la prima richiesta; le richieste successive vengono memorizzate nella cache del servizio Edge Optimize. |
+| Intestazione `x-edgeoptimize-fo: 1` nella risposta | Il servizio Edge Optimize ha restituito un errore e si è verificato il failover sull’origine. | Individua il codice di errore specifico nei registri dei processi di lavoro di Cloudflare. Verifica lo stato del servizio Edge Optimize presso Adobe. |
+| Failover non funzionante | Flag di failover disabilitati o errore nella logica di failover. | Verifica che `FAILOVER_ON_4XX` e `FAILOVER_ON_5XX` siano impostati su `true`. Verifica la presenza di messaggi di errore nei registri del processo di lavoro. |
+| Alcuni percorsi non sono ottimizzati | Il percorso non corrisponde ai percorsi di destinazione o al pattern della pagina HTML. | Verifica che il percorso sia in `TARGETED_PATHS` (se specificato) e che corrisponda al pattern regex della pagina HTML. |
+| Richieste non riuscite con host non valido | `EDGE_OPTIMIZE_TARGET_HOST` include il protocollo, ad esempio `https://`. | Utilizza solo il nome di dominio senza protocollo (ad esempio: `example.com` e non `https://example.com`). |
+| Errore 530 durante il failover | Cloudflare non è in grado di connettersi all’origine oppure la richiesta di failover contiene intestazioni non valide. | Assicurati che la funzione di failover rimuova le intestazioni del servizio Edge Optimize. Verifica che l’origine sia accessibile e che il DNS sia configurato correttamente. |
 
 **Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)**
 
 {{waf-allowlist-setup}}
 
-**Verifica installazione**
+**Verificare la configurazione**
 
-Dopo aver completato la configurazione, verifica che il traffico da bot venga indirizzato ad Edge Optimize e che non venga influenzato dal traffico umano.
+Dopo aver completato la configurazione, verifica che il traffico proveniente da bot venga indirizzato al servizio Edge Optimize e che il traffico da persone non sia interessato da alcuna modifica.
 
-**1. Verifica traffico da bot (deve essere ottimizzato)**
+**1. Test del traffico da bot (deve risultare ottimizzato)**
 
-Simulare una richiesta bot di intelligenza artificiale utilizzando un agente utente:
+Simula una richiesta da un bot IA utilizzando un agente utente da IA agentica:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-Una risposta corretta include l&#39;intestazione `x-edgeoptimize-request-id`, a conferma che la richiesta è stata instradata tramite Edge Optimize:
+Se il test ha esito positivo, la risposta contiene l’intestazione `x-edgeoptimize-request-id`, a conferma che la richiesta è stata indirizzata tramite il servizio Edge Optimize:
 
 ```
 < HTTP/2 200
 < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-**2. Test del traffico umano (non dovrebbe essere interessato)**
+**2. Test del traffico da persone (deve risultare NON interessato da modifiche)**
 
-Simula una richiesta browser umana regolare:
+Simula una normale richiesta inserita da una persona nel browser:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-La risposta deve **non** contenere l&#39;intestazione `x-edgeoptimize-request-id`. Il contenuto della pagina e il tempo di risposta devono rimanere identici a prima di abilitare l’opzione Ottimizza in Edge.
+La risposta **non** deve contenere l’intestazione `x-edgeoptimize-request-id`. Il contenuto della pagina e il tempo di risposta devono risultare identici rispetto a prima che sia stata abilitata la funzione Ottimizza su rete edge.
 
-**3. Come distinguere tra i due scenari**
+**3. Differenze tra i due scenari**
 
-| Intestazione | Traffico bot (ottimizzato) | Traffico umano (non interessato) |
+| Intestazione | Traffico da bot (ottimizzato) | Traffico da persone (non interessato da modifiche) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Presente — contiene un ID richiesta univoco | Assente |
-| `x-edgeoptimize-fo` | Presente solo se si è verificato il failover (valore: `1`) | Assente |
+| `x-edgeoptimize-request-id` | Presente: contiene un ID di richiesta univoco | Assente |
+| `x-edgeoptimize-fo` | Presente solo in caso di failover (valore: `1`) | Assente |
 
 {{verify-routing-status-in-ui}}
 
