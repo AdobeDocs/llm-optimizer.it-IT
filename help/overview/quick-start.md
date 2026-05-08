@@ -12,9 +12,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:12:24.085Z'
-source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
+source-git-commit: 9c8e5750410f0746d1777d2637d84561d15a7a64
 workflow-type: tm+mt
-source-wordcount: 1463
+source-wordcount: 1472
 ht-degree: 38%
 
 ---
@@ -62,9 +62,9 @@ Per attivare la versione di prova, in qualità di cliente di AEM Cloud, puoi eff
 
 ![Versione di prova di LLM Optimizer](/help/overview/assets/llm-trial.png)
 
-#### Clienti Adobe Analytics
+#### ADOBE ANALYTICS e ADOBE CUSTOMER JOURNEY ANALYTICS
 
-I clienti di Adobe Analytics visualizzeranno un banner nella pagina Home di Experience Cloud.
+Per i clienti Adobe Analytics e Adobe Customer Journey Analytics, visualizzerai un banner nella pagina Home di Experience Cloud.
 
 ![Home page di Experience Cloud con banner Avvia la prova di Adobe LLM Optimizer](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
@@ -77,7 +77,7 @@ Una volta che la versione di prova è attiva, procedi con l’onboarding del nom
 
 >[!NOTE]
 >
-> * **Versione di prova gratuita:** i clienti di AEM Cloud e Adobe Analytics possono utilizzare la versione di prova gratuita di LLM Optimizer.
+> * **Versione di prova gratuita:** i clienti di AEM Cloud e Adobe Analytics/Customer Journey Analytics possono utilizzare la versione di prova gratuita di LLM Optimizer.
 > * **I clienti che attivano la versione di prova il 1° aprile 2026** o in data successiva possono utilizzare fino a 100 prompt, un dominio e distribuire ottimizzazioni in un massimo di 10 URL per un singolo tipo di opportunità.
 > * **I clienti che hanno attivato la versione di prova prima del 1° aprile 2026** continuano ad avere accesso a un massimo di 200 richieste in base ai termini esistenti.
 >
