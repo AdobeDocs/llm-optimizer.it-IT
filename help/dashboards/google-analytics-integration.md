@@ -2,10 +2,10 @@
 title: Integrazione Google Analytics
 description: Scopri come collegare Google Analytics 4 con LLM Optimizer per misurare l’individuazione basata sull’intelligenza artificiale, il coinvolgimento dei siti e i risultati di business nel dashboard di Traffico da referral.
 feature: Referral Traffic
-source-git-commit: abf88fc3e141e12d6b5c826e35d4590ae6407c9b
+source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 1%
+source-wordcount: '1169'
+ht-degree: 0%
 
 ---
 
@@ -13,8 +13,6 @@ ht-degree: 1%
 # Integrazione Google Analytics
 
 L’integrazione di Google Analytics 4 (GA4) collega LLM Optimizer con i dati GA4 dell’organizzazione per consentirti di misurare come l’individuazione basata sull’intelligenza artificiale su piattaforme quali ChatGPT, Gemini, Copilot, Claude e Perplexity si traduce in un coinvolgimento reale del sito web e in risultati di business. Dopo aver connesso una proprietà GA4, LLM Optimizer richiama le metriche di traffico da referral, coinvolgimento e conversione che attribuiscono GA4 a tali origini e le inserisce nella dashboard **Traffico da referral** nella scheda **Impatto aziendale**.
-
-## Disponibilità {#availability}
 
 >[!IMPORTANT]
 >
@@ -40,11 +38,11 @@ Il flusso di connessione inizia dal dashboard [Traffico da referral](/help/dashb
 
    ![Dashboard di Traffico da referral, scheda Impatto aziendale](/help/dashboards/assets/ga4-integration-01-business-impact-tab.png)
 
-1. Selezionare **Connetti ad Analytics**. LLM Optimizer ti indirizza a **Configurazione cliente > Analytics**. Nel selettore del provider Analytics, seleziona **Google Analytics 4**.
+1. Selezionare **Connetti ad Analytics**. LLM Optimizer ti indirizza a **Configurazione cliente > Analytics**. Nel selettore del provider Analytics, selezionare **Connetti Google Analytics 4**.
 
    ![Configurazione cliente, scheda Analytics con GA4 selezionato](/help/dashboards/assets/ga4-integration-02-analytics-ga4-picker.png)
 
-1. Seleziona **Connetti**. Viene visualizzata una nuova scheda del browser nella schermata di accesso di Google.
+1. Seleziona **Connetti account**. Viene visualizzata una nuova scheda del browser nella schermata di accesso di Google.
 
    ![Accesso a Google per la connessione GA4](/help/dashboards/assets/ga4-integration-03-google-sign-in.png)
 
