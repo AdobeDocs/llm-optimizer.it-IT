@@ -2,10 +2,10 @@
 title: Traffico da referral
 description: Scopri come utilizzare la dashboard Traffico da referral per vedere come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral.
 feature: Referral Traffic
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 80%
+source-wordcount: '750'
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 Traffico da referral mostra come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral. Tieni traccia e analizza le origini del traffico, i pattern di referral e le metriche di conversione da siti web e piattaforme esterni. Ti aiuterà a capire da quali origini, aree geografiche e pagine proviene il traffico con maggior coinvolgimento. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
 >[!NOTE]
->Per impostazione predefinita, questo dashboard crea informazioni sul traffico da **registri CDN**. Se la tua organizzazione è su un&#39;offerta a pagamento, puoi connettere **Adobe Analytics** per aggiungere dati che misurino l&#39;individuazione basata sull&#39;intelligenza artificiale e il coinvolgimento del sito. Questi dati sono disponibili nella scheda **Impatto aziendale**. Senza l’integrazione in Adobe Analytics, la scheda non viene compilata. Per ulteriori dettagli, consulta [Integrazione Adobe Analytics](/help/dashboards/adobe-analytics-integration.md).
+>Per impostazione predefinita, questo dashboard crea informazioni sul traffico da **registri CDN**. Se la tua organizzazione è su un&#39;offerta a pagamento, puoi connettere **Adobe Analytics** o **Google Analytics 4**(GA4) per aggiungere dati che misurino l&#39;individuazione basata sull&#39;intelligenza artificiale e il coinvolgimento del sito. Questi dati sono disponibili nella scheda **Impatto aziendale**. Tieni presente che senza l’integrazione con Adobe Analytics o GA4, la scheda non viene compilata. Per ulteriori dettagli, vedere [Integrazione Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) o [Integrazione Google Analytics](/help/dashboards/google-analytics-integration.md).
 
 ![Pagina Referral](/help/dashboards/assets/referral-traffic.png)
 
