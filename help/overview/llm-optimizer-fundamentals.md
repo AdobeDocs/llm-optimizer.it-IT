@@ -1,10 +1,15 @@
 ---
 title: Nozioni di base su LLM Optimizer
 description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’IA. Tieni traccia di menzioni, citazioni e insight. Inizia subito a ottimizzare per migliorare il coinvolgimento e la tua influenza.
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+autotag-review: '2026-05-15T17:53:03.904Z'
+TQID: 'https://experienceleague.adobe.com/AI6oPtSezIqw3TBl-mUYH1clgJ-TQ-4z4KSjbN2Qr50'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
+source-wordcount: 508
+ht-degree: 84%
 
 ---
 
@@ -52,11 +57,11 @@ L’ottimizzazione per motori generativi è per sua natura interfunzionale. LLM 
 
 Adobe LLM Optimizer offre le seguenti possibilità:
 
-**Misurare la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il tuo brand viene menzionato nei risultati di ricerca basati sull’IA. Grazie a un punteggio di visibilità chiaro e che puoi valutare nel tempo, puoi intervenire sulla base di dati, e non di semplici supposizioni.
-**Benchmarking rispetto ad altri brand**: scopri come il tuo brand si colloca rispetto ad altri brand nei motori generativi. Identifica eventuali lacune in termini di share of voice e scopri vantaggi competitivi.
-**Scoprire opportunità da mettere subito in pratica**: individua possibili opportunità a livello di contenuto (ad esempio, domande frequenti, sunti, schemi) e tecniche (ad esempio crawlability, problemi di indicizzazione), per aumentano direttamente le menzioni e le citazioni.
-**Tenere traccia dell’impatto del traffico da IA**: monitora il traffico proveniente da IA agentica (dagli assistenti IA) e da referral (quando l’utente fa clic sul una citazione) nelle tue proprietà. Collega la visibilità GEO a un coinvolgimento reale.
-**Abilitare la collaborazione tra team**: condividi le dashboard, assegna i proprietari per prompt o categorie e assicurati che gli obiettivi di visibilità possano essere tracciati dai membri dei team di marketing, SEO e comunicazione.
+**Misurare la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il tuo brand viene menzionato nei risultati di ricerca basati sull’IA. Supera le supposizioni grazie a un punteggio di visibilità chiaro, che potrai monitorare e confrontare nel tempo.
+**Benchmark Others** - Guarda come il tuo brand si confronta con gli altri nei motori generativi. Identifica le lacune della quota di voce e scopri i vantaggi competitivi.
+**Scopri opportunità fruibili**: individua opportunità di contenuto (ad esempio, domande frequenti, riassunti, schema) e opportunità tecniche (crawlability, problemi di indicizzazione) che aumentano direttamente menzioni e citazioni.
+**Tracciare l&#39;impatto del traffico dall&#39;intelligenza artificiale** - Monitorare il traffico agente (dagli assistenti di intelligenza artificiale) e il traffico da referral (l&#39;utente fa clic dalle citazioni) nelle proprietà di tua proprietà. Collega la visibilità GEO a un coinvolgimento reale.
+**Abilita Team Collaboration** - Condividi dashboard, assegna i proprietari per le richieste o le categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO e comunicazione.
 
 
 ## Riferimenti

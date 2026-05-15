@@ -2,9 +2,14 @@
 title: Ottimizza in Edge - CloudFront (BYOCDN)
 description: Scopri come configurare CloudFront BYOCDN per ottimizzare in Edge in LLM Optimizer.
 feature: Opportunities
-source-git-commit: 6cf66563c0ea043ab7f67e44be29b1e8d29d83d9
+autotag-review: '2026-05-15T17:41:48.977Z'
+TQID: 'https://experienceleague.adobe.com/fGlW2FIQooU-8nv8H1lH3WOxinOFUVK7RVNol7ACPq8'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: 2217
 ht-degree: 8%
 
 ---
@@ -41,7 +46,7 @@ Prima di configurare la configurazione CloudFront, assicurati di disporre di:
    |--------|-------|
    | `x-edgeoptimize-api-key` | Chiave API |
    | `x-forwarded-host` | `www.example.com` |
-   | `x-edgeoptimize-fetcher-key` | La chiave del fetcher (necessaria solo in caso di WAF di inserire nell&#39;elenco Consentiti) |
+   | `x-edgeoptimize-fetcher-key` | Chiave fetcher (necessaria solo in caso di WAF di inserire nell&#39;elenco Consentiti) |
 
    Sostituisci `www.example.com` con il tuo dominio sito Web effettivo e `Your API key` con la chiave API Edge Optimize fornita dal tuo rappresentante Adobe.
 
@@ -191,7 +196,7 @@ Se il tuo comportamento utilizza un criterio di cache gestita di AWS (ad esempio
 
 6. Fare clic su **Distribuisci** per salvare il codice.
 
-7. Nota il nome del ruolo di esecuzione **&#x200B;**&#x200B;visualizzato in **Configurazione** > **Autorizzazioni** (ad esempio, `edgeoptimize-origin-role-xxxxx`). È necessario eseguire questa operazione nei passaggi seguenti.
+7. Nota il nome del ruolo di esecuzione **** visualizzato in **Configurazione** > **Autorizzazioni** (ad esempio, `edgeoptimize-origin-role-xxxxx`). È necessario eseguire questa operazione nei passaggi seguenti.
 
 **Aggiorna i criteri di attendibilità del ruolo di esecuzione**
 
