@@ -116,7 +116,7 @@ Un **amministratore di sistema** della tua organizzazione può utilizzare [Adobe
 1. Accedi a [Adobe Admin Console](https://adminconsole.adobe.com/) con un account con diritti amministrativi per la tua organizzazione.
 1. Assegna il profilo di prodotto Adobe LLM Optimizer (o la licenza di prodotto equivalente della tua organizzazione) all’utente o al gruppo che deve ricevere le funzionalità assegnate al prodotto.
 
-Per i passaggi dettagliati, vedi [Gestione dei prodotti in Admin Console](https://helpx.adobe.com/enterprise/using/manage-products.html) e [Gestione dei gruppi di utenti](https://helpx.adobe.com/it/enterprise/using/user-groups.html).
+Per i passaggi dettagliati, vedi [Gestione dei prodotti in Admin Console](https://helpx.adobe.com/it/enterprise/using/manage-products.html) e [Gestione dei gruppi di utenti](https://helpx.adobe.com/it/enterprise/using/user-groups.html).
 
 >[!NOTE]
 >

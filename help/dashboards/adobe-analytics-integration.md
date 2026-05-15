@@ -99,7 +99,7 @@ Durante la configurazione, definisci la suite di rapporti e la dimensione di pag
 
 ### Come viene identificato il traffico LLM
 
-Il traffico originato da LLM viene identificato utilizzando il tipo di riferimento Adobe Analytics [Strumenti di IA per la conversazione](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
+Il traffico originato da LLM viene identificato utilizzando il tipo di riferimento Adobe Analytics [Strumenti di IA per la conversazione](https://experienceleague.adobe.com/it/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools).
 
 ### Dati acquisiti {#data-ingested}
 

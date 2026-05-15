@@ -34,7 +34,7 @@ Mostra le seguenti metriche chiave a colpo d’occhio:
 
 ![Arricchisci dashboard pagine dettagli prodotto](/help/dashboards/opportunities/assets/enrich-product-detail-pages-overview.png)
 
-Questa opportunità può essere ottimizzata utilizzando [Ottimizza in Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Le ottimizzazioni vengono distribuite esclusivamente agli agenti di intelligenza artificiale senza alcun impatto sui visitatori umani (consegna solo bot), vengono applicate a livello di CDN senza la necessità di modifiche a CMS o catalogo e possono avere effetto in pochi minuti senza il coinvolgimento degli sviluppatori, rendendolo un percorso di distribuzione veloce e a basso rischio per cataloghi di prodotti di grandi dimensioni.
+Questa opportunità può essere ottimizzata utilizzando [Ottimizza in Edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Le ottimizzazioni vengono distribuite esclusivamente agli agenti di intelligenza artificiale senza alcun impatto sui visitatori umani (consegna solo bot), vengono applicate a livello di CDN senza la necessità di modifiche a CMS o catalogo e possono avere effetto in pochi minuti senza il coinvolgimento degli sviluppatori, rendendolo un percorso di distribuzione veloce e a basso rischio per cataloghi di prodotti di grandi dimensioni.
 
 ## Come funziona
 
@@ -44,7 +44,7 @@ Per ogni pagina di prodotto interessata, LLM Optimizer fornisce:
 
 - **Anteprima analisi IA**: elenco completo delle informazioni del catalogo mancanti nella visualizzazione dell&#39;agente di IA e del motivo per cui sono importanti per l&#39;individuazione dei prodotti basata su LLM, incluso un elenco di punti dati recuperabili quali varianti di prodotto, opzioni di dimensione, specifiche del materiale e dettagli di compatibilità, tra gli altri.
 
-La correzione viene applicata utilizzando [Ottimizza in Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge), la funzionalità di distribuzione di Adobe basata su Edge che fornisce uno snapshot HTML completamente pre-renderizzato e compatibile con l&#39;intelligenza artificiale agli agenti utente LLM a livello CDN. In questo modo vengono recuperati tutti i dati del catalogo precedentemente nascosti (comprese le varianti di prodotto, le specifiche tecniche e i dettagli delle funzioni) senza toccare il catalogo Commerce o l’interfaccia utente visibile della vetrina.
+La correzione viene applicata utilizzando [Ottimizza in Edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge), la funzionalità di distribuzione di Adobe basata su Edge che fornisce uno snapshot HTML completamente pre-renderizzato e compatibile con l&#39;intelligenza artificiale agli agenti utente LLM a livello CDN. In questo modo vengono recuperati tutti i dati del catalogo precedentemente nascosti (comprese le varianti di prodotto, le specifiche tecniche e i dettagli delle funzioni) senza toccare il catalogo Commerce o l’interfaccia utente visibile della vetrina.
 
 ![URL con tabella dei suggerimenti](/help/dashboards/opportunities/assets/enrich-product-detail-pages-suggestions.png)
 
@@ -70,7 +70,7 @@ L’ottimizzazione viene fornita esclusivamente agli agenti utente AI tramite il
 
 Se l’istanza Commerce non è ancora connessa a LLM Optimizer, prima di poter applicare gli arricchimenti verrai indirizzato alla configurazione della connessione.
 
-Se non hai ancora effettuato l&#39;onboarding, fai clic su **Distribuisci ottimizzazioni** per passare al processo di onboarding. Per informazioni complete sul funzionamento di Ottimizza in Edge, sui provider CDN supportati e sul processo di onboarding, visita la pagina [Ottimizza in Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
+Se non hai ancora effettuato l&#39;onboarding, fai clic su **Distribuisci ottimizzazioni** per passare al processo di onboarding. Per informazioni complete sul funzionamento di Ottimizza in Edge, sui provider CDN supportati e sul processo di onboarding, visita la pagina [Ottimizza in Edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
 
 ![Finestra di dialogo Distribuisci in Edge](/help/dashboards/opportunities/assets/enrich-product-detail-pages-deploy.png)
 
