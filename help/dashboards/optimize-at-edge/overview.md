@@ -2,17 +2,20 @@
 title: Ottimizzazione nella rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
+autotag-review: '2026-05-15T17:55:41.072Z'
+TQID: 'https://experienceleague.adobe.com/kMxoKtrfyzxIpLJP9nt-rq6GP37ICCNe4XienUKqDZE'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
   - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
 subfeature_v2:
   - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-autotag-review: '2026-04-30T18:15:36.189Z'
-source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 3108
 ht-degree: 57%
@@ -63,7 +66,7 @@ Requisiti per il team IT/CDN:
 * Aggiungi l’agente utente `*AdobeEdgeOptimize/1.0*` all’elenco Consentiti nel file robots.txt del sito o nelle regole di gestione del traffico da bot.
 * Assicurati che le pagine non siano bloccate a livello di dominio o CDN.
 * Aggiungere le regole di indirizzamento per l’ottimizzazione della rete Edge nella CDN.
-* Se la rete CDN dispone di regole di WAF o Bot Manager, inserire nell&#39;elenco Consentiti l&#39;agente utente `*AdobeEdgeOptimize/1.0*`. Se è necessaria una verifica aggiuntiva, configurare l&#39;intestazione `x-edgeoptimize-fetcher-key`. Ogni guida BYOCDN riportata di seguito include i passaggi necessari.
+* Se la rete CDN dispone di regole di WAF o Bot Manager, inserire nell&#39;elenco Consentiti l&#39;agente utente di `*AdobeEdgeOptimize/1.0*`. Se è necessaria una verifica aggiuntiva, configurare l&#39;intestazione `x-edgeoptimize-fetcher-key`. Ogni guida BYOCDN riportata di seguito include i passaggi necessari.
 * Confermare l’indirizzamento dell’ottimizzazione della rete Edge nell’interfaccia di LLM Optimizer.
 
 Il diagramma seguente illustra il flusso delle richieste in una configurazione BYOCDN con Ottimizza in Edge:
