@@ -4,24 +4,14 @@ description: Ottimizza gli insight LLM configurando categorie, argomenti, prompt
 feature: Best Practices, Customer Configuration
 autotag-review: '2026-05-15T17:36:13.598Z'
 TQID: 'https://experienceleague.adobe.com/aZCxLQbfeDDtqD3hBGuD-JuCZoMuGiqQrs0gaqxt4-4'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1530
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +29,17 @@ Nella dashboard [!UICONTROL Configurazione cliente], puoi personalizzare le cate
 
 ## Esperienza incentrata sul brand
 
-Per impostazione predefinita, i nuovi clienti iniziano con un’interfaccia mirata e brand-first con una configurazione basata sull’onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un marchio attivo e altri marchi suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente a questa esperienza incentrata sul marchio.
+Per impostazione predefinita, i nuovi clienti iniziano con un’interfaccia incentrata sul brand e una configurazione basata sull’onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un brand attivo e altri brand suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente all’Esperienza incentrata sul brand.
 
-Per chi utilizza un&#39;esperienza incentrata sul marchio, la **gestione dei marchi** è il punto in cui puoi definire il modo in cui il tuo marchio viene monitorato e analizzato.
+Se utilizzi l’Esperienza incentrata sul brand, **Gestione dei brand** consente di definire il modo in cui il brand viene monitorato e analizzato.
 
-![Gestione dei marchi: navigazione nelle app (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Gestione dei brand: navigazione nell’app (Esperienza incentrata sul brand)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Gestione marchi: panoramica sulla configurazione](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Gestione dei brand: panoramica sulla configurazione](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Per impostare argomenti e prompt per un marchio specifico, utilizzare **Gestione prompt**.
+Per configurare argomenti e prompt per un brand specifico, utilizza **Gestione dei prompt**.
 
-![Gestione richieste](/help/assets/brand-centric-experience/prompts-management.png)
+![Gestione dei prompt](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Libreria di prompt di settore
 
@@ -119,7 +109,7 @@ Per decidere come impostare le categorie, rispondi a questa domanda: **Chi dovr�
 >[!IMPORTANT]
 >
 > * Scegli un approccio e attieniti ad esso.
-> * Puoi avere **un** solo modello di categorie per account o brand. Non combinare **SBU** e **URL_DIR** contemporaneamente.
+> * Puoi avere **un** solo modello di categorie per account o brand. Non combinare **SBU** e **URL_DIR** allo stesso tempo.
 <!--Can you mix Product/Service with these?-->
 
 Esempio:

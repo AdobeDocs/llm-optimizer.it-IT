@@ -4,21 +4,14 @@ description: Scopri come utilizzare la dashboard Traffico da IA agentica per sco
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:33:15.711Z'
 TQID: 'https://experienceleague.adobe.com/3dWNUxcquDVip4Gg1WMYfwv8MUSbZYWqJYnkQ3aZkmc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e06fae5f-830b-4222-a469-b5e148d36465
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1407
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +31,9 @@ Questa pagina descrive quanto segue:
 * [Risultati migliori e peggiori](#top-bottom-movers)
 * [Analisi prestazioni URL e agente utente](#user-url-performance)
 
-Se ti trovi nella [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), passa a **Traffico agente** e seleziona il sito per il quale desideri visualizzare le informazioni sul traffico agente.
+Se ti trovi nell’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), passa a **Traffico da IA agentica** e seleziona il sito di cui desideri visualizzare gli insight sul traffico da IA agentica.
 
-![Traffico agente - Selettore siti (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+![Traffico da IA agentica: selettore siti (esperienza incentrata sul brand)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
 ## Inoltro del registro CDN {#cdn-setup}
 
@@ -67,15 +60,15 @@ Nella finestra **Effettua onboarding provider CDN**:
 Se selezioni **Altro**, dovrai contattare llmo-now@adobe.com per assistenza.
 
 >[!NOTE]
->Per informazioni dettagliate sull&#39;inoltro di log quando si utilizza una rete CDN gestita dal cliente (BYOCDN), vedere [Panoramica sull&#39;inoltro di log BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
+>Per informazioni dettagliate sull’inoltro dei registri quando si utilizza una rete CDN gestita dal cliente (BYOCDN), consulta [Panoramica sull’inoltro del registro BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Una volta attivata, i registri vengono acquisiti e la dashboard sarà popolata con metriche quali il totale delle interazioni degli agenti, il tasso di successo, gli hit per mercato, l’analisi dell’agente utente e prestazioni a livello di URL.
 
 ### Esperienza incentrata sul brand
 
-Se ti trovi nella [esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), puoi aggiungere le informazioni di inoltro del registro CDN passando a **Gestione marchi** e facendo clic sull&#39;etichetta **CDN**.
+Se ti trovi nell’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), puoi aggiungere le informazioni di inoltro del registro CDN passando a **Gestione brand** e facendo clic sull’etichetta **CDN**.
 
-![Gestione marchi - Inoltro registro CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+![Gestione brand: inoltro del registro CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 LLM Optimizer elabora un sottoinsieme di campi dai registri CDN. Anche se i nomi dei campi del registro non elaborati variano a seconda del provider CDN, vengono normalizzati e riportati come:
 
@@ -126,7 +119,7 @@ Utilizza il grafico delle tendenze del traffico da IA agentica per tenere tracci
 
 ## Risultati migliori e peggiori {#top-bottom-movers}
 
-La vista Spostamenti in alto e in basso evidenzia gli URL con le modifiche più grandi, settimana dopo settimana, nel traffico agente: visite o hit dai sistemi di intelligenza artificiale che accedono al contenuto. **Primi spostamenti** mostra le pagine che acquistano visibilità o coinvolgimento, mentre **Ultimi spostamenti** rivela gli URL con i rifiuti più accentuati. Questo ti consente di identificare rapidamente quali contenuti sono in crescita, quali potrebbero richiedere attenzione e dove i pattern di individuazione basati sull’IA stanno cambiando.
+La vista Risultati migliori e peggiori evidenzia gli URL che hanno registrato le maggiori variazioni nel traffico da IA agentica su base settimanale: visite o hit provenienti dai sistemi di IA che accedono ai tuoi contenuti. **Risultati migliori** mostra le pagine che acquisiscono visibilità o coinvolgimento, mentre **Risultati peggiori** rivela gli URL che hanno registrato i cali più drastici. Questo ti consente di identificare rapidamente quali contenuti sono in crescita, quali potrebbero richiedere attenzione e dove i pattern di individuazione basati sull’IA stanno cambiando.
 
 ![Risultati migliori e peggior](/help/dashboards/assets/movers.png)
 

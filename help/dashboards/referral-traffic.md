@@ -4,20 +4,14 @@ description: Scopri come utilizzare la dashboard Traffico da referral per vedere
 feature: Referral Traffic
 autotag-review: '2026-05-15T17:57:28.534Z'
 TQID: 'https://experienceleague.adobe.com/rMSltSJf-UH4FHoST9NhmeY-hGVNLXsFXbCLzZenW5w'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e3c08d81-9e25-4503-9df5-8dd1f489aa99
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e3c08d81-9e25-4503-9df5-8dd1f489aa99
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 09e228275cf84316ee2e8990636bb3b8865ac263
 workflow-type: tm+mt
 source-wordcount: 750
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +21,7 @@ ht-degree: 78%
 Traffico da referral mostra come i visitatori accedono al tuo sito da piattaforme esterne, citazioni IA e collegamenti di referral. Tieni traccia e analizza le origini del traffico, i pattern di referral e le metriche di conversione da siti web e piattaforme esterni. Ti aiuterà a capire da quali origini, aree geografiche e pagine proviene il traffico con maggior coinvolgimento. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
 >[!NOTE]
->Per impostazione predefinita, questo dashboard crea informazioni sul traffico da **registri CDN**. Se la tua organizzazione è su un&#39;offerta a pagamento, puoi connettere **Adobe Analytics** o **Google Analytics 4**(GA4) per aggiungere dati che misurino l&#39;individuazione basata sull&#39;intelligenza artificiale e il coinvolgimento del sito. Questi dati sono disponibili nella scheda **Impatto aziendale**. Tieni presente che senza l’integrazione con Adobe Analytics o GA4, la scheda non viene compilata. Per ulteriori dettagli, vedere [Integrazione Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) o [Integrazione Google Analytics](/help/dashboards/google-analytics-integration.md).
+>Per impostazione predefinita, questa dashboard crea insight sul traffico dai **registri CDN**. Se la tua organizzazione è su un&#39;offerta a pagamento, puoi connettere **Adobe Analytics** o **Google Analytics 4**(GA4) per aggiungere dati che misurino l&#39;individuazione basata sull&#39;intelligenza artificiale e il coinvolgimento del sito. Questi dati sono disponibili nella scheda **Impatto aziendale**. Tieni presente che senza l’integrazione con Adobe Analytics o GA4, la scheda non viene compilata. Per ulteriori dettagli, vedere [Integrazione Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) o [Integrazione Google Analytics](/help/dashboards/google-analytics-integration.md).
 
 ![Pagina Referral](/help/dashboards/assets/referral-traffic.png)
 
@@ -39,17 +33,17 @@ Questa pagina descrive quanto segue:
 * [URL di referral principali](#top-referrals)
 * [Dettagli del traffico da referral](#traffic-details)
 
-Se sei sulla [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), passa a **Traffico da referral** e seleziona il sito per il quale desideri visualizzare le informazioni sul Traffico da referral LLM.
+Se ti trovi nell’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), passa a **Traffico da referral** e seleziona il sito di cui desideri visualizzare gli insight sul traffico da referral LLM.
 
-![Traffico da referral — selettore del sito (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+![Traffico da referral: selettore siti (esperienza incentrata sul brand)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
 ## Configurazione {#setup}
 
 Al primo accesso, la dashboard Traffico da referral potrebbe apparire vuota. Per visualizzare i dati, devi configurare l’inoltro del registro CDN.
 
-Per i clienti che si trovano nella [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), puoi aggiungere informazioni sull&#39;inoltro del registro CDN passando a **Gestione marchi** e facendo clic sull&#39;etichetta **CDN**.
+Per i clienti che si trovano nell’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), puoi aggiungere le informazioni di inoltro del registro CDN passando a **Gestione brand** e facendo clic sull’etichetta **CDN**.
 
-**Configurazione del cliente (esperienza classica):** Configura [Inoltro del registro CDN](/help/dashboards/customer-configuration.md#cdn-configuration) selezionando **Vai alla configurazione**.
+**Configurazione del cliente (esperienza classica):** configura l’[inoltro del registro CDN](/help/dashboards/customer-configuration.md#cdn-configuration) selezionando **Vai a Configurazione**.
 
 ![Configurazione di referral](/help/dashboards/assets/referral-setup1.png)
 

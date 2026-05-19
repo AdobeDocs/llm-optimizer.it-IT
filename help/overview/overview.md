@@ -4,19 +4,13 @@ description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand n
 feature: Onboarding
 autotag-review: '2026-05-15T17:54:37.542Z'
 TQID: 'https://experienceleague.adobe.com/5qyk6PCTaT93tz-UUnYRYznylOh4lXHuH1yN98g3wIE'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 618
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -69,10 +63,10 @@ L’ottimizzazione per motori generativi è per sua natura interfunzionale. LLM 
 Adobe LLM Optimizer offre le seguenti possibilità:
 
 **Misurare la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il tuo brand viene menzionato nei risultati di ricerca basati sull’IA. Supera le supposizioni grazie a un punteggio di visibilità chiaro, che potrai monitorare e confrontare nel tempo. Consulta la [dashboard Presenza del brand](/help/dashboards/brand-presence.md).
-**Benchmark Others** - Guarda come il tuo marchio si confronta con altri, inclusi i concorrenti nei motori generativi. Identifica le lacune della quota di voce e scopri i vantaggi competitivi. Consulta la [dashboard Presenza del brand](/help/dashboards/brand-presence.md).
-**Scopri opportunità fruibili**: individua opportunità di contenuto (ad esempio, domande frequenti, riassunti, schema) e opportunità tecniche (crawlability, problemi di indicizzazione) che aumentano direttamente menzioni e citazioni. Vedi [Dashboard opportunità](/help/dashboards/opportunities-overview.md).
-**Tracciare l&#39;impatto del traffico dall&#39;intelligenza artificiale** - Monitorare il traffico agente (dagli assistenti di intelligenza artificiale) e il traffico da referral (l&#39;utente fa clic dalle citazioni) nelle proprietà di tua proprietà. Collega la visibilità GEO a un coinvolgimento reale. Vedi [Dashboard traffico agente](/help/dashboards/agentic-traffic.md) e [Dashboard Traffico da referral](/help/dashboards/referral-traffic.md).
-**Abilita Team Collaboration** - Condividi dashboard, assegna i proprietari per le richieste o le categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO (Search Engine Optimization) e comunicazione. Consulta la [dashboard Collaborazione](/help/dashboards/collaboration.md).
+**Benchmarking rispetto ad altri brand**: scopri come il tuo brand si colloca rispetto ad altri brand, inclusa la concorrenza, nei motori generativi. Identifica le lacune della quota di voce e scopri i vantaggi competitivi. Consulta la [dashboard Presenza del brand](/help/dashboards/brand-presence.md).
+**Scoprire opportunità fruibili**: individua le opportunità di contenuto, ad esempio, domande frequenti, riassunti, schemi, e le opportunità tecniche, ad esempio crawlability, problemi di indicizzazione, che aumentano direttamente le menzioni e le citazioni. Consulta la [dashboard Opportunità](/help/dashboards/opportunities-overview.md).
+**Tenere traccia dell’impatto del traffico da IA**: monitora il traffico da IA agentica (dagli Assistenti IA) e da referral (quando l’utente fa clic sulle citazioni) nelle tue proprietà. Collega la visibilità GEO a un coinvolgimento reale. Consulta la [dashboard Traffico da IA agentica](/help/dashboards/agentic-traffic.md) e la [dashboard Traffico da referral](/help/dashboards/referral-traffic.md).
+**Abilitare la collaborazione del team**: condividi le dashboard, assegna i proprietari per prompt o categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO e comunicazione. Consulta la [dashboard Collaborazione](/help/dashboards/collaboration.md).
 
 ## Ulteriori informazioni
 

@@ -4,16 +4,13 @@ description: Scopri come configurare Fastly BYOCDN per l’ottimizzazione nella 
 feature: Opportunities
 autotag-review: '2026-05-15T17:51:24.924Z'
 TQID: 'https://experienceleague.adobe.com/qXp1pbmZrxahHFOUzIuo-WEawdgNWIIQKDyy0yL2MLA'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 349
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -27,8 +24,8 @@ Questa configurazione indirizza il traffico da IA agentica (richieste da bot IA 
 Prima di configurare le regole Fastly VCL, assicurati di:
 
 * aver accesso a Fastly per il tuo dominio;
-* aver recuperato una chiave API di ottimizzazione edge dall’interfaccia di LLM Optimizer. Per i passaggi, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
-* (Facoltativo) Per verificare il routing dell&#39;area di gestione temporanea, vedere [Chiave API di gestione temporanea](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
+* aver recuperato dall’interfaccia di LLM Optimizer una chiave API del servizio Edge Optimize. Per la procedura, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facoltativo) Per verificare l’indirizzamento in fase di staging, consulta [Chiave API di staging](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configurazione**
 
@@ -94,7 +91,7 @@ Lo snippet `vcl_deliver` gestisce il failover in automatico. Se il servizio Edge
 | Il servizio Edge Optimize restituisce `4XX` o `5XX` | La richiesta viene riavviata e trasmessa dall’origine predefinita. |
 | Risposta in caso di failover | Include l’intestazione `x-edgeoptimize-fo: 1`. |
 
-**Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)**
+**Consenti Ottimizza su rete Edge tramite le regole del firewall (facoltativo)**
 
 {{waf-allowlist-setup}}
 
