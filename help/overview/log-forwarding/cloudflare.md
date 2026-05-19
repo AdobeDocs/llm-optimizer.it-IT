@@ -1,6 +1,6 @@
 ---
-title: Inoltro registro - Cloudflare
-description: Scopri come inoltrare i registri CDN da Cloudflare al bucket S3 di Adobe per la raccolta di dati sul traffico agente in LLM Optimizer.
+title: Inoltro dei registri - Cloudflare
+description: Scopri come inoltrare i registri CDN da Cloudflare al bucket S3 di Adobe per la raccolta di dati sul traffico da IA agentica in LLM Optimizer.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:41:23.688Z'
 TQID: 'https://experienceleague.adobe.com/AfhcMa7tZ3L-4qCbNKiblInALmHaKxWLtL-O-Hkvc-U'
@@ -16,24 +16,24 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 381
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Inoltro registro: Cloudflare {#log-forwarding-cloudflare}
+# Inoltro dei registri: Cloudflare {#log-forwarding-cloudflare}
 
-Questa pagina illustra come inoltrare i registri CDN da Cloudflare al bucket S3 di Adobe per la raccolta di dati sul traffico agente. Per effettuare l’onboarding in LLM Optimizer, utilizza la pagina Configurazione CDN di LLM Optimizer. Al termine del processo di onboarding, segui i passaggi descritti in questa pagina per configurare l’inoltro dei registri nella console della dashboard di Cloudflare.
+Questa pagina spiega come inoltrare i registri CDN da Cloudflare al bucket S3 di Adobe per la raccolta dati relativa al traffico da IA agentica. Per effettuare l’onboarding in LLM Optimizer, utilizza la pagina Configurazione CDN di LLM Optimizer. Al termine del processo di onboarding, segui i passaggi descritti in questa pagina per configurare l’inoltro dei registri nella console della dashboard di Cloudflare.
 
-## Passaggio 1: onboarding in LLM Optimizer {#step-1}
+## Passaggio 1: eseguire l’onboarding in LLM Optimizer {#step-1}
 
 Nella pagina LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
-1. Vai a **Dashboard configurazione cliente**.
+1. Vai alla **Dashboard Configurazione cliente**.
 
    ![Pulsante Configurazione](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Fare clic sulla scheda **Configurazione CDN**.
+1. Fai clic sulla scheda **Configurazione CDN**.
 
    ![Scheda Configurazione CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
@@ -41,40 +41,40 @@ Nella pagina LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png) -->
 
-1. Accanto a **Attiva analisi traffico IA**, fai clic su **Configura**.
+1. Accanto ad **Attiva analisi traffico IA**, fai clic su **Configura**.
 
    ![Configura](/help/overview/assets/log-forwarding/common/configure.png)
 
-1. Selezionare **Cloudflare (BYOCDN)**.
+1. Seleziona **Cloudflare (BYOCDN)**.
 
-   ![Seleziona Cloud Flare](/help/overview/assets/log-forwarding/cloudflare/cloudflare-select.png)
+   ![Seleziona Cloudflare](/help/overview/assets/log-forwarding/cloudflare/cloudflare-select.png)
 
-1. Fare clic su **Onboard**.
+1. Fai clic su **Esegui onboarding**.
 
    <!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
 ## Passaggio 2: creare un processo Logpush in Cloudflare {#step-2}
 
-Nel [dashboard Cloudflare](https://dash.cloudflare.com/login), eseguire la procedura seguente:
+Nella [dashboard Cloudflare](https://dash.cloudflare.com/login), segui questi passaggi:
 
-1. Vai alla pagina **Logpush** al livello **Dominio (zona)**.
-1. Selezionare **Crea un processo Logpush**.
+1. Vai alla pagina **Logpush** al livello del **Dominio (zona)**.
+1. Seleziona **Crea un processo Logpush**.
 1. In **Seleziona una destinazione**, scegli **Amazon S3**.
-1. Immettere le seguenti informazioni sulla destinazione:
+1. Immetti le seguenti informazioni di destinazione:
 
-   - **Bucket**: nome del bucket S3. Copia il valore dalla pagina Configurazione CDN di LLM Optimizer.
+   - **Bucket**: il nome del bucket S3. Copia il valore dalla pagina Configurazione CDN di LLM Optimizer.
 
-     ![Nome bucket](/help/overview/assets/log-forwarding/common/bucket-name.png)
+     ![Nome del bucket](/help/overview/assets/log-forwarding/common/bucket-name.png)
 
-   - **Percorso**: la posizione del bucket all&#39;interno del contenitore di archiviazione. Copia il valore dalla pagina Configurazione CDN di LLM Optimizer.
+   - **Percorso**: la posizione del bucket all’interno del contenitore di archiviazione. Copia il valore dalla pagina Configurazione CDN di LLM Optimizer.
 
      ![Percorso Cloudflare](/help/overview/assets/log-forwarding/cloudflare/cloudflare-path.png)
 
-   - **Organizzare gli accessi nelle sottocartelle giornaliere** (scelta consigliata).
+   - **Organizzazione degli accessi nelle sottocartelle giornaliere** (scelta consigliata).
 
      ![Sottocartelle giornaliere](/help/overview/assets/log-forwarding/cloudflare/cloudflare-daily-subfolders.png)
 
-   - **Area bucket**: copiare il valore dalla pagina Configurazione CDN di LLM Optimizer.
+   - **Area bucket**: copia il valore dalla pagina Configurazione CDN di LLM Optimizer.
 
      <!-- ![Region](/help/overview/assets/log-forwarding/cloudflare/cloudflare-region.png)-->
 
@@ -82,17 +82,17 @@ Nel [dashboard Cloudflare](https://dash.cloudflare.com/login), eseguire la proce
 
    Dopo aver completato i passaggi precedenti, seleziona **Continua**.
 
-1. Per provare la proprietà, Cloudflare invierà un file alla destinazione designata. Per trovare il token, fare clic sul pulsante **Apri** nella scheda **Panoramica** del file di verifica della proprietà. Copia il token di proprietà dalla pagina di configurazione CDN di LLM Optimizer, quindi incollalo nel dashboard di Cloudflare per verificare l’accesso al bucket. Immettere il token di proprietà e selezionare **Continua**.
+1. Per provare la proprietà, Cloudflare invierà un file alla destinazione designata. Per trovare il token, fai clic sul pulsante **Apri** nella scheda **Panoramica** del file di verifica della proprietà. Copia il token di proprietà dalla pagina di configurazione CDN di LLM Optimizer, quindi incollalo nella dashboard di Cloudflare per verificare l’accesso al bucket. Immetti il token di proprietà e seleziona **Continua**.
 
    <!--![Ownership token](/help/overview/assets/log-forwarding/cloudflare/cloudflare-ownership-token.png)-->
 
 1. Seleziona il set di dati **Richieste HTTP** da inviare al servizio di archiviazione.
 
-1. Configurare il processo Logpush:
+1. Configura il tuo processo Logpush:
 
-   - Immetti il **nome processo**.
+   - Inserisci il **nome del processo**.
 
-   - In **Invia i campi seguenti**, vedi i valori nella pagina di configurazione di LLM Optimizer.
+   - In **Invia i seguenti campi**, visualizza i valori nella pagina di configurazione di LLM Optimizer.
 
      ![Campi Logpush](/help/overview/assets/log-forwarding/cloudflare/cloudflare-logpush-fields.png)
 
@@ -102,12 +102,12 @@ Nel [dashboard Cloudflare](https://dash.cloudflare.com/login), eseguire la proce
 
 1. In **Opzioni avanzate**:
 
-   - Scegliere il formato dei campi timestamp nei registri: `RFC3339`.
+   - Scegli il formato dei campi marca temporale nei registri: `RFC3339`.
 
-     ![Formato timestamp](/help/overview/assets/log-forwarding/cloudflare/cloudflare-timestamp-format.png)
+     ![Formato marca temporale](/help/overview/assets/log-forwarding/cloudflare/cloudflare-timestamp-format.png)
 
-   - Per le percentuali di campionamento, selezionare **Tutti i registri**.
+   - Per le frequenze di campionamento, seleziona **Tutti i registri**.
 
      ![Frequenza di campionamento](/help/overview/assets/log-forwarding/cloudflare/cloudflare-sampling-rate.png)
 
-1. Seleziona **Invia** una volta completata la configurazione del processo Logpush.
+1. Seleziona **Invia** dopo aver completato la configurazione del processo Logpush.

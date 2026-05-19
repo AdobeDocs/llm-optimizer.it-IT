@@ -17,7 +17,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1346
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 
 La dashboard Presenza del brand fornisce una panoramica dettagliata di come viene percepito il tuo brand a livello di risposte generate dall’IA. Mostra dove, con quale frequenza e in quale contesto viene menzionato il tuo brand. Puoi utilizzare la dashboard per misurare la visibilità, tenere traccia delle citazioni ed esplorare le tendenze del sentiment. La dashboard è suddivisa in diverse sezioni, ciascuna delle quali fornisce insight diversi. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
-![Presenza dei brand panoramica](/help/dashboards/assets/brand-main.png)
+![Panoramica della presenza del brand](/help/dashboards/assets/brand-main.png)
 
 Questa pagina descrive quanto segue:
 
@@ -36,9 +36,9 @@ Questa pagina descrive quanto segue:
 * [Tendenza sentiment](#sentiment-trend)
 * [Insight di dati](#data-insights)
 
-Se ti trovi nella [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), passa a **Presenza dei brand**. Nell&#39;elenco a discesa del brand, seleziona il brand da analizzare oppure scegli **Tutti i brand** per rivedere la visibilità nell&#39;intero set di brand.
+Se utilizzi l’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), passa a **Presenza del brand**. Nell’elenco a discesa del brand, seleziona il brand che desideri analizzare oppure scegli **Tutti i brand** per visualizzare la visibilità dell’intero set di brand.
 
-![Presenza dei brand con il selettore del brand (esperienza incentrata sul brand)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+![Presenza del brand con selettore del brand (Esperienza incentrata sul brand)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## Filtri {#filters}
 

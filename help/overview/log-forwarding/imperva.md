@@ -1,6 +1,6 @@
 ---
-title: Inoltro log - Imperva
-description: Scopri come inoltrare i registri CDN da Imperva al bucket S3 di Adobe per la raccolta di dati sul traffico agente in LLM Optimizer.
+title: Inoltro dei registri - Imperva
+description: Scopri come inoltrare i registri CDN da Imperva al bucket S3 di Adobe per la raccolta automatica dei dati sul traffico da IA agentica in LLM Optimizer.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:52:22.260Z'
 TQID: 'https://experienceleague.adobe.com/y2ticpRCNZjPYJ6wHg-V3QWxBnGF--mQfqGBYjVjKXY'
@@ -16,60 +16,60 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 352
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Inoltro log: Imperva {#log-forwarding-imperva}
+# Inoltro registri: Imperva {#log-forwarding-imperva}
 
-Questa guida spiega come inoltrare i registri CDN da Imperva al bucket S3 di Adobe per la raccolta di dati sul traffico agente. Per effettuare l’onboarding in LLM Optimizer, utilizza la pagina Configurazione CDN di LLM Optimizer. Al termine del processo di onboarding, segui i passaggi descritti in questa pagina per configurare l’inoltro dei registri dalla console web Imperva.
+Questa guida spiega come inoltrare i registri della CDN da Imperva al bucket S3 di Adobe per la raccolta dei dati sul traffico da IA agentica. Per effettuare l’onboarding in LLM Optimizer, utilizza la pagina Configurazione CDN di LLM Optimizer. Una volta completata la procedura di onboarding, segui i passaggi descritti in questa pagina per configurare l’inoltro dei registri dalla console web di Imperva.
 
-## Passaggio 1: onboarding in LLM Optimizer {#step-1}
+## Passaggio 1: eseguire l’onboarding in LLM Optimizer {#step-1}
 
 Nella pagina LLM Optimizer [https://llmo.now/](https://llmo.now/):
 
-1. Vai a **Configurazione**.
+1. Passa a **Configurazione**.
 
    ![Pulsante Configurazione](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Fare clic sulla scheda **Configurazione CDN**.
+1. Fai clic sulla scheda **Configurazione CDN**.
 
    ![Scheda Configurazione CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 1. Fai clic su **Inizia**.
-1. Accanto a **Attiva analisi traffico IA**, fai clic su **Configura**.
+1. Accanto ad **Attiva analisi traffico IA**, fai clic su **Configura**.
 
    ![Configura](/help/overview/assets/log-forwarding/common/configure.png)
-1. Selezionare **Imperva (BYOCDN)**.
+1. Seleziona **Imperva (BYOCDN)**.
 
    ![Seleziona Imperva](/help/overview/assets/log-forwarding/imperva/imperva-select.png)
-1. Fare clic su **Onboard**.
+1. Fai clic su **Esegui onboarding**.
 
-## Passaggio 2: configurare l’inoltro dei registri a Imperva {#step-2}
+## Passaggio 2: configurare l’inoltro dei registri in Imperva {#step-2}
 
 Nella [console Imperva](https://my.imperva.com):
 
 >[!NOTE]
 >
->I registri devono essere inviati ogni giorno.
+>I registri devono essere inviati quotidianamente.
 
-1. Accedi al tuo account Imperva all&#39;indirizzo [https://my.imperva.com](https://my.imperva.com).
+1. Accedi al tuo account Imperva all’indirizzo [https://my.imperva.com](https://my.imperva.com).
 
-2. Nella barra laterale, vai a **Registri** > **Configurazione registro** (o **Integrazione registro**).
+2. Nella barra laterale, passa a **Logs** (Registri) >**Log Setup** (Configurazione registro, oppure **Log Integration** (Integrazione registro).
 
-3. Selezionare **Amazon S3 ARN** come tipo di connessione (destinazione log).
+3. Seleziona **Amazon S3 ARN** come tipo di connessione (destinazione del registro).
 
 4. Immetti le seguenti informazioni:
 
    | Campo | Descrizione | Nota |
    |---|---|---|
-   | **Nome connessione** | Un nome descrittivo per la connessione (ad esempio, registri di produzione S3). È possibile rinominare l&#39;impostazione predefinita. | |
-   | **Percorso** | Percorso della cartella in cui verranno archiviati i file di registro. Utilizza il formato `<Amazon S3 bucket name>/<log folder>`. Ad esempio: `MyBucket/MyImpervaLogFolder`. | `Amazon S3 bucket name` è il **nome bucket** dalla pagina di configurazione di LLM Optimizer. ![Nome bucket](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png) La cartella di registro è **Percorso** dalla pagina di configurazione di LLM Optimizer. ![Percorso](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
+   | **Nome connessione** | Un nome descrittivo per la connessione (ad esempio, registri S3 di Produzione). È possibile rinominare quello predefinito. | |
+   | **Percorso** | Il percorso della cartella in cui verranno memorizzati i file di registro. Utilizza il formato `<Amazon S3 bucket name>/<log folder>`. Ad esempio: `MyBucket/MyImpervaLogFolder`. | `Amazon S3 bucket name` è il **nome bucket** dalla pagina di configurazione di LLM Optimizer. ![Nome bucket](/help/overview/assets/log-forwarding/imperva/imperva-bucket-name.png) La cartella di registro è **Percorso** dalla pagina di configurazione di LLM Optimizer. ![Percorso](/help/overview/assets/log-forwarding/imperva/imperva-path.png) |
 
-5. Fare clic su **Verifica connessione**. Imperva esegue un test completo in cui un file di test (nessun dato reale) viene inviato alla cartella designata e quindi rimosso al termine del trasferimento.
+5. Fai clic su **Verifica connessione**. Imperva esegue un test completo in cui un file di prova (nessun dato reale) viene inviato alla cartella designata e quindi rimosso al termine del trasferimento.
 
-   - **Disponibile** — i dettagli di archiviazione sono validi. È possibile configurare i registri per utilizzare questa connessione.
-   - **Non definito** — mancano i dettagli richiesti o il test non è riuscito.
+   - **Disponibile** - i dettagli di archiviazione sono validi. È possibile configurare i registri per utilizzare questa connessione.
+   - **Non definito** - Mancano i dettagli richiesti o il test non è riuscito.
 
 6. Fai clic su **Salva** per memorizzare la configurazione.
 
@@ -77,7 +77,7 @@ Nella [console Imperva](https://my.imperva.com):
 
    | Campo | Nota |
    |---|---|
-   | Modalità di integrazione del registro | ![Modalità di integrazione registro](/help/overview/assets/log-forwarding/imperva/imperva-log-integration-mode.png) |
+   | Modalità di integrazione del registro | ![Modalità di integrazione del registro](/help/overview/assets/log-forwarding/imperva/imperva-log-integration-mode.png) |
    | Metodo di consegna | ![Metodo di consegna](/help/overview/assets/log-forwarding/imperva/imperva-delivery-method.png) |
    | Tipi di registro | ![Tipi di registro](/help/overview/assets/log-forwarding/imperva/imperva-log-types.png) |
    | Livello di registro | ![Livello di registro](/help/overview/assets/log-forwarding/imperva/imperva-log-level.png) |

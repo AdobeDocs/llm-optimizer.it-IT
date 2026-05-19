@@ -1,6 +1,6 @@
 ---
-title: Recuperare le chiavi API
-description: Come recuperare da LLM Optimizer le chiavi API di ottimizzazione di Edge per produzione e staging.
+title: Recupero delle chiavi API
+description: Come recuperare da LLM Optimizer le chiavi API del servizio Edge Optimize per produzione e staging.
 feature: Opportunities
 autotag-review: '2026-05-15T17:58:10.897Z'
 TQID: 'https://experienceleague.adobe.com/4R-cx6wv75Oowj9ZvEPGCzQbQBSoppgDuI5Ut1IbObA'
@@ -15,14 +15,14 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 337
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Recuperare le chiavi API
+# Recupero delle chiavi API
 
-Prima di configurare la rete CDN, recupera le chiavi API di Edge Optimize dall’interfaccia utente di LLM Optimizer. È necessaria una chiave API **production** per il traffico live. Facoltativamente, puoi anche recuperare una chiave API **staging** per testare prima il routing su un nome host di staging.
+Prima di configurare la rete CDN, recupera le chiavi API del servizio Edge Optimize dall’interfaccia di LLM Optimizer. È necessaria una chiave API di **produzione** per il traffico live. Facoltativamente, puoi anche recuperare una chiave API di **staging** per testare prima l’indirizzamento su un nome host di staging.
 
 ## Chiave API di produzione
 
@@ -30,45 +30,45 @@ Prima di configurare la rete CDN, recupera le chiavi API di Edge Optimize dall�
 
    ![Passa a Configurazione cliente](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
 
-2. Individua la sezione **Distribuire le ottimizzazioni agli agenti di IA**. Selezionare la casella di controllo **Abilita motore di ottimizzazione**.
+2. Individua la sezione **Implementare le ottimizzazioni negli agenti IA**. Seleziona la casella di controllo **Abilitare motore di ottimizzazione**.
 
-   ![Distribuzione ottimizzazioni agli agenti di IA - in sospeso](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
+   ![Implementare le ottimizzazioni negli agenti IA](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
 
 3. Nella finestra di dialogo di conferma, seleziona **Abilita**.
 
-   ![Abilita la finestra di dialogo di conferma del motore di ottimizzazione](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
+   ![Abilitare la finestra di dialogo di conferma del motore di ottimizzazione](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
 
-4. Selezionare **Visualizza dettagli**. Nella finestra di dialogo **Dettagli ottimizzazione distribuzione**, copia la **chiave API di produzione** (utilizza **Copia** accanto al campo).
+4. Seleziona **Visualizza dettagli**. Nella finestra di dialogo **Dettagli delle ottimizzazioni dell’implementazione**, copia la **chiave API di produzione** (utilizza **Copia** accanto al campo).
 
-   ![Chiave API di produzione nei dettagli delle ottimizzazioni della distribuzione](/help/assets/optimize-at-edge/byocdn-production-api-key-details.png)
+   ![Chiave API di produzione nei Dettagli delle ottimizzazioni dell’implementazione](/help/assets/optimize-at-edge/byocdn-production-api-key-details.png)
 
    >[!NOTE]
-   >La finestra di dialogo potrebbe indicare che la configurazione non è completa. Questo è previsto fino alla verifica del routing: è comunque possibile copiare la chiave API in modo che il team IT o CDN possa completare la configurazione.
+   >La finestra di dialogo potrebbe indicare che la configurazione non è completa. Questo è previsto fino alla verifica dell’indirizzamento: è comunque possibile copiare la chiave API in modo che il team IT o CDN possa completare la configurazione.
 
-Per assistenza sui passaggi precedenti, contatta il team del tuo account Adobe o `llmo-at-edge@adobe.com`.
+Se hai bisogno di assistenza per i passaggi precedenti, contatta il team Adobe Account o `llmo-at-edge@adobe.com`.
 
-## Chiave API di staging (opzionale)
+## Chiave API di staging (facoltativa)
 
-Per convalidare il ciclo di produzione in un ambiente inferiore prima di abilitare il ciclo di produzione, puoi configurare un nome host di staging.
+Per convalidare l’indirizzamento in un ambiente inferiore prima di abilitare l’indirizzamento per la produzione, puoi configurare un nome host di staging.
 
 **Requisiti**
 
-* Il nome host dell&#39;area di gestione temporanea deve trovarsi nello **stesso dominio registrabile** della produzione (ad esempio, `https://staging.example.com` quando la produzione è `https://www.example.com`).
-* Solo **un** dominio di gestione temporanea per sito. Una volta salvato, non è possibile modificarlo senza contattare Adobe.
+* Il nome host di staging deve trovarsi nello **stesso dominio registrabile** della produzione (ad esempio, `https://staging.example.com` quando la produzione è `https://www.example.com`).
+* Deve esserci solo **un** dominio di staging per sito. Una volta salvato, non è possibile modificarlo senza contattare Adobe.
 
 **Passaggi**
 
 1. In LLM Optimizer, apri **Configurazione cliente** e seleziona la scheda **Configurazione CDN**.
-2. In **Distribuisci ottimizzazioni agli agenti di IA**, selezionare **Aggiungi dominio stage** (o **Dominio stage** se è già configurato un dominio di gestione temporanea).
-3. Immetti l&#39;URL di gestione temporanea completo, incluso `https://`, e seleziona **Imposta dominio**.
-4. Copia la chiave API **staging** dalla finestra di dialogo di conferma.
+2. In **Implementare le ottimizzazioni negli agenti IA**, seleziona **Aggiungi dominio di staging** (o **Dominio staging** se è già configurato un dominio di staging).
+3. Immetti l’URL di staging completo, includendo `https://`, e seleziona **Imposta dominio**.
+4. Copia la chiave API di **staging** dalla finestra di dialogo di conferma.
 
-   ![Chiave API del dominio di gestione temporanea](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
+   ![Chiave API del dominio di staging](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
 
-Distribuisci le stesse regole di routing nell’ambiente di staging utilizzando la chiave API di staging.
+Implementa le stesse regole di indirizzamento nell’ambiente di staging utilizzando la chiave API di staging.
 
 Se hai bisogno di aiuto, contatta `llmo-at-edge@adobe.com`.
 
 ## Passaggi successivi
 
-Dopo aver recuperato le chiavi API, torna alla [guida all&#39;installazione della rete CDN](/help/dashboards/optimize-at-edge/overview.md#cdn-configuration-guides) per configurare il routing.
+Dopo aver recuperato le chiavi API, torna alla [Guida per la configurazione della rete CDN](/help/dashboards/optimize-at-edge/overview.md#cdn-configuration-guides) per configurare l’indirizzamento.

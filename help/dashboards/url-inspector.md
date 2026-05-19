@@ -16,7 +16,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 718
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ L’Inspector URL consente di analizzare le prestazioni a livello di ricerche IA
 
 ![Inspector URL](/help/dashboards/assets/url-insp.png)
 
-Se sei sulla [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), passa a **URL Inspector** e seleziona il sito per il quale desideri visualizzare le informazioni.
+Se ti trovi nell’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), passa a **Inspector URL** e seleziona il sito di cui desideri visualizzare gli insight.
 
-![Ispettore URL — selettore del sito (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
+![Ispector URL: selettore siti (esperienza incentrata sul brand)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 
 ## Filtri
 

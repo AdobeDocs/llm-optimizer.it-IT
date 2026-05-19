@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1530
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ Nella dashboard [!UICONTROL Configurazione cliente], puoi personalizzare le cate
 
 ## Esperienza incentrata sul brand
 
-Per impostazione predefinita, i nuovi clienti iniziano con un’interfaccia mirata e brand-first con una configurazione basata sull’onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un marchio attivo e altri marchi suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente a questa esperienza incentrata sul marchio.
+Per impostazione predefinita, i nuovi clienti iniziano con un’interfaccia incentrata sul brand e una configurazione basata sull’onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un brand attivo e altri brand suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente all’Esperienza incentrata sul brand.
 
-Per chi utilizza un&#39;esperienza incentrata sul marchio, la **gestione dei marchi** è il punto in cui puoi definire il modo in cui il tuo marchio viene monitorato e analizzato.
+Se utilizzi l’Esperienza incentrata sul brand, **Gestione dei brand** consente di definire il modo in cui il brand viene monitorato e analizzato.
 
-![Gestione dei marchi: navigazione nelle app (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Gestione dei brand: navigazione nell’app (Esperienza incentrata sul brand)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Gestione marchi: panoramica sulla configurazione](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Gestione dei brand: panoramica sulla configurazione](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Per impostare argomenti e prompt per un marchio specifico, utilizzare **Gestione prompt**.
+Per configurare argomenti e prompt per un brand specifico, utilizza **Gestione dei prompt**.
 
-![Gestione richieste](/help/assets/brand-centric-experience/prompts-management.png)
+![Gestione dei prompt](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Libreria di prompt di settore
 
@@ -119,7 +119,7 @@ Per decidere come impostare le categorie, rispondi a questa domanda: **Chi dovr�
 >[!IMPORTANT]
 >
 > * Scegli un approccio e attieniti ad esso.
-> * Puoi avere **un** solo modello di categorie per account o brand. Non combinare **SBU** e **URL_DIR** contemporaneamente.
+> * Puoi avere **un** solo modello di categorie per account o brand. Non combinare **SBU** e **URL_DIR** allo stesso tempo.
 <!--Can you mix Product/Service with these?-->
 
 Esempio:

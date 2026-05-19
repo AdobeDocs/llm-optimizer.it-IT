@@ -15,7 +15,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 508
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -64,10 +64,10 @@ L’ottimizzazione per motori generativi è per sua natura interfunzionale. LLM 
 Adobe LLM Optimizer offre le seguenti possibilità:
 
 **Misurare la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il tuo brand viene menzionato nei risultati di ricerca basati sull’IA. Supera le supposizioni grazie a un punteggio di visibilità chiaro, che potrai monitorare e confrontare nel tempo.
-**Benchmark Others** - Guarda come il tuo brand si confronta con gli altri nei motori generativi. Identifica le lacune della quota di voce e scopri i vantaggi competitivi.
-**Scopri opportunità fruibili**: individua opportunità di contenuto (ad esempio, domande frequenti, riassunti, schema) e opportunità tecniche (crawlability, problemi di indicizzazione) che aumentano direttamente menzioni e citazioni.
-**Tracciare l&#39;impatto del traffico dall&#39;intelligenza artificiale** - Monitorare il traffico agente (dagli assistenti di intelligenza artificiale) e il traffico da referral (l&#39;utente fa clic dalle citazioni) nelle proprietà di tua proprietà. Collega la visibilità GEO a un coinvolgimento reale.
-**Abilita Team Collaboration** - Condividi dashboard, assegna i proprietari per le richieste o le categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO e comunicazione.
+**Benchmarking rispetto ad altri brand**: scopri come il tuo brand si colloca rispetto ad altri brand nei motori generativi. Identifica le lacune in termini di share of voice e scopri nuovi vantaggi competitivi.
+**Scoprire opportunità fruibili**: individua le opportunità di contenuto, ad esempio, domande frequenti, riassunti, schemi, e le opportunità tecniche, ad esempio crawlability, problemi di indicizzazione, che aumentano direttamente le menzioni e le citazioni.
+**Tenere traccia dell’impatto del traffico da IA**: monitora il traffico da IA agentica (dagli Assistenti IA) e da referral (quando l’utente fa clic sulle citazioni) nelle tue proprietà. Collega la visibilità GEO a un coinvolgimento reale.
+**Abilitare la collaborazione tra team**: condividi le dashboard, assegna i proprietari per prompt o categorie e assicurati che gli obiettivi di visibilità possano essere tracciati dai membri dei team di marketing, SEO e comunicazione.
 
 
 ## Riferimenti

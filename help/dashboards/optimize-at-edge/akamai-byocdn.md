@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 809
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -27,16 +27,16 @@ Questa configurazione indirizza il traffico da IA agentica (richieste da bot IA 
 Prima di configurare le regole di Akamai Property Manager, assicurati di:
 
 * aver accesso ad Akamai Property Manager per il tuo dominio;
-* aver recuperato una chiave API di ottimizzazione edge dall’interfaccia di LLM Optimizer. Per i passaggi, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
-* (Facoltativo) Per verificare il routing dell&#39;area di gestione temporanea, vedere [Chiave API di gestione temporanea](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
+* aver recuperato dall’interfaccia di LLM Optimizer una chiave API del servizio Edge Optimize. Per la procedura, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Facoltativo) Per verificare l’indirizzamento in fase di staging, consulta [Chiave API di staging](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configurazione**
 
-La seguente regola di Akamai Property Manager indirizza il traffico di pagina HTML agente ad Edge Optimize. La configurazione include i seguenti passaggi:
+La seguente regola di Akamai Property Manager indirizza il traffico della pagina HTML da IA agentica verso il servizio Edge Optimize. La configurazione include i seguenti passaggi:
 
-**1. Imposta criteri di routing (corrispondenza traffico agente utente e HTML)**
+**1. Imposta i criteri di indirizzamento (corrispondenza per agenti utente e traffico HTML)**
 
-Impostare l&#39;instradamento per i seguenti agenti utente:
+Imposta l’indirizzamento per i seguenti agenti utente:
 
 ```
  *AdobeEdgeOptimize-AI*
@@ -49,7 +49,7 @@ Impostare l&#39;instradamento per i seguenti agenti utente:
 
 >[!NOTE]
 >
->Applica la regola di routing Optimize at Edge solo al traffico di pagina HTML agente. Un&#39;impostazione comune consiste nell&#39;utilizzare i criteri lato richiesta, ad esempio **Estensione file**, per far corrispondere `html` e `EMPTY_STRING` per gli URL di pagina senza estensione. Se il sito utilizza HTML da altri pattern di URL o include route non di pagina senza estensione, come endpoint API, perfeziona la regola con criteri aggiuntivi basati sul percorso.
+>Applica la regola di indirizzamento Ottimizza su rete Edge solo al traffico delle pagine HTML da IA agentica. Una configurazione comune prevede l’utilizzo di criteri lato richiesta come **Estensione file** per far corrispondere `html` e `EMPTY_STRING` per gli URL di pagine senza estensione. Se il tuo sito fornisce codice HTML da altri modelli di URL o include indirizzamenti senza estensione che non portano a pagine (ad esempio, endpoint API), perfeziona la regola con ulteriori criteri basati sul percorso.
 
 ![Imposta i criteri di indirizzamento](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -59,7 +59,7 @@ Imposta l’origine come `live.edgeoptimize.net` e abbina SAN a `*.edgeoptimize.
 
 >[!NOTE]
 >
->Se l&#39;attivazione della proprietà non riesce dopo aver aggiunto la regola Ottimizza in Edge, verifica se la regola utilizza una modalità di verifica SSL del server di origine diversa da quella predefinita. In caso contrario, aggiorna la regola Ottimizza in Edge in modo che corrisponda alla regola predefinita. Se ad esempio la regola predefinita utilizza **Impostazioni piattaforma**, utilizzare anche **Impostazioni piattaforma**. Se non riesci a utilizzare l’impostazione richiesta, contatta il supporto Akamai.
+>Se l’attivazione della proprietà non riesce dopo aver aggiunto la regola Ottimizza su rete Edge, verifica se la regola utilizza una modalità di verifica SSL del server di origine diversa da quella predefinita. In tal caso, aggiorna la regola Ottimizza su rete Edge in modo che corrisponda alla regola predefinita. Ad esempio, se la regola predefinita utilizza **Impostazioni della piattaforma**, utilizza anche qui le **Impostazioni della piattaforma**. Se non riesci a utilizzare l’impostazione richiesta, contatta l’assistenza clienti di Akamai.
 
 ![Imposta il comportamento di origine e SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -75,22 +75,22 @@ Imposta la variabile della chiave della cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` s
 
 **5. Modifica le intestazioni delle richieste in ingresso**
 
-Imposta le seguenti intestazioni di richiesta in ingresso:
-`x-edgeoptimize-api-key` alla chiave API recuperata da LLMO
-Da `x-edgeoptimize-config` a `LLMCLIENT=TRUE;`
-Da `x-edgeoptimize-url` a `{{builtin.AK_URL}}`
+Imposta le seguenti intestazioni per le richieste in entrata:
+`x-edgeoptimize-api-key` verso la chiave API recuperata da LLMO
+`x-edgeoptimize-config` a `LLMCLIENT=TRUE;`
+`x-edgeoptimize-url` a `{{builtin.AK_URL}}`
 
 ![Modifica le intestazioni delle richieste in ingresso](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)**
+**Consenti Ottimizza su rete Edge tramite le regole del firewall (facoltativo)**
 
 {{waf-allowlist-setup}}
 
-![Imposta l&#39;intestazione x-edgeoptimize-fetcher-key in Gestione proprietà](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
+![Imposta l’intestazione x-edgeoptimize-fetcher-key in Property Manager](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
 
 >[!NOTE]
 >
->È inoltre possibile inserire nell&#39;elenco Consentiti l&#39;agente utente `*AdobeEdgeOptimize/1.0*` e l&#39;intestazione `x-edgeoptimize-fetcher-key` in Akamai Bot Manager.
+>Inoltre, inserisci l’agente utente `*AdobeEdgeOptimize/1.0*` e l’intestazione `x-edgeoptimize-fetcher-key` all’elenco Consentiti in Akamai Bot Manager.
 
 **6. Modifica le intestazioni delle risposte in ingresso**
 
@@ -116,7 +116,7 @@ Nella regola di indirizzamento principale, configura il comportamento di failove
 
 >[!IMPORTANT]
 >
->Il frammento XML in questo passaggio richiede il comportamento **Avanzato**. In alcuni ambienti Akamai, questo comportamento non è disponibile per la modifica self-service. Se non trovi l&#39;opzione **Avanzate**, contatta il team dell&#39;account Akamai o il supporto di Akamai per abilitare la configurazione richiesta.
+>Lo snippet XML in questo passaggio richiede il comportamento **Avanzato**. In alcuni ambienti Akamai, questo comportamento non è disponibile per la modifica self-service. Se non visualizzi l’opzione **Avanzato**, contatta il tuo team di account Akamai o l’assistenza Akamai per abilitare la configurazione necessaria.
 
 ![Failover del sito](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
@@ -148,7 +148,7 @@ Aggiungi l’intestazione di richiesta `x-edgeoptimize-request` con il valore `f
 >
 >In questo modo la regola per l’intestazione del test di failover viene valutata per **tutte** le regole di indirizzamento, non solo per una di esse.
 >
->Inoltre, assicurati che la regola **Ottimizza su routing Edge** non sia sostituita da alcuna regola corrispondente successiva che modifichi l&#39;origine, il comportamento di caching o l&#39;ID cache per le stesse richieste. Se un’altra regola corrispondente ripristina questi comportamenti, il comando Ottimizza in fase di routing o caching di Edge potrebbe non funzionare come previsto.
+>Accertati inoltre che la regola di **indirizzamento Ottimizza su rete Edge** non venga sovrascritta da alcuna regola corrispondente successiva che modifichi l’origine, il comportamento di caching o l’ID della cache per le stesse richieste. Se un’altra regola di corrispondenza reimposta questi comportamenti, l’indirizzamento o il caching di Ottimizza su rete Edge potrebbero non funzionare come previsto.
 
 Se il valore dell’intestazione della richiesta `x-edgeoptimize-request` è `fo`, imposta l’intestazione della risposta in uscita `x-edgeoptimize-fo` su `true`.
 
