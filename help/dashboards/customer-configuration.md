@@ -4,19 +4,14 @@ description: Utilizza la configurazione cliente per definire in che modo il tuo 
 feature: Customer Configuration
 autotag-review: '2026-05-15T17:45:12.067Z'
 TQID: 'https://experienceleague.adobe.com/qa7zk54n9G19-Azz9f6mn7V1kAGvnJSOJjpxbTBeHgc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: f16c1bda1c9919a62077811653f92d5fc2c74045
 workflow-type: tm+mt
-source-wordcount: 2249
-ht-degree: 100%
+source-wordcount: 3935
+ht-degree: 57%
 
 ---
 
@@ -37,6 +32,7 @@ Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del
 * [Alias del brand](#brand-aliases)
 * [Configurazione CDN](#agentic-cdn)
 * [Google Search Console](#google-console)
+* [Suggerimenti rapidi basati su tentativi di citazione e Traffico da referral](#prompt-suggestions)
 
 Se utilizzi l’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), passa a **Gestione dei brand** per configurare i brand e gli alias dei brand e per definire la concorrenza da monitorare. La funzione **Gestione dei brand** viene utilizzata anche per configurare integrazioni quali Google Search Console, Adobe Analytics e l’inoltro di registri CDN relativi agli URL associati ai brand. A tal fine, fai clic sulle schede corrispondenti: GSC, CDN e così via.
 
@@ -258,3 +254,122 @@ Sì, puoi eliminare qualsiasi prompt che non desideri monitorare. I prompt elimi
 D: Una volta aggiunti i prompt di Google Search Console al mio elenco di prompt, entro quanto tempo vedrò i dati sulla presenza del brand per questi prompt?
 
 I dati sulla presenza del brand per i prompt aggiunti di recente verranno visualizzati durante il successivo aggiornamento dei dati pianificato, che in genere viene eseguito all’inizio di ogni settimana. A seconda del momento in cui si aggiungono i prompt, è possibile che i risultati vengano visualizzati entro pochi giorni.
+
+## Suggerimenti rapidi basati su tentativi di citazione e Traffico da referral {#prompt-suggestions}
+
+Invece di indovinare quali prompt hanno importanza, **Suggerimenti prompt** partono da quali agenti e utenti di IA stanno già accedendo o sono a cui si fa riferimento sul tuo sito.
+
+Adobe LLM Optimizer analizza i dati CDN per identificare le pagine a cui gli agenti di IA accedono già in modo coerente (tentativi di citazione) e a cui gli utenti fanno riferimento (traffico da referral LLM). Successivamente, genera automaticamente suggerimenti di prompt in base alle lacune nella copertura dei prompt corrente. Invece di indovinare quali URL assegnare la priorità e quali prompt creare, il flusso di lavoro inizia da veri e propri segnali di traffico: pagine a cui gli agenti stanno già cercando di accedere e che poi definiscono il tipo di prompt utente a cui dovrebbero rispondere tali pagine.
+
+Quando gli agenti AI accedono già in modo coerente a una pagina, la domanda non è come far sì che gli agenti sappiano della pagina, ma a quali domande il contenuto della pagina potrebbe rispondere. Senza i prompt configurati per queste pagine, non hai alcuna visibilità su come il tuo brand viene visualizzato nelle risposte AI sugli argomenti più importanti. Suggerimenti prompt da Agentic Traffic (Traffico agente) consente di colmare questo gap e iniziare a monitorare e migliorare la visibilità dei brand delle pagine in cui gli agenti sono già più attivi.
+
+>[!NOTE]
+>
+> Nella [esperienza incentrata sul marchio](/help/overview/quick-start.md#brand-centric-experience), i suggerimenti dei prompt vengono visualizzati nella sezione **Gestione dei prompt**.
+
+### Come funziona {#prompt-suggestions-how-it-works}
+
+Il flusso di lavoro Suggerimenti prompt viene eseguito in quattro passaggi, trasformando i segnali di traffico CDN in suggerimenti di prompt pronti per la configurazione. Ogni passaggio si basa su quello precedente: partendo da pagine in cui l’attività dell’agente IA è già stata dimostrata, comprendendo a cosa servono tali pagine, verificando ciò che è già coperto e generando prompt specifici, fondati e pronti per la pubblicazione.
+
+![Suggerimenti dal flusso di lavoro Traffico agente](/help/dashboards/assets/prompt-suggestions-workflow.png)
+
+#### Passaggio 1 — Identificare le pagine a segnale elevato dal traffico agente {#prompt-suggestions-step-1}
+
+La pipeline inizia identificando le pagine del sito con cui i sistemi di intelligenza artificiale sono già attivamente coinvolti, utilizzando due segnali provenienti dai dati CDN: con quale frequenza i sistemi di intelligenza artificiale accedono alle pagine come origine e rispondono a domande reali degli utenti; e se tali pagine stanno già spingendo utenti reali verso il sito dalle risposte generate dall’intelligenza artificiale.
+
+* **Tentativi**: il modo in cui i sistemi di intelligenza artificiale accedono a una pagina come potenziale origine durante la risposta alle domande dell&#39;utente. La pipeline cerca le pagine che mostrano un’attività coerente per i tentativi di citazione, settimana per settimana, fornendo un’immagine più olistica di interesse rispetto a un singolo punto nel tempo.
+* **traffico da referral LLM**: istanze in cui un utente ha fatto clic da una risposta generata da IA per passare all&#39;URL. La pipeline si concentra sui dati di riferimento più recenti e assegna priorità alle pagine con il maggior volume di visite guidate dall’intelligenza artificiale, garantendo che i suggerimenti si fondino su modelli di consigli di intelligenza artificiale attuali e collaudati.
+
+| Segnale | Che cosa significa |
+|--------|---------------|
+| Solo tentativi di citazione | Gli agenti accedono regolarmente a questa pagina come potenziale sorgente |
+| Solo traffico da referral LLM | Gli agenti stanno inviando attivamente gli utenti a questa pagina |
+| Entrambi | Gli agenti vi accedono e gli utenti fanno clic — il target con la massima affidabilità |
+
+Una pagina può essere qualificata tramite segnale o entrambi. Le pagine che mostrano entrambi i segnali rappresentano i target con la massima affidabilità per la generazione immediata.
+
+#### Passaggio 2 — Analizzare il contenuto e le finalità della pagina {#prompt-suggestions-step-2}
+
+Per ogni pagina qualificata, la pipeline legge il contenuto della pagina e:
+
+* **Riepiloga** il documento in una descrizione concisa e basata sui fatti che diventa la base di tutto ciò che segue.
+* **Classifica** il tipo di pagina, che si tratti di un prodotto, una risorsa, un supporto o un hub.
+* Identifica l&#39;**intento di percorso primario**, ovvero il tipo di domanda a cui la pagina è meglio posizionata per rispondere, ad esempio informativa, istruttiva, comparativa o transazionale.
+
+Le due classificazioni funzionano insieme. Ad esempio, i prompt generati da una pagina di supporto come una guida alla configurazione o un tutorial hanno più probabilità di essere rilevanti per un utente tipo esistente rispetto a un nuovo pubblico.
+
+#### Passaggio 3 — Controllare la copertura del prompt esistente {#prompt-suggestions-step-3}
+
+Prima di generare qualsiasi nuova pagina, la pipeline controlla se ogni pagina qualificata è già coperta da prompt configurati nel tuo account LLM Optimizer, in esecuzione in due passaggi:
+
+1. Scansione per similarità semantica che identifica rapidamente i prompt candidati provenienti dalla libreria di prompt esistente che sono potenzialmente correlati alla pagina.
+2. Una revisione basata su LLM che valuta l’allineamento di ciascun candidato al prompt con il contenuto della pagina, non solo se è correlato a livello topico, ma anche se copre l’aspetto della pagina.
+
+Una pagina è considerata coperta se almeno un prompt esistente soddisfa tale soglia. Le pagine che non presentano una corrispondenza adeguata vengono identificate come spazi vuoti e passano al passaggio 4.
+
+#### Passaggio 4: generazione, controllo qualità e richiesta di classificazione per URL {#prompt-suggestions-step-4}
+
+![Generazione dei prompt e controllo qualità](/help/dashboards/assets/prompt-suggestions-generation.png)
+
+Per ogni pagina vuota, la pipeline genera prompt dal suono naturale e basati sulla descrizione del contenuto della pagina. Inizia con l&#39;identificare i personaggi rilevanti — qualcuno che realisticamente farebbe domande a cui questa pagina risponde e costruisce uno scenario realistico intorno a quell&#39;individuo prima di generare i candidati prompt.
+
+Ogni prompt viene sottoposto a un controllo automatico della qualità suddiviso in tre dimensioni:
+
+* Indica se la pagina è **specifica** anziché una domanda generica che può essere applicata a qualsiasi pagina della categoria.
+* Indica se la pagina è **messa a terra** nel contenuto effettivo.
+* Indica se può sembrare qualcosa che un **utente reale** digiterebbe in uno strumento di intelligenza artificiale come ChatGPT.
+
+I prompt che non superano questa revisione vengono riscritti con un feedback specifico e riesaminati. Se ancora non passano, cadono.
+
+Il passaggio finale è un controllo di diversità, le richieste tra URL troppo simili tra loro vengono eliminate dall’elenco finale. Ogni prompt viene contrassegnato con l&#39;argomento e la categoria preconfigurati e include un campo di ragionamento che spiega perché l&#39;URL di origine è stato oggetto di targeting in base ai segnali di tentativo di citazione e di traffico da referral. Ai prompt viene inoltre assegnata una classificazione di priorità che consente di sapere su quali suggerimenti agire per primi; una priorità più elevata significa un segnale di IA combinato più forte proveniente dall’URL sorgente. I prompt sono quindi pronti per essere esaminati nella scheda **Suggerimenti prompt** della dashboard Configurazione cliente.
+
+### Procedura di utilizzo {#prompt-suggestions-how-to-use}
+
+1. Apri il dashboard **Configurazione cliente** e passa alla scheda **Suggerimenti prompt**.
+1. Utilizza il filtro **Source** per selezionare **Tentativo di citazione** per visualizzare i suggerimenti generati dal traffico agente.
+1. Rivedi le colonne **Motivazione** e **Priorità** per valutare ogni suggerimento.
+1. Seleziona i prompt da aggiungere e fai clic su **Aggiungi selezione** per aggiungerli ai prompt configurati.
+
+![Scheda Suggerimenti richiesta con filtro di origine Tentativo di citazione](/help/dashboards/assets/prompt-suggestions-citation-attempt.png)
+
+![Aggiungi suggerimenti prompt selezionati](/help/dashboards/assets/prompt-suggestions-add-selection.png)
+
+### Domande frequenti {#prompt-suggestions-faq}
+
+D: La mia organizzazione ha bisogno di una configurazione aggiuntiva per utilizzare questa funzione?
+
+Questa funzione si basa sui dati di registro CDN. Se hai già abilitato [l&#39;inoltro del registro CDN](#cdn-configuration), non è necessaria alcuna configurazione aggiuntiva. Senza i registri CDN, i dati relativi ai tentativi di citazione o al traffico da referral non saranno disponibili per l’analisi.
+
+D: Perché un URL specifico non viene visualizzato nei suggerimenti?
+
+Ci sono alcuni motivi comuni. La pagina potrebbe non avere ancora un’attività di recupero di IA coerente o un traffico da referral significativo; senza uno di questi segnali, non entra nella pipeline. Potrebbe già essere coperta da un prompt configurato esistente poiché la pipeline genera solo suggerimenti per spazi vuoti reali. Oppure il tipo di pagina potrebbe non essere idoneo per la generazione di prompt.
+
+D: I suggerimenti possono cambiare nel tempo?
+
+Sì. La pipeline viene eseguita periodicamente quando diventano disponibili nuovi dati CDN. Man mano che il comportamento di utente e agente si evolve (quali pagine vengono accessibili, con quale frequenza e quali sono i fattori che determinano il traffico da referral), i suggerimenti riflettono tali modifiche. Le pagine che prima non erano a segnale elevato potrebbero qualificarsi nelle esecuzioni future e le lacune esistenti che sono state corrette non genereranno più nuovi suggerimenti.
+
+D: perché trovo URL che non mi aspettavo nei suggerimenti?
+
+Gli URL visualizzati si basano interamente sul comportamento degli agenti osservati, pagine a cui i sistemi di intelligenza artificiale accedono regolarmente o alle quali indirizzano gli utenti, indipendentemente da quanto siano prominenti nella strategia dei contenuti. In alcuni casi, potrebbero essere pagine che non hai mai considerato importanti, ma per le quali l’intelligenza artificiale ha ripetutamente raggiunto. Se nei suggerimenti viene visualizzato un URL, è perché i dati lo supportano. Sei sempre libero di ignorare i suggerimenti che non si adattano alla tua strategia, ma i dati dietro ogni suggerimento si basano su una vera attività di intelligenza artificiale.
+
+D: Cosa significa il campo di ragionamento?
+
+Ogni prompt include una spiegazione del motivo per cui il relativo URL di origine è stato elencato come suggerimento. Per le pagine che si qualificano tramite tentativi di citazione, viene mostrato come la pagina viene classificata tra tutte le pagine a cui si accede in base ai tentativi settimanali. Per le pagine che si qualificano tramite il traffico da referral, viene visualizzato lo stesso per le visualizzazioni pagina di riferimento. Le pagine con entrambi i segnali mostrano entrambi. Questo consente di comprendere la priorità e scegliere quali suggerimenti pubblicare per primi.
+
+Per una pagina con entrambi i segnali, il ragionamento potrebbe essere simile al seguente: *Generato per [URL pagina] — si classifica nel 3% dei primi tentativi di citazione settimanali mediani e nell&#39;1% dei primi tentativi di citazione per traffico da referral LLM.*
+
+D: Come viene determinata la priorità?
+
+La priorità si basa su un punteggio combinato di due segnali: il modo in cui una pagina viene classificata tra tutte le pagine in base ai tentativi di citazione e il modo in cui viene classificata tra tutte le pagine in base alle visualizzazioni delle pagine di riferimento LLM. Entrambi sono espressi come percentili e sommati, pertanto le pagine con un punteggio elevato su entrambi i segnali risalgono naturalmente all’inizio. Una pagina a cui AI accede e invia utenti in modo coerente, sarà sempre più in alto di una pagina con un solo segnale.
+
+D: In che modo la pipeline decide quali pagine sono idonee in base ai tentativi di citazione?
+
+La pipeline cerca le pagine che mostrano un’attività di recupero dell’intelligenza artificiale coerente nel tempo. Per essere idonea, una pagina deve soddisfare due condizioni: deve mostrare un’attività significativa in almeno metà delle settimane nei dati disponibili e il suo conteggio mediano degli hit agentici durante tali settimane attive deve rientrare nel primo 25% in tutte le pagine. Entrambe le condizioni devono essere soddisfatte: la sola frequenza non è sufficiente e nemmeno il volume degli hit è sufficiente.
+
+D: In che modo la pipeline decide quali pagine sono idonee in base al traffico da referral?
+
+Una pagina è idonea se viene visualizzata nel primo 10% di tutte le pagine per numero totale di visite di riferimento LLM negli ultimi tre mesi. In questo modo i suggerimenti si basano su pagine che stanno già generando un click-through reale e misurabile dalle risposte AI, in base al comportamento recente.
+
+D: I suggerimenti dei prompt sono disponibili in lingue diverse dall’inglese?
+
+Non ancora. Al momento la pipeline genera prompt solo in inglese. In una versione futura verrà aggiunto il supporto multilingue.
