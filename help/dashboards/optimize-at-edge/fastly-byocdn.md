@@ -10,10 +10,10 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 34837b04c48141b8c3657b8f07cb3c2e4852a9ea
+source-git-commit: c5a8f033aac85913b56a40bb1560537da04847f2
 workflow-type: tm+mt
-source-wordcount: 349
-ht-degree: 99%
+source-wordcount: 350
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Questa configurazione indirizza il traffico da IA agentica (richieste da bot IA 
 
 **Prerequisiti**
 
-Prima di configurare le regole Fastly VCL, assicurati di:
+Prima di impostare le regole VCL Fastly, verificare di disporre di:
 
 * aver accesso a Fastly per il tuo dominio;
 * aver recuperato dall’interfaccia di LLM Optimizer una chiave API del servizio Edge Optimize. Per la procedura, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
