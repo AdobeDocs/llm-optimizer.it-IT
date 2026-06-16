@@ -4,16 +4,13 @@ description: Scopri come configurare CloudFront BYOCDN per l’ottimizzazione ne
 feature: Opportunities
 autotag-review: '2026-05-15T17:41:48.977Z'
 TQID: 'https://experienceleague.adobe.com/fGlW2FIQooU-8nv8H1lH3WOxinOFUVK7RVNol7ACPq8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 7097550211d1570d6ff65ab980f9a160f8d2a9e0
 workflow-type: tm+mt
-source-wordcount: 2204
-ht-degree: 96%
+source-wordcount: 2343
+ht-degree: 90%
 
 ---
 
@@ -232,6 +229,27 @@ Il ruolo creato automaticamente viene fornito con un criterio `AWSLambdaBasicExe
 
 >[!WARNING]
 >L’area geografica dell’ARN deve essere `*` — Lambda@Edge viene eseguito nella posizione edge più vicina al visualizzatore, pertanto i registri vengono scritti in CloudWatch nell’area geografica della posizione edge (ad esempio, `ap-south-1`, `eu-west-1`), non necessariamente `us-east-1`. Il gruppo di registri utilizza un nome con prefisso di area geografica: `/aws/lambda/us-east-1.FUNCTION_NAME`, dove `us-east-1` è sempre l’area geografica propria della funzione.
+
+**Correggi il collegamento dei registri di CloudWatch**
+
+Per impostazione predefinita, il collegamento **Visualizza registri CloudWatch** nella console Lambda collega a `/aws/lambda/FUNCTION_NAME` in `us-east-1`, ovvero il gruppo di registro errato per Lambda@Edge. Configurare un gruppo di registro personalizzato in modo che il collegamento punti al percorso corretto.
+
+**Navigazione:** Console AWS > Lambda > [funzione] > Configurazione > Strumenti di monitoraggio e operazioni
+
+1. Fai clic su **Modifica**.
+
+2. In **Gruppo di registro CloudWatch**, seleziona **Personalizzato**.
+
+3. Impostare il nome del gruppo di log personalizzato su `/aws/lambda/us-east-1.edgeoptimize-origin`.
+
+4. In **Autorizzazioni**, lascia la casella di controllo **Aggiungi autorizzazioni richieste** **deselezionata**.
+
+   ![Configurazione gruppo di log personalizzato Lambda](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
+
+5. Fai clic su **Salva**.
+
+>[!NOTE]
+>Anche dopo questa correzione, il collegamento **Visualizza registri di CloudWatch** apre il nome corretto del gruppo di registri, ma potrebbe non mostrare dati se ti trovi nell&#39;area sbagliata. I registri Lambda@Edge vengono scritti nell&#39;area Edge che ha fornito la richiesta (ad esempio, `eu-west-1`, `ap-south-1`), non `us-east-1`. Per visualizzare i registri, è comunque necessario passare all’area corretta in CloudWatch.
 
 **Pubblicare una versione**
 
