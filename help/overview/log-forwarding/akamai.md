@@ -4,18 +4,14 @@ description: Scopri come inoltrare i registri CDN da Akamai al bucket S3 di Adob
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:35:22.816Z'
 TQID: 'https://experienceleague.adobe.com/cO-qqOveWFee1-QnVSlzmO-n383sptHl59Ni2qQcvAU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
 workflow-type: tm+mt
-source-wordcount: 595
-ht-degree: 100%
+source-wordcount: 612
+ht-degree: 96%
 
 ---
 
@@ -71,7 +67,7 @@ country -> Paese/Area geografica
 * **Dati di scambio messaggi**
 reqHost -> Host della richiesta
 reqPath -> Percorso della richiesta
-queryStr -> Stringa di query
+queryStr -> Stringa di query (facoltativo)
 reqMethod -> Metodo di richiesta
 ua -> User-Agent
 statusCode -> Codice di stato HTTP
@@ -81,13 +77,17 @@ referer -> Referer
 * **Dati prestazioni di rete**
 timeToFirstByte -> Time to first byte
 
+>[!NOTE]
+>
+>Il parametro `queryStr` è facoltativo. È possibile ometterlo se la stringa di query include informazioni PII.
+
 I campi del set di dati Akamai (inclusi gli ID) sono i seguenti:
 
 1100, # reqTimeSec -> Orario della richiesta
 2012, # country -> Paese
 1011, # reqHost -> Host della richiesta
 1013, # reqPath -> Percorso della richiesta
-2009, # queryStr -> Stringa di query
+2009, # queryStr -> Stringa di query (facoltativo)
 1012, # reqMethod -> Metodo di richiesta
 1017, # ua -> User-Agent
 1008, # statusCode -> Codice di stato HTTP
