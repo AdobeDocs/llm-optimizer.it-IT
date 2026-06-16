@@ -4,18 +4,14 @@ description: Scopri come inoltrare i registri CDN da Akamai al bucket S3 di Adob
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:35:22.816Z'
 TQID: 'https://experienceleague.adobe.com/cO-qqOveWFee1-QnVSlzmO-n383sptHl59Ni2qQcvAU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 76d1b915d41771580544d3d87732092cfecda6d5
 workflow-type: tm+mt
 source-wordcount: 612
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -58,7 +54,7 @@ Nel pannello di controllo di Akamai [https://control.akamai.com/](https://contro
 
 ## Passaggio 3: scegliere i parametri dei dati {#step-3}
 
-Dopo aver creato il flusso, nel pannello di controllo di Akamai fai clic su Avanti per continuare alla scheda **Data sets (Set di dati)**. Segui i passaggi della documentazione ufficiale di Akamai per scegliere i [parametri dei dati](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Saranno necessari i seguenti campi dalla configurazione di LLM Optimizer:
+Dopo aver creato il flusso, nel Pannello di controllo di Akamai fare clic su **Avanti** per passare alla scheda **Set di dati**. Segui i passaggi della documentazione ufficiale di Akamai per scegliere i [parametri dei dati](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Saranno necessari i seguenti campi dalla configurazione di LLM Optimizer:
 
 ![Campi di configurazione di LLMO](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
 
