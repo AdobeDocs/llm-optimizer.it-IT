@@ -99,7 +99,7 @@ La visibilità basata sull’intelligenza artificiale è solo una parte della st
 
 Questo video introduce la vista **Impatto aziendale**, che combina LLM Optimizer con Adobe Analytics per mostrare come il traffico con riferimento all&#39;intelligenza artificiale si traduce in coinvolgimento, conversioni e ricavi, aiutandoti a misurare il valore effettivo della tua presenza all&#39;intelligenza artificiale.
 
->[!VIDEO](https://video.tv.adobe.com/v/3492503/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492511/?captions=ita&learn=on){transcript=true}
 
 ## Come funziona {#how-it-works}
 
