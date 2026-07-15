@@ -14,9 +14,9 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1227
+source-wordcount: 1225
 ht-degree: 56%
 
 ---
@@ -28,7 +28,7 @@ Le opportunità di ottimizzazione vengono rilevate automaticamente e forniscono 
 
 Le ottimizzazioni includono correzioni nella pagina (aggiunta di contenuti strutturati, canonici o riepiloghi); adeguamenti tecnici (sblocco di crawler IA o risoluzione di errori); e influenza dei contenuti su siti autorevoli di terze parti. Intervenendo sulla base di queste opportunità di ottimizzazione, potrai assicurarti che il tuo brand sia rappresentato accuratamente e aumentare le probabilità che venga citato nelle risposte generative.
 
-![Opportunità di ottimizzazione](/help/dashboards/assets/oport.png)
+<!--![Optimization opportunities](/help/dashboards/assets/oport.png)-->
 
 ## Dashboard Opportunità
 

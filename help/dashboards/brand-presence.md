@@ -14,10 +14,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1346
-ht-degree: 100%
+source-wordcount: 1335
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,11 @@ ht-degree: 100%
 
 La dashboard Presenza del brand fornisce una panoramica dettagliata di come viene percepito il tuo brand a livello di risposte generate dall’IA. Mostra dove, con quale frequenza e in quale contesto viene menzionato il tuo brand. Puoi utilizzare la dashboard per misurare la visibilità, tenere traccia delle citazioni ed esplorare le tendenze del sentiment. La dashboard è suddivisa in diverse sezioni, ciascuna delle quali fornisce insight diversi. Sono inoltre disponibili filtri personalizzabili per aiutarti a perfezionare i dati visualizzati.
 
-![Panoramica della presenza del brand](/help/dashboards/assets/brand-main.png)
+Passa a **Presenza dei brand**. Nell’elenco a discesa del brand, seleziona il brand che desideri analizzare oppure scegli **Tutti i brand** per visualizzare la visibilità dell’intero set di brand.
+
+![Presenza del brand con selettore del brand (Esperienza incentrata sul brand)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+
+<!-- ![Brand Presence overview](/help/dashboards/assets/brand-main.png)-->
 
 Questa pagina descrive quanto segue:
 
@@ -35,10 +39,6 @@ Questa pagina descrive quanto segue:
 * [Confronto con altri brand](##others-comparison)
 * [Tendenza sentiment](#sentiment-trend)
 * [Insight di dati](#data-insights)
-
-Se utilizzi l’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), passa a **Presenza del brand**. Nell’elenco a discesa del brand, seleziona il brand che desideri analizzare oppure scegli **Tutti i brand** per visualizzare la visibilità dell’intero set di brand.
-
-![Presenza del brand con selettore del brand (Esperienza incentrata sul brand)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## Filtri {#filters}
 
