@@ -2,10 +2,16 @@
 title: Integrazione Google Analytics
 description: Scopri come collegare Google Analytics 4 con LLM Optimizer per misurare l’individuazione basata sull’intelligenza artificiale, il coinvolgimento dei siti e i risultati di business nel dashboard di Traffico da referral.
 feature: Referral Traffic
-source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
+autotag-review: '2026-07-15T17:51:53.586Z'
+TQID: 'https://experienceleague.adobe.com/SvWn3W6hpVsWNzfWdJFvPs94lwlKX4ufjjcXKM-6xIc'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: f5a6cbd1-8a9a-4c79-a6db-ba46537f516e
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 0%
+source-wordcount: 1169
+ht-degree: 17%
 
 ---
 
@@ -30,7 +36,7 @@ Per completare la connessione è necessario:
 
 ## Connettere GA4 al dashboard del Traffico da referral {#connect}
 
-Il flusso di connessione inizia dal dashboard [Traffico da referral](/help/dashboards/referral-traffic.md) come segue:
+Il flusso di connessione inizia dalla dashboard [Traffico da referral](/help/dashboards/referral-traffic.md) come segue:
 
 1. Apri **Traffico da referral** in LLM Optimizer.
 
@@ -38,7 +44,7 @@ Il flusso di connessione inizia dal dashboard [Traffico da referral](/help/dashb
 
    ![Dashboard di Traffico da referral, scheda Impatto aziendale](/help/dashboards/assets/ga4-integration-01-business-impact-tab.png)
 
-1. Selezionare **Connetti ad Analytics**. LLM Optimizer ti indirizza a **Configurazione cliente > Analytics**. Nel selettore del provider Analytics, selezionare **Connetti Google Analytics 4**.
+1. Seleziona **Connetti ad Analytics**. LLM Optimizer ti indirizza a **Configurazione cliente > Analytics**. Nel selettore del provider Analytics, selezionare **Connetti Google Analytics 4**.
 
    ![Configurazione cliente, scheda Analytics con GA4 selezionato](/help/dashboards/assets/ga4-integration-02-analytics-ga4-picker.png)
 
@@ -56,12 +62,12 @@ Il flusso di connessione inizia dal dashboard [Traffico da referral](/help/dashb
 
 Dopo aver connesso GA4 a LLM Optimizer, si verifica quanto segue:
 
-* LLM Optimizer esegue il backfill delle **ultime quattro settimane di calendario complete** e della **settimana di calendario corrente fino alla data**.
-* Dopo il backfill, i dati vengono aggiornati **ogni giorno** con un pull di **giorno precedente completo**.
+* LLM Optimizer esegue una retrocompilazione delle **ultime quattro settimane di calendario intere** e della **settimana di calendario corrente alla data attuale**.
+* Dopo la retrocompilazione, i dati vengono aggiornati **ogni giorno** con un richiamo del **giorno precedente intero**.
 
 >[!NOTE]
 >
->Il completamento della compilazione potrebbe richiedere un paio d’ore. Il dashboard Impatto aziendale inizia a essere popolato progressivamente con l’arrivo dei dati; non è richiesta alcuna azione da parte tua durante l’esecuzione della retrocompilazione.
+>Il completamento della retrocompilazione potrebbe richiedere un paio d’ore. Il dashboard Impatto aziendale inizia a essere popolato progressivamente con l’arrivo dei dati; non è richiesta alcuna azione da parte tua durante l’esecuzione della retrocompilazione.
 
 Se ti riconnetti (ad esempio, per cambiare l’account Google o la proprietà GA4), viene ripristinata solo la settimana del calendario corrente, mentre le settimane precedenti già caricate vengono mantenute.
 
@@ -129,13 +135,13 @@ La tua organizzazione autorizza LLM Optimizer a eseguire query sull’API dati G
 
 D: Con quale frequenza vengono aggiornati i dati?
 
-I dati vengono aggiornati **ogni giorno** (l&#39;intero giorno precedente al completamento della retrocompilazione).
+I dati vengono aggiornati **ogni giorno** (l’intero giorno precedente al completamento della retrocompilazione).
 
 D: I dati non elaborati a livello di evento sono memorizzati in LLM Optimizer?
 
 No. Solo le metriche **aggregate** vengono utilizzate per comprendere i pattern e le tendenze del traffico.
 
-D: vengono memorizzati URL completi, stringhe di query o contenuto della pagina?
+D: Vengono memorizzati URL completi, stringhe di query o contenuti della pagina?
 
 I percorsi delle pagine di destinazione vengono acquisiti come parte del rapporto standard; le stringhe di query e il contenuto della pagina non vengono acquisiti per questa integrazione.
 
@@ -149,11 +155,11 @@ Attualmente, i dati vengono memorizzati a tempo indefinito.
 
 D: I dati sono crittografati in transito e a riposo?
 
-Attualmente, i dati vengono crittografati in transito, non a riposo. Questo comportamento potrebbe cambiare negli aggiornamenti futuri.
+Attualmente, i dati vengono crittografati in transito, non a riposo. Questo aspetto potrebbe cambiare negli aggiornamenti futuri.
 
-D: I dati storici vengono recuperati?
+D: I dati storici vengono retrocompilati?
 
-Sì. Dopo una configurazione corretta, vengono recuperate le ultime quattro settimane di calendario complete e la settimana di calendario corrente. Vedi anche [Dopo la connessione](#after-connect).
+Sì. Dopo una configurazione corretta, vengono retrocompilate le ultime quattro settimane di calendario intere e la settimana di calendario corrente. Consulta anche [Dopo la connessione](#after-connect).
 
 D: Posso disconnettere o revocare l’accesso?
 

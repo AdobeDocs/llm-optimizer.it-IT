@@ -2,20 +2,17 @@
 title: Aggiungi riepiloghi di trascrizioni multimediali
 description: Scopri come LLM Optimizer identifica le pagine in cui le informazioni chiave sono incorporate nel video senza testo leggibile dal computer e come rivedere e distribuire i riepiloghi delle trascrizioni generati dall’intelligenza artificiale con l’opzione Ottimizza in Edge.
 feature: Opportunities
-autotag-review: '2026-05-15T17:28:28.569Z'
-TQID: 'https://experienceleague.adobe.com/LiXMsMq6D08ciXR85aQBNDpmR5Csiv-5b9kv3lfTpDc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+autotag-review: '2026-07-15T16:47:13.112Z'
+TQID: 'https://experienceleague.adobe.com/lsMTVS4cFaGnhZonULQE4MB31bMdkzxoKA62o4IBcz0'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 775
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -51,16 +48,16 @@ Per ogni pagina, sono disponibili:
 
 ![URL con suggerimenti sui suggerimenti correnti, riga espansa con patch di contenuto, dettagli di implementazione e motivazione](/help/dashboards/opportunities/assets/add-multimedia-transcript-summaries-expand.png)
 
-Nella tabella **URL con suggerimenti** sono elencate le pagine in cui la trascrizione o il testo di riepilogo faciliterebbero l&#39;individuazione dell&#39;agente. I suggerimenti sono organizzati in **Suggerimenti correnti**, **Suggerimenti corretti** e **Suggerimenti ignorati**. Per ogni URL è possibile:
+Nella tabella **URL con suggerimenti** sono elencate le pagine in cui la trascrizione o il testo di riepilogo faciliterebbero l&#39;individuazione dell&#39;agente. I suggerimenti sono organizzati in **Suggerimenti correnti**, **Suggerimenti corretti** e **Suggerimenti ignorati**. Per ciascun URL puoi:
 
 - **Espandere la riga** per visualizzare il testo **Patch contenuto**, i dettagli **Implementazione** (inclusa l&#39;operazione DOM pianificata e il selettore CSS) e **Motivo** della modifica.
 - **Anteprima** del confronto prima e dopo per il traffico agente.
 - **Contrassegna come fisso** se l&#39;opportunità è stata gestita al di fuori di LLM Optimizer.
-- **Ignora** suggerimenti non rilevanti.
+- **Ignorare** i suggerimenti non pertinenti.
 
 È possibile modificare il testo della patch dalla riga se supportato (controllo matita), quindi utilizzare le caselle di controllo riga per selezionare l’elemento da distribuire. Il piè di pagina mostra quanti sono selezionati e fornisce **Contrassegna come Fisso**, **Ignora suggerimenti** e **Distribuisci ottimizzazioni**.
 
-### Distribuzione dell’ottimizzazione
+### Implementazione dell’ottimizzazione
 
 Quando sei pronto per pubblicare al server Edge, fai clic su **Distribuisci ottimizzazioni**. In una finestra di dialogo **Distribuisci in Edge** sono elencati gli URL, i selettori e le operazioni che si stanno per eseguire. Rivedi l&#39;elenco, quindi scegli **Distribuisci** o **Annulla**.
 
@@ -72,7 +69,7 @@ Dopo una distribuzione riuscita, **Distribuzione completata** conferma il numero
 
 >[!NOTE]
 >
-> La distribuzione delle ottimizzazioni richiede il completamento del processo di onboarding Ottimizza in Edge. Se non hai ancora effettuato l&#39;onboarding, fai clic su **Distribuisci ottimizzazioni** per passare al processo di onboarding. Per informazioni complete sul funzionamento di Ottimizza in Edge, sui provider CDN supportati e sul processo di onboarding, visita la pagina [Ottimizza in Edge](/help/dashboards/optimize-at-edge/overview.md).
+> L’implementazione delle ottimizzazioni richiede il completamento del processo di onboarding Ottimizza su Edge. Se non hai ancora effettuato l’onboarding, facendo clic su **Implementa ottimizzazioni** ti consentirà di passare al processo di onboarding. Per informazioni complete sul funzionamento di Ottimizza su Edge, sui provider CDN supportati e sul processo di onboarding, consulta la pagina [Ottimizza su Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Suggerimenti corretti e visualizzazione live
 
@@ -96,6 +93,6 @@ Al termine dell&#39;operazione verrà visualizzato un riepilogo di **Rollback co
 
 ![Rollback completato. Rollback Completato](/help/dashboards/opportunities/assets/add-multimedia-transcript-summaries-rollback-confirm.png)
 
-## Prova la demo
+## Prova nella demo
 
 Esplora il flusso di lavoro Aggiungi riepiloghi di trascrizioni multimediali nella [demo Frescopa](https://play.llmo.now/org/demo-org).

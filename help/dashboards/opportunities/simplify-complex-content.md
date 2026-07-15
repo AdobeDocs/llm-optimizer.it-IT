@@ -2,20 +2,17 @@
 title: Semplifica contenuti complessi
 description: Scopri come LLM Optimizer identifica le pagine a traffico elevato con copia densa, difficile da interpretare per gli agenti AI, e come rivedere e distribuire il testo semplificato con Ottimizza in Edge.
 feature: Opportunities
-autotag-review: '2026-05-15T17:58:39.879Z'
-TQID: 'https://experienceleague.adobe.com/wO3ZY-fEgOi7cD4dq0kCltk-YJSD431bkA6-9PW42Lo'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+autotag-review: '2026-07-15T18:04:55.581Z'
+TQID: 'https://experienceleague.adobe.com/uMK9qeAGMNrtvR0TYbeg8SIOKlwKf4L5NIE9ZgsJaUw'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 785
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -47,12 +44,12 @@ Gli URL interessati vengono visualizzati nella tabella **URL con suggerimenti** 
 
 ![URL con suggerimenti correnti, riga espansa con testo migliorato e anteprima](/help/dashboards/opportunities/assets/simplify-complex-content-expand.png)
 
-Nella tabella **URL con suggerimenti** sono elencate le pagine in cui il contenuto semplificato facilita la comprensione da parte degli agenti. I suggerimenti sono organizzati in **Suggerimenti correnti**, **Suggerimenti corretti** e **Suggerimenti ignorati**. Per ogni URL è possibile:
+Nella tabella **URL con suggerimenti** sono elencate le pagine in cui il contenuto semplificato facilita la comprensione da parte degli agenti. I suggerimenti sono organizzati in **Suggerimenti correnti**, **Suggerimenti corretti** e **Suggerimenti ignorati**. Per ciascun URL puoi:
 
 - **Espandere la riga** per visualizzare **Testo migliorato** suggerimenti per la pagina.
 - **Anteprima** del confronto prima e dopo per il traffico agente.
 - **Contrassegna come fisso** se l&#39;opportunità è stata gestita al di fuori di LLM Optimizer.
-- **Ignora** suggerimenti non rilevanti.
+- **Ignorare** i suggerimenti non pertinenti.
 
 **Le visualizzazioni** includono **Suggerimenti correnti**, **Suggerimenti corretti** (stato **Ottimizzati** quando distribuiti) e **Suggerimenti ignorati**. Puoi verificare la distribuzione live utilizzando **Visualizza live** su **Suggerimenti corretti** e ripristinarla in qualsiasi momento.
 
@@ -60,11 +57,11 @@ Seleziona gli URL o gli elementi riga con **Testo migliorato** che desideri sped
 
 ![Piano opportunità, Suggerimenti correnti, riga espansa e Ottimizzazioni distribuzione nell&#39;intestazione piano](/help/dashboards/opportunities/assets/simplify-complex-content-select.png)
 
-### Distribuzione dell’ottimizzazione
+### Implementazione dell’ottimizzazione
 
 Quando sei pronto per pubblicare al server Edge, fai clic su **Distribuisci ottimizzazioni**. In una finestra di dialogo **Distribuisci in Edge** sono elencati gli URL selezionati e i dettagli di ottimizzazione. Rivedi l&#39;elenco, quindi scegli **Distribuisci** o **Annulla**.
 
-![Finestra di dialogo Distribuisci in Edge](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
+![Finestra di dialogo Ottimizza su Edge](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
 
 Dopo una distribuzione riuscita, **Distribuzione completata** conferma il numero di ottimizzazioni eseguite e rileva che gli agenti di intelligenza artificiale potrebbero impiegare del tempo per indicizzare l&#39;aggiornamento. Chiudi la finestra di dialogo e apri **Suggerimenti corretti** per verificare lo stato.
 
@@ -72,7 +69,7 @@ Dopo una distribuzione riuscita, **Distribuzione completata** conferma il numero
 
 >[!NOTE]
 >
->La distribuzione delle ottimizzazioni richiede il completamento del processo di onboarding Ottimizza in Edge. Se non hai ancora effettuato l&#39;onboarding, fai clic su **Distribuisci ottimizzazioni** per passare al processo di onboarding. Per informazioni complete sul funzionamento di Ottimizza in Edge, sui provider CDN supportati e sul processo di onboarding, visita la pagina [Ottimizza in Edge](/help/dashboards/optimize-at-edge/overview.md).
+>L’implementazione delle ottimizzazioni richiede il completamento del processo di onboarding Ottimizza su Edge. Se non hai ancora effettuato l’onboarding, facendo clic su **Implementa ottimizzazioni** ti consentirà di passare al processo di onboarding. Per informazioni complete sul funzionamento di Ottimizza su Edge, sui provider CDN supportati e sul processo di onboarding, consulta la pagina [Ottimizza su Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Suggerimenti corretti e visualizzazione live
 
@@ -100,6 +97,6 @@ Al termine dell&#39;operazione verrà visualizzato un riepilogo di **Rollback co
 
 ![Rollback completato. Rollback Completato](/help/dashboards/opportunities/assets/simplify-complex-content-rollback-confirm.png)
 
-## Prova la demo
+## Prova nella demo
 
 Esplora il flusso di lavoro Semplifica contenuti complessi nella [demo Frescopa](https://play.llmo.now/org/demo-org).

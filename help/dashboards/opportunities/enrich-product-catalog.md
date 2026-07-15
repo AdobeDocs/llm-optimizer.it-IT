@@ -2,20 +2,17 @@
 title: Arricchimento del catalogo prodotti
 description: Scopri come LLM Optimizer identifica i prodotti con descrizioni generiche o tecnicamente dense e come migliorarle utilizzando arricchimenti narrativi generati dall’intelligenza artificiale basati su Adobe Commerce.
 feature: Opportunities
-autotag-review: '2026-05-15T17:45:51.619Z'
-TQID: 'https://experienceleague.adobe.com/5ihGQ8L-37uWsZSDo4TVCUPBPqsqqQ5waGbH3VKPIig'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+autotag-review: '2026-07-15T17:49:49.047Z'
+TQID: 'https://experienceleague.adobe.com/icskl9CwYYRbnFNXWLflduAD9Eba1y4xtXTKaebh-hs'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+subfeature_v2: id: a6256a78-8814-462c-9627-86699b39cee1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 1266
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +23,7 @@ I moduli LLM tentano di collegare gli attributi del prodotto al valore reale, ai
 
 L’opportunità di arricchimento del catalogo prodotti identifica i prodotti nel catalogo Commerce in cui i nomi e le descrizioni sono troppo generici, tecnicamente densi o troppo ambigui per consentire un’interpretazione accurata da parte dei moduli LLM. Basato su Adobe Commerce, genera arricchimenti basati su narrazioni e ricchi di intenti per i nomi e le descrizioni dei prodotti e li applica direttamente al catalogo Commerce con un solo clic.
 
-Mostra due metriche chiave a colpo d’occhio:
+Mette subito in evidenza due metriche chiave:
 
 - **URL**: elenco di pagine di dettagli prodotto (prodotti nel catalogo) valutate per la qualità dell&#39;arricchimento.
 - **Traffico agente**: il totale delle visite e delle interazioni in un sito avviate e guidate da agenti di intelligenza artificiale autonomi (come assistenti o bot basati su LLM) che agiscono per conto degli utenti per scoprire, recuperare o interagire con i contenuti.
@@ -62,11 +59,11 @@ Nella tabella **URL con suggerimenti** sono elencati tutti i prodotti con opport
 - **Contrassegna come Fisso** dopo aver rivisto e applicato l&#39;arricchimento.
 - **Ignora** suggerimenti non rilevanti per la strategia del catalogo.
 
-I suggerimenti sono organizzati in tre visualizzazioni: **Suggerimenti correnti**, **Suggerimenti corretti** e **Suggerimenti ignorati**. Dopo aver applicato un arricchimento, questo viene spostato su Fixed Suggestions con uno stato di **Applied** e un&#39;azione **View in Catalog** per verificare l&#39;aggiornamento in Adobe Commerce. Gli arricchimenti applicati possono essere ripristinati in qualsiasi momento, ripristinando il nome e la descrizione del prodotto originali.
+I suggerimenti sono organizzati in tre viste: **Suggerimenti correnti**, **Suggerimenti corretti** e **Suggerimenti ignorati**. Dopo aver applicato un arricchimento, questo viene spostato su Fixed Suggestions con uno stato di **Applied** e un&#39;azione **View in Catalog** per verificare l&#39;aggiornamento in Adobe Commerce. Gli arricchimenti applicati possono essere ripristinati in qualsiasi momento, ripristinando il nome e la descrizione del prodotto originali.
 
 <!--[Fixed suggestions with Applied status](/help/dashboards/opportunities/assets/enrich-product-catalog-fixed.png)-->
 
-## Distribuzione dell’ottimizzazione
+## Implementazione dell’ottimizzazione
 
 Dopo aver rivisto e modificato facoltativamente i suggerimenti per i prodotti selezionati, fai clic su **Distribuisci ottimizzazioni** per pubblicare il nome e la descrizione del prodotto aggiornati nel catalogo Adobe Commerce. Una finestra di dialogo di conferma mostra i prodotti selezionati e le modifiche applicate. Dopo la conferma, una schermata dei risultati conferma quali prodotti sono stati aggiornati correttamente.
 
@@ -78,7 +75,7 @@ Poiché gli arricchimenti vengono applicati direttamente al catalogo di Adobe Co
 
 ![Finestra di dialogo Applica arricchimenti](/help/dashboards/opportunities/assets/enrich-product-catalog-deploy.png)
 
-## Prova la demo
+## Prova nella demo
 
 Scopri l’opportunità di arricchire il catalogo dei prodotti in azione utilizzando l’ambiente demo Frescopa.
 
