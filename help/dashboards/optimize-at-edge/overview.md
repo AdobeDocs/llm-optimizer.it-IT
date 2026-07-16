@@ -2,23 +2,32 @@
 title: Ottimizza su rete Edge
 description: Scopri come applicare le ottimizzazioni in LLM Optimizer direttamente a livello di CDN senza la necessità di apportare modifiche di authoring.
 feature: Opportunities
-autotag-review: '2026-05-15T17:55:41.072Z'
-TQID: 'https://experienceleague.adobe.com/kMxoKtrfyzxIpLJP9nt-rq6GP37ICCNe4XienUKqDZE'
+autotag-review: '2026-07-15T18:10:00.249Z'
+TQID: 'https://experienceleague.adobe.com/nRq5punuSnNb4XXIJzkO1NGF66tsyN1rdt-O9dd8tmU'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
   - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2:
+  - id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+  - id: a6256a78-8814-462c-9627-86699b39cee1
+  - id: e0ec491f-fe51-42b6-801c-1c0dfcc0e64f
+  - id: fe92ae96-fc87-4fea-96a0-adc06310d4f4
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: 559e77adedb1a93215090441c93c2aa6dc664e5f
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: 2931
-ht-degree: 63%
+source-wordcount: 3147
+ht-degree: 67%
 
 ---
 
@@ -121,8 +130,8 @@ Nelle sezioni seguenti, puoi visualizzare ulteriori dettagli per ogni opportunit
 
 ### Recupera visibilità dei contenuti
 
-Questa opportunità contrassegna le pagine in cui il contenuto chiave è nascosto per gli agenti AI a causa del rendering lato client. Per ogni pagina identificata, mostra esattamente quale contenuto manca dalla vista dell’agente di intelligenza artificiale, evidenzia le lacune di visibilità e consente di applicare direttamente le modifiche per recuperare il contenuto nascosto. Quando distribuisci questa opportunità con Optimize at Edge, agli agenti utente LLM viene distribuita una versione della pagina pre-renderizzata e ottimizzata per l’intelligenza artificiale, in modo che possano accedere al contesto completo senza eseguire Javascript.
-In questo modo la pagina sarà prima completamente visibile agli agenti di intelligenza artificiale. Ulteriori miglioramenti vengono applicati al HTML pre-renderizzato.
+Questa opportunità segnala le pagine in cui il contenuto chiave risulta nascosto per gli agenti IA a causa del rendering lato client. Per ogni pagina identificata, vengono mostrati mostri esattamente i contenuti che l’agente IA non può “vedere”, evidenzia le lacune di visibilità e consente di applicare direttamente le modifiche necessarie per recuperare i contenuti nascosti. Quando implementi questa opportunità con Ottimizzazione nella rete Edge, agli agenti utente LLM viene presentata una versione della pagina pre-renderizzata e ottimizzata per l’IA, affinché possano accedere all’intero contesto senza eseguire alcun codice Javascript.
+In questo modo la pagina sarà completamente visibile agli agenti IA. Ulteriori miglioramenti vengono poi applicati all’HTML pre-renderizzato.
 
 >[!IMPORTANT]
 >Questa funzionalità di pre-rendering si applica in automatico a tutte le opportunità presentate di seguito quando vengono implementate con la funzione Ottimizzazione nella rete Edge, affinché la pagina sia completamente visibile agli agenti IA.
@@ -231,7 +240,7 @@ Se fai clic su **Implementa ottimizzazioni** prima aver completato la configuraz
 
 D. Cosa succede quando i contenuti vengono aggiornati all’origine?
 
-Distribuiamo la versione ottimizzata della pagina dalla cache, purché la pagina sorgente sottostante non sia cambiata. Tuttavia, quando l&#39;origine cambia per **Recupera Visibilità dei contenuti**, il sistema si aggiorna automaticamente in modo che gli agenti di IA ricevano sempre il contenuto più aggiornato. Questo perché utilizziamo impostazioni TTL (time-to-live) della cache ridotte (in ordine di minuti) in modo che qualsiasi aggiornamento del contenuto sul sito attivi una nuova ottimizzazione all’interno di tale finestra. Per opportunità di contenuto come **Aggiungi riepiloghi compatibili con LLM**, LLM Optimizer controlla la pagina di origine per eventuali modifiche. Se viene rilevata una modifica, l’ottimizzazione viene sospesa e contrassegnata per la revisione umana per evitare la deviazione del contenuto tra la pagina visibile dall’agente e la pagina visibile dall’uomo.
+La versione ottimizzata della pagina viene fornita dalla cache, a meno che la pagina di origine sottostante non sia cambiata. Tuttavia, quando l’origine cambia per **Recupera visibilità dei contenuti**, il sistema si aggiorna automaticamente in modo che gli agenti IA ricevano sempre i contenuti più aggiornati. Questo perché vengono utilizzate impostazioni TTL (Time To Live) ridotte per la cache, nell’ordine di pochi minuti, in modo che ogni aggiornamento dei contenuti sul tuo sito attivi una nuova ottimizzazione all’interno di tale intervallo. Per opportunità di contenuto come **Aggiungi riepiloghi ottimizzati per gli LLM**, LLM Optimizer monitora la pagina di origine per rilevare eventuali modifiche. Se viene rilevata una modifica, l’ottimizzazione viene sospesa e viene segnalata la necessità di revisione da parte di una persona, onde evitare potenziali deviazioni tra il contenuto della pagina visibile all’agente e quello della pagina visibile alle persone.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 D. L’ottimizzazione nella rete Edge è valida solo per i siti che utilizzano il servizio Adobe Edge Delivery (EDS)?

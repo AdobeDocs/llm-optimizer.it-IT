@@ -1,19 +1,24 @@
 ---
 title: Panoramica di LLM Optimizer
 description: Scopri come Adobe LLM Optimizer migliora la visibilità del brand nelle ricerche basate sull’IA. Tieni traccia di menzioni, citazioni e insight. Inizia subito a ottimizzare per migliorare il coinvolgimento e la tua influenza.
-autotag-review: '2026-05-15T18:10:16.637Z'
-TQID: 'https://experienceleague.adobe.com/Nyv7-xOn8QaQPa3AWYjt1ld2c36N5Cadv37TFKjYeG0'
+autotag-review: '2026-07-15T18:01:55.084Z'
+TQID: 'https://experienceleague.adobe.com/CLacB5dkUfEGpogS6f79CflqoSXpUtJmYLHmj53M2bs'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: 499
-ht-degree: 83%
+source-wordcount: 506
+ht-degree: 97%
 
 ---
 
@@ -63,9 +68,9 @@ Adobe LLM Optimizer offre le seguenti possibilità:
 
 **Misurare la visibilità del brand**: tieni traccia di quando, dove e con quale frequenza il tuo brand viene menzionato nei risultati di ricerca basati sull’IA. Supera le supposizioni grazie a un punteggio di visibilità chiaro, che potrai monitorare e confrontare nel tempo.
 **Benchmark Competitors**: scopri in che modo il tuo marchio si confronta con i concorrenti nei motori generativi. Identifica le lacune della quota di voce e scopri i vantaggi competitivi.
-**Scopri opportunità fruibili**: individua opportunità di contenuto (ad esempio, domande frequenti, riassunti, schema) e opportunità tecniche (crawlability, problemi di indicizzazione) che aumentano direttamente menzioni e citazioni.
-**Tracciare l&#39;impatto del traffico dall&#39;intelligenza artificiale** - Monitorare il traffico agente (dagli assistenti di intelligenza artificiale) e il traffico da referral (l&#39;utente fa clic dalle citazioni) nelle proprietà di tua proprietà. Collega la visibilità GEO a un coinvolgimento reale.
-**Abilita Team Collaboration** - Condividi dashboard, assegna i proprietari per le richieste o le categorie e assicurati che gli obiettivi di visibilità siano tracciati nelle funzioni di marketing, SEO e comunicazione.
+**Scoprire opportunità fruibili**: individua le opportunità di contenuto, ad esempio, domande frequenti, riassunti, schemi, e le opportunità tecniche, ad esempio crawlability, problemi di indicizzazione, che aumentano direttamente le menzioni e le citazioni.
+**Tenere traccia dell’impatto del traffico da IA**: monitora il traffico da IA agentica (dagli Assistenti IA) e da referral (quando l’utente fa clic sulle citazioni) nelle tue proprietà. Collega la visibilità GEO a un coinvolgimento reale.
+**Abilitare la collaborazione tra team**: condividi le dashboard, assegna i proprietari per prompt o categorie e assicurati che gli obiettivi di visibilità possano essere tracciati dai membri dei team di marketing, SEO e comunicazione.
 
 
 

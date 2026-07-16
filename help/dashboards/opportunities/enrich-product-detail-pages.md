@@ -2,21 +2,25 @@
 title: Arricchimento della pagina dettagli prodotto
 description: Scopri come LLM Optimizer identifica le pagine di prodotto in cui i dati del catalogo sono nascosti dagli agenti di intelligenza artificiale e come recuperare tale visibilità utilizzando l’ottimizzazione basata su edge e gli approfondimenti del catalogo dei prodotti basati su Adobe Commerce.
 feature: Opportunities
-autotag-review: '2026-05-15T17:46:41.487Z'
-TQID: 'https://experienceleague.adobe.com/l4hTGNNg1NW40ceI00P41KZBSGcqmr-t1RWM-NXtRV4'
+autotag-review: '2026-07-15T17:50:18.330Z'
+TQID: 'https://experienceleague.adobe.com/UINqU57uqqbNJE3cV6zK56hxCcAmRrMMv-esNEfxqKI'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
   - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2:
+  - id: a6256a78-8814-462c-9627-86699b39cee1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 1210
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -34,7 +38,7 @@ Mostra le seguenti metriche chiave a colpo d’occhio:
 
 ![Arricchisci dashboard pagine dettagli prodotto](/help/dashboards/opportunities/assets/enrich-product-detail-pages-overview.png)
 
-Questa opportunità può essere ottimizzata utilizzando [Ottimizza in Edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Le ottimizzazioni vengono distribuite esclusivamente agli agenti di intelligenza artificiale senza alcun impatto sui visitatori umani (consegna solo bot), vengono applicate a livello di CDN senza la necessità di modifiche a CMS o catalogo e possono avere effetto in pochi minuti senza il coinvolgimento degli sviluppatori, rendendolo un percorso di distribuzione veloce e a basso rischio per cataloghi di prodotti di grandi dimensioni.
+Questa opportunità può essere ottimizzata mediante l’[ottimizzazione nella rete edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Le ottimizzazioni vengono distribuite esclusivamente agli agenti di intelligenza artificiale senza alcun impatto sui visitatori umani (consegna solo bot), vengono applicate a livello di CDN senza la necessità di modifiche a CMS o catalogo e possono avere effetto in pochi minuti senza il coinvolgimento degli sviluppatori, rendendolo un percorso di distribuzione veloce e a basso rischio per cataloghi di prodotti di grandi dimensioni.
 
 ## Come funziona
 
@@ -56,9 +60,9 @@ Nella tabella **URL con suggerimenti** sono elencate tutte le pagine di prodotto
 - **Contrassegna come fisso** dopo la distribuzione e la convalida dell&#39;ottimizzazione
 - **Ignora** suggerimenti non rilevanti per la tua strategia di merchandising
 
-I suggerimenti sono organizzati in tre visualizzazioni: **Suggerimenti correnti**, **Suggerimenti corretti** e **Suggerimenti ignorati**. Una volta distribuito, un suggerimento passa a Suggerimenti corretti con uno stato di **Ottimizzato** e un&#39;azione **Visualizza Live** per verificare che l&#39;arricchimento sia attivo per il traffico agente. I suggerimenti corretti possono essere ripristinati in qualsiasi momento.
+I suggerimenti sono organizzati in tre viste: **Suggerimenti correnti**, **Suggerimenti corretti** e **Suggerimenti ignorati**. Una volta distribuito, un suggerimento passa a Suggerimenti corretti con uno stato di **Ottimizzato** e un&#39;azione **Visualizza Live** per verificare che l&#39;arricchimento sia attivo per il traffico agente. I suggerimenti corretti possono essere ripristinati in qualsiasi momento.
 
-## Distribuzione dell’ottimizzazione
+## Implementazione dell’ottimizzazione
 
 Dopo aver rivisto i suggerimenti e selezionato le pagine dei prodotti da ottimizzare, fai clic su **Distribuisci ottimizzazioni** per pubblicare l&#39;arricchimento nel server Edge CDN. Una finestra di dialogo di conferma della **Distribuzione ad Edge** mostra gli URL del prodotto selezionati, il tipo di ottimizzazione e l&#39;arricchimento applicati. Dopo la distribuzione, una schermata di conferma conferma conferma quali pagine di prodotto sono state ottimizzate correttamente.
 
@@ -70,11 +74,11 @@ L’ottimizzazione viene fornita esclusivamente agli agenti utente AI tramite il
 
 Se l’istanza Commerce non è ancora connessa a LLM Optimizer, prima di poter applicare gli arricchimenti verrai indirizzato alla configurazione della connessione.
 
-Se non hai ancora effettuato l&#39;onboarding, fai clic su **Distribuisci ottimizzazioni** per passare al processo di onboarding. Per informazioni complete sul funzionamento di Ottimizza in Edge, sui provider CDN supportati e sul processo di onboarding, visita la pagina [Ottimizza in Edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
+Se non hai ancora effettuato l’onboarding, facendo clic su **Implementa ottimizzazioni** ti consentirà di passare al processo di onboarding. Per informazioni complete sul funzionamento di Ottimizza su Edge, sui provider CDN supportati e sul processo di onboarding, consulta la pagina [Ottimizza su Edge](https://experienceleague.adobe.com/it/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
 
-![Finestra di dialogo Distribuisci in Edge](/help/dashboards/opportunities/assets/enrich-product-detail-pages-deploy.png)
+![Finestra di dialogo Ottimizza su Edge](/help/dashboards/opportunities/assets/enrich-product-detail-pages-deploy.png)
 
-## Prova la demo
+## Prova nella demo
 
 Scopri l’opportunità di arricchire le pagine dei dettagli del prodotto in azione utilizzando l’ambiente demo Frescopa.
 
@@ -92,7 +96,7 @@ L’agente catalogo recupera tutte le informazioni sui prodotti disponibili nel 
 
 **Questa ottimizzazione influirà sulle prestazioni dei visitatori umani, dei bot SEO o della vetrina?**
 
-No. Ottimizza in Edge esegue il targeting solo degli agenti utente di intelligenza artificiale. I visitatori umani e i bot SEO ricevono la pagina di prodotto originale esattamente come prima, senza modifiche alla loro esperienza, alle prestazioni di caricamento della pagina o alla progettazione della vetrina.
+No. Ottimizza su Edge è mirato solo agli user agent di IA. I visitatori umani e i bot SEO ricevono la pagina di prodotto originale esattamente come prima, senza modifiche alla loro esperienza, alle prestazioni di caricamento della pagina o alla progettazione della vetrina.
 
 **È necessario modificare il catalogo Commerce, CMS o coinvolgere sviluppatori?**
 
