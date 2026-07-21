@@ -4,24 +4,15 @@ description: Scopri come configurare Akamai BYOCDN per l’ottimizzazione nella 
 feature: Opportunities
 autotag-review: '2026-07-15T17:40:02.356Z'
 TQID: 'https://experienceleague.adobe.com/XlHpXbtxqPl-XQQKWeQc3rbsizCT7U0TF1bQkyv0iM8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
 workflow-type: tm+mt
-source-wordcount: 810
-ht-degree: 98%
+source-wordcount: 795
+ht-degree: 76%
 
 ---
 
@@ -119,58 +110,44 @@ Imposta l’intestazione `x-forwarded-host` su `{{builtin.AK_HOST}}`
 
 **9. Failover del sito**
 
-La configurazione di failover del sito è composta da due parti: il comportamento di failover (che viene configurato all’interno della regola di indirizzamento optimize-at-edge principale) e una regola distinta per l’intestazione a scopo di test del failover.
+La configurazione del failover del sito è composta da due parti: un comportamento di failover all’interno della regola principale di routing Optimize at Edge e una regola di pari livello che aggiunge un’intestazione di risposta quando si verifica il fallback.
 
-**9a. Comportamento di failover del sito (nella regola di indirizzamento optimize-at-edge principale)**
+**9a. Configura il comportamento di failover del sito**
 
-Nella regola di indirizzamento principale, configura il comportamento di failover del sito e lo snippet XML avanzato come indicato di seguito:
+All&#39;interno della regola di routing principale Ottimizza in Edge, creare una regola figlio denominata **Comportamento failover sito**. Impostalo su **Corrispondenza con qualsiasi** e aggiungi i seguenti criteri:
 
->[!IMPORTANT]
->
->Lo snippet XML in questo passaggio richiede il comportamento **Avanzato**. In alcuni ambienti Akamai, questo comportamento non è disponibile per la modifica self-service. Se non visualizzi l’opzione **Avanzato**, contatta il tuo team di account Akamai o l’assistenza Akamai per abilitare la configurazione necessaria.
+* **Il codice di stato della risposta** è compreso tra `400` e `599`.
+* **Timeout origine** è `Yes`.
 
 ![Failover del sito](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-Aggiungi l’intestazione di richiesta `x-edgeoptimize-request` con il valore `fo` tramite XML avanzato:
+![Configurare il comportamento di failover del sito](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-```
-<forward:availability.fail-action2>
-<add-header>
-<status>on</status>
-<name>x-edgeoptimize-request</name>
-<value>fo</value>
-</add-header>
-</forward:availability.fail-action2>
-```
-
-![Comportamenti di failover](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
-
-**9b. Regola intestazione per test del failover (regola di pari livello)**
+**9b. Configura la regola di intestazione della risposta di failover**
 
 >[!IMPORTANT]
 >
 >Crea la regola **EdgeOptimize Failover - Test Header** come una regola **sibiling** (di pari livello) rispetto alle regole di indirizzamento, **non** nidificata al loro interno. Nella struttura delle regole di Akamai Property Manager, la gerarchia si presenterà così:
 >
 >```
->▼ Parent Rule
->   ▶ Optimize at Edge Routing     ← routing rule
->       EdgeOptimize Failover - Test Header       ← sibling, same level
+>▼ Optimize at Edge                         ← parent rule group
+>   ▼ Optimize at Edge Routing               ← routing child
+>       Site Failover Behavior                 ← nested child
+>   EdgeOptimize Failover - Test Header      ← sibling of routing child
 >```
 >
->In questo modo la regola per l’intestazione del test di failover viene valutata per **tutte** le regole di indirizzamento, non solo per una di esse.
+>La regola di pari livello viene valutata quando Akamai ricrea la richiesta non riuscita per il nome host originale. Il criterio della chiave API nella regola di indirizzamento impedisce che la richiesta venga inviata nuovamente ad Edge Optimize.
 >
 >Accertati inoltre che la regola di **indirizzamento Ottimizza su rete Edge** non venga sovrascritta da alcuna regola corrispondente successiva che modifichi l’origine, il comportamento di caching o l’ID della cache per le stesse richieste. Se un’altra regola di corrispondenza reimposta questi comportamenti, l’indirizzamento o il caching di Ottimizza su rete Edge potrebbero non funzionare come previsto.
 
-Se il valore dell’intestazione della richiesta `x-edgeoptimize-request` è `fo`, imposta l’intestazione della risposta in uscita `x-edgeoptimize-fo` su `true`.
+![Configurare la regola di intestazione della risposta di failover](/help/assets/optimize-at-edge/akamai-step9-failover-header.png)
 
-![Regole di failover](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
-
-Il failover del sito fa sì che, se il servizio Edge Optimize restituisce un errore `4XX` o `5XX`, la richiesta viene indirizzata automaticamente all’origine predefinita, in modo che l’utente finale riceva comunque una risposta.
+Il failover del sito assicura che, se Edge Optimize restituisce un errore o un timeout, Akamai ricrei la richiesta per il nome host originale in modo che il visitatore riceva comunque la normale risposta del sito.
 
 | Scenario | Comportamento |
 | --- | --- |
-| Il servizio Edge Optimize restituisce `2XX` | Al client viene trasmessa una risposta ottimizzata. |
-| Il servizio Edge Optimize restituisce `4XX` o `5XX` | La richiesta viene indirizzata all’origine predefinita. |
+| Il servizio Edge Optimize restituisce `2XX` o `3XX` | Viene trasmessa la risposta ottimizzata. `x-edgeoptimize-request-id` è presente. |
+| Edge Optimize restituisce `4XX`-`5XX` oppure l&#39;origine scade | La richiesta viene ricreata per il nome host originale. La risposta include `x-edgeoptimize-fo: true`. |
 
 **Verificare la configurazione**
 
@@ -208,7 +185,7 @@ La risposta **non** deve contenere l’intestazione `x-edgeoptimize-request-id`.
 | Intestazione | Traffico da bot (ottimizzato) | Traffico da persone (non interessato da modifiche) |
 |---|---|---|
 | `x-edgeoptimize-request-id` | Presente: contiene un ID di richiesta univoco | Assente |
-| `x-edgeoptimize-fo` | Presente solo in caso di failover (valore: `1`) | Assente |
+| `x-edgeoptimize-fo` | Presente solo in caso di failover (valore: `true`) | Assente |
 
 {{verify-routing-status-in-ui}}
 
