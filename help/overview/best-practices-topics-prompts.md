@@ -4,58 +4,37 @@ description: Ottimizza gli insight LLM configurando categorie, argomenti, prompt
 feature: Best Practices, Customer Configuration
 autotag-review: '2026-07-15T17:42:20.391Z'
 TQID: 'https://experienceleague.adobe.com/nnLohajbU-fogbmBfGE5PUzdsoTJ5fjwW-ruVTjOWtM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: addf009e-030a-4310-8534-776a3e62ed48
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: addf009e-030a-4310-8534-776a3e62ed48id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 74484901cba1f054070673f2d706b26b6360aacb
 workflow-type: tm+mt
-source-wordcount: 1537
-ht-degree: 100%
+source-wordcount: 1482
+ht-degree: 77%
 
 ---
 
-# Best practice per configurare categorie, argomenti, prompt e altri brand da tracciare
+# Best practice per configurare categorie, argomenti, prompt e altri marchi da monitorare
 
-Questa sezione descrive le best practice per decidere come impostare categorie, argomenti, prompt e altri brand da tracciare. Include inoltre informazioni sulla libreria di prompt di settore, sviluppata da Adobe con un’ampia ricerca condotta con la collaborazione di esperti del settore.
+Questa sezione descrive le best practice per decidere come impostare categorie, argomenti, prompt e altri brand da monitorare. Include inoltre informazioni sulla libreria di prompt di settore, sviluppata da Adobe con un’ampia ricerca condotta con la collaborazione di esperti del settore.
 
-Si tratta di un primo passo fondamentale. Le decisioni prese determinano il modo in cui le informazioni vengono adattate al contesto del tuo business. Eventuali modifiche future apportate alle categorie reimposteranno i dati storici.
+Questa configurazione è un primo passo fondamentale. Le decisioni prese determinano il modo in cui le informazioni vengono adattate al contesto del tuo business. Eventuali modifiche future apportate alle categorie reimposteranno i dati storici.
 
-Nella dashboard [[!UICONTROL Configurazione cliente]](/help/dashboards/customer-configuration.md) puoi definire in che modo il tuo brand verrà monitorato e analizzato nella piattaforma LLM Optimizer. Per informazioni su come utilizzare la dashboard, consulta [[!UICONTROL Configurazione cliente]](/help/dashboards/customer-configuration.md).
+Nel dashboard [[!UICONTROL Gestione dei marchi]](/help/dashboards/customer-configuration.md) puoi definire il modo in cui il tuo marchio viene monitorato e analizzato nella piattaforma di ottimizzazione LLM.
 
-![Finestra Configurazione cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
+Qui puoi personalizzare le categorie (ad esempio, business unit o linee di prodotti), tenere traccia di altri marchi e aggiungere alias di menzione del brand per acquisire tutte le varianti del brand in tutti i prompt. Grazie a questa configurazione, la piattaforma è in grado di personalizzare gli insight in base al contesto del tuo business, per un’analisi accurata della visibilità, del traffico e delle opportunità.
 
-Nella dashboard [!UICONTROL Configurazione cliente], puoi personalizzare le categorie (ad esempio, unità di business o linee di prodotti), tenere traccia di altri brand e aggiungere alias di menzione del brand per acquisire tutte le varianti del tuo brand nei prompt. Grazie a questa configurazione, la piattaforma è in grado di personalizzare gli insight in base al contesto del tuo business, per un’analisi accurata della visibilità, del traffico e delle opportunità.
+Per impostazione predefinita, ogni organizzazione inizia con un marchio attivo e altri marchi suggeriti tra cui scegliere.
 
-## Esperienza incentrata sul brand
+![Gestione dei marchi - navigazione nelle app (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-Per impostazione predefinita, i nuovi clienti iniziano con un’interfaccia incentrata sul brand e una configurazione basata sull’onboarding. In questa nuova interfaccia, ogni organizzazione inizia con un brand attivo e altri brand suggeriti tra cui scegliere. I clienti LLM Optimizer esistenti passeranno gradualmente all’Esperienza incentrata sul brand.
+![Gestione dei marchi - panoramica sulla configurazione](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Se utilizzi l’Esperienza incentrata sul brand, **Gestione dei brand** consente di definire il modo in cui il brand viene monitorato e analizzato.
+Per impostare argomenti e richieste per un marchio specifico, utilizzare la dashboard **Libreria prompt**.
 
-![Gestione dei brand: navigazione nell’app (Esperienza incentrata sul brand)](/help/assets/brand-centric-experience/llmo-app-shell.png)
-
-![Gestione dei brand: panoramica sulla configurazione](/help/assets/brand-centric-experience/brands-management-configuration.png)
-
-Per configurare argomenti e prompt per un brand specifico, utilizza **Gestione dei prompt**.
+<!-- Add link to Prompt Library page when available-->
 
 ![Gestione dei prompt](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -65,12 +44,13 @@ Per aiutarti a iniziare con prompt e argomenti, Adobe ha creato una libreria di 
 
 Per utilizzare la libreria di prompt di settore:
 
-1. Passa alla dashboard **Configurazione cliente**.
-1. Seleziona **Scarica libreria prompt** per scaricare il file della libreria da LLM Optimizer.
-   ![Download della libreria di prompt di settore](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Passare alla **Libreria prompt**.
+1. Selezionare **Scarica libreria prompt** per scaricare il file della libreria da LLM Optimizer.
 1. Rivedi gli **Argomenti** e i **Prompt** suggeriti per il settore del tuo brand nella relativa scheda e scegli le opzioni più rilevanti.
 1. Rivedi la **colonna Fase percorso cliente** per visualizzare le opzioni dei prompt lungo il ciclo di vita del cliente (ad esempio, dall’individuazione alla conversione fino alla conservazione). I prompt della fase iniziale/alta del funnel hanno priorità elevata, ma considera anche le opzioni per le fasi successive per promuovere la conservazione, abilitare l’assistenza clienti e così via.
 1. Modifica gli argomenti o i prompt in base alle esigenze per supportare al meglio i tuoi obiettivi prima di caricare gli argomenti e i prompt in Adobe LLM Optimizer; ad esempio, aggiungi il nome del tuo brand o dei tuoi prodotti, aggiungi la terminologia in linea con il brand, e così via. Puoi aggiungere i prompt a LLM Optimizer manualmente o tramite il caricamento in blocco utilizzando il modello *.csv* fornito.
+
+<!--![Industry prompt library download](/help/assets/best-practices/download-prompts.png) - add screenshot to steps-->
 
 >[!TIP]
 >
@@ -86,11 +66,11 @@ La libreria di prompt di settore è stata sviluppata attraverso un’iniziativa 
 
 Argomenti principali ricercati da clienti nei diversi settori:
 
-* **Automotive:** risoluzione di problemi relativi alle auto, confronto tra veicoli e finanziamento/leasing
+* **Auto:** risoluzione dei problemi relativi all&#39;auto, confronto tra veicoli e finanziamento/leasing
 * **Servizi finanziari:** ricerca di prodotti finanziari
-* **Assistenza sanitaria:** ricerca di sintomi o problemi di salute, confronto delle opzioni di trattamento, comprensione dei referti di laboratorio o di termini medici
-* **Telecomunicazioni:** confronto tra piani, termini di contratto e promozioni, verifica del servizio nell’area locale
-* **Viaggi:** preparazione al viaggio, ricerca e prenotazione del viaggio
+* **Sanità:** ricerca di sintomi o problemi di salute, confronto delle opzioni di trattamento e comprensione dei risultati di laboratorio o dei termini medici
+* **Telecomunicazioni:** Confronto tra piani, condizioni contrattuali e promozioni e controllo del servizio nell&#39;area locale
+* **Viaggi aerei:** Preparazione a un viaggio, ricerca e prenotazione di un viaggio
 
 Tendenze nel comportamento di ricerca IA e nei prompt in strumenti LLM da parte di clienti:
 
@@ -122,12 +102,15 @@ Per decidere come impostare le categorie, rispondi a questa domanda: **Chi dovr�
 * Se sei *responsabile per il sito web o i contenuti*, scegli l&#39;approccio **URL_DIR**.
 * Se sei un *responsabile di merchandising/offerte*, scegli l’approccio **categorie di prodotti/servizi**.
 
-![Aggiunta di categorie in LLM Optimizer](/help/assets/best-practices/add-category.png)
+<!--How do you pick a region? Or is that handled differently?-->
+
+![Aggiunta di categorie in LLM Optimizer](/help/assets/best-practices/create-category1.png)
 
 >[!IMPORTANT]
 >
 > * Scegli un approccio e attieniti ad esso.
 > * Puoi avere **un** solo modello di categorie per account o brand. Non combinare **SBU** e **URL_DIR** allo stesso tempo.
+
 <!--Can you mix Product/Service with these?-->
 
 Esempio:
@@ -158,13 +141,14 @@ Per decidere quali argomenti adottare, crea un breve elenco semplice (massimo 6-
 * Contatta l’assistenza
 * Azienda/News (se ne hai davvero bisogno)
 
-![Aggiunta di argomenti in LLM Optimizer](/help/assets/best-practices/add-topic.png)
+![Aggiunta di argomenti in LLM Optimizer](/help/assets/best-practices/add-new-topic1.png)
 
 Quando crei l’elenco di argomenti, considera quanto segue:
 
-* Un editor è in grado di comprendere in 5 secondi l’argomento, in base al testo del prompt? In caso contrario, semplifica o cambia il nome dell’argomento.
+* Qualcuno può capire l&#39;argomento in 5 secondi dal testo del prompt? In caso contrario, semplifica o cambia il nome dell’argomento.
 * Un team diverso si occuperà della correzione di argomenti diversi? Se sì, hai scelto argomenti utili.
-  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
+
+<!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Alri suggerimenti utili:
 
@@ -174,7 +158,7 @@ Alri suggerimenti utili:
 >[!IMPORTANT]
 >
 > * Mantieni gli argomenti basati sull’intento, non organizzativi.
-> * Non aggiungere categorie ofiltri per brand/non brand/area geografica, in quanto puoi applicare appositi filtri nella scheda **[!UICONTROL Brand]**.
+> * Non aggiungere categorie/filtri per marchio/non marchio/area geografica, in quanto è possibile filtrare specificamente per questo nel dashboard **[!UICONTROL Presenza dei brand]**.
 > * Gli argomenti coprire diverse categorie. **Non puoi** definire argomenti univoci per ogni categoria.
 > * Un singolo prompt **può** esistere in diversi argomenti o categorie.
 
@@ -197,11 +181,11 @@ Best practice per i prompt:
 
 ## Best practice per il tracciamento di altri brand
 
-Il tracciamento di altri brand consente di monitorare la visibilità e le menzioni nelle risposte LLM per i prompt e gli argomenti importanti per tuo business.
+Il tracciamento di altri brand consente di monitorare la visibilità e le menzioni nelle risposte LLM per prompt e argomenti importanti per la tua azienda.
 
-La scheda [!UICONTROL **Tracciamento altri**] ti consente di aggiungere altri brand, inclusa la concorrenza, per tenere traccia della loro visibilità per prompt e argomenti specifici.
+[!UICONTROL **Altri marchi da monitorare**] sono disponibili in **Gestione dei marchi** > **Monitoraggio del mercato** e consente di aggiungere altri, inclusi i concorrenti, per tenere traccia della loro visibilità per prompt e argomenti specifici.
 
-Con il tracciamento di altri brand, puoi vedere con quale frequenza vengono menzionati insieme al tuo brand in diverse aree geografiche e categorie, e confrontarne la visibilità rispetto alla tua.
+Con altri marchi da monitorare, puoi vedere con quale frequenza altri marchi vengono menzionati insieme al tuo marchio in diverse regioni e categorie e confrontarne la visibilità con la tua.
 
 >[!TIP]
 >
@@ -209,6 +193,7 @@ Con il tracciamento di altri brand, puoi vedere con quale frequenza vengono menz
 
 ## Ulteriori informazioni
 
-* La [dashboard Configurazione cliente](/help/dashboards/customer-configuration.md) consente di configurare il tracciamento di categorie, argomenti, prompt e altri brand.
+* [Gestione dei marchi](/help/dashboards/customer-configuration.md) è il luogo in cui puoi configurare le categorie e altri marchi da monitorare.
+* [Nella libreria dei prompt](/help/dashboards/customer-configuration.md) è possibile configurare argomenti e prompt.
 * [Best practice per LLM Optimizer](/help/tutorials/best-practices.md) descrive le best practice per l’ottimizzazione LLM
 
