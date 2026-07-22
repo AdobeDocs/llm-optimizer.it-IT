@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
+source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
 workflow-type: tm+mt
 source-wordcount: 795
-ht-degree: 76%
+ht-degree: 70%
 
 ---
 
@@ -42,7 +42,7 @@ Prima di impostare le regole di Gestione proprietà Akamai, assicurati di dispor
 
 La seguente regola di Akamai Property Manager indirizza il traffico della pagina HTML da IA agentica verso il servizio Edge Optimize. La configurazione include i seguenti passaggi:
 
-**1. Imposta i criteri di indirizzamento (corrispondenza per agenti utente e traffico HTML)**
+## &#x200B;1. Impostare i criteri di routing (corrispondenza traffico agente utente e HTML)
 
 Imposta l’indirizzamento per i seguenti agenti utente:
 
@@ -64,7 +64,7 @@ Imposta l’indirizzamento per i seguenti agenti utente:
 
 ![Imposta i criteri di indirizzamento](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
-**2. Imposta il comportamento di origine e SSL**
+## &#x200B;2. Impostare il comportamento di Origin e SSL
 
 Imposta l’origine come `live.edgeoptimize.net` e abbina SAN a `*.edgeoptimize.net`
 
@@ -74,17 +74,17 @@ Imposta l’origine come `live.edgeoptimize.net` e abbina SAN a `*.edgeoptimize.
 
 ![Imposta il comportamento di origine e SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
-**3. Imposta la variabile chiave della cache**
+## &#x200B;3. Imposta variabile chiave cache
 
 Imposta la variabile della chiave della cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` su `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![Imposta la variabile chiave della cache](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
-**4. Regole di memorizzazione in cache**
+## &#x200B;4. Regole di memorizzazione in cache
 
 ![Regole di memorizzazione in cache](/help/assets/optimize-at-edge/akamai-step4-rules.png)
 
-**5. Modifica le intestazioni delle richieste in ingresso**
+## &#x200B;5. Modifica intestazioni richieste in ingresso
 
 Imposta le seguenti intestazioni per le richieste in entrata:
 `x-edgeoptimize-api-key` verso la chiave API recuperata da LLMO
@@ -93,7 +93,7 @@ Imposta le seguenti intestazioni per le richieste in entrata:
 
 ![Modifica le intestazioni delle richieste in ingresso](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Consenti Ottimizza su rete Edge tramite le regole del firewall (facoltativo)**
+## Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)
 
 {{waf-allowlist-setup}}
 
@@ -103,25 +103,25 @@ Imposta le seguenti intestazioni per le richieste in entrata:
 >
 >Inoltre, inserisci l’agente utente `*AdobeEdgeOptimize/1.0*` e l’intestazione `x-edgeoptimize-fetcher-key` all’elenco Consentiti in Akamai Bot Manager.
 
-**6. Modifica le intestazioni delle risposte in ingresso**
+## &#x200B;6. Modifica intestazioni di risposta in ingresso
 
 ![Modifica le intestazioni delle risposte in ingresso](/help/assets/optimize-at-edge/akamai-step6-response.png)
 
-**7. Modifica l’ID cache**
+## &#x200B;7. Modifica ID cache
 
 ![Modifica l’ID cache](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. Modifica le intestazioni delle richieste in uscita**
+## &#x200B;8. Modifica intestazioni richieste in uscita
 
 Imposta l’intestazione `x-forwarded-host` su `{{builtin.AK_HOST}}`
 
 ![Modifica le intestazioni delle richieste in uscita](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
-**9. Failover del sito**
+## &#x200B;9. Failover del sito
 
 La configurazione del failover del sito è composta da due parti: un comportamento di failover all’interno della regola principale di routing Optimize at Edge e una regola di pari livello che aggiunge un’intestazione di risposta quando si verifica il fallback.
 
-**9a. Configura il comportamento di failover del sito**
+### 9 bis. Configurare il comportamento di failover del sito
 
 All&#39;interno della regola di routing principale Ottimizza in Edge, creare una regola figlio denominata **Comportamento failover sito**. Impostalo su **Corrispondenza con qualsiasi** e aggiungi i seguenti criteri:
 
@@ -132,7 +132,7 @@ All&#39;interno della regola di routing principale Ottimizza in Edge, creare una
 
 ![Configurare il comportamento di failover del sito](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-**9b. Configura la regola di intestazione della risposta di failover**
+### 9 ter. Configurare la regola di intestazione della risposta di failover
 
 >[!IMPORTANT]
 >
@@ -158,7 +158,7 @@ Il failover del sito assicura che, se Edge Optimize restituisce un errore o un t
 | Il servizio Edge Optimize restituisce `2XX` o `3XX` | Viene trasmessa la risposta ottimizzata. `x-edgeoptimize-request-id` è presente. |
 | Edge Optimize restituisce `4XX`-`5XX` oppure l&#39;origine scade | La richiesta viene ricreata per il nome host originale. La risposta include `x-edgeoptimize-fo: true`. |
 
-**Verificare la configurazione**
+## Verificare la configurazione
 
 Dopo aver completato la configurazione, verifica che il traffico proveniente da bot venga indirizzato al servizio Edge Optimize e che il traffico da persone non sia interessato da alcuna modifica.
 

@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 350
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Prima di impostare le regole VCL Fastly, verificare di disporre di:
 * aver recuperato dall’interfaccia di LLM Optimizer una chiave API del servizio Edge Optimize. Per la procedura, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facoltativo) Per verificare l’indirizzamento in fase di staging, consulta [Chiave API di staging](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Configurazione**
+## Configurazione
 
 Aggiungi al tuo servizio Fastly i tre snippet VCL seguenti. Questi snippet gestiscono l’indirizzamento delle richieste agentiche al servizio Edge Optimize, la separazione delle chiavi nella cache e il failover all’origine predefinita.
 
@@ -46,7 +46,7 @@ Aggiungi al tuo servizio Fastly i tre snippet VCL seguenti. Questi snippet gesti
 
 ![Aggiungi snippet VCL](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
-**snippet vcl_recv**
+### snippet vcl_recv
 
 ```
 unset req.http.x-edgeoptimize-url;
@@ -66,7 +66,7 @@ if (!req.http.x-edgeoptimize-request
 }
 ```
 
-**snippet vcl_hash**
+### vcl_hash snippet
 
 ```
 if (req.http.x-edgeoptimize-config) {
@@ -75,7 +75,7 @@ if (req.http.x-edgeoptimize-config) {
 }
 ```
 
-**snippet vcl_deliver**
+### vcl_deliver snippet
 
 ```
 if (req.http.x-edgeoptimize-config && resp.status >= 400) {
@@ -92,7 +92,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 }
 ```
 
-**Failover**
+### Failover
 
 Lo snippet `vcl_deliver` gestisce il failover in automatico. Se il servizio Edge Optimize restituisce un errore `4XX` o `5XX`, la richiesta viene riavviata e indirizzata all’origine predefinita, affinché l’utente finale riceva comunque una risposta. Le risposte di failover includono l’intestazione `x-edgeoptimize-fo: 1`.
 
@@ -102,11 +102,11 @@ Lo snippet `vcl_deliver` gestisce il failover in automatico. Se il servizio Edge
 | Il servizio Edge Optimize restituisce `4XX` o `5XX` | La richiesta viene riavviata e trasmessa dall’origine predefinita. |
 | Risposta in caso di failover | Include l’intestazione `x-edgeoptimize-fo: 1`. |
 
-**Consenti Ottimizza su rete Edge tramite le regole del firewall (facoltativo)**
+## Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)
 
 {{waf-allowlist-setup}}
 
-**Verificare la configurazione**
+## Verificare la configurazione
 
 Dopo aver completato la configurazione, verifica che il traffico proveniente da bot venga indirizzato al servizio Edge Optimize e che il traffico da persone non sia interessato da alcuna modifica.
 
