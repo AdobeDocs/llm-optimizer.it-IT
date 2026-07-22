@@ -4,26 +4,15 @@ description: Scopri come configurare Cloudflare BYOCDN per l’ottimizzazione ne
 feature: Opportunities
 autotag-review: '2026-07-15T17:46:02.378Z'
 TQID: 'https://experienceleague.adobe.com/ZgOX0yC8qyb13Y7YNCg3Y1A6Q3TSk9-mUQ8gthzQvLM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadcid: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 1919
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -41,11 +30,11 @@ Prima di impostare le regole di instradamento di Cloud Worker, verificare di dis
 * aver recuperato dall’interfaccia di LLM Optimizer una chiave API del servizio Edge Optimize. Per la procedura, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facoltativo) Per verificare l’indirizzamento in fase di staging, consulta [Chiave API di staging](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Come funziona l’indirizzamento**
+## Funzionamento del routing
 
 Una volta configurata correttamente, una richiesta al tuo dominio (ad esempio, `www.example.com/page.html`) proveniente da un agente utente agentico viene intercettata dal processo di lavoro Cloudflare e indirizzata al back-end del servizio Edge Optimize. La richiesta al back-end include le intestazioni necessarie.
 
-**Test della richiesta al back-end**
+### Verifica della richiesta di back-end
 
 Puoi verificare l’indirizzamento effettuando una richiesta diretta al back-end del servizio Edge Optimize.
 
@@ -57,7 +46,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
   -H 'x-edgeoptimize-config: LLMCLIENT=TRUE;'
 ```
 
-**Intestazioni necessarie**
+### Intestazioni richieste
 
 Le seguenti intestazioni devono essere impostate sulle richieste al back-end del servizio Edge Optimize:
 
@@ -85,13 +74,13 @@ Questa opzione utilizza il pulsante **Implementazione in Cloudflare** per creare
 >
 >Utilizza questa opzione solo se **non** disponi di un Cloudflare Worker esistente nel dominio. Se disponi già di un processo di lavoro, utilizza [Opzione 2: configurazione manuale](#option-2-manual-setup) per aggiungere la logica di indirizzamento dell’Ottimizzazione sulla rete Edge al processo di lavoro esistente.
 
-**Passaggio 1: implementare il processo di lavoro**
+### Passaggio 1: distribuire il lavoratore
 
 Fai clic sul pulsante seguente per implementare il processo di lavoro dell’Ottimizzazione sulla rete Edge nell’account Cloudflare:
 
 [![Implementazione in Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
 
-**Passaggio 2: compilare il modulo di implementazione**
+### Passaggio 2: compilare il modulo di distribuzione
 
 Facendo clic sul pulsante, si apre la pagina di configurazione dei processi di lavoro. Compila il modulo come segue:
 
@@ -115,7 +104,7 @@ Dopo aver implementato il processo di lavoro, procedi con [Aggiungere un indiriz
 
 Segui questi passaggi per creare e configurare manualmente il processo di lavoro.
 
-**Passaggio 1: creare il processo di lavoro Cloudflare**
+### Passaggio 1: creare il processo di lavoro Cloudflare
 
 1. Accedi alla dashboard di Cloudflare.
 2. Passa a **Workers &amp; Pages** (Processi di lavoro e pagine) nella barra laterale.
@@ -125,13 +114,13 @@ Segui questi passaggi per creare e configurare manualmente il processo di lavoro
 
 ![Dashboard dei processi di lavoro Cloudflare](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
 
-**Passaggio 2: aggiungere il codice del processo di lavoro**
+### Passaggio 2: aggiungere il codice del lavoratore
 
 Dopo aver creato il processo di lavoro, fare clic su **Modifica codice** e sostituire il codice predefinito con il codice di [worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js). Se disponi già di Cloud Worker, unisci il codice con il codice del processo di lavoro esistente invece di sostituirlo completamente.
 
 Fai clic su **Save and deploy** (Salva e implementa) per pubblicare il processo di lavoro.
 
-**Passaggio 3: configurare i segreti e le variabili di ambiente**
+### Passaggio 3: configurare variabili di ambiente e segreti
 
 Le variabili di ambiente memorizzano in modo sicuro le configurazioni sensibili, come la chiave API.
 
@@ -167,7 +156,7 @@ In alternativa, puoi configurare gli indirizzamenti a livello di zona:
 
 ![Indirizzamenti del processo di lavoro Cloudflare](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
 
-**Verifica del comportamento di failover**
+### Verifica del comportamento di failover
 
 Se il servizio Edge Optimize non è disponibile o restituisce un errore, il processo di lavoro esegue automaticamente il failover sulla tua origine. Le risposte di failover includono l’intestazione `x-edgeoptimize-fo`:
 
@@ -178,7 +167,7 @@ Se il servizio Edge Optimize non è disponibile o restituisce un errore, il proc
 
 Per la risoluzione di eventuali problemi, puoi monitorare gli eventi di failover nei registri dei processi di lavoro di Cloudflare.
 
-**Logica del processo di lavoro**
+### Informazioni sulla logica di Worker
 
 Il processo di lavoro Cloudflare implementa la logica seguente:
 
@@ -200,11 +189,11 @@ Il processo di lavoro Cloudflare implementa la logica seguente:
 
 7. **Gestione del reindirizzamento:** l’opzione `redirect: "manual"` fa sì che le risposte di reindirizzamento dal servizio Edge Optimize vengano trasmesse al client senza che il processo di lavoro le segua.
 
-**Personalizzazione della configurazione**
+## Personalizzazione della configurazione
 
 Puoi personalizzare il comportamento del processo di lavoro modificando le costanti di configurazione all’inizio del codice:
 
-**Elenco dei bot agentici**
+### Elenco bot agenti
 
 Modifica l’array `AGENTIC_BOTS` per aggiungere o rimuovere agenti utente:
 
@@ -223,7 +212,7 @@ const AGENTIC_BOTS = [
 ];
 ```
 
-**Percorsi di destinazione**
+### Percorsi di destinazione
 
 Per impostazione predefinita, tutte le pagine HTML vengono indirizzate al servizio Edge Optimize. Per limitare l’indirizzamento a percorsi specifici, modifica l’array `TARGETED_PATHS`:
 
@@ -235,7 +224,7 @@ const TARGETED_PATHS = null;
 const TARGETED_PATHS = ['/', '/page.html', '/products', '/about-us'];
 ```
 
-**Cofigurazione del failover**
+### Configurazione di failover
 
 Per impostazione predefinita, il processo di lavoro esegue il failover in caso di errori 4XX o 5XX dal servizio Edge Optimize. Personalizza questo comportamento:
 
@@ -253,7 +242,7 @@ const FAILOVER_ON_4XX = false;
 const FAILOVER_ON_5XX = false;
 ```
 
-**Considerazioni importanti**
+### Considerazioni importanti
 
 * **Comportamento di failover:** se il servizio Edge Optimize restituisce un errore (con codici di stato 4XX o 5XX) o se la richiesta non riesce a causa di un errore di rete, il processo di lavoro esegue automaticamente il failover sull’origine. Il failover utilizza `EDGE_OPTIMIZE_TARGET_HOST` come dominio di origine, simile a `F_Default_Origin` di Fastly o `Default_Origin` di CloudFront. Le risposte di failover includono l’intestazione `x-edgeoptimize-fo: 1`, che puoi utilizzare a scopo di monitoraggio e debug.
 
@@ -265,7 +254,7 @@ const FAILOVER_ON_5XX = false;
 
 * **Registrazione:** abilita la registrazione dei processi di lavoro Cloudflare per monitorare le richieste e risolvere eventuali problemi. Passa a **Workers** (Processi di lavoro) > **tuo processo di lavoro** > **Logs** (Registri) per visualizzare i registri in tempo reale. Il processo di lavoro registra gli eventi di failover a scopo di debug.
 
-**Risoluzione dei problemi**
+## Risoluzione dei problemi
 
 | Problema | Causa possibile | Soluzione |
 |-------|----------------|----------|
@@ -280,11 +269,11 @@ const FAILOVER_ON_5XX = false;
 | Richieste non riuscite con host non valido | `EDGE_OPTIMIZE_TARGET_HOST` include il protocollo, ad esempio `https://`. | Utilizza solo il nome di dominio senza protocollo (ad esempio: `example.com` e non `https://example.com`). |
 | Errore 530 durante il failover | Cloudflare non è in grado di connettersi all’origine oppure la richiesta di failover contiene intestazioni non valide. | Assicurati che la funzione di failover rimuova le intestazioni del servizio Edge Optimize. Verifica che l’origine sia accessibile e che il DNS sia configurato correttamente. |
 
-**Consenti Ottimizza su rete Edge tramite le regole del firewall (facoltativo)**
+## Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)
 
 {{waf-allowlist-setup}}
 
-**Verificare la configurazione**
+## Verificare la configurazione
 
 Dopo aver completato la configurazione, verifica che il traffico proveniente da bot venga indirizzato al servizio Edge Optimize e che il traffico da persone non sia interessato da alcuna modifica.
 

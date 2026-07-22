@@ -4,25 +4,15 @@ description: Scopri come configurare CloudFront BYOCDN per l’ottimizzazione ne
 feature: Opportunities
 autotag-review: '2026-07-15T17:46:25.674Z'
 TQID: 'https://experienceleague.adobe.com/yIEUTzlnvOX-WBf276KQcAN8sGYDpZNVibJt024VMWU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
-source-wordcount: 2360
-ht-degree: 91%
+source-wordcount: 2343
+ht-degree: 85%
 
 ---
 
@@ -40,7 +30,7 @@ Prima di configurare CloudFront, assicurati di:
 * aver recuperato dall’interfaccia di LLM Optimizer una chiave API del servizio Edge Optimize. Per la procedura, consulta [Recuperare le chiavi API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Facoltativo) Per verificare l’indirizzamento in fase di staging, consulta [Chiave API di staging](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Passaggio 1: creare l’origine per il servizio Edge Optimize**
+## Passaggio 1: creare l’origine di Edge Optimize
 
 **Navigazione:** Console AWS > CloudFront > Distribuzioni > [La tua distribuzione] > scheda Origini
 
@@ -66,7 +56,7 @@ Prima di configurare CloudFront, assicurati di:
 
 ![Creazione dell’origine di Cloudfront](/help/assets/optimize-at-edge/cloudfront-origin-creation.png)
 
-**Passaggio 2: creare la funzione di richiesta del visualizzatore**
+## Passaggio 2: creare la funzione di richiesta del visualizzatore
 
 **Navigazione:** Console AWS > CloudFront > Funzioni
 
@@ -88,7 +78,7 @@ Prima di configurare CloudFront, assicurati di:
 ![Creazione della funzione di Cloudfront](/help/assets/optimize-at-edge/cloudfront-function-creation.png)
 
 
-**Passaggio 3: configurare il criterio di cache**
+## Passaggio 3: configurare i criteri della cache
 
 **Navigazione:** Console AWS > CloudFront > Distribuzioni > [La tua distribuzione] > Comportamenti
 
@@ -98,7 +88,7 @@ Verifica il criterio di cache attualmente associato al comportamento. Fai clic s
 * **Scenario B (criterio personalizzato):** puoi vedere selezionato “**Criterio di cache**” con un nome di criterio creato da te o dal tuo team (non un criterio fornito da AWS).
 * **Scenario C (criterio gestito):** puoi vedere selezionato “**Criterio di cache**”con un nome fornito da AWS, ad esempio `CachingOptimized`, `CachingDisabled` o `CachingOptimizedForUncompressedObjects`, che non possono essere modificati.
 
-**Scenario A: impostazioni cache precedenti**
+### Scenario A: impostazioni della cache legacy
 
 Se il comportamento utilizza impostazioni cache precedenti:
 
@@ -119,7 +109,7 @@ Se il comportamento utilizza impostazioni cache precedenti:
 
 4. Fai clic su **Salva modifiche**.
 
-**Scenario B: impostazioni non precedenti con criterio di cache personalizzato**
+### Scenario B: non legacy con criteri di cache personalizzati
 
 Se il comportamento utilizza già un criterio di cache personalizzato (uno creato dall’utente, non un criterio gestito da AWS):
 
@@ -137,7 +127,7 @@ Se il comportamento utilizza già un criterio di cache personalizzato (uno creat
 
 5. Fai clic su **Salva modifiche**.
 
-**Scenario C: non precedente con un criterio di cache gestito (AWS)**
+### Scenario C: non legacy con criteri di cache gestiti (AWS)
 
 Se il comportamento utilizza un criterio di cache gestito da AWS (per esempio `CachingOptimized`), non puoi modificarlo. Devi creare un nuovo criterio di cache personalizzato che replichi le impostazioni del criterio gestito esistente e aggiunga le intestazioni Edge Optimize in alto.
 
@@ -185,12 +175,12 @@ Se il comportamento utilizza un criterio di cache gestito da AWS (per esempio `C
    3. Scegli `edgeoptimize-cache` dal menu a discesa.
    4. Fai clic su **Salva modifiche**.
 
-**Passaggio 4: creare la funzione Lambda@Edge (richiesta di origine e risposta)**
+## Passaggio 4: creare la funzione Lambda@Edge (richiesta e risposta di origine)
 
 >[!IMPORTANT]
 >Le funzioni Lambda@Edge **devono essere create nell’`us-east-1`area geografica (N. Virginia)**. Si tratta di un requisito di AWS. Anche se la funzione viene creata in `us-east-1`, AWS la replica automaticamente in tutte le posizioni Edge di CloudFront in tutto il mondo, in modo che venga eseguita nella posizione edge più vicina al visualizzatore. Prima di procedere, assicurati di trovarti nell’area `us-east-1` della console AWS.
 
-**Creare la funzione Lambda**
+### Creare la funzione Lambda
 
 **Navigazione:** Console AWS > Lambda
 
@@ -210,7 +200,7 @@ Se il comportamento utilizza un criterio di cache gestito da AWS (per esempio `C
 
 7. Prendi nota del **nome del ruolo di esecuzione** visualizzato in **Configurazione** > **Autorizzazioni** (ad esempio, `edgeoptimize-origin-role-xxxxx`). Ti servirà nei seguenti passaggi.
 
-**Aggiorna il criterio di attendibilità del ruolo di esecuzione**
+### Aggiorna il criterio di attendibilità del ruolo di esecuzione
 
 Il ruolo creato automaticamente considera attendibile solo `lambda.amazonaws.com`. Per Lambda@Edge, devi aggiungere anche `edgelambda.amazonaws.com`.
 
@@ -225,7 +215,7 @@ Il ruolo creato automaticamente considera attendibile solo `lambda.amazonaws.com
 >[!WARNING]
 >Per Lambda@Edge è **obbligatoria** l’entità principale di servizio `edgelambda.amazonaws.com`. In sua assenza, CloudFront non può invocare la funzione nelle posizioni Edge.
 
-**Correggere i criteri di autorizzazione dei registri di CloudWatch**
+### Correzione dei criteri di autorizzazione per i registri di CloudWatch
 
 Il ruolo creato automaticamente viene fornito con un criterio `AWSLambdaBasicExecutionRole` configurato per la normale funzione Lambda, in cui l’area geografica e il nome del gruppo di registri per Lambda@Edge sono errati. Devi aggiornarlo.
 
@@ -242,7 +232,7 @@ Il ruolo creato automaticamente viene fornito con un criterio `AWSLambdaBasicExe
 >[!WARNING]
 >L’area geografica dell’ARN deve essere `*` — Lambda@Edge viene eseguito nella posizione edge più vicina al visualizzatore, pertanto i registri vengono scritti in CloudWatch nell’area geografica della posizione edge (ad esempio, `ap-south-1`, `eu-west-1`), non necessariamente `us-east-1`. Il gruppo di registri utilizza un nome con prefisso di area geografica: `/aws/lambda/us-east-1.FUNCTION_NAME`, dove `us-east-1` è sempre l’area geografica propria della funzione.
 
-**Correggi il collegamento dei registri di CloudWatch**
+### Correggi il collegamento dei registri di CloudWatch
 
 Per impostazione predefinita, il collegamento **Visualizza registri CloudWatch** nella console Lambda collega a `/aws/lambda/FUNCTION_NAME` in `us-east-1`, ovvero il gruppo di registro errato per Lambda@Edge. Configurare un gruppo di registro personalizzato in modo che il collegamento punti al percorso corretto.
 
@@ -263,7 +253,7 @@ Per impostazione predefinita, il collegamento **Visualizza registri CloudWatch**
 >[!NOTE]
 >Anche dopo questa correzione, il collegamento **Visualizza registri di CloudWatch** apre il nome corretto del gruppo di registri, ma potrebbe non mostrare dati se ti trovi nell&#39;area sbagliata. I registri Lambda@Edge vengono scritti nell&#39;area Edge che ha fornito la richiesta (ad esempio, `eu-west-1`, `ap-south-1`), non `us-east-1`. Per visualizzare i registri, è comunque necessario passare all’area corretta in CloudWatch.
 
-**Pubblicare una versione**
+### Pubblicare una versione
 
 1. Nella pagina della funzione, fai clic su **Azioni** (in alto a destra) > **Pubblica nuova versione**.
 
@@ -275,7 +265,7 @@ Per impostazione predefinita, il collegamento **Visualizza registri CloudWatch**
 4. Copia o prendi nota dell’**ARN della funzione** (ti servirà nel passaggio successivo).
    ![ARN di Lambda](/help/assets/optimize-at-edge/cloudfront-lambda-arn.png)
 
-**Passaggio 5: associare funzioni e criterio di cache al comportamento**
+## Passaggio 5: associare le funzioni e i criteri di cache al comportamento
 
 **Navigazione:** Console AWS > CloudFront > Distribuzioni > [La tua distribuzione] > Comportamenti
 
@@ -294,11 +284,11 @@ Per impostazione predefinita, il collegamento **Visualizza registri CloudWatch**
 
 4. Fai clic su **Salva modifiche**.
 
-**Consenti Ottimizza su rete Edge tramite le regole del firewall (facoltativo)**
+## Consenti ottimizzazione in Edge tramite regole firewall (facoltativo)
 
 {{waf-allowlist-setup}}
 
-**Passaggio 6: provare la configurazione**
+## Passaggio 6: verificare la configurazione
 
 **1. Test del traffico da bot (deve risultare ottimizzato)**
 
@@ -372,7 +362,7 @@ Puoi anche controllare la scheda **Metriche** in **Console AWS > CloudFront > Fu
 
 Se il gruppo di registri non è presente, verifica che le autorizzazioni IAM siano state aggiornate correttamente nel passaggio 4. Controlla anche altre aree geografiche vicine di AWS: la posizione Edge che ha visualizzato la richiesta potrebbe essere diversa da quella prevista.
 
-**Risoluzione dei problemi**
+## Risoluzione dei problemi
 
 | Problema | Causa possibile | Soluzione |
 |-------|----------------|----------|
@@ -382,16 +372,16 @@ Se il gruppo di registri non è presente, verifica che le autorizzazioni IAM sia
 | La cache non rispetta `cache-control: no-store` | Il TTL minimo potrebbe essere troppo elevato | Imposta il TTL minimo su `0` nel tuo criterio di cache (passaggio 3). Se il TTL minimo è già molto breve, questo potrebbe non essere il problema. |
 | Traffico regolare (non agentico) interrotto dopo la configurazione | Configurazione errata del criterio di cache | Se hai creato un nuovo criterio di cache (Scenario C), assicurati di aver replicato tutte le impostazioni del criterio gestito originale. |
 
-**Disabilitare e riabilitare Ottimizza su Edge**
+## Disabilitazione e riabilitazione di Ottimizza in Edge
 
 La funzione Lambda@Edge (`edgeoptimize-origin`) è associata alla richiesta di origine e agli eventi di risposta di origine del comportamento CloudFront. Siccome viene eseguito in linea su ogni richiesta che passa attraverso tale comportamento, sia umana che agentica, un’interruzione di Lambda@Edge influirà su tutto il traffico live, non solo sulle richieste agentiche. Se rilevi un’interruzione Lambda@Edge, rimuovi immediatamente le associazioni della funzione per ripristinare il normale flusso di traffico all’origine predefinita.
 
-**Come rilevare un’interruzione di Lambda@Edge**
+### Come rilevare un’interruzione Lambda@Edge
 
 * **Dashboard AWS Service Health**: visita la [Dashboard AWS Service Health](https://health.aws.amazon.com/health/status) per eventuali incidenti attivi che interessano **Amazon CloudFront** o **AWS Lambda**. Un’interruzione globale o regionale riportata qui è il modo più rapido per confermare che il problema riguarda il lato dell’infrastruttura AWS anziché la tua configurazione.
 * **Errori Lambda@Edge**: passa a **Console AWS > CloudFront > Monitoraggio > [La tua distribuzione]**. Apri la scheda **Errori Lambda@Edge** per verificare nel grafico degli **Errori di esecuzione** l’eventuale presenza di errori di esecuzione. Se il numero è elevato, Lambda@Edge potrebbe essere inattivo.
 
-**Scollegare la funzione Lambda@Edge**
+### Scollegamento della funzione Lambda@Edge
 
 **Navigazione:** Console AWS > CloudFront > Distribuzioni > [La tua distribuzione] > Comportamenti
 
@@ -415,7 +405,7 @@ La funzione Lambda@Edge (`edgeoptimize-origin`) è associata alla richiesta di o
 
 Al termine dell’implentazione, tutti gli indirizzamenti del traffico arrivano direttamente all’origine predefinita. Nessuna configurazione viene eliminata: la funzione Lambda e le relative associazioni possono essere ripristinate in qualsiasi momento.
 
-**Collegare nuovamente la funzione Lambda@Edge**
+### Riassociazione della funzione Lambda@Edge
 
 **Navigazione:** Console AWS > CloudFront > Distribuzioni > [La tua distribuzione] > Comportamenti
 
