@@ -20,10 +20,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 72cc645997dbd5ae0442fefad73fe6a4e7ffe050
 workflow-type: tm+mt
-source-wordcount: 3935
-ht-degree: 57%
+source-wordcount: 3923
+ht-degree: 56%
 
 ---
 
@@ -48,9 +48,9 @@ Per configurare il modo in cui LLM Optimizer monitora e analizza la presenza del
 
 Se utilizzi l’[esperienza incentrata sul brand](/help/overview/quick-start.md#brand-centric-experience), passa a **Gestione dei brand** per configurare i brand e gli alias dei brand e per definire la concorrenza da monitorare. La funzione **Gestione dei brand** viene utilizzata anche per configurare integrazioni quali Google Search Console, Adobe Analytics e l’inoltro di registri CDN relativi agli URL associati ai brand. A tal fine, fai clic sulle schede corrispondenti: GSC, CDN e così via.
 
-![Gestione dei brand: navigazione nell’app (esperienza incentrata sul brand)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Gestione dei marchi - navigazione nelle app (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Gestione dei brand: panoramica della configurazione (esperienza incentrata sul brand)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Gestione dei marchi - panoramica della configurazione (esperienza incentrata sul marchio)](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
 >[!IMPORTANT]
 >
@@ -225,7 +225,7 @@ Dopo aver integrato l’account Google Search Console con LLM Optimizer, puoi ri
 1. Nella scheda di Google Search Console, rivedi l’elenco di argomenti e prompt provenienti da Search Console.
    ![Elenco dei prompt](/help/dashboards/assets/prompts-list.png)
 1. Fai clic sulla categoria di argomento/prompt desiderata per espandere l’elenco.
-1. Utilizza il pulsante **Aggiungi** per aggiungere prompt dall’elenco. Inoltre, puoi aggiungere prompt e categorie in blocco utilizzando **Aggiungi tutto**.
+1. Utilizza il pulsante **Aggiungi** per aggiungere i prompt dall&#39;elenco. È inoltre possibile aggiungere in blocco richieste e categorie utilizzando **Aggiungi tutto**.
    ![Aggiungi prompt](/help/dashboards/assets/add-prompts.png)
 1. Dopo aver completato la selezione, fai clic su **Salva** nel messaggio di notifica.
 

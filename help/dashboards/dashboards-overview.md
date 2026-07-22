@@ -1,6 +1,6 @@
 ---
 title: Panoramica delle dashboard
-description: Questo è un articolo di panoramica.
+description: Questo articolo descrive tutte le dashboard di LLM Optimizer. Fai clic su ogni collegamento per ulteriori informazioni sulle funzionalità di LLM Optimizer.
 feature: Onboarding
 autotag-review: '2026-07-15T17:49:14.691Z'
 TQID: 'https://experienceleague.adobe.com/tF7WvqcuYsu--kShNo215zbbVg1fFQg-TXLH-YHQw0c'
@@ -15,17 +15,17 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
-source-wordcount: 562
-ht-degree: 100%
+source-wordcount: 281
+ht-degree: 72%
 
 ---
 
 
 # Panoramica delle dashboard
 
-Ti diamo il benvenuto nella panoramica delle dashboard. Le dashboard in LLM Optimizer consentono ai marketer di tenere traccia della visibilità del brand e del sentiment nelle diverse piattaforme di ricerca IA, individuare opportunità di ottimizzazione e implementare modifiche prescrittive al fine di migliorare le citazioni e le prestazioni.
+Ti diamo il benvenuto nella panoramica delle dashboard. Le dashboard in LLM Optimizer consentono agli addetti al marketing di tenere traccia di visibilità dei brand e sentiment tra le piattaforme Ricerca IA, identificare opportunità di ottimizzazione e implementare modifiche prescrittive per migliorare le citazioni e le prestazioni.
 
 Le viste principali includono Panoramica, Presenza del brand, Traffico da referral, Traffico da IA agentica, Inspector URL, Opportunità, Collaborazione e Configurazione cliente.
 
@@ -34,19 +34,19 @@ CARDS
 
 * ./brand-presence.md
   {title= Brand presence dashboard}
-  {image= /help/assets/overview/brand-presence-card.png}
+  {image= /help/assets/overview/brand-presence-card1.png}
   {description= Tracks how your brand appears across LLM search platforms, including sentiment analysis and benchmarking other brands.}
   {target=_blank}
   {cta=Learn more}
 * ./agentic-traffic.md
   {title= Agentic traffic dashboard}
   {description= Surfaces traffic from LLMs that traditional analytics miss, helping you connect AI-assisted discovery to engagement and revenue.}
-  {image= /help/assets/overview/agentic-traffic-card.png}
+  {image= /help/assets/overview/agentic-traffic-card1.png}
   {target=_blank}
   {cta=Learn more}
 * ./referral-traffic.md
   {title= Referral traffic dashboard}
-  {image= /help/assets/overview/referral-traffic-card.png}
+  {image= /help/assets/overview/referral-traffic-card1.png}
   {description= Measures human visits that originate from AI-generated citations that let you discover actual AI user engagement}
   {target=_blank}
   {cta=Learn more}
@@ -58,23 +58,28 @@ CARDS
   {cta=Learn more}
 * ./opportunities-overview.md
   {title= Opportunities dashboard}
-  {image= /help/assets/overview/opportunities-card.png}
+  {image= /help/assets/overview/opportunities-card1.png}
   {description= Surfaces and prioritizes actionable insights that improve brand visibility and citation performance across AI-powered search platforms}
   {target=_blank}
   {cta=Learn more}
 * ./url-inspector.md
   {title= URL inspector dashboard}
-  {image= /help/assets/overview/url-inspector-card.png}
+  {image= /help/assets/overview/url-inspector-card1.png}
   {description= Gives you visibility into how your owned URLs are performing in AI-driven search environments.}
   {target=_blank}
   {cta=Learn more}
 * ./customer-configuration.md
-  {title= Customer Configuration dashboard}
-  {image= /help/assets/overview/customer-configuration-card.png}
+  {title= Brands management dashboard}
+  {image= /help/dashboards/assets/brands-management-card.png}
+  {description= Lets organizations manage brands in LLM Optimizer.}
+  {target=_blank}
+  {cta=Learn more}
+* ./customer-configuration.md
+  {title= Prompt library dashboard}
+  {image= /help/assets/best-practices/download-prompts1.png}
   {description= Lets organizations control how the Adobe LLM Optimizer operates for their specific needs.}
   {target=_blank}
   {cta=Learn more}
-
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -83,7 +88,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./brand-presence.md" title="Dashboard Presenza del brand" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboard Presenza del brand"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card1.png" alt="Dashboard Presenza del brand"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -106,7 +111,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agentic-traffic.md" title="Dashboard Traffico da IA agentica" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="Dashboard Traffico da IA agentica"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card1.png" alt="Dashboard Traffico da IA agentica"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -129,7 +134,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./referral-traffic.md" title="Dashboard Traffico da referral" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Dashboard Traffico da referral"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card1.png" alt="Dashboard Traffico da referral"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -175,7 +180,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./opportunities-overview.md" title="Dashboard Opportunità" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/opportunities-card.png" alt="Dashboard Opportunità"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/opportunities-card1.png" alt="Dashboard Opportunità"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -198,7 +203,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./url-inspector.md" title="Dashboard Inspector URL" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/url-inspector-card.png" alt="Dashboard Inspector URL"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/url-inspector-card1.png" alt="Dashboard Inspector URL"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,12 +221,12 @@ CARDS
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Customer Configuration dashboard">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Brands management dashboard">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./customer-configuration.md" title="Dashboard Configurazione cliente" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Dashboard Configurazione cliente"
+                    <a href="./customer-configuration.md" title="Dashboard di gestione dei brand" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/dashboards/assets/brands-management-card.png" alt="Dashboard di gestione dei brand"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -229,12 +234,35 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="Dashboard Configurazione cliente">Dashboard Configurazione cliente</a>
+                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="Dashboard di gestione dei brand">Dashboard di gestione dei marchi</a>
+                    </p>
+                    <p class="is-size-6">Consente alle organizzazioni di gestire i marchi in LLM Optimizer.</p>
+                </div>
+                <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Prompt library dashboard">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./customer-configuration.md" title="Dashboard libreria Prompt" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/best-practices/download-prompts1.png" alt="Dashboard libreria Prompt"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./customer-configuration.md" target="_blank" rel="referrer" title="Dashboard libreria Prompt">Richiedi dashboard libreria</a>
                     </p>
                     <p class="is-size-6">Consente alle organizzazioni di controllare il funzionamento di Adobe LLM Optimizer in base alle proprie esigenze specifiche.</p>
                 </div>
                 <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>

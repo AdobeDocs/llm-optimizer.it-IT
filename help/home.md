@@ -18,10 +18,10 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
-source-wordcount: 682
-ht-degree: 100%
+source-wordcount: 364
+ht-degree: 86%
 
 ---
 
@@ -116,7 +116,7 @@ CARDS
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Panoramica delle dashboard">Panoramica delle dashboard</a>
                     </p>
-                    <p class="is-size-6">Scopri come usare le dashboard per ottenere insight e consigli per il tuo sito.</p>
+                    <p class="is-size-6">Scopri come ottenere insight e consigli per il tuo sito con le dashboard.</p>
                 </div>
                 <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
@@ -133,14 +133,14 @@ CARDS
 CARDS
 
 * ./overview/best-practices-topics-prompts.md
-  {title= Best practices for setting up categories, topics, prompts, and tracking others}
+  {title= Best practices for setting up categories, topics, prompts, and tracking other brands}
   {description= Learn how to configure LLM Optimizer for tailored brand monitoring and strategic content analysis.}
-  {image= /help/assets/overview/customer-configuration-card.png}
+  {image= /help/assets/best-practices/add-new-topic1.png}
   {target=_blank}
   {cta=Learn more}
 * ./tutorials/best-practices.md
   {title= Best practices for LLM optimization using Adobe LLM Optimizer}
-  {image= /help/assets/overview/best-practices-card.png}
+  {image= /help/assets/best-practices/create-category1.png}
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
@@ -153,12 +153,12 @@ CARDS
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Best practices for setting up categories, topics, prompts, and tracking others">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Best practices for setting up categories, topics, prompts, and tracking other brands">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri brand" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri brand"
+                    <a href="./overview/best-practices-topics-prompts.md" title="Best practice per l’impostazione di categorie, argomenti, prompt e il tracciamento di altri brand" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/best-practices/add-new-topic1.png" alt="Best practice per l’impostazione di categorie, argomenti, prompt e il tracciamento di altri brand"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -166,7 +166,7 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri brand">Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri brand</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best practice per l’impostazione di categorie, argomenti, prompt e il tracciamento di altri brand">Best practice per impostare categorie, argomenti, prompt e tenere traccia di altri marchi</a>
                     </p>
                     <p class="is-size-6">Scopri come configurare LLM Optimizer per il monitoraggio personalizzato del brand e l’analisi strategica dei contenuti.</p>
                 </div>
@@ -181,7 +181,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./tutorials/best-practices.md" title="Best practice per l’ottimizzazione LLM con Adobe LLM Optimizer" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/best-practices-card.png" alt="Best practice per l’ottimizzazione LLM con Adobe LLM Optimizer"
+                        <img class="is-bordered-r-small" src="/help/assets/best-practices/create-category1.png" alt="Best practice per l’ottimizzazione LLM con Adobe LLM Optimizer"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -225,7 +225,7 @@ CARDS
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## Ottimizza su rete Edge
+## Ottimizzazione nella rete Edge
 
 <!--
 CARDS
@@ -255,10 +255,10 @@ CARDS
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./dashboards/optimize-at-edge/overview.md" target="_blank" rel="referrer" title="Ottimizza su rete Edge">Ottimizzazione nella rete Edge</a>
                     </p>
-                    <p class="is-size-6">Scopri come implementare le ottimizzazioni in LLM Optimizer senza la necessità di apportare modifiche di authoring.</p>
+                    <p class="is-size-6">Scopri come distribuire le ottimizzazioni in LLM Optimizer senza la necessità di apportare modifiche di authoring.</p>
                 </div>
                 <a href="./dashboards/optimize-at-edge/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri di più</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                 </a>
             </div>
         </div>
