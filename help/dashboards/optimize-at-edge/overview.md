@@ -179,7 +179,7 @@ Per informazioni dettagliate sulla dashboard, i passaggi di distribuzione e le d
 
 Per ogni opportunità, puoi visualizzare in anteprima e live, modificare e implementare, le ottimizzazioni sulla rete Edge, nonché ripristinare la versione precedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477992/?captions=ita&learn=on&enablevpops)
 
 ### Anteprima
 
