@@ -2,9 +2,12 @@
 title: Ottimizza in Edge - Server HTTP Apache
 description: Scopri come configurare Apache HTTP Server (self-hosted reverse proxy) BYOCDN per l’ottimizzazione in Edge in LLM Optimizer.
 feature: Opportunities
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 source-git-commit: d7e723161836027dcdde931378f5d0f776a1ecfc
 workflow-type: tm+mt
 source-wordcount: 585
